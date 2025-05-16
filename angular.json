@@ -18,7 +18,6 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets",
@@ -28,7 +27,13 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -60,30 +65,28 @@
               ]
             },
             "en": {
-              "aot": true,
-              "i18nFile": "src/locales/messages.en.xlf",
-              "i18nFormat": "xlf",
-              "i18nLocale": "en",
-              "i18nMissingTranslation": "error"
+              "i18nMissingTranslation": "error",
+              "localize": [
+                "en"
+              ]
             },
             "pt": {
-              "aot": true,
-              "i18nFile": "src/locales/messages.pt.xlf",
-              "i18nFormat": "xlf",
-              "i18nLocale": "pt",
-              "i18nMissingTranslation": "error"
+              "i18nMissingTranslation": "error",
+              "localize": [
+                "pt"
+              ]
             },
             "fr": {
-              "aot": true,
-              "i18nFile": "src/locales/messages.fr.xlf",
-              "i18nFormat": "xlf",
-              "i18nLocale": "fr",
-              "i18nMissingTranslation": "error"
+              "i18nMissingTranslation": "error",
+              "localize": [
+                "fr"
+              ]
             },
             "es5": {
               "tsConfig": "./tsconfig.es5.json"
             }
-          }
+          },
+          "defaultConfiguration": ""
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -154,6 +157,22 @@
             "production": {
               "devServerTarget": "live-resume:serve:production"
             }
+          }
+        }
+      },
+      "i18n": {
+        "locales": {
+          "en": {
+            "translation": "src/locales/messages.en.xlf",
+            "baseHref": ""
+          },
+          "pt": {
+            "translation": "src/locales/messages.pt.xlf",
+            "baseHref": ""
+          },
+          "fr": {
+            "translation": "src/locales/messages.fr.xlf",
+            "baseHref": ""
           }
         }
       }
