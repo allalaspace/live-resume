@@ -1,16 +1,16 @@
-import { AngularFirestore, DocumentReference } from "@angular/fire/firestore";
 import { Contact } from "../model/contact.model";
 import { Injectable } from "@angular/core";
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class ContactService {
 
-    constructor(private database: AngularFirestore) { }
+    constructor() { }
 
-    createContact(contact: Contact): Promise<DocumentReference> {
-        console.log("contact");
-        console.log(this.database.collection<Contact>("contacts").add(contact));
-        return this.database.collection<Contact>("contacts").add(contact);
-       
+    async createContact(contact: Contact): Promise<any> {
+        console.log('Contact form submission:', contact);
+        // Simulation d'une réponse réussie
+        return Promise.resolve({ id: 'temp-id-' + new Date().getTime() });
     }
 }
