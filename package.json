@@ -18,8 +18,10 @@
     "build-locale:en": "ng build --aot --configuration production --i18n-locale=en --i18n-format=xlf --i18n-file=src/locales/messages.en.xlf --output-path=dist/en --base-href /en/",
     "build-locale:fr": "ng build --aot --configuration production --i18n-locale=fr --i18n-format=xlf --i18n-file=src/locales/messages.fr.xlf --output-path=dist/fr --base-href /fr/",
     "build-locale:pt": "ng build --aot --configuration production --i18n-locale=pt --i18n-format=xlf --i18n-file=src/locales/messages.pt.xlf --output-path=dist/pt --base-href /pt/",
-    "build-locale": "npm run build-locale:en && npm run build-locale:pt && npm run build-locale:fr "
+    "build-locale": "npm run build-locale:en && npm run build-locale:pt && npm run build-locale:fr ",
+    "deploy:gh-pages": "ng build --configuration=fr --base-href=https://allalaspace.github.io/live-resume/ && npx angular-cli-ghpages --dir=dist/live-resume/fr"
   },
+  "homepage": "https://allalaspace.github.io/live-resume",
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.3.12",
@@ -56,6 +58,7 @@
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^1.0.7",
     "codelyzer": "^6.0.2",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",

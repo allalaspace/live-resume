@@ -72,6 +72,29 @@ Pour créer une version de production :
   npm run build-locale
   ```
 
+## Déploiement sur GitHub Pages
+
+### Méthode manuelle
+
+Pour déployer l'application sur GitHub Pages, utilisez la commande :
+
+```
+npm run deploy:gh-pages
+```
+
+Cette commande crée une version optimisée du site et la déploie sur la branche gh-pages.
+
+### Méthode automatique avec GitHub Actions
+
+Ce projet inclut également un workflow GitHub Actions qui déploie automatiquement le site sur GitHub Pages à chaque push sur la branche principale.
+
+Pour activer cette fonctionnalité :
+1. Assurez-vous que votre dépôt dispose de GitHub Pages activé dans les paramètres
+2. Configurez GitHub Pages pour utiliser la branche "gh-pages"
+3. Poussez vos modifications sur la branche principale
+
+Le site sera alors accessible à l'adresse : https://votre-utilisateur.github.io/live-resume/
+
 ## Notes sur les mises à jour
 
 Le projet a été mis à jour vers Angular 17. Des modifications ont été apportées pour assurer la compatibilité avec cette version, notamment :
