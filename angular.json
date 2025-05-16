@@ -164,7 +164,6 @@
       }
     }
   },
-  "defaultProject": "live-resume",
   "cli": {
     "analytics": false
   }
