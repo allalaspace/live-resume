@@ -20,6 +20,14 @@ jobs:
       - name: Install dependencies
         run: npm install --force
         
+      - name: Debug - Check paths
+        run: |
+          pwd
+          find . -name "environment*" -type f
+          mkdir -p src/environments
+          echo 'export const environment = { production: true, firebaseConfig: { apiKey: "dummy", authDomain: "dummy", databaseURL: "dummy", projectId: "dummy", storageBucket: "dummy", messagingSenderId: "dummy", appId: "dummy", measurementId: "dummy" } };' > src/environments/environment.ts
+          ls -la src/environments/
+        
       - name: Build
         run: npm run build:fr
         
