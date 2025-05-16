@@ -72,6 +72,21 @@ Pour créer une version de production :
   npm run build-locale
   ```
 
+## Personnalisation
+
+Pour adapter ce CV à vos informations personnelles :
+
+1. Modifiez les fichiers JSON dans le dossier `src/assets/data/` qui contiennent toutes les données affichées
+2. Remplacez les images dans `src/assets/images/` par vos propres images
+3. Pour ajouter une nouvelle langue :
+   - Créez un nouveau fichier de traduction dans `src/locales/`
+   - Mettez à jour les configurations dans `angular.json` et `package.json`
+
+Les fichiers principaux à modifier sont :
+- `src/assets/data/about.json` - Informations personnelles
+- `src/assets/data/experiences.json` - Expérience professionnelle
+- `src/assets/data/posts.json` - Publications, articles, projets
+
 ## Déploiement sur GitHub Pages
 
 ### Méthode manuelle
