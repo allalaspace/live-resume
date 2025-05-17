@@ -30,6 +30,7 @@ jobs:
         
       - name: Build
         run: |
+          npm install -g @angular/cli
           ng build --configuration=fr --base-href="https://allalaspace.github.io/live-resume/"
           cp dist/live-resume/fr/index.html dist/live-resume/fr/404.html
         
