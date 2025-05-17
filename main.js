@@ -3194,7 +3194,7 @@ class WelcomeBackgroundComponent {
       selectors: [["app-welcome-background"]],
       decls: 11,
       vars: 0,
-      consts: [[1, "skills"], ["loading", "lazy", "src", "/assets/template/welcome/illustration-back.png", "alt", "Background circle", 1, "background"], ["loading", "lazy", "src", "/assets/template/welcome/icons/docker.svg", "alt", "Docker", 1, "skill-icon", "first"], ["loading", "lazy", "src", "/assets/template/welcome/icons/css3.svg", "alt", "CSS3", 1, "skill-icon", "second"], ["loading", "lazy", "src", "/assets/template/welcome/icons/git.svg", "alt", "Git", 1, "skill-icon", "third"], ["loading", "lazy", "src", "/assets/template/welcome/icons/html5.svg", "alt", "HTML5", 1, "skill-icon", "fourth"], ["loading", "lazy", "src", "/assets/template/welcome/icons/sql.svg", "alt", "SQL", 1, "skill-icon", "fifth"], ["loading", "lazy", "src", "/assets/template/welcome/icons/php.svg", "alt", "PHP", 1, "skill-icon", "sixth"], ["loading", "lazy", "src", "/assets/template/welcome/icons/java.svg", "alt", "JAVA", 1, "skill-icon", "seventh"], ["loading", "lazy", "src", "/assets/template/welcome/icons/bitbucket.svg", "alt", "BitBucket", 1, "skill-icon", "eighth"], ["loading", "lazy", "src", "/assets/template/welcome/icons/android.svg", "alt", "Android", 1, "skill-icon", "ninth"]],
+      consts: [[1, "skills"], ["loading", "lazy", "src", "assets/template/welcome/illustration-back.png", "alt", "Background circle", 1, "background"], ["loading", "lazy", "src", "assets/template/welcome/icons/docker.svg", "alt", "Docker", 1, "skill-icon", "first"], ["loading", "lazy", "src", "assets/template/welcome/icons/css3.svg", "alt", "CSS3", 1, "skill-icon", "second"], ["loading", "lazy", "src", "assets/template/welcome/icons/git.svg", "alt", "Git", 1, "skill-icon", "third"], ["loading", "lazy", "src", "assets/template/welcome/icons/html5.svg", "alt", "HTML5", 1, "skill-icon", "fourth"], ["loading", "lazy", "src", "assets/template/welcome/icons/sql.svg", "alt", "SQL", 1, "skill-icon", "fifth"], ["loading", "lazy", "src", "assets/template/welcome/icons/php.svg", "alt", "PHP", 1, "skill-icon", "sixth"], ["loading", "lazy", "src", "assets/template/welcome/icons/java.svg", "alt", "JAVA", 1, "skill-icon", "seventh"], ["loading", "lazy", "src", "assets/template/welcome/icons/bitbucket.svg", "alt", "BitBucket", 1, "skill-icon", "eighth"], ["loading", "lazy", "src", "assets/template/welcome/icons/android.svg", "alt", "Android", 1, "skill-icon", "ninth"]],
       template: function WelcomeBackgroundComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -3448,7 +3448,7 @@ class WelcomeDialogComponent {
         } else {
           i18n_0 = "Salut!";
         }
-        return [i18n_0, [1, "dialog-container"], ["loading", "lazy", "src", "./assets/template/welcome/bubble-frame.png", "alt", "Welcome Speech Bobble"], [1, "console"], [1, "hello"], ["typingAnimation", "", 1, "txt-rotate", 3, "phrasePeriod", "startDelay", "typeSpeed", "data"]];
+        return [i18n_0, [1, "dialog-container"], ["loading", "lazy", "src", "assets/template/welcome/bubble-frame.png", "alt", "Welcome Speech Bobble"], [1, "console"], [1, "hello"], ["typingAnimation", "", 1, "txt-rotate", 3, "phrasePeriod", "startDelay", "typeSpeed", "data"]];
       },
       template: function WelcomeDialogComponent_Template(rf, ctx) {
         if (rf & 1) {
@@ -3503,7 +3503,7 @@ class WelcomeComponent {
       selectors: [["app-welcome"]],
       decls: 6,
       vars: 0,
-      consts: [["id", "welcome"], [1, "layer_one"], [1, "avatar-container"], ["loading", "lazy", "src", "../../../assets/template/welcome/boudich-preview.png", "alt", "Boudiche Mohamed Ali", 1, "illustration"]],
+      consts: [["id", "welcome"], [1, "layer_one"], [1, "avatar-container"], ["loading", "lazy", "src", "assets/template/welcome/boudich-preview.png", "alt", "Boudiche Mohamed Ali", 1, "illustration"]],
       template: function WelcomeComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "section", 0)(1, "div", 1)(2, "div", 2);
