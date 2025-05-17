@@ -32,19 +32,19 @@
     "hobbies": [        
         {
             "icon": "biking",
-            "title": "Cycling"
+            "title": "Cyclisme"
         },
         {
             "icon": "dumbbell",
-            "title": "Gym"
+            "title": "Musculation"
         },
         {
             "icon": "suitcase-rolling",
-            "title": "Travel"
+            "title": "Voyage"
         },
         {
             "icon": "book",
-            "title": "Read"
+            "title": "Lecture"
         }
     ]
 }

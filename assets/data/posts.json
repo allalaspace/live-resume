@@ -11,8 +11,8 @@
             },
             {
                 "language": "fr",
-                "title": "The anti-traversing 2D .",
-                "description": "Have you ever thought ."
+                "title": "La formule anti-traversée de tableau 2D.",
+                "description": "Avez-vous déjà pensé à une façon d'éviter de parcourir un tableau 2D?"
             },
             {
                 "language": "pt",
@@ -33,8 +33,8 @@
             },
             {
                 "language": "fr",
-                "title": "In 2019, get out of unemployment! Be a Web Developer.",
-                "description": "There were numerous vacancies for ."
+                "title": "En 2019, sortez du chômage ! Devenez développeur web.",
+                "description": "Il y avait de nombreux postes vacants pour les développeurs web."
             },
             {
                 "language": "pt",
@@ -55,8 +55,8 @@
             },
             {
                 "language": "fr",
-                "title": "Map Item Navigation for Android - <i>Open-source component</i>.",
-                "description": "For great user experience, the usage of maps together with the ordered list is used very often in mobile applications. This article presents an open-source application for Android that provides a fully functional component."
+                "title": "Navigation par éléments de carte pour Android - <i>Composant open-source</i>.",
+                "description": "Pour une excellente expérience utilisateur, l'utilisation de cartes associées à une liste ordonnée est très fréquente dans les applications mobiles. Cet article présente une application open-source pour Android qui fournit un composant entièrement fonctionnel."
             },
             {
                 "language": "pt",
@@ -77,8 +77,8 @@
             },
             {
                 "language": "fr",
-                "title": "Geo Distance search with MySQL & PHP.",
-                "description": "Nowadays, <b>geolocation</b> is essential for most of the basic daily activities. Who never have asked Google where is the closest market?  In this article, I show a practical example of how to create a <i>SQL Query</i> that does a geolocational search based on a radius range and a fixed geolocational point."
+                "title": "Recherche de distances géographiques avec MySQL et PHP.",
+                "description": "De nos jours, la <b>géolocalisation</b> est essentielle pour la plupart des activités quotidiennes de base. Qui n'a jamais demandé à Google où se trouve le marché le plus proche ? Dans cet article, je montre un exemple pratique de création d'une <i>requête SQL</i> qui effectue une recherche géolocalisée basée sur un rayon et un point géographique fixe."
             },
             {
                 "language": "pt",
@@ -99,8 +99,8 @@
             },
             {
                 "language": "fr",
-                "title": "Sending authenticated email in PHP.",
-                "description": "With the appliance of the email security policy on the <i>Web 2.0</i> came the need to take measures that would hinder the practice of <i>spamming</i>, among the measures taken,  it is the use of authenticated e-mail, which means that for each e-mail sent, we would have the <i>signature</i> of the host who sent it, thus, there would be greater control over who, eventually, practice the spamming. In this article, I show you how to send the authenticate e-mail, increasing the chances of your email get read by the target user."
+                "title": "Envoi d'e-mails authentifiés en PHP.",
+                "description": "Avec l'application de la politique de sécurité des e-mails sur le <i>Web 2.0</i> est venue la nécessité de prendre des mesures pour entraver la pratique du <i>spamming</i>. Parmi les mesures prises, l'utilisation d'e-mails authentifiés signifie que pour chaque e-mail envoyé, nous avons la <i>signature</i> de l'hôte qui l'a envoyé, ce qui permet un meilleur contrôle sur les pratiques de spam. Dans cet article, je vous montre comment envoyer des e-mails authentifiés, augmentant ainsi les chances que votre e-mail soit lu par l'utilisateur cible."
             },
             {
                 "language": "pt",
@@ -121,8 +121,8 @@
             },
             {
                 "language": "fr",
-                "title": "Sharing Intent for Android - <i>Open-source component</i>.",
-                "description": "Applications like <i>Whatsapp, Facebook, Twitter, Snapchat, etc...</i> have the ability to receive content to be shared. This gives us a wide range of possibilities, being possible to share videos, texts, URLs and even the application's page in the PlayStore for users to install your application."
+                "title": "Partage d'intentions pour Android - <i>Composant open-source</i>.",
+                "description": "Des applications comme <i>Whatsapp, Facebook, Twitter, Snapchat, etc...</i> ont la capacité de recevoir du contenu à partager. Cela nous offre un large éventail de possibilités, permettant de partager des vidéos, des textes, des URL et même la page de l'application dans le PlayStore pour que les utilisateurs installent votre application."
             },
             {
                 "language": "pt",
@@ -143,8 +143,8 @@
             },
             {
                 "language": "fr",
-                "title": "Contact List for Android - <i>Open-source component</i>.",
-                "description": "When developing a mobile application, you will be facing the need to facilitate the life of your user when sharing your application among its friends. For this, I have created the ContactPickerList, a simple and practical way to access the phonebook contact list."
+                "title": "Liste de contacts pour Android - <i>Composant open-source</i>.",
+                "description": "Lors du développement d'une application mobile, vous serez confronté à la nécessité de faciliter la vie de votre utilisateur lorsqu'il partage votre application avec ses amis. Pour cela, j'ai créé le ContactPickerList, un moyen simple et pratique d'accéder à la liste des contacts du téléphone."
             },
             {
                 "language": "pt",
@@ -169,8 +169,8 @@
                 "description": "Quem nunca encontrou uma notificação de usuário antes? Todos nós, usuários de smartphones, os vemos todos os dias. Neste artigo, ensinarei como enviar notificações quase em tempo real para qualquer dispositivo Android, como smartphone, smartwatch, etc."
             },{
                 "language": "fr",
-                "title": "Tinder Slide Card for Android - <i>Open-source component</i>.",
-                "description": "Who has never encountered a push notification before? All of us smartphone users see them every day. In this article, I will teach you how to send notifications almost in real-time to any android device such as smartphone, smartwatch, etc."
+                "title": "Carte de glissement style Tinder pour Android - <i>Composant open-source</i>.",
+                "description": "Qui n'a jamais rencontré une notification push auparavant ? Tous les utilisateurs de smartphones les voient chaque jour. Dans cet article, je vous apprendrai comment envoyer des notifications presque en temps réel à n'importe quel appareil Android comme un smartphone, une smartwatch, etc."
             }
         ]
     },
@@ -190,8 +190,8 @@
                 "description": "Um componente completo para quem precisa de um baralho de cartas dinâmicas com gráficos interativos para Android. Muito parecido com o que encontramos em <i> Tinder </i>. Código-fonte totalmente aberto para alterações e melhorias."
             },{
                 "language": "fr",
-                "title": "Push Notification for Android - <i>Open-source component</i>.",
-                "description": "A complete component for those who need a deck of dynamic cards woth interactive charts for Android. Much like what we found in <i>Tinder</i>. Fully open-source for changes and improvements."
+                "title": "Notification push pour Android - <i>Composant open-source</i>.",
+                "description": "Un composant complet pour ceux qui ont besoin d'un jeu de cartes dynamiques avec des graphiques interactifs pour Android. Très similaire à ce que l'on trouve dans <i>Tinder</i>. Entièrement open-source pour les modifications et améliorations."
             }
         ]
     }
