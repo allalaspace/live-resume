@@ -29,10 +29,13 @@ jobs:
           ls -la src/environments/
         
       - name: Build
-        run: npm run build:fr
+        run: |
+          ng build --configuration=fr --base-href="https://allalaspace.github.io/live-resume/"
+          cp dist/live-resume/fr/index.html dist/live-resume/fr/404.html
         
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           branch: gh-pages
-          folder: dist/live-resume/fr 
+          folder: dist/live-resume/fr
+          clean: true 
