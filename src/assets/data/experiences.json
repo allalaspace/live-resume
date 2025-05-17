@@ -6,7 +6,7 @@
         "endAt": "12-24-2010",
         "companyName": "Fácil Tecnologias",
         "website": "http://www.faciltecnologias.com.br/",
-        "logo": "../../assets/template/experience/logo/facil-logo.png",
+        "logo": "assets/template/experience/logo/facil-logo.png",
         "internationalizations": [
             {
                 "language": "pt",
@@ -40,7 +40,7 @@
                 "http": "https://www.facebook.com/editoranossotransito/"
             }
         ],
-        "backgroundUrl": "../../assets/template/experience/uberaba.jpg"
+        "backgroundUrl": "assets/template/experience/uberaba.jpg"
     },
     {
         "id": 2,
@@ -49,7 +49,7 @@
         "endAt": "06-16-2014",
         "companyName": "E-tática",
         "website": "https://www.e-tatica.com/",
-        "logo": "../../assets/template/experience/logo/etatica-logo.png",
+        "logo": "assets/template/experience/logo/etatica-logo.png",
         "internationalizations": [
             {
                 "language": "pt",
@@ -94,7 +94,7 @@
                 "http": "https://www.instagram.com/somos_etatica/"
             }
         ],
-        "backgroundUrl": "../../assets/template/experience/rio.jpg"
+        "backgroundUrl": "assets/template/experience/rio.jpg"
     },
     {
         "id": 3,
@@ -103,7 +103,7 @@
         "endAt": "05-23-2014",
         "companyName": "A3is",
         "website": "http://deevo.com.br/",
-        "logo": "../../assets/template/experience/logo/a3is.png",
+        "logo": "assets/template/experience/logo/a3is.png",
         "internationalizations": [
             {
                 "language": "pt",
@@ -137,7 +137,7 @@
                 "http": "https://www.linkedin.com/company/deevo/about/"
             }
         ],
-        "backgroundUrl": "../../assets/template/experience/sao-paulo.jpg"
+        "backgroundUrl": "assets/template/experience/sao-paulo.jpg"
     },
     {
         "id": 4,
@@ -145,7 +145,7 @@
         "startAt": "03-01-2014",
         "endAt": "06-30-2014",
         "companyName": "AtoutCom",
-        "logo": "../../assets/template/experience/logo/atout.png",
+        "logo": "assets/template/experience/logo/atout.png",
         "internationalizations": [
             {
                 "language": "pt",
@@ -184,7 +184,7 @@
                 "http": "https://www.facebook.com/skydreamer.io/"
             }
         ],
-        "backgroundUrl": "../../assets/template/experience/utrecht.jpg"
+        "backgroundUrl": "assets/template/experience/utrecht.jpg"
     },
     {
         "id": 5,
@@ -193,7 +193,7 @@
         "endAt": "01-01-2016",
         "companyName": "Allisone",
         "website": "https://www.qat.com/",
-        "logo": "../../assets/template/experience/logo/allisone.png",
+        "logo": "assets/template/experience/logo/allisone.png",
         "internationalizations": [
             {
                 "language": "pt",
@@ -237,7 +237,7 @@
                 "http": "https://www.youtube.com/c/QatGlobal-USA"
             }
         ],
-        "backgroundUrl": "../../assets/template/experience/uberaba.jpg"
+        "backgroundUrl": "assets/template/experience/uberaba.jpg"
     },
     {
         "id": 6,
@@ -245,7 +245,7 @@
         "startAt": "01-02-2016",
         "companyName": "Veolia",
         "website": "https://www.Veolia.com/",
-        "logo": "../../assets/template/experience/logo/veolia.svg",
+        "logo": "assets/template/experience/logo/veolia.svg",
         "internationalizations": [
             {
                 "language": "pt",
@@ -290,6 +290,6 @@
                 "http": "https://www.youtube.com/swisscom"
             }
         ],
-        "backgroundUrl": "../../assets/template/experience/rotterdam.jpg"
+        "backgroundUrl": "assets/template/experience/rotterdam.jpg"
     }
 ]
