@@ -260,8 +260,8 @@ class AboutComponent {
           /**
            * @desc nav
            */
-          const MSG_EXTERNAL_aboutMe$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_ABOUT_ABOUT_COMPONENT_TS_0 = goog.getMsg("About me");
-          i18n_0 = MSG_EXTERNAL_aboutMe$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_ABOUT_ABOUT_COMPONENT_TS_0;
+          const MSG_EXTERNAL_aboutMe$$SRC_APP_ABOUT_ABOUT_COMPONENT_TS_0 = goog.getMsg("About me");
+          i18n_0 = MSG_EXTERNAL_aboutMe$$SRC_APP_ABOUT_ABOUT_COMPONENT_TS_0;
         } else {
           i18n_0 = "A propos";
         }
@@ -270,8 +270,8 @@ class AboutComponent {
           /**
            * @desc about
            */
-          const MSG_EXTERNAL_yearsOld$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_ABOUT_ABOUT_COMPONENT_TS_1 = goog.getMsg("years old");
-          i18n_1 = MSG_EXTERNAL_yearsOld$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_ABOUT_ABOUT_COMPONENT_TS_1;
+          const MSG_EXTERNAL_yearsOld$$SRC_APP_ABOUT_ABOUT_COMPONENT_TS_1 = goog.getMsg("years old");
+          i18n_1 = MSG_EXTERNAL_yearsOld$$SRC_APP_ABOUT_ABOUT_COMPONENT_TS_1;
         } else {
           i18n_1 = "ans";
         }
@@ -789,8 +789,8 @@ class ContactComponent {
           /**
            * @desc contact
            */
-          const MSG_EXTERNAL_namePlaceholder$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_0 = goog.getMsg("Mark");
-          i18n_0 = MSG_EXTERNAL_namePlaceholder$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_0;
+          const MSG_EXTERNAL_namePlaceholder$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_0 = goog.getMsg("Mark");
+          i18n_0 = MSG_EXTERNAL_namePlaceholder$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_0;
         } else {
           i18n_0 = "Jean Dupont";
         }
@@ -799,8 +799,8 @@ class ContactComponent {
           /**
            * @desc contact
            */
-          const MSG_EXTERNAL_emailPlaceholder$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_1 = goog.getMsg("mark@gmail.com");
-          i18n_1 = MSG_EXTERNAL_emailPlaceholder$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_1;
+          const MSG_EXTERNAL_emailPlaceholder$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_1 = goog.getMsg("mark@gmail.com");
+          i18n_1 = MSG_EXTERNAL_emailPlaceholder$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_1;
         } else {
           i18n_1 = "dupont@gmail.com";
         }
@@ -809,8 +809,8 @@ class ContactComponent {
           /**
            * @desc contact
            */
-          const MSG_EXTERNAL_messagePlaceholder$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_2 = goog.getMsg("Write here your message... I will reply to you soon.");
-          i18n_2 = MSG_EXTERNAL_messagePlaceholder$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_2;
+          const MSG_EXTERNAL_messagePlaceholder$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_2 = goog.getMsg("Write here your message... I will reply to you soon.");
+          i18n_2 = MSG_EXTERNAL_messagePlaceholder$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_2;
         } else {
           i18n_2 = "\xC9crivez ici votre message ... je vous r\xE9pondrai bient\xF4t.";
         }
@@ -819,8 +819,8 @@ class ContactComponent {
           /**
            * @desc contact
            */
-          const MSG_EXTERNAL_send$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_3 = goog.getMsg("Send");
-          i18n_3 = MSG_EXTERNAL_send$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_3;
+          const MSG_EXTERNAL_send$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_3 = goog.getMsg("Send");
+          i18n_3 = MSG_EXTERNAL_send$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_3;
         } else {
           i18n_3 = "Envoyer";
         }
@@ -829,8 +829,8 @@ class ContactComponent {
           /**
            * @desc contact
            */
-          const MSG_EXTERNAL_successfulSubmit$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_4 = goog.getMsg("Thank you for contacting me, I'll reply to you very soon.");
-          i18n_4 = MSG_EXTERNAL_successfulSubmit$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_4;
+          const MSG_EXTERNAL_successfulSubmit$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_4 = goog.getMsg("Thank you for contacting me, I'll reply to you very soon.");
+          i18n_4 = MSG_EXTERNAL_successfulSubmit$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_4;
         } else {
           i18n_4 = "Merci de m'avoir contacter,Je vous r\xE9pondrai tr\xE8s bient\xF4t.";
         }
@@ -839,8 +839,8 @@ class ContactComponent {
           /**
            * @desc contact
            */
-          const MSG_EXTERNAL_errorSubmit$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_5 = goog.getMsg("Sorry, there is an instability, try again later, or contact me via email or social media.");
-          i18n_5 = MSG_EXTERNAL_errorSubmit$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_5;
+          const MSG_EXTERNAL_errorSubmit$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_5 = goog.getMsg("Sorry, there is an instability, try again later, or contact me via email or social media.");
+          i18n_5 = MSG_EXTERNAL_errorSubmit$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_5;
         } else {
           i18n_5 = "D\xE9sol\xE9, il y a une instabilit\xE9, r\xE9essayez plus tard ou contactez-moi par e-mail ou sur les r\xE9seaux sociaux.";
         }
@@ -849,8 +849,8 @@ class ContactComponent {
           /**
            * @desc nav
            */
-          const MSG_EXTERNAL_contact$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_6 = goog.getMsg("Contact");
-          i18n_6 = MSG_EXTERNAL_contact$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_6;
+          const MSG_EXTERNAL_contact$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_6 = goog.getMsg("Contact");
+          i18n_6 = MSG_EXTERNAL_contact$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_6;
         } else {
           i18n_6 = "Contact";
         }
@@ -859,8 +859,8 @@ class ContactComponent {
           /**
            * @desc contact
            */
-          const MSG_EXTERNAL_name$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_7 = goog.getMsg("Your name:");
-          i18n_7 = MSG_EXTERNAL_name$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_7;
+          const MSG_EXTERNAL_name$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_7 = goog.getMsg("Your name:");
+          i18n_7 = MSG_EXTERNAL_name$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_7;
         } else {
           i18n_7 = "Votre nom:";
         }
@@ -869,8 +869,8 @@ class ContactComponent {
           /**
            * @desc contact
            */
-          const MSG_EXTERNAL_email$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_8 = goog.getMsg("Email:");
-          i18n_8 = MSG_EXTERNAL_email$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_8;
+          const MSG_EXTERNAL_email$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_8 = goog.getMsg("Email:");
+          i18n_8 = MSG_EXTERNAL_email$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_8;
         } else {
           i18n_8 = "Email:";
         }
@@ -879,8 +879,8 @@ class ContactComponent {
           /**
            * @desc contact
            */
-          const MSG_EXTERNAL_message$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_9 = goog.getMsg("Your message:");
-          i18n_9 = MSG_EXTERNAL_message$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_9;
+          const MSG_EXTERNAL_message$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_9 = goog.getMsg("Your message:");
+          i18n_9 = MSG_EXTERNAL_message$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_9;
         } else {
           i18n_9 = "Votre message:";
         }
@@ -889,8 +889,8 @@ class ContactComponent {
           /**
            * @desc contact
            */
-          const MSG_EXTERNAL_requiredNameError$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_10 = goog.getMsg("The name is required.");
-          i18n_10 = MSG_EXTERNAL_requiredNameError$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_10;
+          const MSG_EXTERNAL_requiredNameError$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_10 = goog.getMsg("The name is required.");
+          i18n_10 = MSG_EXTERNAL_requiredNameError$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_10;
         } else {
           i18n_10 = "le nom est obligatoire.";
         }
@@ -899,8 +899,8 @@ class ContactComponent {
           /**
            * @desc contact
            */
-          const MSG_EXTERNAL_invalidNameError$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_11 = goog.getMsg("Please, provide a valid name.");
-          i18n_11 = MSG_EXTERNAL_invalidNameError$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_11;
+          const MSG_EXTERNAL_invalidNameError$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_11 = goog.getMsg("Please, provide a valid name.");
+          i18n_11 = MSG_EXTERNAL_invalidNameError$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_11;
         } else {
           i18n_11 = "PVeuillez fournir un nom valide.";
         }
@@ -909,8 +909,8 @@ class ContactComponent {
           /**
            * @desc contact
            */
-          const MSG_EXTERNAL_requiredEmailError$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_12 = goog.getMsg("The email is required.");
-          i18n_12 = MSG_EXTERNAL_requiredEmailError$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_12;
+          const MSG_EXTERNAL_requiredEmailError$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_12 = goog.getMsg("The email is required.");
+          i18n_12 = MSG_EXTERNAL_requiredEmailError$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_12;
         } else {
           i18n_12 = "L'email est obligatoire.";
         }
@@ -919,8 +919,8 @@ class ContactComponent {
           /**
            * @desc contact
            */
-          const MSG_EXTERNAL_invalidEmailError$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_13 = goog.getMsg("Please, provide a valid email address.");
-          i18n_13 = MSG_EXTERNAL_invalidEmailError$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_13;
+          const MSG_EXTERNAL_invalidEmailError$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_13 = goog.getMsg("Please, provide a valid email address.");
+          i18n_13 = MSG_EXTERNAL_invalidEmailError$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_13;
         } else {
           i18n_13 = "Veuillez fournir une adresse email valide.";
         }
@@ -929,8 +929,8 @@ class ContactComponent {
           /**
            * @desc contact
            */
-          const MSG_EXTERNAL_requiredMessageError$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_14 = goog.getMsg("The message is required.");
-          i18n_14 = MSG_EXTERNAL_requiredMessageError$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_CONTACT_CONTACT_COMPONENT_TS_14;
+          const MSG_EXTERNAL_requiredMessageError$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_14 = goog.getMsg("The message is required.");
+          i18n_14 = MSG_EXTERNAL_requiredMessageError$$SRC_APP_CONTACT_CONTACT_COMPONENT_TS_14;
         } else {
           i18n_14 = "Le message est obligatoire.";
         }
@@ -1047,14 +1047,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ContactService: () => (/* binding */ ContactService)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7580);
 
 
 class ContactService {
   constructor() {}
   createContact(contact) {
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       console.log('Contact form submission:', contact);
       // Simulation d'une réponse réussie
       return Promise.resolve({
@@ -1946,8 +1946,8 @@ class ExperienceComponent {
           /**
            * @desc exp.nav
            */
-          const MSG_EXTERNAL_previous$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_0 = goog.getMsg("Previous");
-          i18n_0 = MSG_EXTERNAL_previous$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_0;
+          const MSG_EXTERNAL_previous$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_0 = goog.getMsg("Previous");
+          i18n_0 = MSG_EXTERNAL_previous$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_0;
         } else {
           i18n_0 = "Pr\xE9c\xE9dent";
         }
@@ -1956,8 +1956,8 @@ class ExperienceComponent {
           /**
            * @desc exp.nav
            */
-          const MSG_EXTERNAL_next$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_1 = goog.getMsg("Next");
-          i18n_1 = MSG_EXTERNAL_next$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_1;
+          const MSG_EXTERNAL_next$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_1 = goog.getMsg("Next");
+          i18n_1 = MSG_EXTERNAL_next$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_1;
         } else {
           i18n_1 = "suivant";
         }
@@ -1966,8 +1966,8 @@ class ExperienceComponent {
           /**
            * @desc exp.nav
            */
-          const MSG_EXTERNAL_previous$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_2 = goog.getMsg("Previous");
-          i18n_2 = MSG_EXTERNAL_previous$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_2;
+          const MSG_EXTERNAL_previous$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_2 = goog.getMsg("Previous");
+          i18n_2 = MSG_EXTERNAL_previous$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_2;
         } else {
           i18n_2 = "Pr\xE9c\xE9dent";
         }
@@ -1976,8 +1976,8 @@ class ExperienceComponent {
           /**
            * @desc exp.nav
            */
-          const MSG_EXTERNAL_next$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_3 = goog.getMsg("Next");
-          i18n_3 = MSG_EXTERNAL_next$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_3;
+          const MSG_EXTERNAL_next$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_3 = goog.getMsg("Next");
+          i18n_3 = MSG_EXTERNAL_next$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_3;
         } else {
           i18n_3 = "suivant";
         }
@@ -1986,8 +1986,8 @@ class ExperienceComponent {
           /**
            * @desc nav
            */
-          const MSG_EXTERNAL_experiences$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_4 = goog.getMsg("Experiences");
-          i18n_4 = MSG_EXTERNAL_experiences$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_4;
+          const MSG_EXTERNAL_experiences$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_4 = goog.getMsg("Experiences");
+          i18n_4 = MSG_EXTERNAL_experiences$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_4;
         } else {
           i18n_4 = "Exp\xE9riences";
         }
@@ -1996,8 +1996,8 @@ class ExperienceComponent {
           /**
            * @desc exp.nav
            */
-          const MSG_EXTERNAL_previous$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_5 = goog.getMsg("Previous");
-          i18n_5 = MSG_EXTERNAL_previous$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_5;
+          const MSG_EXTERNAL_previous$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_5 = goog.getMsg("Previous");
+          i18n_5 = MSG_EXTERNAL_previous$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_5;
         } else {
           i18n_5 = "Pr\xE9c\xE9dent";
         }
@@ -2006,8 +2006,8 @@ class ExperienceComponent {
           /**
            * @desc exp.nav
            */
-          const MSG_EXTERNAL_next$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_6 = goog.getMsg("Next");
-          i18n_6 = MSG_EXTERNAL_next$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_6;
+          const MSG_EXTERNAL_next$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_6 = goog.getMsg("Next");
+          i18n_6 = MSG_EXTERNAL_next$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_6;
         } else {
           i18n_6 = "suivant";
         }
@@ -2237,7 +2237,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   HeaderComponent: () => (/* binding */ HeaderComponent)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7580);
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ 9626);
 /* harmony import */ var ng_navigator_share__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-navigator-share */ 8071);
@@ -2310,7 +2310,7 @@ class HeaderComponent {
   }
   share() {
     var _this = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         yield _this.ngNavigatorShareService.share({
           title: "Live Resume - Mohamed ali boudich ",
@@ -2354,8 +2354,8 @@ class HeaderComponent {
           /**
            * @desc nav
            */
-          const MSG_EXTERNAL_open_as_pdf$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_HEADER_HEADER_COMPONENT_TS_0 = goog.getMsg("Open Resume as PDF");
-          i18n_0 = MSG_EXTERNAL_open_as_pdf$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_HEADER_HEADER_COMPONENT_TS_0;
+          const MSG_EXTERNAL_open_as_pdf$$SRC_APP_HEADER_HEADER_COMPONENT_TS_0 = goog.getMsg("Open Resume as PDF");
+          i18n_0 = MSG_EXTERNAL_open_as_pdf$$SRC_APP_HEADER_HEADER_COMPONENT_TS_0;
         } else {
           i18n_0 = "Ouvrir le CV au format PDF";
         }
@@ -2364,7 +2364,7 @@ class HeaderComponent {
           /**
            * @desc nav
            */
-          const MSG_EXTERNAL_aboutMe$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_HEADER_HEADER_COMPONENT_TS_1 = goog.getMsg("{$startTagSpan}About me{$closeTagSpan}", {
+          const MSG_EXTERNAL_aboutMe$$SRC_APP_HEADER_HEADER_COMPONENT_TS_1 = goog.getMsg("{$startTagSpan}About me{$closeTagSpan}", {
             "closeTagSpan": "\uFFFD/#12\uFFFD",
             "startTagSpan": "\uFFFD#12\uFFFD"
           }, {
@@ -2373,7 +2373,7 @@ class HeaderComponent {
               "startTagSpan": "<span itemprop=\"name\">"
             }
           });
-          i18n_1 = MSG_EXTERNAL_aboutMe$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_HEADER_HEADER_COMPONENT_TS_1;
+          i18n_1 = MSG_EXTERNAL_aboutMe$$SRC_APP_HEADER_HEADER_COMPONENT_TS_1;
         } else {
           i18n_1 = "A propos";
         }
@@ -2382,7 +2382,7 @@ class HeaderComponent {
           /**
            * @desc nav
            */
-          const MSG_EXTERNAL_experiences$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_HEADER_HEADER_COMPONENT_TS_2 = goog.getMsg("{$startTagSpan}Experiences{$closeTagSpan}", {
+          const MSG_EXTERNAL_experiences$$SRC_APP_HEADER_HEADER_COMPONENT_TS_2 = goog.getMsg("{$startTagSpan}Experiences{$closeTagSpan}", {
             "closeTagSpan": "\uFFFD/#16\uFFFD",
             "startTagSpan": "\uFFFD#16\uFFFD"
           }, {
@@ -2391,7 +2391,7 @@ class HeaderComponent {
               "startTagSpan": "<span itemprop=\"name\">"
             }
           });
-          i18n_2 = MSG_EXTERNAL_experiences$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_HEADER_HEADER_COMPONENT_TS_2;
+          i18n_2 = MSG_EXTERNAL_experiences$$SRC_APP_HEADER_HEADER_COMPONENT_TS_2;
         } else {
           i18n_2 = "Exp\xE9riences";
         }
@@ -2400,7 +2400,7 @@ class HeaderComponent {
           /**
            * @desc nav
            */
-          const MSG_EXTERNAL_posts$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_HEADER_HEADER_COMPONENT_TS_3 = goog.getMsg("{$startTagSpan}Posts{$closeTagSpan}", {
+          const MSG_EXTERNAL_posts$$SRC_APP_HEADER_HEADER_COMPONENT_TS_3 = goog.getMsg("{$startTagSpan}Posts{$closeTagSpan}", {
             "closeTagSpan": "\uFFFD/#20\uFFFD",
             "startTagSpan": "\uFFFD#20\uFFFD"
           }, {
@@ -2409,7 +2409,7 @@ class HeaderComponent {
               "startTagSpan": "<span itemprop=\"name\">"
             }
           });
-          i18n_3 = MSG_EXTERNAL_posts$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_HEADER_HEADER_COMPONENT_TS_3;
+          i18n_3 = MSG_EXTERNAL_posts$$SRC_APP_HEADER_HEADER_COMPONENT_TS_3;
         } else {
           i18n_3 = "Posts";
         }
@@ -2418,7 +2418,7 @@ class HeaderComponent {
           /**
            * @desc nav
            */
-          const MSG_EXTERNAL_contact$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_HEADER_HEADER_COMPONENT_TS_4 = goog.getMsg("{$startTagSpan}Contact{$closeTagSpan}", {
+          const MSG_EXTERNAL_contact$$SRC_APP_HEADER_HEADER_COMPONENT_TS_4 = goog.getMsg("{$startTagSpan}Contact{$closeTagSpan}", {
             "closeTagSpan": "\uFFFD/#24\uFFFD",
             "startTagSpan": "\uFFFD#24\uFFFD"
           }, {
@@ -2427,7 +2427,7 @@ class HeaderComponent {
               "startTagSpan": "<span itemprop=\"name\">"
             }
           });
-          i18n_4 = MSG_EXTERNAL_contact$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_HEADER_HEADER_COMPONENT_TS_4;
+          i18n_4 = MSG_EXTERNAL_contact$$SRC_APP_HEADER_HEADER_COMPONENT_TS_4;
         } else {
           i18n_4 = "Contact";
         }
@@ -2663,8 +2663,8 @@ class PostsCarouselComponent {
           /**
            * @desc posts
            */
-          const MSG_EXTERNAL_of$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_CAROUSEL_POSTS_CAROUSEL_COMPONENT_TS_0 = goog.getMsg("of");
-          i18n_0 = MSG_EXTERNAL_of$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_CAROUSEL_POSTS_CAROUSEL_COMPONENT_TS_0;
+          const MSG_EXTERNAL_of$$SRC_APP_POSTS_POSTS_CAROUSEL_POSTS_CAROUSEL_COMPONENT_TS_0 = goog.getMsg("of");
+          i18n_0 = MSG_EXTERNAL_of$$SRC_APP_POSTS_POSTS_CAROUSEL_POSTS_CAROUSEL_COMPONENT_TS_0;
         } else {
           i18n_0 = "de";
         }
@@ -2673,8 +2673,8 @@ class PostsCarouselComponent {
           /**
            * @desc nav
            */
-          const MSG_EXTERNAL_posts$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_CAROUSEL_POSTS_CAROUSEL_COMPONENT_TS_1 = goog.getMsg("posts");
-          i18n_1 = MSG_EXTERNAL_posts$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_CAROUSEL_POSTS_CAROUSEL_COMPONENT_TS_1;
+          const MSG_EXTERNAL_posts$$SRC_APP_POSTS_POSTS_CAROUSEL_POSTS_CAROUSEL_COMPONENT_TS_1 = goog.getMsg("posts");
+          i18n_1 = MSG_EXTERNAL_posts$$SRC_APP_POSTS_POSTS_CAROUSEL_POSTS_CAROUSEL_COMPONENT_TS_1;
         } else {
           i18n_1 = "Posts";
         }
@@ -2683,8 +2683,8 @@ class PostsCarouselComponent {
           /**
            * @desc posts
            */
-          const MSG_EXTERNAL_readMore$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_CAROUSEL_POSTS_CAROUSEL_COMPONENT_TS_2 = goog.getMsg("Read more");
-          i18n_2 = MSG_EXTERNAL_readMore$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_CAROUSEL_POSTS_CAROUSEL_COMPONENT_TS_2;
+          const MSG_EXTERNAL_readMore$$SRC_APP_POSTS_POSTS_CAROUSEL_POSTS_CAROUSEL_COMPONENT_TS_2 = goog.getMsg("Read more");
+          i18n_2 = MSG_EXTERNAL_readMore$$SRC_APP_POSTS_POSTS_CAROUSEL_POSTS_CAROUSEL_COMPONENT_TS_2;
         } else {
           i18n_2 = "Lire la suite";
         }
@@ -2811,8 +2811,8 @@ class PostsComponent {
           /**
            * @desc exp.nav
            */
-          const MSG_EXTERNAL_previous$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_COMPONENT_TS_0 = goog.getMsg("Previous");
-          i18n_0 = MSG_EXTERNAL_previous$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_COMPONENT_TS_0;
+          const MSG_EXTERNAL_previous$$SRC_APP_POSTS_POSTS_COMPONENT_TS_0 = goog.getMsg("Previous");
+          i18n_0 = MSG_EXTERNAL_previous$$SRC_APP_POSTS_POSTS_COMPONENT_TS_0;
         } else {
           i18n_0 = "Pr\xE9c\xE9dent";
         }
@@ -2821,8 +2821,8 @@ class PostsComponent {
           /**
            * @desc exp.nav
            */
-          const MSG_EXTERNAL_next$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_COMPONENT_TS_1 = goog.getMsg("Next");
-          i18n_1 = MSG_EXTERNAL_next$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_COMPONENT_TS_1;
+          const MSG_EXTERNAL_next$$SRC_APP_POSTS_POSTS_COMPONENT_TS_1 = goog.getMsg("Next");
+          i18n_1 = MSG_EXTERNAL_next$$SRC_APP_POSTS_POSTS_COMPONENT_TS_1;
         } else {
           i18n_1 = "suivant";
         }
@@ -2831,8 +2831,8 @@ class PostsComponent {
           /**
            * @desc nav
            */
-          const MSG_EXTERNAL_posts$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_COMPONENT_TS_2 = goog.getMsg("Posts");
-          i18n_2 = MSG_EXTERNAL_posts$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_COMPONENT_TS_2;
+          const MSG_EXTERNAL_posts$$SRC_APP_POSTS_POSTS_COMPONENT_TS_2 = goog.getMsg("Posts");
+          i18n_2 = MSG_EXTERNAL_posts$$SRC_APP_POSTS_POSTS_COMPONENT_TS_2;
         } else {
           i18n_2 = "Posts";
         }
@@ -2841,8 +2841,8 @@ class PostsComponent {
           /**
            * @desc exp.nav
            */
-          const MSG_EXTERNAL_previous$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_COMPONENT_TS_3 = goog.getMsg("Previous");
-          i18n_3 = MSG_EXTERNAL_previous$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_COMPONENT_TS_3;
+          const MSG_EXTERNAL_previous$$SRC_APP_POSTS_POSTS_COMPONENT_TS_3 = goog.getMsg("Previous");
+          i18n_3 = MSG_EXTERNAL_previous$$SRC_APP_POSTS_POSTS_COMPONENT_TS_3;
         } else {
           i18n_3 = "Pr\xE9c\xE9dent";
         }
@@ -2851,8 +2851,8 @@ class PostsComponent {
           /**
            * @desc exp.nav
            */
-          const MSG_EXTERNAL_next$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_COMPONENT_TS_4 = goog.getMsg("Next");
-          i18n_4 = MSG_EXTERNAL_next$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_COMPONENT_TS_4;
+          const MSG_EXTERNAL_next$$SRC_APP_POSTS_POSTS_COMPONENT_TS_4 = goog.getMsg("Next");
+          i18n_4 = MSG_EXTERNAL_next$$SRC_APP_POSTS_POSTS_COMPONENT_TS_4;
         } else {
           i18n_4 = "suivant";
         }
@@ -2861,8 +2861,8 @@ class PostsComponent {
           /**
            * @desc posts
            */
-          const MSG_EXTERNAL_synopsis$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_COMPONENT_TS_5 = goog.getMsg("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate sagittis velit, eget scelerisque arcu semper finibus.");
-          i18n_5 = MSG_EXTERNAL_synopsis$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_POSTS_POSTS_COMPONENT_TS_5;
+          const MSG_EXTERNAL_synopsis$$SRC_APP_POSTS_POSTS_COMPONENT_TS_5 = goog.getMsg("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate sagittis velit, eget scelerisque arcu semper finibus.");
+          i18n_5 = MSG_EXTERNAL_synopsis$$SRC_APP_POSTS_POSTS_COMPONENT_TS_5;
         } else {
           i18n_5 = "Dans d'innombrables fois, un article ou une simple information m'a fait gagner des heures de recherche, alors chaque fois que c'est possible, j'essaye de faire mes humbles contributions:";
         }
@@ -3443,8 +3443,8 @@ class WelcomeDialogComponent {
           /**
            * @desc dialog
            */
-          const MSG_EXTERNAL_hello$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_WELCOME_WELCOME_DIALOG_WELCOME_DIALOG_COMPONENT_TS_0 = goog.getMsg("salut!");
-          i18n_0 = MSG_EXTERNAL_hello$$____________USERS_MOHAMEDALIBOUDICHE_GITCLONE_LIVE_RESUME_SRC_APP_WELCOME_WELCOME_DIALOG_WELCOME_DIALOG_COMPONENT_TS_0;
+          const MSG_EXTERNAL_hello$$SRC_APP_WELCOME_WELCOME_DIALOG_WELCOME_DIALOG_COMPONENT_TS_0 = goog.getMsg("salut!");
+          i18n_0 = MSG_EXTERNAL_hello$$SRC_APP_WELCOME_WELCOME_DIALOG_WELCOME_DIALOG_COMPONENT_TS_0;
         } else {
           i18n_0 = "Salut!";
         }
@@ -3579,16 +3579,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   environment: () => (/* binding */ environment)
 /* harmony export */ });
 const environment = {
-  production: false,
+  production: true,
   firebaseConfig: {
-    apiKey: "AIzaSyD6m9ELMG_0GovK86u1fmntHZ6Cw19njHQ",
-    authDomain: "newone-24039.firebaseapp.com",
-    databaseURL: "https://newone-24039-default-rtdb.firebaseio.com",
-    projectId: "newone-24039",
-    storageBucket: "newone-24039.appspot.com",
-    messagingSenderId: "580602405334",
-    appId: "1:580602405334:web:fe4c10e8282106a2d20477",
-    measurementId: "G-SS9EJGMXNL"
+    apiKey: "dummy",
+    authDomain: "dummy",
+    databaseURL: "dummy",
+    projectId: "dummy",
+    storageBucket: "dummy",
+    messagingSenderId: "dummy",
+    appId: "dummy",
+    measurementId: "dummy"
   }
 };
 
