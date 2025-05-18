@@ -261,6 +261,60 @@
         </context-group>
         <note priority="1" from="description">dialog</note>
       </trans-unit>
+      <trans-unit id="firebaseContact" datatype="html">
+        <source>Pour un formulaire de contact plus complet, utilisez notre nouveau système :</source>
+        <target>Pour un formulaire de contact plus complet, utilisez notre nouveau système :</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">contact</note>
+      </trans-unit>
+      <trans-unit id="firebaseContactBtn" datatype="html">
+        <source>Formulaire de contact avancé</source>
+        <target>Formulaire de contact avancé</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="description">contact</note>
+      </trans-unit>
+      <trans-unit id="advancedContactForm" datatype="html">
+        <source>Formulaire de contact avancé</source>
+        <target>Formulaire de contact avancé</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/firebase-contact/firebase-contact.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">contact</note>
+      </trans-unit>
+      <trans-unit id="backToResume" datatype="html">
+        <source>Retour au CV</source>
+        <target>Retour au CV</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/firebase-contact/firebase-contact.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">contact</note>
+      </trans-unit>
+      <trans-unit id="subject" datatype="html">
+        <source>Subject (optional):</source>
+        <target>Sujet (optionnel):</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/firebase-contact/firebase-contact.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <note priority="1" from="description">contact</note>
+      </trans-unit>
+      <trans-unit id="subjectPlaceholder" datatype="html">
+        <source>Sujet de votre message</source>
+        <target>Sujet de votre message</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/firebase-contact/firebase-contact.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="description">contact</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

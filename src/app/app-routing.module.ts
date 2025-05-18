@@ -1,6 +1,8 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { ResumeComponent } from "./resume/resume.component";
+import { ContactFormComponent } from "./components/contact-form/contact-form.component";
+import { FirebaseContactComponent } from "./contact/firebase-contact/firebase-contact.component";
 
 // Any URL apart from the root domain is going to be rendered as "page-not-found".
 const routes: Routes = [
@@ -9,7 +11,8 @@ const routes: Routes = [
   { path: "experience", redirectTo: "/#experience"},
   { path: "experiences", redirectTo: "/#experience"},
   { path: "posts", redirectTo: "/#posts"},
-  { path: "contact", redirectTo: "/#contact"},
+  { path: "contact", component: FirebaseContactComponent},
+  { path: "contact-form", component: ContactFormComponent},
   { path: "**", redirectTo: "/page-not-found" }
 ];
 

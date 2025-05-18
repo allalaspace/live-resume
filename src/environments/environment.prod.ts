@@ -1,13 +1,13 @@
 export const environment = {
-  production: true,
+  production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyD6m9ELMG_0GovK86u1fmntHZ6Cw19njHQ",
-    authDomain: "newone-24039.firebaseapp.com",
-    databaseURL: "https://newone-24039-default-rtdb.firebaseio.com",
-    projectId: "newone-24039",
-    storageBucket: "newone-24039.appspot.com",
-    messagingSenderId: "580602405334",
-    appId: "1:580602405334:web:fe4c10e8282106a2d20477",
-    measurementId: "G-SS9EJGMXNL"
+    apiKey: "AIzaSyC9HXBJvCb0zBoPk0ibHsC0BHYUJhUQoZk",
+    authDomain: "resume-878da.firebaseapp.com",
+    databaseURL: "https://resume-878da-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "resume-878da",
+    storageBucket: "resume-878da.firebasestorage.app",
+    messagingSenderId: "325945374703",
+    appId: "1:325945374703:web:259b7beee4ccb2c730a81a",
+    measurementId: "G-LNG7P2NKK4"
   }
-};
+}; 

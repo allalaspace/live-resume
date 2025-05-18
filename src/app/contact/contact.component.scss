@@ -282,3 +282,36 @@
     from { opacity: 1; }
     to { opacity: 0.3; }
 }
+
+.firebase-contact-link {
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 123, 255, 0.1);
+  border-radius: 8px;
+  
+  p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+      background-color: #0056b3;
+    }
+    
+    .icon {
+      margin-left: 8px;
+    }
+  }
+}

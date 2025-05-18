@@ -1,11 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 import {
   faEnvelope, faPhone, faTimes,
-  faMapMarkerAlt, IconDefinition
+  faMapMarkerAlt, IconDefinition, faArrowRight
 } from "@fortawesome/free-solid-svg-icons";
 import { UntypedFormGroup, UntypedFormControl, Validators } from "@angular/forms";
 import { ContactService } from "./contact.service";
-import { Contact } from "../model/contact.model";
+import { Contact } from "../models/contact.model";
 
 @Component({
   selector: "app-contact",
@@ -24,6 +24,7 @@ export class ContactComponent implements OnInit {
   faPhone: IconDefinition;
   faMapMarkerAlt: IconDefinition;
   faTimes: IconDefinition;
+  faArrowRight: IconDefinition;
 
   isLoading: boolean = false;
   hasBeenSubmited: boolean = false;
@@ -71,6 +72,7 @@ export class ContactComponent implements OnInit {
     this.faPhone = faPhone;
     this.faMapMarkerAlt = faMapMarkerAlt;
     this.faTimes = faTimes;
+    this.faArrowRight = faArrowRight;
   }
 
   saveContact(contact: Contact) {
