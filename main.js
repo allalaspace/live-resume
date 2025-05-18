@@ -3412,14 +3412,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _welcome_dialog_typing_typing_animation_directive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./welcome-dialog-typing/typing-animation.directive */ 3768);
 
 
-const _c0 = () => ["Meu nome \u00E9 Guilherme.", "Seja bem-vindo(a) ao meu resumo online.", "Abaixo, voc\u00EA me conhecer\u00E1 melhor... :)"];
+const _c0 = () => ["My name is Mohamed Ali.", "Welcome to my online resume.", "Down below, you will know me better... :)"];
 const _c1 = a0 => ({
-  "language": "pt",
+  "language": "en",
   "phrases": a0
 });
-const _c2 = () => ["je m appelle mohamed ali.", "Bienvenue sur mon portofolio.", "Down below, you will know me better... :)"];
+const _c2 = () => ["Je me nomme Mohamed Ali.", "Bienvenue sur mon portfolio.", "Ci-dessous, vous apprendrez \u00E0 mieux me conna\u00EEtre... :)"];
 const _c3 = a0 => ({
-  "language": "en",
+  "language": "fr",
   "phrases": a0
 });
 const _c4 = (a0, a1) => [a0, a1];
@@ -3443,7 +3443,7 @@ class WelcomeDialogComponent {
           /**
            * @desc dialog
            */
-          const MSG_EXTERNAL_hello$$SRC_APP_WELCOME_WELCOME_DIALOG_WELCOME_DIALOG_COMPONENT_TS_0 = goog.getMsg("salut!");
+          const MSG_EXTERNAL_hello$$SRC_APP_WELCOME_WELCOME_DIALOG_WELCOME_DIALOG_COMPONENT_TS_0 = goog.getMsg("Salut!");
           i18n_0 = MSG_EXTERNAL_hello$$SRC_APP_WELCOME_WELCOME_DIALOG_WELCOME_DIALOG_COMPONENT_TS_0;
         } else {
           i18n_0 = "Salut!";
