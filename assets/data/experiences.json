@@ -249,5 +249,99 @@
             }
         ],
         "backgroundUrl": "assets/template/experience/rotterdam.jpg"
+    },
+    ,
+    {
+        "id": 7,
+        "position": 7,
+        "startAt": "01-02-2021",
+        "companyName": "Jaji",
+        "website": "https://www.jaji.frÒ/",
+        "logo": "assets/template/experience/logo/veolia.svg",
+        "internationalizations": [
+            {
+                "language": "en",
+                "city": "Paris",
+                "country": "France",
+                "role": "Full-stack Engineer",
+                "description": "<b>Swisscom</b> is the <b>#1</b> telecommunications company and one of the leading IT companies in Switzerland. Its products and services range from B2C products, such as <i>Swisscom TV</i>, to B2B IT solutions in multiple industries, such as <i>Banking, Health, Energy, Entertainment, and Advertising</i>.<br><br>In the <i>Swisscom DevOps Center</i> innovation and experimenting are deeply rooted in the DNA of the company. The multicultural environment with 15 nationalities, and a <i>Tribe/Squad</i> culture, contribute to putting us, the employees, as part of an international virtual team, specialized in DevOps among various other top technologies."
+            },
+            {
+                "language": "fr",
+                "city": "Paris",
+                "country": "France",
+                "role": "Ingénieur Full-stack",
+                "description": "<b>Swisscom</b> est la <b>#1</b> entreprise de télécommunications et l'une des principales entreprises informatiques en Suisse. Ses produits et services vont des produits B2C, comme <i>Swisscom TV</i>, aux solutions informatiques B2B dans de multiples secteurs, tels que <i>la Banque, la Santé, l'Énergie, le Divertissement et la Publicité</i>.<br><br>Dans le <i>Centre DevOps de Swisscom</i>, l'innovation et l'expérimentation sont profondément ancrées dans l'ADN de l'entreprise. L'environnement multiculturel avec 15 nationalités, et une culture de <i>Tribu/Escouade</i>, contribuent à nous placer, les employés, au sein d'une équipe virtuelle internationale, spécialisée en DevOps parmi diverses autres technologies de pointe."
+            }
+        ],
+        "technologies": [
+            "MVC", "MVC", "MVC", "Web API", "Selenium", "DBDeploy", "Versioning Control", "CI/CD", "NUnit",  "Jenkins", "NPM", "Gradle", "Jira","Castle winsdor","Rabbitmq", "MassTransit (SOA)"  , "Log2Console" , "sqlserver 2014" , "visual studio 2010/2017" , "Linq4Pad", "NANCYFX", "POSTMAN" ,"Redis" ,"NUNIT" , "javascript", "jquery","Angular" , "tfs", ".Net Core", "deployd", "swagger", "GIT", "Jenkins", "Glimpse"
+            
+        ],
+        "medias": [
+            {
+                "icon": "linkedin",
+                "title": "LinkedIn Swisscom",
+                "http": "https://www.linkedin.com/company/swisscom/"
+            },
+            {
+                "icon": "facebook",
+                "title": "Facebook Swisscom",
+                "http": "https://www.facebook.com/Swisscom"
+            },
+            {
+                "icon": "youtube",
+                "title": "Youtube Swisscom",
+                "http": "https://www.youtube.com/swisscom"
+            }
+        ],
+        "backgroundUrl": "assets/template/experience/rotterdam.jpg"
+    },
+    ,
+    {
+        "id": 6,
+        "position": 6,
+        "startAt": "01-12-2024",
+        "companyName": "Klésia",
+        "website": "https://www.Klesia.com/",
+        "logo": "assets/template/experience/logo/veolia.svg",
+        "internationalizations": [
+            {
+                "language": "en",
+                "city": "Paris",
+                "country": "France",
+                "role": "Full-stack Engineer",
+                "description": "<b>Swisscom</b> is the <b>#1</b> telecommunications company and one of the leading IT companies in Switzerland. Its products and services range from B2C products, such as <i>Swisscom TV</i>, to B2B IT solutions in multiple industries, such as <i>Banking, Health, Energy, Entertainment, and Advertising</i>.<br><br>In the <i>Swisscom DevOps Center</i> innovation and experimenting are deeply rooted in the DNA of the company. The multicultural environment with 15 nationalities, and a <i>Tribe/Squad</i> culture, contribute to putting us, the employees, as part of an international virtual team, specialized in DevOps among various other top technologies."
+            },
+            {
+                "language": "fr",
+                "city": "Paris",
+                "country": "France",
+                "role": "Ingénieur Full-stack",
+                "description": "<b>Klésia</b> est la <b>#1</b> entreprise de télécommunications et l'une des principales entreprises informatiques en Suisse. Ses produits et services vont des produits B2C, comme <i>Swisscom TV</i>, aux solutions informatiques B2B dans de multiples secteurs, tels que <i>la Banque, la Santé, l'Énergie, le Divertissement et la Publicité</i>.<br><br>Dans le <i>Centre DevOps de Swisscom</i>, l'innovation et l'expérimentation sont profondément ancrées dans l'ADN de l'entreprise. L'environnement multiculturel avec 15 nationalités, et une culture de <i>Tribu/Escouade</i>, contribuent à nous placer, les employés, au sein d'une équipe virtuelle internationale, spécialisée en DevOps parmi diverses autres technologies de pointe."
+            }
+        ],
+        "technologies": [
+            "MVC", "MVC", "MVC", "Web API", "Selenium", "DBDeploy", "Versioning Control", "CI/CD", "NUnit",  "Jenkins", "NPM", "Gradle", "Jira","Castle winsdor","Rabbitmq", "MassTransit (SOA)"  , "Log2Console" , "sqlserver 2014" , "visual studio 2010/2017" , "Linq4Pad", "NANCYFX", "POSTMAN" ,"Redis" ,"NUNIT" , "javascript", "jquery","Angular" , "tfs", ".Net Core", "deployd", "swagger", "GIT", "Jenkins", "Glimpse"
+            
+        ],
+        "medias": [
+            {
+                "icon": "linkedin",
+                "title": "LinkedIn Swisscom",
+                "http": "https://www.linkedin.com/company/swisscom/"
+            },
+            {
+                "icon": "facebook",
+                "title": "Facebook Swisscom",
+                "http": "https://www.facebook.com/Swisscom"
+            },
+            {
+                "icon": "youtube",
+                "title": "Youtube Swisscom",
+                "http": "https://www.youtube.com/swisscom"
+            }
+        ],
+        "backgroundUrl": "assets/template/experience/rotterdam.jpg"
     }
 ]
