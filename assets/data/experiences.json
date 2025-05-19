@@ -250,7 +250,6 @@
         ],
         "backgroundUrl": "assets/template/experience/rotterdam.jpg"
     },
-    ,
     {
         "id": 7,
         "position": 7,
@@ -297,10 +296,9 @@
         ],
         "backgroundUrl": "assets/template/experience/rotterdam.jpg"
     },
-    ,
     {
-        "id": 6,
-        "position": 6,
+        "id": 8,
+        "position": 8,
         "startAt": "01-12-2024",
         "companyName": "Klésia",
         "website": "https://www.Klesia.com/",
