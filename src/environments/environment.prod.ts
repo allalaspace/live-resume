@@ -1,9 +1,9 @@
 export const environment = {
-  production: false,
+  production: true,
   firebaseConfig: {
     apiKey: "AIzaSyC9HXBJvCb0zBoPk0ibHsC0BHYUJhUQoZk",
     authDomain: "resume-878da.firebaseapp.com",
-    databaseURL: "https://resume-878da-default-rtdb.europe-west1.firebasedatabase.app",
+    databaseURL: "https://resume-878da.firebaseio.com",
     projectId: "resume-878da",
     storageBucket: "resume-878da.firebasestorage.app",
     messagingSenderId: "325945374703",
