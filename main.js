@@ -4545,14 +4545,14 @@ __webpack_require__.r(__webpack_exports__);
 const environment = {
   production: true,
   firebaseConfig: {
-    apiKey: "dummy",
-    authDomain: "dummy",
-    databaseURL: "dummy",
-    projectId: "dummy",
-    storageBucket: "dummy",
-    messagingSenderId: "dummy",
-    appId: "dummy",
-    measurementId: "dummy"
+    apiKey: "AIzaSyC9HXBJvCb0zBoPk0ibHsC0BHYUJhUQoZk",
+    authDomain: "resume-878da.firebaseapp.com",
+    databaseURL: "https://resume-878da-default-rtdb.firebaseio.com",
+    projectId: "resume-878da",
+    storageBucket: "resume-878da.firebasestorage.app",
+    messagingSenderId: "325945374703",
+    appId: "1:325945374703:web:259b7beee4ccb2c730a81a",
+    measurementId: "G-LNG7P2NKK4"
   }
 };
 
