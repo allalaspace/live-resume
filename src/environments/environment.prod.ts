@@ -3,7 +3,7 @@ export const environment = {
   firebaseConfig: {
     apiKey: "AIzaSyC9HXBJvCb0zBoPk0ibHsC0BHYUJhUQoZk",
     authDomain: "resume-878da.firebaseapp.com",
-    databaseURL: "https://resume-878da-default-rtdb.firebaseio.com",
+    databaseURL: "https://resume-878da-default-rtdb.europe-west1.firebasedatabase.app",
     projectId: "resume-878da",
     storageBucket: "resume-878da.firebasestorage.app",
     messagingSenderId: "325945374703",
