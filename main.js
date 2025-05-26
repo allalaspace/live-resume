@@ -3130,7 +3130,7 @@ class HeaderComponent {
       try {
         yield _this.ngNavigatorShareService.share({
           title: "Live Resume - Mohamed ali boudich ",
-          text: "Hello, I'm a Full-stack Java Web Developer with 10+ years of experience designing web and mobile projects. Find out more in my live-resume!",
+          text: "Hello, I'm a Full-stack DotNet Web Developer with 10+ years of experience designing web and mobile projects. Find out more in my live-resume!",
           url: "https://mohamedaliboudich.fr"
         });
       } catch (error) {
@@ -4547,7 +4547,7 @@ const environment = {
   firebaseConfig: {
     apiKey: "AIzaSyC9HXBJvCb0zBoPk0ibHsC0BHYUJhUQoZk",
     authDomain: "resume-878da.firebaseapp.com",
-    databaseURL: "https://resume-878da-default-rtdb.firebaseio.com",
+    databaseURL: "https://resume-878da-default-rtdb.europe-west1.firebasedatabase.app",
     projectId: "resume-878da",
     storageBucket: "resume-878da.firebasestorage.app",
     messagingSenderId: "325945374703",
