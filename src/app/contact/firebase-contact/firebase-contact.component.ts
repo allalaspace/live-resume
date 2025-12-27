@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { FirebaseService } from '../../services/firebase.service';
+import { SupabaseService } from '../../services/supabase.service';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -19,7 +19,7 @@ export class FirebaseContactComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private firebaseService: FirebaseService
+    private supabaseService: SupabaseService
   ) { }
 
   ngOnInit(): void {
@@ -41,7 +41,7 @@ export class FirebaseContactComponent implements OnInit {
     this.isLoading = true;
     
     try {
-      const result = await this.firebaseService.sendContactMessage(
+      const result = await this.supabaseService.sendContactMessage(
         this.contactForm.value.name,
         this.contactForm.value.email,
         this.contactForm.value.message

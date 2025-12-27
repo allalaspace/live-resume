@@ -12,11 +12,6 @@ import { PageNotFoundModule } from "./404/page-not-found.module";
 import { CoreModule } from "./core/core.module";
 import { ContactModule } from "./contact/contact.module";
 
-// Firebase imports
-import { environment } from '../environments/environment';
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
-
 import localeEn from "@angular/common/locales/en";
 import localePt from "@angular/common/locales/pt";
 import localeFr from "@angular/common/locales/fr";
@@ -36,10 +31,7 @@ registerLocaleData(localePt, "pt-BR", localePtExtra);
     ContactModule,
     PageNotFoundModule,
     PageNotFoundRoutingModule,
-    ReactiveFormsModule,
-    // Firebase modules - utilisation de la version database
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule
+    ReactiveFormsModule
   ],
   declarations: [ AppComponent ],
   bootstrap: [ AppComponent ],
