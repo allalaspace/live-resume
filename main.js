@@ -495,25 +495,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AppModule: () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/platform-browser */ 436);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 316);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/forms */ 4456);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/router */ 5072);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/platform-browser */ 436);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ 316);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/forms */ 4456);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/router */ 5072);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 4114);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 92);
 /* harmony import */ var _resume_resume_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resume/resume.module */ 2563);
 /* harmony import */ var _404_page_not_found_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./404/page-not-found-routing.module */ 9684);
 /* harmony import */ var _404_page_not_found_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./404/page-not-found.module */ 6565);
 /* harmony import */ var _core_core_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./core/core.module */ 8423);
-/* harmony import */ var _contact_contact_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./contact/contact.module */ 980);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../environments/environment */ 5312);
-/* harmony import */ var _angular_fire_compat__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/fire/compat */ 8942);
-/* harmony import */ var _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/fire/compat/database */ 608);
-/* harmony import */ var _angular_common_locales_en__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/locales/en */ 9032);
-/* harmony import */ var _angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/common/locales/pt */ 8581);
-/* harmony import */ var _angular_common_locales_fr__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common/locales/fr */ 5669);
-/* harmony import */ var _angular_common_locales_extra_pt__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common/locales/extra/pt */ 9692);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _contact_contact_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./contact/contact.module */ 8599);
+/* harmony import */ var _angular_common_locales_en__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common/locales/en */ 9032);
+/* harmony import */ var _angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common/locales/pt */ 8581);
+/* harmony import */ var _angular_common_locales_fr__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common/locales/fr */ 5669);
+/* harmony import */ var _angular_common_locales_extra_pt__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/common/locales/extra/pt */ 7311);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/core */ 7580);
 
 
 
@@ -525,19 +522,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// Firebase imports
 
 
 
 
 
-
-
-
-
-(0,_angular_common__WEBPACK_IMPORTED_MODULE_8__.registerLocaleData)(_angular_common_locales_en__WEBPACK_IMPORTED_MODULE_9__["default"], "en");
-(0,_angular_common__WEBPACK_IMPORTED_MODULE_8__.registerLocaleData)(_angular_common_locales_fr__WEBPACK_IMPORTED_MODULE_10__["default"], "fr");
-(0,_angular_common__WEBPACK_IMPORTED_MODULE_8__.registerLocaleData)(_angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_11__["default"], "pt-BR", _angular_common_locales_extra_pt__WEBPACK_IMPORTED_MODULE_12__["default"]);
+(0,_angular_common__WEBPACK_IMPORTED_MODULE_7__.registerLocaleData)(_angular_common_locales_en__WEBPACK_IMPORTED_MODULE_8__["default"], "en");
+(0,_angular_common__WEBPACK_IMPORTED_MODULE_7__.registerLocaleData)(_angular_common_locales_fr__WEBPACK_IMPORTED_MODULE_9__["default"], "fr");
+(0,_angular_common__WEBPACK_IMPORTED_MODULE_7__.registerLocaleData)(_angular_common_locales_pt__WEBPACK_IMPORTED_MODULE_10__["default"], "pt-BR", _angular_common_locales_extra_pt__WEBPACK_IMPORTED_MODULE_11__["default"]);
 class AppModule {
   static {
     this.ɵfac = function AppModule_Factory(t) {
@@ -545,23 +537,21 @@ class AppModule {
     };
   }
   static {
-    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵdefineNgModule"]({
+    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineNgModule"]({
       type: AppModule,
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent]
     });
   }
   static {
-    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵdefineInjector"]({
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__.BrowserModule, _angular_router__WEBPACK_IMPORTED_MODULE_15__.RouterModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _core_core_module__WEBPACK_IMPORTED_MODULE_5__.CoreModule, _resume_resume_module__WEBPACK_IMPORTED_MODULE_2__.ResumeModule, _contact_contact_module__WEBPACK_IMPORTED_MODULE_6__.ContactModule, _404_page_not_found_module__WEBPACK_IMPORTED_MODULE_4__.PageNotFoundModule, _404_page_not_found_routing_module__WEBPACK_IMPORTED_MODULE_3__.PageNotFoundRoutingModule, _angular_forms__WEBPACK_IMPORTED_MODULE_16__.ReactiveFormsModule,
-      // Firebase modules - utilisation de la version database
-      _angular_fire_compat__WEBPACK_IMPORTED_MODULE_17__.AngularFireModule.initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_7__.environment.firebaseConfig), _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_18__.AngularFireDatabaseModule]
+    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineInjector"]({
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_13__.BrowserModule, _angular_router__WEBPACK_IMPORTED_MODULE_14__.RouterModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _core_core_module__WEBPACK_IMPORTED_MODULE_5__.CoreModule, _resume_resume_module__WEBPACK_IMPORTED_MODULE_2__.ResumeModule, _contact_contact_module__WEBPACK_IMPORTED_MODULE_6__.ContactModule, _404_page_not_found_module__WEBPACK_IMPORTED_MODULE_4__.PageNotFoundModule, _404_page_not_found_routing_module__WEBPACK_IMPORTED_MODULE_3__.PageNotFoundRoutingModule, _angular_forms__WEBPACK_IMPORTED_MODULE_15__.ReactiveFormsModule]
     });
   }
 }
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵsetNgModuleScope"](AppModule, {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵsetNgModuleScope"](AppModule, {
     declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent],
-    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__.BrowserModule, _angular_router__WEBPACK_IMPORTED_MODULE_15__.RouterModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _core_core_module__WEBPACK_IMPORTED_MODULE_5__.CoreModule, _resume_resume_module__WEBPACK_IMPORTED_MODULE_2__.ResumeModule, _contact_contact_module__WEBPACK_IMPORTED_MODULE_6__.ContactModule, _404_page_not_found_module__WEBPACK_IMPORTED_MODULE_4__.PageNotFoundModule, _404_page_not_found_routing_module__WEBPACK_IMPORTED_MODULE_3__.PageNotFoundRoutingModule, _angular_forms__WEBPACK_IMPORTED_MODULE_16__.ReactiveFormsModule, _angular_fire_compat__WEBPACK_IMPORTED_MODULE_17__.AngularFireModule, _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_18__.AngularFireDatabaseModule]
+    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_13__.BrowserModule, _angular_router__WEBPACK_IMPORTED_MODULE_14__.RouterModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _core_core_module__WEBPACK_IMPORTED_MODULE_5__.CoreModule, _resume_resume_module__WEBPACK_IMPORTED_MODULE_2__.ResumeModule, _contact_contact_module__WEBPACK_IMPORTED_MODULE_6__.ContactModule, _404_page_not_found_module__WEBPACK_IMPORTED_MODULE_4__.PageNotFoundModule, _404_page_not_found_routing_module__WEBPACK_IMPORTED_MODULE_3__.PageNotFoundRoutingModule, _angular_forms__WEBPACK_IMPORTED_MODULE_15__.ReactiveFormsModule]
   });
 })();
 
@@ -1331,7 +1321,7 @@ class ContactComponent {
 
 /***/ }),
 
-/***/ 980:
+/***/ 8599:
 /*!*******************************************!*\
   !*** ./src/app/contact/contact.module.ts ***!
   \*******************************************/
@@ -1391,29 +1381,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   ContactService: () => (/* binding */ ContactService)
 /* harmony export */ });
 /* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 6196);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7580);
-/* harmony import */ var _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/compat/database */ 608);
-
+/* harmony import */ var _services_supabase_client_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/supabase-client.service */ 8548);
 
 
 
 class ContactService {
-  constructor(db) {
-    this.db = db;
-    this.contactsPath = 'contacts';
+  constructor(supabaseClientService) {
+    this.supabaseClientService = supabaseClientService;
+  }
+  get supabase() {
+    return this.supabaseClientService.client;
   }
   createContact(contact) {
     var _this = this;
     return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         console.log('Contact form submission:', contact);
-        const contactRef = yield _this.db.list(_this.contactsPath).push({
-          ...contact,
-          date: new Date().toISOString()
-        });
+        const {
+          data,
+          error
+        } = yield _this.supabase.from('contacts').insert([{
+          name: contact.name,
+          email: contact.email,
+          message: contact.message,
+          subject: contact.subject || '',
+          date: contact.date ? new Date(contact.date).toISOString() : new Date().toISOString(),
+          read: false
+        }]).select();
+        if (error) {
+          throw error;
+        }
         return Promise.resolve({
-          id: contactRef.key
+          id: data?.[0]?.id
         });
       } catch (error) {
         console.error("Erreur lors de l'ajout du contact:", error);
@@ -1426,9 +1426,23 @@ class ContactService {
     var _this2 = this;
     return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
-        const query = _this2.db.list(_this2.contactsPath).valueChanges();
-        const result = yield (0,rxjs__WEBPACK_IMPORTED_MODULE_1__.firstValueFrom)(query);
-        return result;
+        const {
+          data,
+          error
+        } = yield _this2.supabase.from('contacts').select('*').order('date', {
+          ascending: false
+        });
+        if (error) {
+          throw error;
+        }
+        return (data || []).map(item => ({
+          id: item.id,
+          name: item.name,
+          email: item.email,
+          subject: item.subject || '',
+          message: item.message,
+          date: new Date(item.date)
+        }));
       } catch (error) {
         console.error("Erreur lors de la récupération des contacts:", error);
         return [];
@@ -1437,7 +1451,7 @@ class ContactService {
   }
   static {
     this.ɵfac = function ContactService_Factory(t) {
-      return new (t || ContactService)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_3__.AngularFireDatabase));
+      return new (t || ContactService)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_services_supabase_client_service__WEBPACK_IMPORTED_MODULE_1__.SupabaseClientService));
     };
   }
   static {
@@ -1465,7 +1479,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ 4456);
 /* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ 9626);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7580);
-/* harmony import */ var _services_firebase_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/firebase.service */ 8287);
+/* harmony import */ var _services_supabase_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/supabase.service */ 9692);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ 316);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ 5072);
 /* harmony import */ var _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/angular-fontawesome */ 7668);
@@ -1560,9 +1574,9 @@ function FirebaseContactComponent_div_35_Template(rf, ctx) {
   }
 }
 class FirebaseContactComponent {
-  constructor(fb, firebaseService) {
+  constructor(fb, supabaseService) {
     this.fb = fb;
-    this.firebaseService = firebaseService;
+    this.supabaseService = supabaseService;
     this.isLoading = false;
     this.feedbackStatus = '';
     this.submitted = false;
@@ -1586,7 +1600,7 @@ class FirebaseContactComponent {
       }
       _this.isLoading = true;
       try {
-        const result = yield _this.firebaseService.sendContactMessage(_this.contactForm.value.name, _this.contactForm.value.email, _this.contactForm.value.message);
+        const result = yield _this.supabaseService.sendContactMessage(_this.contactForm.value.name, _this.contactForm.value.email, _this.contactForm.value.message);
         if (result.success) {
           _this.feedbackStatus = 'success';
           _this.contactForm.reset();
@@ -1614,7 +1628,7 @@ class FirebaseContactComponent {
   }
   static {
     this.ɵfac = function FirebaseContactComponent_Factory(t) {
-      return new (t || FirebaseContactComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_services_firebase_service__WEBPACK_IMPORTED_MODULE_1__.FirebaseService));
+      return new (t || FirebaseContactComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_4__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_services_supabase_service__WEBPACK_IMPORTED_MODULE_1__.SupabaseService));
     };
   }
   static {
@@ -2187,7 +2201,7 @@ class LocalizedDatePipe {
   transform(value, pattern = "mediumDate") {
     const datePipe = new _angular_common__WEBPACK_IMPORTED_MODULE_0__.DatePipe(this.locale);
     // For now, the translation will be manual, further on, the i18n service will be injected to provide such capability...
-    return datePipe.transform(value, pattern) || (this.locale === "en" ? "Currently" : "Atualmente");
+    return datePipe.transform(value, pattern) || (this.locale === "en" ? "Currently" : "Actuellement");
   }
   static {
     this.ɵfac = function LocalizedDatePipe_Factory(t) {
@@ -3995,57 +4009,113 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   ContactService: () => (/* binding */ ContactService)
 /* harmony export */ });
 /* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 271);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7580);
-/* harmony import */ var _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/compat/database */ 608);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 5429);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 271);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _supabase_client_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./supabase-client.service */ 8548);
 
 
 
 
 class ContactService {
-  constructor(db) {
-    this.db = db;
-    this.contactsPath = 'contacts';
+  constructor(supabaseClientService) {
+    this.supabaseClientService = supabaseClientService;
+  }
+  get supabase() {
+    return this.supabaseClientService.client;
   }
   // Ajouter un nouveau contact
   addContact(contact) {
     var _this = this;
     return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      const contactRef = yield _this.db.list(_this.contactsPath).push({
-        ...contact,
-        date: new Date().toISOString()
-      });
-      return contactRef.key;
+      try {
+        const {
+          data,
+          error
+        } = yield _this.supabase.from('contacts').insert([{
+          name: contact.name,
+          email: contact.email,
+          message: contact.message,
+          subject: contact.subject || '',
+          date: contact.date ? new Date(contact.date).toISOString() : new Date().toISOString(),
+          read: false
+        }]).select();
+        if (error) {
+          throw error;
+        }
+        return data?.[0]?.id || '';
+      } catch (error) {
+        console.error("Erreur lors de l'ajout du contact:", error);
+        throw error;
+      }
     })();
   }
   // Récupérer tous les contacts
   getContacts() {
-    return this.db.list(this.contactsPath).snapshotChanges().pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.map)(changes => changes.map(c => ({
-      id: c.payload.key,
-      ...c.payload.val()
-    }))));
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)(this.supabase.from('contacts').select('*').order('date', {
+      ascending: false
+    })).pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_3__.map)(response => {
+      if (response.error) {
+        console.error("Erreur lors de la récupération des contacts:", response.error);
+        return [];
+      }
+      return (response.data || []).map(item => ({
+        id: item.id,
+        name: item.name,
+        email: item.email,
+        subject: item.subject || '',
+        message: item.message,
+        date: new Date(item.date)
+      }));
+    }));
   }
   // Supprimer un contact
   deleteContact(id) {
     var _this2 = this;
     return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      return _this2.db.object(`${_this2.contactsPath}/${id}`).remove();
+      try {
+        const {
+          error
+        } = yield _this2.supabase.from('contacts').delete().eq('id', id);
+        if (error) {
+          throw error;
+        }
+      } catch (error) {
+        console.error("Erreur lors de la suppression du contact:", error);
+        throw error;
+      }
     })();
   }
   // Mettre à jour un contact
   updateContact(id, contact) {
     var _this3 = this;
     return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      return _this3.db.object(`${_this3.contactsPath}/${id}`).update(contact);
+      try {
+        const updateData = {};
+        if (contact.name) updateData.name = contact.name;
+        if (contact.email) updateData.email = contact.email;
+        if (contact.subject) updateData.subject = contact.subject;
+        if (contact.message) updateData.message = contact.message;
+        if (contact.date) updateData.date = new Date(contact.date).toISOString();
+        const {
+          error
+        } = yield _this3.supabase.from('contacts').update(updateData).eq('id', id);
+        if (error) {
+          throw error;
+        }
+      } catch (error) {
+        console.error("Erreur lors de la mise à jour du contact:", error);
+        throw error;
+      }
     })();
   }
   static {
     this.ɵfac = function ContactService_Factory(t) {
-      return new (t || ContactService)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_3__.AngularFireDatabase));
+      return new (t || ContactService)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵinject"](_supabase_client_service__WEBPACK_IMPORTED_MODULE_1__.SupabaseClientService));
     };
   }
   static {
-    this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+    this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjectable"]({
       token: ContactService,
       factory: ContactService.ɵfac,
       providedIn: 'root'
@@ -4055,46 +4125,282 @@ class ContactService {
 
 /***/ }),
 
-/***/ 8287:
+/***/ 8548:
+/*!*****************************************************!*\
+  !*** ./src/app/services/supabase-client.service.ts ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   SupabaseClientService: () => (/* binding */ SupabaseClientService)
+/* harmony export */ });
+/* harmony import */ var _supabase_supabase_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @supabase/supabase-js */ 7785);
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment */ 5312);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7580);
+
+
+
+class SupabaseClientService {
+  constructor() {
+    this._supabase = null;
+  }
+  get client() {
+    if (!this._supabase) {
+      // #region agent log
+      fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          location: 'supabase-client.service.ts:12',
+          message: 'Creating Supabase client',
+          data: {
+            url: _environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.supabaseUrl,
+            keyPrefix: _environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.supabaseKey?.substring(0, 20)
+          },
+          timestamp: Date.now(),
+          sessionId: 'debug-session',
+          runId: 'run1',
+          hypothesisId: 'D'
+        })
+      }).catch(() => {});
+      // #endregion
+      // Configuration pour éviter les conflits de verrous Navigator
+      const options = {
+        auth: {
+          storage: typeof window !== 'undefined' ? {
+            getItem: key => {
+              try {
+                return window.localStorage.getItem(key);
+              } catch (e) {
+                return null;
+              }
+            },
+            setItem: (key, value) => {
+              try {
+                window.localStorage.setItem(key, value);
+              } catch (e) {
+                // Ignore storage errors
+              }
+            },
+            removeItem: key => {
+              try {
+                window.localStorage.removeItem(key);
+              } catch (e) {
+                // Ignore storage errors
+              }
+            }
+          } : undefined,
+          autoRefreshToken: false,
+          persistSession: false,
+          detectSessionInUrl: false,
+          flowType: 'pkce'
+        },
+        global: {
+          headers: {}
+        },
+        db: {
+          schema: 'public'
+        }
+      };
+      this._supabase = (0,_supabase_supabase_js__WEBPACK_IMPORTED_MODULE_1__.createClient)(_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.supabaseUrl, _environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.supabaseKey, options);
+    }
+    return this._supabase;
+  }
+  static {
+    this.ɵfac = function SupabaseClientService_Factory(t) {
+      return new (t || SupabaseClientService)();
+    };
+  }
+  static {
+    this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      token: SupabaseClientService,
+      factory: SupabaseClientService.ɵfac,
+      providedIn: 'root'
+    });
+  }
+}
+
+/***/ }),
+
+/***/ 9692:
 /*!**********************************************!*\
-  !*** ./src/app/services/firebase.service.ts ***!
+  !*** ./src/app/services/supabase.service.ts ***!
   \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   FirebaseService: () => (/* binding */ FirebaseService)
+/* harmony export */   SupabaseService: () => (/* binding */ SupabaseService)
 /* harmony export */ });
 /* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 6196);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7580);
-/* harmony import */ var _angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/compat/database */ 608);
+/* harmony import */ var _supabase_client_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./supabase-client.service */ 8548);
 
 
 
-
-class FirebaseService {
-  constructor(db) {
-    this.db = db;
+class SupabaseService {
+  constructor(supabaseClientService) {
+    this.supabaseClientService = supabaseClientService;
+  }
+  get supabase() {
+    return this.supabaseClientService.client;
   }
   // Méthode pour envoyer un message de contact
   sendContactMessage(name, email, message) {
     var _this = this;
     return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      // #region agent log
+      fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          location: 'supabase.service.ts:15',
+          message: 'sendContactMessage called',
+          data: {
+            name,
+            email,
+            messageLength: message.length
+          },
+          timestamp: Date.now(),
+          sessionId: 'debug-session',
+          runId: 'run1',
+          hypothesisId: 'A'
+        })
+      }).catch(() => {});
+      // #endregion
       try {
-        const contactRef = yield _this.db.list('contacts').push({
+        const insertData = {
           name: name,
           email: email,
           message: message,
           date: new Date().toISOString(),
           read: false
-        });
+        };
+        // #region agent log
+        fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            location: 'supabase.service.ts:25',
+            message: 'Before Supabase insert',
+            data: {
+              insertData
+            },
+            timestamp: Date.now(),
+            sessionId: 'debug-session',
+            runId: 'run1',
+            hypothesisId: 'A'
+          })
+        }).catch(() => {});
+        // #endregion
+        const {
+          data,
+          error
+        } = yield _this.supabase.from('contacts').insert([insertData]).select();
+        // #region agent log
+        fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            location: 'supabase.service.ts:33',
+            message: 'After Supabase insert',
+            data: {
+              hasError: !!error,
+              errorCode: error?.code,
+              errorMessage: error?.message,
+              errorDetails: error?.details,
+              hasData: !!data,
+              dataLength: data?.length
+            },
+            timestamp: Date.now(),
+            sessionId: 'debug-session',
+            runId: 'run1',
+            hypothesisId: 'A'
+          })
+        }).catch(() => {});
+        // #endregion
+        if (error) {
+          console.error("Erreur lors de l'envoi du message:", error);
+          // #region agent log
+          fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              location: 'supabase.service.ts:37',
+              message: 'Supabase error details',
+              data: {
+                code: error.code,
+                message: error.message,
+                details: error.details,
+                hint: error.hint
+              },
+              timestamp: Date.now(),
+              sessionId: 'debug-session',
+              runId: 'run1',
+              hypothesisId: 'A'
+            })
+          }).catch(() => {});
+          // #endregion
+          return {
+            success: false,
+            error: error
+          };
+        }
+        // #region agent log
+        fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            location: 'supabase.service.ts:44',
+            message: 'Insert successful',
+            data: {
+              id: data?.[0]?.id
+            },
+            timestamp: Date.now(),
+            sessionId: 'debug-session',
+            runId: 'run1',
+            hypothesisId: 'A'
+          })
+        }).catch(() => {});
+        // #endregion
         return {
           success: true,
-          id: contactRef.key
+          id: data?.[0]?.id
         };
       } catch (error) {
         console.error("Erreur lors de l'envoi du message:", error);
+        // #region agent log
+        fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            location: 'supabase.service.ts:48',
+            message: 'Exception caught',
+            data: {
+              errorMessage: error instanceof Error ? error.message : String(error)
+            },
+            timestamp: Date.now(),
+            sessionId: 'debug-session',
+            runId: 'run1',
+            hypothesisId: 'A'
+          })
+        }).catch(() => {});
+        // #endregion
         return {
           success: false,
           error: error
@@ -4107,9 +4413,15 @@ class FirebaseService {
     var _this2 = this;
     return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
-        const query = _this2.db.list('contacts', ref => ref.orderByChild('email').equalTo(email).limitToFirst(1)).valueChanges();
-        const result = yield (0,rxjs__WEBPACK_IMPORTED_MODULE_1__.firstValueFrom)(query);
-        return result && result.length > 0;
+        const {
+          data,
+          error
+        } = yield _this2.supabase.from('contacts').select('email').eq('email', email).limit(1);
+        if (error) {
+          console.error("Erreur lors de la vérification de l'email:", error);
+          return false;
+        }
+        return data && data.length > 0;
       } catch (error) {
         console.error("Erreur lors de la vérification de l'email:", error);
         return false;
@@ -4117,14 +4429,14 @@ class FirebaseService {
     })();
   }
   static {
-    this.ɵfac = function FirebaseService_Factory(t) {
-      return new (t || FirebaseService)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_fire_compat_database__WEBPACK_IMPORTED_MODULE_3__.AngularFireDatabase));
+    this.ɵfac = function SupabaseService_Factory(t) {
+      return new (t || SupabaseService)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_supabase_client_service__WEBPACK_IMPORTED_MODULE_1__.SupabaseClientService));
     };
   }
   static {
     this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
-      token: FirebaseService,
-      factory: FirebaseService.ɵfac,
+      token: SupabaseService,
+      factory: SupabaseService.ɵfac,
       providedIn: 'root'
     });
   }
@@ -4544,16 +4856,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 const environment = {
   production: true,
-  firebaseConfig: {
-    apiKey: "AIzaSyC9HXBJvCb0zBoPk0ibHsC0BHYUJhUQoZk",
-    authDomain: "resume-878da.firebaseapp.com",
-    databaseURL: "https://resume-878da-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "resume-878da",
-    storageBucket: "resume-878da.firebasestorage.app",
-    messagingSenderId: "325945374703",
-    appId: "1:325945374703:web:259b7beee4ccb2c730a81a",
-    measurementId: "G-LNG7P2NKK4"
-  }
+  supabaseUrl: "https://auoiubngdazzhyryvrzk.supabase.co",
+  supabaseKey: "sb_publishable_e10A1nnnYID8s0JYvz6Z6A_IBkdGDAO"
 };
 
 /***/ }),
