@@ -7,6 +7,7 @@ import { catchError } from "rxjs/operators";
 import { IExperience } from "../experience/experience-interfaces";
 import { IAbout } from "../about/about-interfaces";
 import { IPost } from "../posts/posts-interfaces";
+import { PostsService } from "../services/posts.service";
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,10 @@ export class DataService {
 
     baseUrl: string = "assets/data/";
     
-    constructor(private http: HttpClient) { }
+    constructor(
+      private http: HttpClient,
+      private postsService: PostsService
+    ) { }
 
     getExperiences() : Observable<IExperience[]> {
         return this.http.get<IExperience[]>(this.baseUrl + "experiences.json")
@@ -32,7 +36,8 @@ export class DataService {
     }
 
     getPosts() : Observable<IPost[]> {
-        return this.http.get<IPost[]>(this.baseUrl + "posts.json")
+        // Utiliser Supabase pour récupérer les posts dynamiquement
+        return this.postsService.getPosts()
             .pipe(
                 catchError(this.handleError)
             );
