@@ -10,9 +10,6 @@ export class SupabaseClientService {
 
   get client(): SupabaseClient {
     if (!this._supabase) {
-      // #region agent log
-      fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'supabase-client.service.ts:12',message:'Creating Supabase client',data:{url:environment.supabaseUrl,keyPrefix:environment.supabaseKey?.substring(0,20)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'D'})}).catch(()=>{});
-      // #endregion
       // Configuration pour éviter les conflits de verrous Navigator
       const options: SupabaseClientOptions<'public'> = {
         auth: {
