@@ -1,1 +1,2 @@
 {"location":"supabase-client.service.ts:12","message":"Creating Supabase client","data":{"url":"https://auoiubngdazzhyryvrzk.supabase.co","keyPrefix":"sb_publishable_e10A1"},"timestamp":1766873128564,"sessionId":"debug-session","runId":"run1","hypothesisId":"D"}
+{"location":"supabase-client.service.ts:12","message":"Creating Supabase client","data":{"url":"https://auoiubngdazzhyryvrzk.supabase.co","keyPrefix":"sb_publishable_e10A1"},"timestamp":1766874484670,"sessionId":"debug-session","runId":"run1","hypothesisId":"D"}
