@@ -1974,45 +1974,49 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   DataService: () => (/* binding */ DataService)
 /* harmony export */ });
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 7919);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs/operators */ 1318);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7580);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ 6443);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 7919);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ 1318);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ 6443);
+/* harmony import */ var _services_posts_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/posts.service */ 7989);
+
 
 
 
 
 class DataService {
-  constructor(http) {
+  constructor(http, postsService) {
     this.http = http;
+    this.postsService = postsService;
     this.baseUrl = "assets/data/";
   }
   getExperiences() {
-    return this.http.get(this.baseUrl + "experiences.json").pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_0__.catchError)(this.handleError));
+    return this.http.get(this.baseUrl + "experiences.json").pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_1__.catchError)(this.handleError));
   }
   getAbout() {
-    return this.http.get(this.baseUrl + "about.json").pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_0__.catchError)(this.handleError));
+    return this.http.get(this.baseUrl + "about.json").pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_1__.catchError)(this.handleError));
   }
   getPosts() {
-    return this.http.get(this.baseUrl + "posts.json").pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_0__.catchError)(this.handleError));
+    // Utiliser Supabase pour récupérer les posts dynamiquement
+    return this.postsService.getPosts().pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_1__.catchError)(this.handleError));
   }
   handleError(error) {
     console.error("server error:", error);
     if (error.error instanceof Error) {
       const errMessage = error.error.message;
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_1__.throwError)(() => errMessage);
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => errMessage);
       // Use the following instead if using lite-server
       // return throwError(() => err.text() || "backend server error");
     }
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_1__.throwError)(() => error || "Node.js server error");
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.throwError)(() => error || "Node.js server error");
   }
   static {
     this.ɵfac = function DataService_Factory(t) {
-      return new (t || DataService)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpClient));
+      return new (t || DataService)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_4__.HttpClient), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_services_posts_service__WEBPACK_IMPORTED_MODULE_0__.PostsService));
     };
   }
   static {
-    this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+    this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjectable"]({
       token: DataService,
       factory: DataService.ɵfac,
       providedIn: 'root'
@@ -4125,6 +4129,113 @@ class ContactService {
 
 /***/ }),
 
+/***/ 7989:
+/*!*******************************************!*\
+  !*** ./src/app/services/posts.service.ts ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   PostsService: () => (/* binding */ PostsService)
+/* harmony export */ });
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 5429);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 271);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _supabase_client_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./supabase-client.service */ 8548);
+
+
+
+
+class PostsService {
+  constructor(supabaseClientService) {
+    this.supabaseClientService = supabaseClientService;
+  }
+  get supabase() {
+    return this.supabaseClientService.client;
+  }
+  // Récupérer tous les posts avec leurs internationalisations
+  getPosts() {
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)(this.supabase.from('posts').select(`
+          *,
+          post_internationalizations (*)
+        `).order('order_index', {
+      ascending: false
+    }).order('date', {
+      ascending: false
+    })).pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_3__.map)(response => {
+      if (response.error) {
+        console.error("Erreur lors de la récupération des posts:", response.error);
+        return [];
+      }
+      const posts = response.data || [];
+      return posts.map(post => {
+        const internationalizations = (post.post_internationalizations || []).map(intl => ({
+          language: intl.language,
+          title: intl.title,
+          description: intl.description
+        }));
+        return {
+          thumbnail: post.thumbnail,
+          http: post.http || '',
+          date: post.date,
+          internationalizations: internationalizations
+        };
+      });
+    }));
+  }
+  // Récupérer un post par ID
+  getPostById(id) {
+    var _this = this;
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      try {
+        const {
+          data,
+          error
+        } = yield _this.supabase.from('posts').select(`
+          *,
+          post_internationalizations (*)
+        `).eq('id', id).single();
+        if (error) {
+          console.error("Erreur lors de la récupération du post:", error);
+          return null;
+        }
+        if (!data) return null;
+        const post = data;
+        const internationalizations = (post.post_internationalizations || []).map(intl => ({
+          language: intl.language,
+          title: intl.title,
+          description: intl.description
+        }));
+        return {
+          thumbnail: post.thumbnail,
+          http: post.http || '',
+          date: post.date,
+          internationalizations: internationalizations
+        };
+      } catch (error) {
+        console.error("Erreur lors de la récupération du post:", error);
+        return null;
+      }
+    })();
+  }
+  static {
+    this.ɵfac = function PostsService_Factory(t) {
+      return new (t || PostsService)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵinject"](_supabase_client_service__WEBPACK_IMPORTED_MODULE_1__.SupabaseClientService));
+    };
+  }
+  static {
+    this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjectable"]({
+      token: PostsService,
+      factory: PostsService.ɵfac,
+      providedIn: 'root'
+    });
+  }
+}
+
+/***/ }),
+
 /***/ 8548:
 /*!*****************************************************!*\
   !*** ./src/app/services/supabase-client.service.ts ***!
@@ -4147,26 +4258,6 @@ class SupabaseClientService {
   }
   get client() {
     if (!this._supabase) {
-      // #region agent log
-      fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          location: 'supabase-client.service.ts:12',
-          message: 'Creating Supabase client',
-          data: {
-            url: _environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.supabaseUrl,
-            keyPrefix: _environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.supabaseKey?.substring(0, 20)
-          },
-          timestamp: Date.now(),
-          sessionId: 'debug-session',
-          runId: 'run1',
-          hypothesisId: 'D'
-        })
-      }).catch(() => {});
-      // #endregion
       // Configuration pour éviter les conflits de verrous Navigator
       const options = {
         auth: {
@@ -4252,155 +4343,30 @@ class SupabaseService {
   sendContactMessage(name, email, message) {
     var _this = this;
     return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      // #region agent log
-      fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          location: 'supabase.service.ts:15',
-          message: 'sendContactMessage called',
-          data: {
-            name,
-            email,
-            messageLength: message.length
-          },
-          timestamp: Date.now(),
-          sessionId: 'debug-session',
-          runId: 'run1',
-          hypothesisId: 'A'
-        })
-      }).catch(() => {});
-      // #endregion
       try {
-        const insertData = {
+        const {
+          data,
+          error
+        } = yield _this.supabase.from('contacts').insert([{
           name: name,
           email: email,
           message: message,
           date: new Date().toISOString(),
           read: false
-        };
-        // #region agent log
-        fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            location: 'supabase.service.ts:25',
-            message: 'Before Supabase insert',
-            data: {
-              insertData
-            },
-            timestamp: Date.now(),
-            sessionId: 'debug-session',
-            runId: 'run1',
-            hypothesisId: 'A'
-          })
-        }).catch(() => {});
-        // #endregion
-        const {
-          data,
-          error
-        } = yield _this.supabase.from('contacts').insert([insertData]).select();
-        // #region agent log
-        fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            location: 'supabase.service.ts:33',
-            message: 'After Supabase insert',
-            data: {
-              hasError: !!error,
-              errorCode: error?.code,
-              errorMessage: error?.message,
-              errorDetails: error?.details,
-              hasData: !!data,
-              dataLength: data?.length
-            },
-            timestamp: Date.now(),
-            sessionId: 'debug-session',
-            runId: 'run1',
-            hypothesisId: 'A'
-          })
-        }).catch(() => {});
-        // #endregion
+        }]).select();
         if (error) {
           console.error("Erreur lors de l'envoi du message:", error);
-          // #region agent log
-          fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-              location: 'supabase.service.ts:37',
-              message: 'Supabase error details',
-              data: {
-                code: error.code,
-                message: error.message,
-                details: error.details,
-                hint: error.hint
-              },
-              timestamp: Date.now(),
-              sessionId: 'debug-session',
-              runId: 'run1',
-              hypothesisId: 'A'
-            })
-          }).catch(() => {});
-          // #endregion
           return {
             success: false,
             error: error
           };
         }
-        // #region agent log
-        fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            location: 'supabase.service.ts:44',
-            message: 'Insert successful',
-            data: {
-              id: data?.[0]?.id
-            },
-            timestamp: Date.now(),
-            sessionId: 'debug-session',
-            runId: 'run1',
-            hypothesisId: 'A'
-          })
-        }).catch(() => {});
-        // #endregion
         return {
           success: true,
           id: data?.[0]?.id
         };
       } catch (error) {
         console.error("Erreur lors de l'envoi du message:", error);
-        // #region agent log
-        fetch('http://127.0.0.1:7242/ingest/a1567803-7342-4d14-a623-2d536e9a948a', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            location: 'supabase.service.ts:48',
-            message: 'Exception caught',
-            data: {
-              errorMessage: error instanceof Error ? error.message : String(error)
-            },
-            timestamp: Date.now(),
-            sessionId: 'debug-session',
-            runId: 'run1',
-            hypothesisId: 'A'
-          })
-        }).catch(() => {});
-        // #endregion
         return {
           success: false,
           error: error
