@@ -24,4 +24,8 @@
         <fa-icon [icon]="faShareAlt" class="icon" (click)="share()" alt="share" itemprop="share"></fa-icon>
     </div>
 
+    <div class="child install-container" #installBtn [hidden]="!showInstallButton || isInstalled">
+        <fa-icon [icon]="faDownload" class="icon" (click)="installApp()" alt="install" title="Installer l'application"></fa-icon>
+    </div>
+
 </header>   
