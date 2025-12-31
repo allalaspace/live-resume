@@ -460,6 +460,36 @@ class AppComponent {
       name: "description",
       content: "Hello, I'm a Full-stack Web Developer with 10+ years of experience designing web and mobile projects. Find out more in my live-resume!"
     });
+    // Enregistrer le service worker pour PWA
+    this.registerServiceWorker();
+  }
+  registerServiceWorker() {
+    if ('serviceWorker' in navigator) {
+      // Enregistrer le service worker simple
+      navigator.serviceWorker.register('/service-worker.js').then(registration => {
+        console.log('Service Worker enregistré avec succès:', registration.scope);
+        // Vérifier les mises à jour
+        registration.addEventListener('updatefound', () => {
+          const newWorker = registration.installing;
+          if (newWorker) {
+            newWorker.addEventListener('statechange', () => {
+              if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                // Nouvelle version disponible
+                if (confirm('Une nouvelle version est disponible. Voulez-vous recharger la page ?')) {
+                  window.location.reload();
+                }
+              }
+            });
+          }
+        });
+      }).catch(error => {
+        console.log('Erreur lors de l\'enregistrement du Service Worker:', error);
+      });
+      // Écouter les messages du service worker
+      navigator.serviceWorker.addEventListener('message', event => {
+        console.log('Message du Service Worker:', event.data);
+      });
+    }
   }
   static {
     this.ɵfac = function AppComponent_Factory(t) {
