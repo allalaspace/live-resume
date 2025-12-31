@@ -1,6 +1,8 @@
-import { Component, OnInit, Input, ViewChild, ElementRef, Renderer2, Inject, LOCALE_ID, AfterViewInit } from "@angular/core";
-import { faBars, faShareAlt, faCloudDownloadAlt, IconDefinition } from "@fortawesome/free-solid-svg-icons";
+import { Component, OnInit, OnDestroy, Input, ViewChild, ElementRef, Renderer2, Inject, LOCALE_ID, AfterViewInit } from "@angular/core";
+import { faBars, faShareAlt, faCloudDownloadAlt, faDownload, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { NgNavigatorShareService } from "ng-navigator-share";
+import { PwaService } from "../services/pwa.service";
+import { Subscription } from "rxjs";
 
 @Component({
   selector: "app-header",
@@ -8,7 +10,7 @@ import { NgNavigatorShareService } from "ng-navigator-share";
   styleUrls: ["./header.component.scss", "./header.component.responsivity.scss"]
 })
 
-export class HeaderComponent implements OnInit, AfterViewInit {
+export class HeaderComponent implements OnInit, AfterViewInit, OnDestroy {
     
   private _activeSection: any;
   private _pageXOffset: any;
@@ -18,14 +20,20 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   faBars: IconDefinition;
   faShareAlt: IconDefinition;
   faCloudDownloadAlt: IconDefinition;
+  faDownload: IconDefinition;
+  showInstallButton: boolean = false;
+  isInstalled: boolean = false;
+  private pwaSubscriptions: Subscription[] = [];
 
   @ViewChild("nav") nav: ElementRef;
   @ViewChild("shareBtn") shareBtn: ElementRef;
+  @ViewChild("installBtn") installBtn: ElementRef;
 
   constructor(
     @Inject(LOCALE_ID) public locale: string,
     private renderer: Renderer2,
-    ngNavigatorShareService: NgNavigatorShareService
+    ngNavigatorShareService: NgNavigatorShareService,
+    private pwaService: PwaService
   ) {
     this.ngNavigatorShareService = ngNavigatorShareService;
   }
@@ -62,6 +70,26 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     this.faBars = faBars;
     this.faShareAlt = faShareAlt;
     this.faCloudDownloadAlt = faCloudDownloadAlt;
+    this.faDownload = faDownload;
+
+    // S'abonner aux changements du service PWA
+    this.pwaSubscriptions.push(
+      this.pwaService.deferredPrompt$.subscribe(prompt => {
+        this.showInstallButton = prompt !== null && !this.isInstalled;
+      })
+    );
+
+    this.pwaSubscriptions.push(
+      this.pwaService.isInstalled$.subscribe(installed => {
+        this.isInstalled = installed;
+        this.showInstallButton = false;
+      })
+    );
+  }
+
+  ngOnDestroy(): void {
+    // Nettoyer les abonnements
+    this.pwaSubscriptions.forEach(sub => sub.unsubscribe());
   }
 
   private updateNavigation() {
@@ -108,5 +136,9 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     } catch(error) {
       console.log("You app is not shared, reason: ", error);
     }    
+  }
+
+  async installApp() {
+    await this.pwaService.installApp();
   }
 }

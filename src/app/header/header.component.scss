@@ -137,10 +137,27 @@ header {
         .icon {
             font-size: 25px;
             color: #4e5562;
+        }
+    }
 
-            &:hover {
-                color: #222f5c;
-            }
-        }        
+    .child.install-container {
+        display: block;
+        margin-left: 10px;
+        background-color: #222f5c;
+        padding: 11px;
+        border-radius: 15px;
+        box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: #1a2445;
+            transform: scale(1.05);
+        }
+
+        .icon {
+            font-size: 25px;
+            color: #fff;
+        }
     }
 }
