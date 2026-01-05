@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { SupabaseClientService } from './supabase-client.service';
+import { SupabaseStorageService } from './supabase-storage.service';
 import { IPost, IPostInternationalization } from '../posts/posts-interfaces';
 import { Observable, from, map } from 'rxjs';
 
@@ -7,6 +8,7 @@ interface PostRow {
   id: string;
   thumbnail: string;
   http: string | null;
+  markdown_file: string | null;
   date: string;
   order_index: number;
   created_at: string;
@@ -25,7 +27,10 @@ interface PostInternationalizationRow {
   providedIn: 'root'
 })
 export class PostsService {
-  constructor(private supabaseClientService: SupabaseClientService) {}
+  constructor(
+    private supabaseClientService: SupabaseClientService,
+    private storageService: SupabaseStorageService
+  ) {}
 
   private get supabase() {
     return this.supabaseClientService.client;
@@ -62,8 +67,10 @@ export class PostsService {
             }));
 
           return {
+            id: post.id,
             thumbnail: post.thumbnail,
-            http: post.http || '',
+            http: post.http || undefined,
+            markdownFile: post.markdown_file || undefined,
             date: post.date,
             internationalizations: internationalizations
           } as IPost;
@@ -103,14 +110,46 @@ export class PostsService {
         }));
 
       return {
+        id: post.id,
         thumbnail: post.thumbnail,
-        http: post.http || '',
+        http: post.http || undefined,
+        markdownFile: post.markdown_file || undefined,
         date: post.date,
         internationalizations: internationalizations
       } as IPost;
     } catch (error) {
       console.error("Erreur lors de la récupération du post:", error);
       return null;
+    }
+  }
+
+  /**
+   * Récupère le contenu markdown d'un post depuis Supabase Storage
+   * @param markdownFile Chemin du fichier markdown dans le storage
+   * @returns Promise<string> Contenu markdown du fichier
+   */
+  async getPostMarkdownContent(markdownFile: string): Promise<string> {
+    if (!markdownFile) {
+      throw new Error('Le chemin du fichier markdown est requis');
+    }
+
+    try {
+      console.log(`[PostsService] Récupération du contenu markdown pour: ${markdownFile}`);
+      const content = await this.storageService.downloadMarkdownFile(markdownFile);
+      return content;
+    } catch (error: any) {
+      console.error('[PostsService] Erreur lors de la récupération du contenu markdown:', {
+        error,
+        markdownFile,
+        errorMessage: error?.message || 'Erreur inconnue',
+        errorName: error?.name || 'UnknownError'
+      });
+      // Propager l'erreur avec plus de contexte
+      if (error instanceof Error) {
+        throw error;
+      } else {
+        throw new Error(`Erreur lors de la récupération du contenu markdown: ${String(error)}`);
+      }
     }
   }
 }

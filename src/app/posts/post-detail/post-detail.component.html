@@ -1,0 +1,52 @@
+<div class="post-detail-container">
+  <!-- Bouton retour -->
+  <div class="back-button-container">
+    <button class="back-button" (click)="goBack()" aria-label="Retour aux posts">
+      <span>←</span> Retour aux posts
+    </button>
+  </div>
+
+  <!-- État de chargement -->
+  <div *ngIf="isLoading" class="loading-container">
+    <div class="spinner"></div>
+    <p>Chargement de l'article...</p>
+  </div>
+
+  <!-- État d'erreur -->
+  <div *ngIf="error && !isLoading" class="error-container">
+    <h2>Erreur</h2>
+    <p>{{ error }}</p>
+    <div class="error-actions">
+      <button class="btn-primary" (click)="goBack()">Retour aux posts</button>
+      <button class="btn-secondary" (click)="goHome()">Retour à l'accueil</button>
+    </div>
+  </div>
+
+  <!-- Contenu du post -->
+  <article *ngIf="post && !isLoading && !error" class="post-article" itemscope itemtype="https://schema.org/Article">
+    <!-- En-tête de l'article -->
+    <header class="post-header">
+      <div class="post-thumbnail" *ngIf="post.thumbnail">
+        <img [src]="post.thumbnail" [alt]="getPostTitle()" itemprop="image" />
+      </div>
+      
+      <div class="post-meta">
+        <h1 class="post-title" itemprop="headline">{{ getPostTitle() }}</h1>
+        <div class="post-date" itemprop="datePublished" [attr.content]="post.date">
+          {{ formatDate(post.date) }}
+        </div>
+        <meta itemprop="author" content="Mohamed Ali Boudich" />
+        <meta itemprop="publisher" content="Mohamed Ali Boudich" />
+      </div>
+    </header>
+
+    <!-- Contenu markdown rendu -->
+    <div class="post-content" [innerHTML]="htmlContent" itemprop="articleBody"></div>
+
+    <!-- Footer de l'article -->
+    <footer class="post-footer">
+      <button class="btn-primary" (click)="goBack()">Retour aux posts</button>
+    </footer>
+  </article>
+</div>
+

@@ -51,9 +51,29 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Ignorer les requêtes vers des APIs externes (sauf si nécessaire)
   const url = new URL(event.request.url);
+  
+  // Ignorer les requêtes vers des APIs externes (sauf si nécessaire)
   if (url.origin !== self.location.origin && !url.href.includes('supabase.co')) {
+    return;
+  }
+
+  // Ne pas mettre en cache les routes dynamiques (posts/:id)
+  // Toujours aller chercher ces routes depuis le réseau
+  if (url.pathname.startsWith('/posts/') && url.pathname !== '/posts') {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          return response;
+        })
+        .catch(() => {
+          // En cas d'erreur réseau, retourner index.html pour le routing Angular
+          if (event.request.destination === 'document') {
+            return caches.match('/index.html');
+          }
+          return fetch(event.request);
+        })
+    );
     return;
   }
 
@@ -75,8 +95,10 @@ self.addEventListener('fetch', (event) => {
             // Cloner la réponse pour la mettre en cache
             const responseToCache = response.clone();
 
-            // Mettre en cache les ressources statiques
-            if (event.request.url.match(/\.(js|css|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/)) {
+            // Mettre en cache uniquement les ressources statiques
+            // Ne pas mettre en cache les pages HTML dynamiques
+            if (event.request.url.match(/\.(js|css|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/) &&
+                !event.request.destination === 'document') {
               caches.open(RUNTIME_CACHE)
                 .then((cache) => {
                   cache.put(event.request, responseToCache);

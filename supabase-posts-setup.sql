@@ -64,3 +64,5 @@ CREATE POLICY "Allow public read post_internationalizations" ON post_internation
 --   TO authenticated
 --   USING (true);
 
+-- Ajouter le champ markdown_file pour référencer les fichiers markdown dans Supabase Storage
+ALTER TABLE posts ADD COLUMN IF NOT EXISTS markdown_file TEXT;
