@@ -3,6 +3,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { ResumeComponent } from "./resume/resume.component";
 import { ContactFormComponent } from "./components/contact-form/contact-form.component";
 import { FirebaseContactComponent } from "./contact/firebase-contact/firebase-contact.component";
+import { PostDetailComponent } from "./posts/post-detail/post-detail.component";
 
 // Any URL apart from the root domain is going to be rendered as "page-not-found".
 const routes: Routes = [
@@ -10,6 +11,8 @@ const routes: Routes = [
   { path: "about", redirectTo: "/#about"},
   { path: "experience", redirectTo: "/#experience"},
   { path: "experiences", redirectTo: "/#experience"},
+  // Route spécifique avant la route générique
+  { path: "posts/:id", component: PostDetailComponent},
   { path: "posts", redirectTo: "/#posts"},
   { path: "contact", component: FirebaseContactComponent},
   { path: "contact-form", component: ContactFormComponent},
@@ -30,7 +33,8 @@ const routes: Routes = [
       // the fragment scrolling is powered by Navigation Events. As such, we
       // have to tell the Router to re-trigger the Navigation Events even if we
       // are navigating to the same URL.
-      onSameUrlNavigation: "reload"
+      // Changé en "ignore" pour éviter les boucles infinies
+      onSameUrlNavigation: "ignore"
     }
   )],
   exports: [ RouterModule ]
