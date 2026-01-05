@@ -1,7 +1,7 @@
 # Live Resume  
+[![Deploy to GitHub Pages](https://github.com/allalaspace/live-resume/actions/workflows/deploy.yml/badge.svg)](https://github.com/allalaspace/live-resume/actions/workflows/deploy.yml)
 
 Un CV interactif développé avec Angular et disponible en plusieurs langues.
-[![Deploy to GitHub Pages](https://github.com/allalaspace/live-resume/actions/workflows/deploy.yml/badge.svg)](https://github.com/allalaspace/live-resume/actions/workflows/deploy.yml)
 ## Fonctionnalités
 
 - CV interactif à page unique
