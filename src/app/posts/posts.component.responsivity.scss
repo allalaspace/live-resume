@@ -1,101 +1,26 @@
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 960px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .container h1 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
 
     .container {
-
         h1 {
-            font-size: 38px;
+            font-size: 32px;
         }
-    
-        p.synopsis {
+
+        p.synopsis,
+        p.empty {
             font-size: 16px;
         }
-
-        .top-container {
-    
-            .navigation {
-                font-size: 28px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 550px) {
-
-    .container {
-
-        h1 {
-            font-size: 34px;
-        }
-    
-        p.synopsis {
-            font-size: 14px;
-        }
-
-        .top-container {
-    
-            .navigation {
-                font-size: 24px;
-
-                span {
-                    margin: 5px;
-                }
-            }
-        }
-
-        .middle-container {
-            padding-bottom: 1em;
-        }
-    }
-}
-
-@media screen and (max-width: 450px) {
-
-    .container {
-
-        h1 {
-            margin: 0.65em 0;
-        }
-    
-        p.synopsis {
-            margin-top: 0;
-        }
-
-        .top-container {
-    
-            .navigation {
-                font-size: 24px;
-
-                span {
-                    margin: 5px;
-                }
-
-                .divider {
-                    display: none;
-                }
-                
-                .molding {
-                    border: 3px solid #414c73;
-                    display: inline-block;
-                    padding: 0 5px 5px 5px;
-                    border-radius: 10px;
-                    
-                    .icon {
-                        font-size: 16px;
-                    }
-                
-                    span {
-                        margin: 5px;
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 360px) {
-
-    .container p.synopsis {
-        display: none;
     }
 }

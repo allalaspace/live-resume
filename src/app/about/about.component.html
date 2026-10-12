@@ -12,6 +12,9 @@
             <h1 i18n="nav@@aboutMe">About me</h1>
             <h2><span itemprop="name">{{ name }}</span></h2>
             <p class="text" internationalization [data]="aboutData?.internationalizations" property='description' itemprop="summary">Loading...</p>
+            <ul class="skills" *ngIf="skills.length">
+                <li *ngFor="let skill of skills">{{ skill }}</li>
+            </ul>
             <div class="hobbies">
                 <h3>Hobbies</h3>
                 <fa-icon *ngFor="let hobby of aboutData?.hobbies" [icon]="['fas', hobby.icon]" class="icon" title="{{ hobby.title }}" itemprop="hobby"></fa-icon>
