@@ -1,42 +1,50 @@
-name: Deploy to GitHub Pages
+name: CI
 
 on:
+  pull_request:
+    branches:
+      - master
   push:
     branches:
-      - master  # ou main, selon votre branche principale
+      - master
 
 jobs:
-  build-and-deploy:
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-        
+        uses: actions/checkout@v4
+
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          
+          node-version: "18"
+
       - name: Install dependencies
         run: npm install --force
-        
-      - name: Debug - Check paths
+
+      - name: Create environment file
         run: |
-          pwd
-          find . -name "environment*" -type f
           mkdir -p src/environments
-          echo 'export const environment = { production: true, supabaseUrl: "https://auoiubngdazzhyryvrzk.supabase.co", supabaseKey: "sb_publishable_e10A1nnnYID8s0JYvz6Z6A_IBkdGDAO" };' > src/environments/environment.ts
-          ls -la src/environments/
-        
+          cat > src/environments/environment.ts << 'EOF'
+          export const environment = {
+            production: true,
+            supabaseUrl: "https://auoiubngdazzhyryvrzk.supabase.co",
+            supabaseKey: "sb_publishable_e10A1nnnYID8s0JYvz6Z6A_IBkdGDAO"
+          };
+          EOF
+
       - name: Build
         run: |
           npm install -g @angular/cli
           ng build --configuration=fr --base-href="https://allalaspace.github.io/live-resume/"
           cp dist/live-resume/fr/index.html dist/live-resume/fr/404.html
-        
+
       - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           branch: gh-pages
           folder: dist/live-resume/fr
-          clean: true 
+          clean: true

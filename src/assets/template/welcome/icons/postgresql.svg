@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g fill="none" stroke="#1c2b4a" stroke-width="1.8" opacity="0.6">
+    <ellipse cx="25" cy="14" rx="12" ry="4.5"/>
+    <path d="M13 14v16c0 2.6 5.4 4.8 12 4.8s12-2.2 12-4.8V14"/>
+    <path d="M13 20.5c0 2.6 5.4 4.8 12 4.8s12-2.2 12-4.8"/>
+  </g>
+  <text x="25" y="40" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#1c2b4a" opacity="0.7">PG</text>
+</svg>

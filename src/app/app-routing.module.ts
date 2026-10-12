@@ -3,7 +3,6 @@ import { Routes, RouterModule } from "@angular/router";
 import { ResumeComponent } from "./resume/resume.component";
 import { ContactFormComponent } from "./components/contact-form/contact-form.component";
 import { FirebaseContactComponent } from "./contact/firebase-contact/firebase-contact.component";
-import { PostDetailComponent } from "./posts/post-detail/post-detail.component";
 
 // Any URL apart from the root domain is going to be rendered as "page-not-found".
 const routes: Routes = [
@@ -11,9 +10,6 @@ const routes: Routes = [
   { path: "about", redirectTo: "/#about"},
   { path: "experience", redirectTo: "/#experience"},
   { path: "experiences", redirectTo: "/#experience"},
-  // Route spécifique avant la route générique
-  { path: "posts/:id", component: PostDetailComponent},
-  { path: "posts", redirectTo: "/#posts"},
   { path: "contact", component: FirebaseContactComponent},
   { path: "contact-form", component: ContactFormComponent},
   { path: "**", redirectTo: "/page-not-found" }

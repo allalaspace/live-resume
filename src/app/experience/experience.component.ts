@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, Renderer2, ViewChild } from "@angular/core";
+import { Component, OnInit, ElementRef, Renderer2, ViewChild, Inject, LOCALE_ID } from "@angular/core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { IExperience } from "./experience-interfaces";
@@ -35,7 +35,8 @@ export class ExperienceComponent implements OnInit {
     private dataService: DataService,
     private sortService: SorterService,
     private renderer: Renderer2,
-    private library: FaIconLibrary
+    private library: FaIconLibrary,
+    @Inject(LOCALE_ID) private locale: string
   ) {
     library.addIconPacks(fas, fab);
   }
@@ -124,6 +125,11 @@ export class ExperienceComponent implements OnInit {
     } else if (targetPos < this.currentPosition) {
       this.onClickPrevious(targetPos);
     }
+  }
+
+  hasCityAndCountry(exp: IExperience): boolean {
+    const localized = exp.internationalizations?.find(item => item.language === (this.locale || "en"));
+    return !!(localized?.city && localized?.country);
   }
 
   private retrieveBackgroundUrl(): string {
