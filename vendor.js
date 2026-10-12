@@ -12462,7 +12462,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ GoTrueAdminApi)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tslib */ 4398);
 /* harmony import */ var _lib_fetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/fetch */ 7694);
 /* harmony import */ var _lib_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/helpers */ 9379);
@@ -12516,7 +12516,7 @@ class GoTrueAdminApi {
    */
   signOut(_x) {
     var _this = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (jwt, scope = _lib_types__WEBPACK_IMPORTED_MODULE_3__.SIGN_OUT_SCOPES[0]) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (jwt, scope = _lib_types__WEBPACK_IMPORTED_MODULE_3__.SIGN_OUT_SCOPES[0]) {
       if (_lib_types__WEBPACK_IMPORTED_MODULE_3__.SIGN_OUT_SCOPES.indexOf(scope) < 0) {
         throw new Error(`@supabase/auth-js: Parameter scope must be one of ${_lib_types__WEBPACK_IMPORTED_MODULE_3__.SIGN_OUT_SCOPES.join(', ')}`);
       }
@@ -12548,7 +12548,7 @@ class GoTrueAdminApi {
    */
   inviteUserByEmail(_x2) {
     var _this2 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (email, options = {}) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (email, options = {}) {
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this2.fetch, 'POST', `${_this2.url}/invite`, {
           body: {
@@ -12581,7 +12581,7 @@ class GoTrueAdminApi {
    */
   generateLink(params) {
     var _this3 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const {
             options
@@ -12620,7 +12620,7 @@ class GoTrueAdminApi {
    */
   createUser(attributes) {
     var _this4 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this4.fetch, 'POST', `${_this4.url}/admin/users`, {
           body: attributes,
@@ -12648,7 +12648,7 @@ class GoTrueAdminApi {
    */
   listUsers(params) {
     var _this5 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c, _d, _e, _f, _g;
       try {
         const pagination = {
@@ -12703,7 +12703,7 @@ class GoTrueAdminApi {
    */
   getUserById(uid) {
     var _this6 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.validateUUID)(uid);
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this6.fetch, 'GET', `${_this6.url}/admin/users/${uid}`, {
@@ -12732,7 +12732,7 @@ class GoTrueAdminApi {
    */
   updateUserById(uid, attributes) {
     var _this7 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.validateUUID)(uid);
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this7.fetch, 'PUT', `${_this7.url}/admin/users/${uid}`, {
@@ -12764,7 +12764,7 @@ class GoTrueAdminApi {
    */
   deleteUser(_x3) {
     var _this8 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (id, shouldSoftDelete = false) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (id, shouldSoftDelete = false) {
       (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.validateUUID)(id);
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this8.fetch, 'DELETE', `${_this8.url}/admin/users/${id}`, {
@@ -12789,7 +12789,7 @@ class GoTrueAdminApi {
   }
   _listFactors(params) {
     var _this9 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.validateUUID)(params.userId);
       try {
         const {
@@ -12823,7 +12823,7 @@ class GoTrueAdminApi {
   }
   _deleteFactor(params) {
     var _this0 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.validateUUID)(params.userId);
       (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.validateUUID)(params.id);
       try {
@@ -12853,7 +12853,7 @@ class GoTrueAdminApi {
    */
   _listOAuthClients(params) {
     var _this1 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c, _d, _e, _f, _g;
       try {
         const pagination = {
@@ -12907,7 +12907,7 @@ class GoTrueAdminApi {
    */
   _createOAuthClient(params) {
     var _this10 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this10.fetch, 'POST', `${_this10.url}/admin/oauth/clients`, {
           body: params,
@@ -12938,7 +12938,7 @@ class GoTrueAdminApi {
    */
   _getOAuthClient(clientId) {
     var _this11 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this11.fetch, 'GET', `${_this11.url}/admin/oauth/clients/${clientId}`, {
           headers: _this11.headers,
@@ -12968,7 +12968,7 @@ class GoTrueAdminApi {
    */
   _updateOAuthClient(clientId, params) {
     var _this12 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this12.fetch, 'PUT', `${_this12.url}/admin/oauth/clients/${clientId}`, {
           body: params,
@@ -12999,7 +12999,7 @@ class GoTrueAdminApi {
    */
   _deleteOAuthClient(clientId) {
     var _this13 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this13.fetch, 'DELETE', `${_this13.url}/admin/oauth/clients/${clientId}`, {
           headers: _this13.headers,
@@ -13028,7 +13028,7 @@ class GoTrueAdminApi {
    */
   _regenerateOAuthClientSecret(clientId) {
     var _this14 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this14.fetch, 'POST', `${_this14.url}/admin/oauth/clients/${clientId}/regenerate_secret`, {
           headers: _this14.headers,
@@ -13064,7 +13064,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _GoTrueAdminApi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GoTrueAdminApi */ 8299);
 /* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/constants */ 3171);
 /* harmony import */ var _lib_errors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/errors */ 5127);
@@ -13115,7 +13115,7 @@ function lockNoOp(_x, _x2, _x3) {
  * JWTs.
  */
 function _lockNoOp() {
-  _lockNoOp = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (name, acquireTimeout, fn) {
+  _lockNoOp = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (name, acquireTimeout, fn) {
     return yield fn();
   });
   return _lockNoOp.apply(this, arguments);
@@ -13273,7 +13273,7 @@ class GoTrueClient {
         console.error('Failed to create a new BroadcastChannel, multi-tab state changes will not be available', e);
       }
       (_c = this.broadcastChannel) === null || _c === void 0 ? void 0 : _c.addEventListener('message', /*#__PURE__*/function () {
-        var _ref = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (event) {
+        var _ref = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (event) {
           _this._debug('received broadcast notification from other tab or client', event);
           yield _this._notifyAllSubscribers(event.data.event, event.data.session, false); // broadcast = false so we don't get an endless loop of messages
         });
@@ -13317,12 +13317,12 @@ class GoTrueClient {
    */
   initialize() {
     var _this2 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (_this2.initializePromise) {
         return yield _this2.initializePromise;
       }
-      _this2.initializePromise = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-        return yield _this2._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      _this2.initializePromise = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        return yield _this2._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           return yield _this2._initialize();
         }));
       })();
@@ -13337,7 +13337,7 @@ class GoTrueClient {
    */
   _initialize() {
     var _this3 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a;
       try {
         let params = {};
@@ -13384,7 +13384,7 @@ class GoTrueClient {
           } = data;
           _this3._debug('#_initialize()', 'detected session in URL', session, 'redirect type', redirectType);
           yield _this3._saveSession(session);
-          setTimeout(/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+          setTimeout(/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
             if (redirectType === 'recovery') {
               yield _this3._notifyAllSubscribers('PASSWORD_RECOVERY', session);
             } else {
@@ -13422,7 +13422,7 @@ class GoTrueClient {
    */
   signInAnonymously(credentials) {
     var _this4 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c;
       try {
         const res = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_4__._request)(_this4.fetch, 'POST', `${_this4.url}/signup`, {
@@ -13487,7 +13487,7 @@ class GoTrueClient {
    */
   signUp(credentials) {
     var _this5 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c;
       try {
         let res;
@@ -13592,7 +13592,7 @@ class GoTrueClient {
    */
   signInWithPassword(credentials) {
     var _this6 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         let res;
         if ('email' in credentials) {
@@ -13687,7 +13687,7 @@ class GoTrueClient {
    */
   signInWithOAuth(credentials) {
     var _this7 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c, _d;
       return yield _this7._handleProviderSignIn(credentials.provider, {
         redirectTo: (_a = credentials.options) === null || _a === void 0 ? void 0 : _a.redirectTo,
@@ -13702,9 +13702,9 @@ class GoTrueClient {
    */
   exchangeCodeForSession(authCode) {
     var _this8 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this8.initializePromise;
-      return _this8._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return _this8._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return _this8._exchangeCodeForSession(authCode);
       }));
     })();
@@ -13718,7 +13718,7 @@ class GoTrueClient {
    */
   signInWithWeb3(credentials) {
     var _this9 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const {
         chain
       } = credentials;
@@ -13734,7 +13734,7 @@ class GoTrueClient {
   }
   signInWithEthereum(credentials) {
     var _this0 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l;
       // TODO: flatten type
       let message;
@@ -13857,7 +13857,7 @@ class GoTrueClient {
   }
   signInWithSolana(credentials) {
     var _this1 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m;
       let message;
       let signature;
@@ -13979,7 +13979,7 @@ class GoTrueClient {
   }
   _exchangeCodeForSession(authCode) {
     var _this10 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const storageItem = yield (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_5__.getItemAsync)(_this10.storage, `${_this10.storageKey}-code-verifier`);
       const [codeVerifier, redirectType] = (storageItem !== null && storageItem !== void 0 ? storageItem : '').split('/');
       try {
@@ -14044,7 +14044,7 @@ class GoTrueClient {
    */
   signInWithIdToken(credentials) {
     var _this11 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const {
           options,
@@ -14129,7 +14129,7 @@ class GoTrueClient {
    */
   signInWithOtp(credentials) {
     var _this12 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c, _d, _e;
       try {
         if ('email' in credentials) {
@@ -14217,7 +14217,7 @@ class GoTrueClient {
    */
   verifyOtp(params) {
     var _this13 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b;
       try {
         let redirectTo = undefined;
@@ -14289,7 +14289,7 @@ class GoTrueClient {
    */
   signInWithSSO(params) {
     var _this14 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c, _d, _e;
       try {
         let codeChallenge = null;
@@ -14340,19 +14340,19 @@ class GoTrueClient {
    */
   reauthenticate() {
     var _this15 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this15.initializePromise;
-      return yield _this15._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return yield _this15._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return yield _this15._reauthenticate();
       }));
     })();
   }
   _reauthenticate() {
     var _this16 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this16._useSession(/*#__PURE__*/function () {
-          var _ref7 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref7 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             const {
               data: {
                 session
@@ -14398,7 +14398,7 @@ class GoTrueClient {
    */
   resend(credentials) {
     var _this17 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const endpoint = `${_this17.url}/resend`;
         if ('email' in credentials) {
@@ -14483,11 +14483,11 @@ class GoTrueClient {
    */
   getSession() {
     var _this18 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this18.initializePromise;
-      const result = yield _this18._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      const result = yield _this18._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return _this18._useSession(/*#__PURE__*/function () {
-          var _ref9 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref9 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             return result;
           });
           return function (_x6) {
@@ -14503,16 +14503,16 @@ class GoTrueClient {
    */
   _acquireLock(acquireTimeout, fn) {
     var _this19 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this19._debug('#_acquireLock', 'begin', acquireTimeout);
       try {
         if (_this19.lockAcquired) {
           const last = _this19.pendingInLock.length ? _this19.pendingInLock[_this19.pendingInLock.length - 1] : Promise.resolve();
-          const result = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+          const result = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
             yield last;
             return yield fn();
           })();
-          _this19.pendingInLock.push((0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+          _this19.pendingInLock.push((0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
             try {
               yield result;
             } catch (e) {
@@ -14521,12 +14521,12 @@ class GoTrueClient {
           })());
           return result;
         }
-        return yield _this19.lock(`lock:${_this19.storageKey}`, acquireTimeout, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        return yield _this19.lock(`lock:${_this19.storageKey}`, acquireTimeout, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           _this19._debug('#_acquireLock', 'lock acquired for storage key', _this19.storageKey);
           try {
             _this19.lockAcquired = true;
             const result = fn();
-            _this19.pendingInLock.push((0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+            _this19.pendingInLock.push((0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
               try {
                 yield result;
               } catch (e) {
@@ -14559,7 +14559,7 @@ class GoTrueClient {
    */
   _useSession(fn) {
     var _this20 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this20._debug('#_useSession', 'begin');
       try {
         // the use of __loadSession here is the only correct use of the function!
@@ -14577,7 +14577,7 @@ class GoTrueClient {
    */
   __loadSession() {
     var _this21 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this21._debug('#__loadSession()', 'begin');
       if (!_this21.lockAcquired) {
         _this21._debug('#__loadSession()', 'used outside of an acquired lock!', new Error().stack);
@@ -14669,12 +14669,12 @@ class GoTrueClient {
    */
   getUser(jwt) {
     var _this22 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (jwt) {
         return yield _this22._getUser(jwt);
       }
       yield _this22.initializePromise;
-      const result = yield _this22._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      const result = yield _this22._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return yield _this22._getUser();
       }));
       if (result.data.user) {
@@ -14685,7 +14685,7 @@ class GoTrueClient {
   }
   _getUser(jwt) {
     var _this23 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         if (jwt) {
           return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_4__._request)(_this23.fetch, 'GET', `${_this23.url}/user`, {
@@ -14695,7 +14695,7 @@ class GoTrueClient {
           });
         }
         return yield _this23._useSession(/*#__PURE__*/function () {
-          var _ref13 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref13 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             var _a, _b, _c;
             const {
               data,
@@ -14747,19 +14747,19 @@ class GoTrueClient {
    */
   updateUser(_x8) {
     var _this24 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (attributes, options = {}) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (attributes, options = {}) {
       yield _this24.initializePromise;
-      return yield _this24._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return yield _this24._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return yield _this24._updateUser(attributes, options);
       }));
     }).apply(this, arguments);
   }
   _updateUser(_x9) {
     var _this25 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (attributes, options = {}) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (attributes, options = {}) {
       try {
         return yield _this25._useSession(/*#__PURE__*/function () {
-          var _ref15 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref15 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             const {
               data: sessionData,
               error: sessionError
@@ -14828,16 +14828,16 @@ class GoTrueClient {
    */
   setSession(currentSession) {
     var _this26 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this26.initializePromise;
-      return yield _this26._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return yield _this26._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return yield _this26._setSession(currentSession);
       }));
     })();
   }
   _setSession(currentSession) {
     var _this27 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         if (!currentSession.access_token || !currentSession.refresh_token) {
           throw new _lib_errors__WEBPACK_IMPORTED_MODULE_3__.AuthSessionMissingError();
@@ -14925,19 +14925,19 @@ class GoTrueClient {
    */
   refreshSession(currentSession) {
     var _this28 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this28.initializePromise;
-      return yield _this28._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return yield _this28._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return yield _this28._refreshSession(currentSession);
       }));
     })();
   }
   _refreshSession(currentSession) {
     var _this29 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this29._useSession(/*#__PURE__*/function () {
-          var _ref18 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref18 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             var _a;
             if (!currentSession) {
               const {
@@ -15005,7 +15005,7 @@ class GoTrueClient {
    */
   _getSessionFromURL(params, callbackUrlType) {
     var _this30 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         if (!(0,_lib_helpers__WEBPACK_IMPORTED_MODULE_5__.isBrowser)()) throw new _lib_errors__WEBPACK_IMPORTED_MODULE_3__.AuthImplicitGrantRedirectError('No browser detected.');
         // If there's an error in the URL, it doesn't matter what flow it is, we just return the error.
@@ -15137,7 +15137,7 @@ class GoTrueClient {
    */
   _isPKCECallback(params) {
     var _this31 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const currentStorageContent = yield (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_5__.getItemAsync)(_this31.storage, `${_this31.storageKey}-code-verifier`);
       return !!(params.code && currentStorageContent);
     })();
@@ -15152,24 +15152,24 @@ class GoTrueClient {
    */
   signOut() {
     var _this32 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {
       scope: 'global'
     }) {
       yield _this32.initializePromise;
-      return yield _this32._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return yield _this32._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return yield _this32._signOut(options);
       }));
     }).apply(this, arguments);
   }
   _signOut() {
     var _this33 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
       scope
     } = {
       scope: 'global'
     }) {
       return yield _this33._useSession(/*#__PURE__*/function () {
-        var _ref20 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+        var _ref20 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
           var _a;
           const {
             data,
@@ -15222,9 +15222,9 @@ class GoTrueClient {
     };
     this._debug('#onAuthStateChange()', 'registered callback with id', id);
     this.stateChangeEmitters.set(id, subscription);
-    (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this34.initializePromise;
-      yield _this34._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      yield _this34._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         _this34._emitInitialSession(id);
       }));
     })();
@@ -15236,9 +15236,9 @@ class GoTrueClient {
   }
   _emitInitialSession(id) {
     var _this35 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield _this35._useSession(/*#__PURE__*/function () {
-        var _ref23 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+        var _ref23 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
           var _a, _b;
           try {
             const {
@@ -15271,7 +15271,7 @@ class GoTrueClient {
    */
   resetPasswordForEmail(_x12) {
     var _this36 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (email, options = {}) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (email, options = {}) {
       let codeChallenge = null;
       let codeChallengeMethod = null;
       if (_this36.flowType === 'pkce') {
@@ -15309,7 +15309,7 @@ class GoTrueClient {
    */
   getUserIdentities() {
     var _this37 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a;
       try {
         const {
@@ -15336,7 +15336,7 @@ class GoTrueClient {
   }
   linkIdentity(credentials) {
     var _this38 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if ('token' in credentials) {
         return _this38.linkIdentityIdToken(credentials);
       }
@@ -15345,14 +15345,14 @@ class GoTrueClient {
   }
   linkIdentityOAuth(credentials) {
     var _this39 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a;
       try {
         const {
           data,
           error
         } = yield _this39._useSession(/*#__PURE__*/function () {
-          var _ref24 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref24 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             var _a, _b, _c, _d, _e;
             const {
               data,
@@ -15401,9 +15401,9 @@ class GoTrueClient {
   }
   linkIdentityIdToken(credentials) {
     var _this40 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield _this40._useSession(/*#__PURE__*/function () {
-        var _ref25 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+        var _ref25 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
           var _a;
           try {
             const {
@@ -15489,10 +15489,10 @@ class GoTrueClient {
    */
   unlinkIdentity(identity) {
     var _this41 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this41._useSession(/*#__PURE__*/function () {
-          var _ref26 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref26 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             var _a, _b;
             const {
               data,
@@ -15527,14 +15527,14 @@ class GoTrueClient {
    */
   _refreshAccessToken(refreshToken) {
     var _this42 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const debugName = `#_refreshAccessToken(${refreshToken.substring(0, 5)}...)`;
       _this42._debug(debugName, 'begin');
       try {
         const startedAt = Date.now();
         // will attempt to refresh the token with exponential backoff
         return yield (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_5__.retryable)(/*#__PURE__*/function () {
-          var _ref27 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (attempt) {
+          var _ref27 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (attempt) {
             if (attempt > 0) {
               yield (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_5__.sleep)(200 * Math.pow(2, attempt - 1)); // 200, 400, 800, ...
             }
@@ -15579,7 +15579,7 @@ class GoTrueClient {
   }
   _handleProviderSignIn(provider, options) {
     var _this43 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const url = yield _this43._getUrlForProvider(`${_this43.url}/authorize`, provider, {
         redirectTo: options.redirectTo,
         scopes: options.scopes,
@@ -15605,7 +15605,7 @@ class GoTrueClient {
    */
   _recoverAndRefresh() {
     var _this44 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b;
       const debugName = '#_recoverAndRefresh()';
       _this44._debug(debugName, 'begin');
@@ -15697,7 +15697,7 @@ class GoTrueClient {
   }
   _callRefreshToken(refreshToken) {
     var _this45 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b;
       if (!refreshToken) {
         throw new _lib_errors__WEBPACK_IMPORTED_MODULE_3__.AuthSessionMissingError();
@@ -15747,7 +15747,7 @@ class GoTrueClient {
   }
   _notifyAllSubscribers(_x17, _x18) {
     var _this46 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (event, session, broadcast = true) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (event, session, broadcast = true) {
       const debugName = `#_notifyAllSubscribers(${event})`;
       _this46._debug(debugName, 'begin', session, `broadcast = ${broadcast}`);
       try {
@@ -15759,7 +15759,7 @@ class GoTrueClient {
         }
         const errors = [];
         const promises = Array.from(_this46.stateChangeEmitters.values()).map(/*#__PURE__*/function () {
-          var _ref28 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (x) {
+          var _ref28 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (x) {
             try {
               yield x.callback(event, session);
             } catch (e) {
@@ -15788,7 +15788,7 @@ class GoTrueClient {
    */
   _saveSession(session) {
     var _this47 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this47._debug('#_saveSession()', session);
       // _saveSession is always called whenever a new session has been acquired
       // so we can safely suppress the warning returned by future getSession calls
@@ -15826,7 +15826,7 @@ class GoTrueClient {
   }
   _removeSession() {
     var _this48 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this48._debug('#_removeSession()');
       _this48.suppressGetSessionWarning = false;
       yield (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_5__.removeItemAsync)(_this48.storage, _this48.storageKey);
@@ -15862,7 +15862,7 @@ class GoTrueClient {
    */
   _startAutoRefresh() {
     var _this49 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this49._stopAutoRefresh();
       _this49._debug('#_startAutoRefresh()');
       const ticker = setInterval(() => _this49._autoRefreshTokenTick(), _lib_constants__WEBPACK_IMPORTED_MODULE_2__.AUTO_REFRESH_TICK_DURATION_MS);
@@ -15885,7 +15885,7 @@ class GoTrueClient {
       // run the tick immediately, but in the next pass of the event loop so that
       // #_initialize can be allowed to complete without recursively waiting on
       // itself
-      setTimeout(/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      setTimeout(/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         yield _this49.initializePromise;
         yield _this49._autoRefreshTokenTick();
       }), 0);
@@ -15897,7 +15897,7 @@ class GoTrueClient {
    */
   _stopAutoRefresh() {
     var _this50 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this50._debug('#_stopAutoRefresh()');
       const ticker = _this50.autoRefreshTicker;
       _this50.autoRefreshTicker = null;
@@ -15930,7 +15930,7 @@ class GoTrueClient {
    */
   startAutoRefresh() {
     var _this51 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this51._removeVisibilityChangedCallback();
       yield _this51._startAutoRefresh();
     })();
@@ -15945,7 +15945,7 @@ class GoTrueClient {
    */
   stopAutoRefresh() {
     var _this52 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this52._removeVisibilityChangedCallback();
       yield _this52._stopAutoRefresh();
     })();
@@ -15955,15 +15955,15 @@ class GoTrueClient {
    */
   _autoRefreshTokenTick() {
     var _this53 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this53._debug('#_autoRefreshTokenTick()', 'begin');
       try {
-        yield _this53._acquireLock(0, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        yield _this53._acquireLock(0, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           try {
             const now = Date.now();
             try {
               return yield _this53._useSession(/*#__PURE__*/function () {
-                var _ref31 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+                var _ref31 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
                   const {
                     data: {
                       session
@@ -16007,7 +16007,7 @@ class GoTrueClient {
    */
   _handleVisibilityChange() {
     var _this54 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this54._debug('#_handleVisibilityChange()');
       if (!(0,_lib_helpers__WEBPACK_IMPORTED_MODULE_5__.isBrowser)() || !(window === null || window === void 0 ? void 0 : window.addEventListener)) {
         if (_this54.autoRefreshToken) {
@@ -16017,7 +16017,7 @@ class GoTrueClient {
         return false;
       }
       try {
-        _this54.visibilityChangedCallback = /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        _this54.visibilityChangedCallback = /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           return yield _this54._onVisibilityChanged(false);
         });
         window === null || window === void 0 ? void 0 : window.addEventListener('visibilitychange', _this54.visibilityChangedCallback);
@@ -16034,7 +16034,7 @@ class GoTrueClient {
    */
   _onVisibilityChanged(calledFromInitialize) {
     var _this55 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const methodName = `#_onVisibilityChanged(${calledFromInitialize})`;
       _this55._debug(methodName, 'visibilityState', document.visibilityState);
       if (document.visibilityState === 'visible') {
@@ -16049,7 +16049,7 @@ class GoTrueClient {
           // should be recovered immediately... but to do that we need to acquire
           // the lock first asynchronously
           yield _this55.initializePromise;
-          yield _this55._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+          yield _this55._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
             if (document.visibilityState !== 'visible') {
               _this55._debug(methodName, 'acquired the lock to recover the session, but the browser visibilityState is no longer visible, aborting');
               // visibility has changed while waiting for the lock, abort
@@ -16074,7 +16074,7 @@ class GoTrueClient {
    */
   _getUrlForProvider(url, provider, options) {
     var _this56 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const urlParams = [`provider=${encodeURIComponent(provider)}`];
       if (options === null || options === void 0 ? void 0 : options.redirectTo) {
         urlParams.push(`redirect_to=${encodeURIComponent(options.redirectTo)}`);
@@ -16102,10 +16102,10 @@ class GoTrueClient {
   }
   _unenroll(params) {
     var _this57 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this57._useSession(/*#__PURE__*/function () {
-          var _ref34 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref34 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             var _a;
             const {
               data: sessionData,
@@ -16139,10 +16139,10 @@ class GoTrueClient {
   }
   _enroll(params) {
     var _this58 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this58._useSession(/*#__PURE__*/function () {
-          var _ref35 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref35 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             var _a, _b;
             const {
               data: sessionData,
@@ -16201,11 +16201,11 @@ class GoTrueClient {
   }
   _verify(params) {
     var _this59 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      return _this59._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return _this59._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         try {
           return yield _this59._useSession(/*#__PURE__*/function () {
-            var _ref37 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+            var _ref37 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
               var _a;
               const {
                 data: sessionData,
@@ -16267,11 +16267,11 @@ class GoTrueClient {
   }
   _challenge(params) {
     var _this60 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      return _this60._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return _this60._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         try {
           return yield _this60._useSession(/*#__PURE__*/function () {
-            var _ref39 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+            var _ref39 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
               var _a;
               const {
                 data: sessionData,
@@ -16346,7 +16346,7 @@ class GoTrueClient {
    */
   _challengeAndVerify(params) {
     var _this61 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // both _challenge and _verify independently acquire the lock, so no need
       // to acquire it here
       const {
@@ -16373,7 +16373,7 @@ class GoTrueClient {
    */
   _listFactors() {
     var _this62 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a;
       // use #getUser instead of #_getUser as the former acquires a lock
       const {
@@ -16413,7 +16413,7 @@ class GoTrueClient {
    */
   _getAuthenticatorAssuranceLevel() {
     var _this63 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b;
       const {
         data: {
@@ -16470,10 +16470,10 @@ class GoTrueClient {
    */
   _getAuthorizationDetails(authorizationId) {
     var _this64 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this64._useSession(/*#__PURE__*/function () {
-          var _ref40 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref40 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             const {
               data: {
                 session
@@ -16522,10 +16522,10 @@ class GoTrueClient {
    */
   _approveAuthorization(authorizationId, options) {
     var _this65 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this65._useSession(/*#__PURE__*/function () {
-          var _ref41 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref41 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             const {
               data: {
                 session
@@ -16584,10 +16584,10 @@ class GoTrueClient {
    */
   _denyAuthorization(authorizationId, options) {
     var _this66 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this66._useSession(/*#__PURE__*/function () {
-          var _ref42 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref42 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             const {
               data: {
                 session
@@ -16646,10 +16646,10 @@ class GoTrueClient {
    */
   _listOAuthGrants() {
     var _this67 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this67._useSession(/*#__PURE__*/function () {
-          var _ref43 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref43 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             const {
               data: {
                 session
@@ -16698,10 +16698,10 @@ class GoTrueClient {
    */
   _revokeOAuthGrant(options) {
     var _this68 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this68._useSession(/*#__PURE__*/function () {
-          var _ref44 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref44 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             const {
               data: {
                 session
@@ -16750,7 +16750,7 @@ class GoTrueClient {
   }
   fetchJwk(_x30) {
     var _this69 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (kid, jwks = {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (kid, jwks = {
       keys: []
     }) {
       // try fetching from the supplied jwks
@@ -16806,7 +16806,7 @@ class GoTrueClient {
    */
   getClaims(_x31) {
     var _this70 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (jwt, options = {}) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (jwt, options = {}) {
       try {
         let token = jwt;
         if (!token) {
@@ -17591,7 +17591,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   _userResponse: () => (/* binding */ _userResponse),
 /* harmony export */   handleError: () => (/* binding */ handleError)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ 4398);
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants */ 3171);
 /* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./helpers */ 9379);
@@ -17607,7 +17607,7 @@ function handleError(_x) {
   return _handleError.apply(this, arguments);
 }
 function _handleError() {
-  _handleError = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (error) {
+  _handleError = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (error) {
     var _a;
     if (!(0,_helpers__WEBPACK_IMPORTED_MODULE_2__.looksLikeFetchResponse)(error)) {
       throw new _errors__WEBPACK_IMPORTED_MODULE_3__.AuthRetryableFetchError(_getErrorMessage(error), 0);
@@ -17664,7 +17664,7 @@ function _request(_x2, _x3, _x4, _x5) {
   return _request2.apply(this, arguments);
 }
 function _request2() {
-  _request2 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options) {
+  _request2 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options) {
     var _a;
     const headers = Object.assign({}, options === null || options === void 0 ? void 0 : options.headers);
     if (!headers[_constants__WEBPACK_IMPORTED_MODULE_1__.API_VERSION_HEADER_NAME]) {
@@ -17693,7 +17693,7 @@ function _handleRequest(_x6, _x7, _x8, _x9, _x0, _x1) {
   return _handleRequest2.apply(this, arguments);
 }
 function _handleRequest2() {
-  _handleRequest2 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options, parameters, body) {
+  _handleRequest2 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options, parameters, body) {
     const requestParams = _getRequestParams(method, options, parameters, body);
     let result;
     try {
@@ -17830,7 +17830,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   validateExp: () => (/* binding */ validateExp),
 /* harmony export */   validateUUID: () => (/* binding */ validateUUID)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants */ 3171);
 /* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./errors */ 5127);
 /* harmony import */ var _base64url__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./base64url */ 5262);
@@ -17928,7 +17928,7 @@ const looksLikeFetchResponse = maybeResponse => {
 };
 // Storage helpers
 const setItemAsync = /*#__PURE__*/function () {
-  var _ref = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, key, data) {
+  var _ref = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, key, data) {
     yield storage.setItem(key, JSON.stringify(data));
   });
   return function setItemAsync(_x, _x2, _x3) {
@@ -17936,7 +17936,7 @@ const setItemAsync = /*#__PURE__*/function () {
   };
 }();
 const getItemAsync = /*#__PURE__*/function () {
-  var _ref2 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, key) {
+  var _ref2 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, key) {
     const value = yield storage.getItem(key);
     if (!value) {
       return null;
@@ -17952,7 +17952,7 @@ const getItemAsync = /*#__PURE__*/function () {
   };
 }();
 const removeItemAsync = /*#__PURE__*/function () {
-  var _ref3 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, key) {
+  var _ref3 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, key) {
     yield storage.removeItem(key);
   });
   return function removeItemAsync(_x6, _x7) {
@@ -18012,7 +18012,7 @@ function sleep(_x8) {
  * if the function should run again.
  */
 function _sleep() {
-  _sleep = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (time) {
+  _sleep = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (time) {
     return yield new Promise(accept => {
       setTimeout(() => accept(null), time);
     });
@@ -18023,7 +18023,7 @@ function retryable(fn, isRetryable) {
   const promise = new Promise((accept, reject) => {
     // eslint-disable-next-line @typescript-eslint/no-extra-semi
     ;
-    (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       for (let attempt = 0; attempt < Infinity; attempt++) {
         try {
           const result = yield fn(attempt);
@@ -18065,7 +18065,7 @@ function sha256(_x9) {
   return _sha.apply(this, arguments);
 }
 function _sha() {
-  _sha = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (randomString) {
+  _sha = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (randomString) {
     const encoder = new TextEncoder();
     const encodedData = encoder.encode(randomString);
     const hash = yield crypto.subtle.digest('SHA-256', encodedData);
@@ -18078,7 +18078,7 @@ function generatePKCEChallenge(_x0) {
   return _generatePKCEChallenge.apply(this, arguments);
 }
 function _generatePKCEChallenge() {
-  _generatePKCEChallenge = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (verifier) {
+  _generatePKCEChallenge = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (verifier) {
     const hasCryptoSupport = typeof crypto !== 'undefined' && typeof crypto.subtle !== 'undefined' && typeof TextEncoder !== 'undefined';
     if (!hasCryptoSupport) {
       console.warn('WebCrypto API is not supported. Code challenge method will default to use plain instead of sha256.');
@@ -18094,7 +18094,7 @@ function getCodeChallengeAndMethod(_x1, _x10) {
 }
 /** Parses the API version which is 2YYY-MM-DD. */
 function _getCodeChallengeAndMethod() {
-  _getCodeChallengeAndMethod = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, storageKey, isPasswordRecovery = false) {
+  _getCodeChallengeAndMethod = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, storageKey, isPasswordRecovery = false) {
     const codeVerifier = generatePKCEVerifier();
     let storedCodeVerifier = codeVerifier;
     if (isPasswordRecovery) {
@@ -18273,7 +18273,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   navigatorLock: () => (/* binding */ navigatorLock),
 /* harmony export */   processLock: () => (/* binding */ processLock)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./helpers */ 9379);
 
 
@@ -18365,7 +18365,7 @@ function navigatorLock(_x, _x2, _x3) {
   return _navigatorLock.apply(this, arguments);
 }
 function _navigatorLock() {
-  _navigatorLock = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (name, acquireTimeout, fn) {
+  _navigatorLock = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (name, acquireTimeout, fn) {
     if (internals.debug) {
       console.log('@supabase/gotrue-js: navigatorLock: acquire lock', name, acquireTimeout);
     }
@@ -18393,7 +18393,7 @@ function _navigatorLock() {
       mode: 'exclusive',
       signal: abortController.signal
     }, /*#__PURE__*/function () {
-      var _ref = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (lock) {
+      var _ref = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (lock) {
         if (lock) {
           if (internals.debug) {
             console.log('@supabase/gotrue-js: navigatorLock: acquired', name, lock.name);
@@ -18461,7 +18461,7 @@ function processLock(_x4, _x5, _x6) {
   return _processLock.apply(this, arguments);
 }
 function _processLock() {
-  _processLock = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (name, acquireTimeout, fn) {
+  _processLock = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (name, acquireTimeout, fn) {
     var _a;
     const previousOperation = (_a = PROCESS_LOCKS[name]) !== null && _a !== void 0 ? _a : Promise.resolve();
     const currentOperation = Promise.race([previousOperation.catch(() => {
@@ -18476,13 +18476,13 @@ function _processLock() {
         throw e;
       }
       return null;
-    }).then(/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    }).then(/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // previous operations finished and we didn't get a race on the acquire
       // timeout, so the current operation can finally start
       return yield fn();
     }));
     PROCESS_LOCKS[name] = currentOperation.catch(/*#__PURE__*/function () {
-      var _ref3 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (e) {
+      var _ref3 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (e) {
         if (e && e.isAcquireTimeout) {
           // if the current operation timed out, it doesn't mean that the previous
           // operation finished, so we need contnue waiting for it to finish
@@ -18959,7 +18959,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   serializeCredentialRequestResponse: () => (/* binding */ serializeCredentialRequestResponse),
 /* harmony export */   webAuthnAbortService: () => (/* binding */ webAuthnAbortService)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tslib */ 4398);
 /* harmony import */ var _base64url__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./base64url */ 5262);
 /* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./errors */ 5127);
@@ -19243,7 +19243,7 @@ function createCredential(_x) {
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/CredentialsContainer/get MDN - credentials.get}
  */
 function _createCredential() {
-  _createCredential = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options) {
+  _createCredential = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options) {
     try {
       const response = yield navigator.credentials.create(/** we assert the type here until typescript types are updated */
       options);
@@ -19279,7 +19279,7 @@ function getCredential(_x2) {
   return _getCredential.apply(this, arguments);
 }
 function _getCredential() {
-  _getCredential = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options) {
+  _getCredential = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options) {
     try {
       const response = yield navigator.credentials.get(/** we assert the type here until typescript types are updated */
       options);
@@ -19410,7 +19410,7 @@ class WebAuthnApi {
    */
   _enroll(params) {
     var _this = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this.client.mfa.enroll(Object.assign(Object.assign({}, params), {
         factorType: 'webauthn'
       }));
@@ -19432,7 +19432,7 @@ class WebAuthnApi {
    */
   _challenge(_x3, _x4) {
     var _this2 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
       factorId,
       webauthn,
       friendlyName,
@@ -19552,7 +19552,7 @@ class WebAuthnApi {
    * */
   _verify(_x5) {
     var _this3 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
       challengeId,
       factorId,
       webauthn
@@ -19582,7 +19582,7 @@ class WebAuthnApi {
    */
   _authenticate(_x6, _x7) {
     var _this4 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
       factorId,
       webauthn: {
         rpId = typeof window !== 'undefined' ? window.location.hostname : undefined,
@@ -19668,7 +19668,7 @@ class WebAuthnApi {
    */
   _register(_x8, _x9) {
     var _this5 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
       friendlyName,
       webauthn: {
         rpId = typeof window !== 'undefined' ? window.location.hostname : undefined,
@@ -20075,7 +20075,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   REALTIME_SUBSCRIBE_STATES: () => (/* binding */ REALTIME_SUBSCRIBE_STATES),
 /* harmony export */   "default": () => (/* binding */ RealtimeChannel)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/constants */ 574);
 /* harmony import */ var _lib_push__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/push */ 5608);
 /* harmony import */ var _lib_timer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/timer */ 3474);
@@ -20242,7 +20242,7 @@ class RealtimeChannel {
       this.joinedOnce = true;
       this._rejoin(timeout);
       this.joinPush.receive('ok', /*#__PURE__*/function () {
-        var _ref2 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
+        var _ref2 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
           postgres_changes
         }) {
           var _a;
@@ -20313,7 +20313,7 @@ class RealtimeChannel {
    */
   track(_x2) {
     var _this2 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (payload, opts = {}) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (payload, opts = {}) {
       return yield _this2.send({
         type: 'presence',
         event: 'track',
@@ -20326,7 +20326,7 @@ class RealtimeChannel {
    */
   untrack() {
     var _this3 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (opts = {}) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (opts = {}) {
       return yield _this3.send({
         type: 'presence',
         event: 'untrack'
@@ -20337,7 +20337,7 @@ class RealtimeChannel {
     var _this4 = this;
     if (this.state === _lib_constants__WEBPACK_IMPORTED_MODULE_1__.CHANNEL_STATES.joined && type === REALTIME_LISTEN_TYPES.PRESENCE) {
       this.socket.log('channel', `resubscribe to ${this.topic} due to change in presence callbacks on joined channel`);
-      this.unsubscribe().then(/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      this.unsubscribe().then(/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return yield _this4.subscribe();
       }));
     }
@@ -20356,7 +20356,7 @@ class RealtimeChannel {
    */
   httpSend(_x3, _x4) {
     var _this5 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (event, payload, opts = {}) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (event, payload, opts = {}) {
       var _a;
       if (payload === undefined || payload === null) {
         return Promise.reject('Payload is required for httpSend()');
@@ -20405,7 +20405,7 @@ class RealtimeChannel {
    */
   send(_x5) {
     var _this6 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (args, opts = {}) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (args, opts = {}) {
       var _a, _b;
       if (!_this6._canPush() && args.type === 'broadcast') {
         console.warn('Realtime send() is automatically falling back to REST API. ' + 'This behavior will be deprecated in the future. ' + 'Please use httpSend() explicitly for REST delivery.');
@@ -20516,7 +20516,7 @@ class RealtimeChannel {
   /** @internal */
   _fetchWithTimeout(url, options, timeout) {
     var _this7 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const controller = new AbortController();
       const id = setTimeout(() => controller.abort(), timeout);
       const response = yield _this7.socket.fetch(url, Object.assign(Object.assign({}, options), {
@@ -20770,7 +20770,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ RealtimeClient)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _lib_websocket_factory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/websocket-factory */ 5991);
 /* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/constants */ 574);
 /* harmony import */ var _lib_serializer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/serializer */ 2035);
@@ -20974,7 +20974,7 @@ class RealtimeClient {
    */
   removeChannel(channel) {
     var _this = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const status = yield channel.unsubscribe();
       if (_this.channels.length === 0) {
         _this.disconnect();
@@ -20987,7 +20987,7 @@ class RealtimeClient {
    */
   removeAllChannels() {
     var _this2 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const values_1 = yield Promise.all(_this2.channels.map(channel => channel.unsubscribe()));
       _this2.channels = [];
       _this2.disconnect();
@@ -21102,7 +21102,7 @@ class RealtimeClient {
    */
   setAuth() {
     var _this3 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (token = null) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (token = null) {
       _this3._authPromise = _this3._performAuth(token);
       try {
         yield _this3._authPromise;
@@ -21124,7 +21124,7 @@ class RealtimeClient {
    */
   sendHeartbeat() {
     var _this4 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a;
       if (!_this4.isConnected()) {
         try {
@@ -21441,7 +21441,7 @@ class RealtimeClient {
    */
   _performAuth() {
     var _this5 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (token = null) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (token = null) {
       let tokenToSend;
       let isManualToken = false;
       if (token) {
@@ -21490,7 +21490,7 @@ class RealtimeClient {
    */
   _waitForAuthIfNeeded() {
     var _this6 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (_this6._authPromise) {
         yield _this6._authPromise;
       }
@@ -21531,8 +21531,8 @@ class RealtimeClient {
    */
   _setupReconnectionTimer() {
     var _this7 = this;
-    this.reconnectTimer = new _lib_timer__WEBPACK_IMPORTED_MODULE_4__["default"](/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      setTimeout(/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    this.reconnectTimer = new _lib_timer__WEBPACK_IMPORTED_MODULE_4__["default"](/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      setTimeout(/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         yield _this7._waitForAuthIfNeeded();
         if (!_this7.isConnected()) {
           _this7.connect();
@@ -25719,6037 +25719,6 @@ __webpack_require__.r(__webpack_exports__);
 function createInvalidObservableTypeError(input) {
   return new TypeError(`You provided ${input !== null && typeof input === 'object' ? 'an invalid object' : `'${input}'`} where a stream was expected. You can provide an Observable, Promise, ReadableStream, Array, AsyncIterable, or Iterable.`);
 }
-
-/***/ }),
-
-/***/ 7172:
-/*!******************************************************************!*\
-  !*** ./node_modules/@angular/animations/fesm2022/animations.mjs ***!
-  \******************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   AUTO_STYLE: () => (/* binding */ AUTO_STYLE),
-/* harmony export */   AnimationBuilder: () => (/* binding */ AnimationBuilder),
-/* harmony export */   AnimationFactory: () => (/* binding */ AnimationFactory),
-/* harmony export */   AnimationMetadataType: () => (/* binding */ AnimationMetadataType),
-/* harmony export */   NoopAnimationPlayer: () => (/* binding */ NoopAnimationPlayer),
-/* harmony export */   animate: () => (/* binding */ animate),
-/* harmony export */   animateChild: () => (/* binding */ animateChild),
-/* harmony export */   animation: () => (/* binding */ animation),
-/* harmony export */   group: () => (/* binding */ group),
-/* harmony export */   keyframes: () => (/* binding */ keyframes),
-/* harmony export */   query: () => (/* binding */ query),
-/* harmony export */   sequence: () => (/* binding */ sequence),
-/* harmony export */   stagger: () => (/* binding */ stagger),
-/* harmony export */   state: () => (/* binding */ state),
-/* harmony export */   style: () => (/* binding */ style),
-/* harmony export */   transition: () => (/* binding */ transition),
-/* harmony export */   trigger: () => (/* binding */ trigger),
-/* harmony export */   useAnimation: () => (/* binding */ useAnimation),
-/* harmony export */   "ɵAnimationGroupPlayer": () => (/* binding */ AnimationGroupPlayer),
-/* harmony export */   "ɵBrowserAnimationBuilder": () => (/* binding */ BrowserAnimationBuilder),
-/* harmony export */   "ɵPRE_STYLE": () => (/* binding */ ɵPRE_STYLE)
-/* harmony export */ });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ 316);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7580);
-/**
- * @license Angular v17.3.12
- * (c) 2010-2024 Google LLC. https://angular.io/
- * License: MIT
- */
-
-
-
-
-
-/**
- * @description Constants for the categories of parameters that can be defined for animations.
- *
- * A corresponding function defines a set of parameters for each category, and
- * collects them into a corresponding `AnimationMetadata` object.
- *
- * @publicApi
- */
-var AnimationMetadataType;
-(function (AnimationMetadataType) {
-  /**
-   * Associates a named animation state with a set of CSS styles.
-   * See [`state()`](api/animations/state)
-   */
-  AnimationMetadataType[AnimationMetadataType["State"] = 0] = "State";
-  /**
-   * Data for a transition from one animation state to another.
-   * See `transition()`
-   */
-  AnimationMetadataType[AnimationMetadataType["Transition"] = 1] = "Transition";
-  /**
-   * Contains a set of animation steps.
-   * See `sequence()`
-   */
-  AnimationMetadataType[AnimationMetadataType["Sequence"] = 2] = "Sequence";
-  /**
-   * Contains a set of animation steps.
-   * See `{@link animations/group group()}`
-   */
-  AnimationMetadataType[AnimationMetadataType["Group"] = 3] = "Group";
-  /**
-   * Contains an animation step.
-   * See `animate()`
-   */
-  AnimationMetadataType[AnimationMetadataType["Animate"] = 4] = "Animate";
-  /**
-   * Contains a set of animation steps.
-   * See `keyframes()`
-   */
-  AnimationMetadataType[AnimationMetadataType["Keyframes"] = 5] = "Keyframes";
-  /**
-   * Contains a set of CSS property-value pairs into a named style.
-   * See `style()`
-   */
-  AnimationMetadataType[AnimationMetadataType["Style"] = 6] = "Style";
-  /**
-   * Associates an animation with an entry trigger that can be attached to an element.
-   * See `trigger()`
-   */
-  AnimationMetadataType[AnimationMetadataType["Trigger"] = 7] = "Trigger";
-  /**
-   * Contains a re-usable animation.
-   * See `animation()`
-   */
-  AnimationMetadataType[AnimationMetadataType["Reference"] = 8] = "Reference";
-  /**
-   * Contains data to use in executing child animations returned by a query.
-   * See `animateChild()`
-   */
-  AnimationMetadataType[AnimationMetadataType["AnimateChild"] = 9] = "AnimateChild";
-  /**
-   * Contains animation parameters for a re-usable animation.
-   * See `useAnimation()`
-   */
-  AnimationMetadataType[AnimationMetadataType["AnimateRef"] = 10] = "AnimateRef";
-  /**
-   * Contains child-animation query data.
-   * See `query()`
-   */
-  AnimationMetadataType[AnimationMetadataType["Query"] = 11] = "Query";
-  /**
-   * Contains data for staggering an animation sequence.
-   * See `stagger()`
-   */
-  AnimationMetadataType[AnimationMetadataType["Stagger"] = 12] = "Stagger";
-})(AnimationMetadataType || (AnimationMetadataType = {}));
-/**
- * Specifies automatic styling.
- *
- * @publicApi
- */
-const AUTO_STYLE = '*';
-/**
- * Creates a named animation trigger, containing a  list of [`state()`](api/animations/state)
- * and `transition()` entries to be evaluated when the expression
- * bound to the trigger changes.
- *
- * @param name An identifying string.
- * @param definitions  An animation definition object, containing an array of
- * [`state()`](api/animations/state) and `transition()` declarations.
- *
- * @return An object that encapsulates the trigger data.
- *
- * @usageNotes
- * Define an animation trigger in the `animations` section of `@Component` metadata.
- * In the template, reference the trigger by name and bind it to a trigger expression that
- * evaluates to a defined animation state, using the following format:
- *
- * `[@triggerName]="expression"`
- *
- * Animation trigger bindings convert all values to strings, and then match the
- * previous and current values against any linked transitions.
- * Booleans can be specified as `1` or `true` and `0` or `false`.
- *
- * ### Usage Example
- *
- * The following example creates an animation trigger reference based on the provided
- * name value.
- * The provided animation value is expected to be an array consisting of state and
- * transition declarations.
- *
- * ```typescript
- * @Component({
- *   selector: "my-component",
- *   templateUrl: "my-component-tpl.html",
- *   animations: [
- *     trigger("myAnimationTrigger", [
- *       state(...),
- *       state(...),
- *       transition(...),
- *       transition(...)
- *     ])
- *   ]
- * })
- * class MyComponent {
- *   myStatusExp = "something";
- * }
- * ```
- *
- * The template associated with this component makes use of the defined trigger
- * by binding to an element within its template code.
- *
- * ```html
- * <!-- somewhere inside of my-component-tpl.html -->
- * <div [@myAnimationTrigger]="myStatusExp">...</div>
- * ```
- *
- * ### Using an inline function
- * The `transition` animation method also supports reading an inline function which can decide
- * if its associated animation should be run.
- *
- * ```typescript
- * // this method is run each time the `myAnimationTrigger` trigger value changes.
- * function myInlineMatcherFn(fromState: string, toState: string, element: any, params: {[key:
- string]: any}): boolean {
- *   // notice that `element` and `params` are also available here
- *   return toState == 'yes-please-animate';
- * }
- *
- * @Component({
- *   selector: 'my-component',
- *   templateUrl: 'my-component-tpl.html',
- *   animations: [
- *     trigger('myAnimationTrigger', [
- *       transition(myInlineMatcherFn, [
- *         // the animation sequence code
- *       ]),
- *     ])
- *   ]
- * })
- * class MyComponent {
- *   myStatusExp = "yes-please-animate";
- * }
- * ```
- *
- * ### Disabling Animations
- * When true, the special animation control binding `@.disabled` binding prevents
- * all animations from rendering.
- * Place the  `@.disabled` binding on an element to disable
- * animations on the element itself, as well as any inner animation triggers
- * within the element.
- *
- * The following example shows how to use this feature:
- *
- * ```typescript
- * @Component({
- *   selector: 'my-component',
- *   template: `
- *     <div [@.disabled]="isDisabled">
- *       <div [@childAnimation]="exp"></div>
- *     </div>
- *   `,
- *   animations: [
- *     trigger("childAnimation", [
- *       // ...
- *     ])
- *   ]
- * })
- * class MyComponent {
- *   isDisabled = true;
- *   exp = '...';
- * }
- * ```
- *
- * When `@.disabled` is true, it prevents the `@childAnimation` trigger from animating,
- * along with any inner animations.
- *
- * ### Disable animations application-wide
- * When an area of the template is set to have animations disabled,
- * **all** inner components have their animations disabled as well.
- * This means that you can disable all animations for an app
- * by placing a host binding set on `@.disabled` on the topmost Angular component.
- *
- * ```typescript
- * import {Component, HostBinding} from '@angular/core';
- *
- * @Component({
- *   selector: 'app-component',
- *   templateUrl: 'app.component.html',
- * })
- * class AppComponent {
- *   @HostBinding('@.disabled')
- *   public animationsDisabled = true;
- * }
- * ```
- *
- * ### Overriding disablement of inner animations
- * Despite inner animations being disabled, a parent animation can `query()`
- * for inner elements located in disabled areas of the template and still animate
- * them if needed. This is also the case for when a sub animation is
- * queried by a parent and then later animated using `animateChild()`.
- *
- * ### Detecting when an animation is disabled
- * If a region of the DOM (or the entire application) has its animations disabled, the animation
- * trigger callbacks still fire, but for zero seconds. When the callback fires, it provides
- * an instance of an `AnimationEvent`. If animations are disabled,
- * the `.disabled` flag on the event is true.
- *
- * @publicApi
- */
-function trigger(name, definitions) {
-  return {
-    type: AnimationMetadataType.Trigger,
-    name,
-    definitions,
-    options: {}
-  };
-}
-/**
- * Defines an animation step that combines styling information with timing information.
- *
- * @param timings Sets `AnimateTimings` for the parent animation.
- * A string in the format "duration [delay] [easing]".
- *  - Duration and delay are expressed as a number and optional time unit,
- * such as "1s" or "10ms" for one second and 10 milliseconds, respectively.
- * The default unit is milliseconds.
- *  - The easing value controls how the animation accelerates and decelerates
- * during its runtime. Value is one of  `ease`, `ease-in`, `ease-out`,
- * `ease-in-out`, or a `cubic-bezier()` function call.
- * If not supplied, no easing is applied.
- *
- * For example, the string "1s 100ms ease-out" specifies a duration of
- * 1000 milliseconds, and delay of 100 ms, and the "ease-out" easing style,
- * which decelerates near the end of the duration.
- * @param styles Sets AnimationStyles for the parent animation.
- * A function call to either `style()` or `keyframes()`
- * that returns a collection of CSS style entries to be applied to the parent animation.
- * When null, uses the styles from the destination state.
- * This is useful when describing an animation step that will complete an animation;
- * see "Animating to the final state" in `transitions()`.
- * @returns An object that encapsulates the animation step.
- *
- * @usageNotes
- * Call within an animation `sequence()`, `{@link animations/group group()}`, or
- * `transition()` call to specify an animation step
- * that applies given style data to the parent animation for a given amount of time.
- *
- * ### Syntax Examples
- * **Timing examples**
- *
- * The following examples show various `timings` specifications.
- * - `animate(500)` : Duration is 500 milliseconds.
- * - `animate("1s")` : Duration is 1000 milliseconds.
- * - `animate("100ms 0.5s")` : Duration is 100 milliseconds, delay is 500 milliseconds.
- * - `animate("5s ease-in")` : Duration is 5000 milliseconds, easing in.
- * - `animate("5s 10ms cubic-bezier(.17,.67,.88,.1)")` : Duration is 5000 milliseconds, delay is 10
- * milliseconds, easing according to a bezier curve.
- *
- * **Style examples**
- *
- * The following example calls `style()` to set a single CSS style.
- * ```typescript
- * animate(500, style({ background: "red" }))
- * ```
- * The following example calls `keyframes()` to set a CSS style
- * to different values for successive keyframes.
- * ```typescript
- * animate(500, keyframes(
- *  [
- *   style({ background: "blue" }),
- *   style({ background: "red" })
- *  ])
- * ```
- *
- * @publicApi
- */
-function animate(timings, styles = null) {
-  return {
-    type: AnimationMetadataType.Animate,
-    styles,
-    timings
-  };
-}
-/**
- * @description Defines a list of animation steps to be run in parallel.
- *
- * @param steps An array of animation step objects.
- * - When steps are defined by `style()` or `animate()`
- * function calls, each call within the group is executed instantly.
- * - To specify offset styles to be applied at a later time, define steps with
- * `keyframes()`, or use `animate()` calls with a delay value.
- * For example:
- *
- * ```typescript
- * group([
- *   animate("1s", style({ background: "black" })),
- *   animate("2s", style({ color: "white" }))
- * ])
- * ```
- *
- * @param options An options object containing a delay and
- * developer-defined parameters that provide styling defaults and
- * can be overridden on invocation.
- *
- * @return An object that encapsulates the group data.
- *
- * @usageNotes
- * Grouped animations are useful when a series of styles must be
- * animated at different starting times and closed off at different ending times.
- *
- * When called within a `sequence()` or a
- * `transition()` call, does not continue to the next
- * instruction until all of the inner animation steps have completed.
- *
- * @publicApi
- */
-function group(steps, options = null) {
-  return {
-    type: AnimationMetadataType.Group,
-    steps,
-    options
-  };
-}
-/**
- * Defines a list of animation steps to be run sequentially, one by one.
- *
- * @param steps An array of animation step objects.
- * - Steps defined by `style()` calls apply the styling data immediately.
- * - Steps defined by `animate()` calls apply the styling data over time
- *   as specified by the timing data.
- *
- * ```typescript
- * sequence([
- *   style({ opacity: 0 }),
- *   animate("1s", style({ opacity: 1 }))
- * ])
- * ```
- *
- * @param options An options object containing a delay and
- * developer-defined parameters that provide styling defaults and
- * can be overridden on invocation.
- *
- * @return An object that encapsulates the sequence data.
- *
- * @usageNotes
- * When you pass an array of steps to a
- * `transition()` call, the steps run sequentially by default.
- * Compare this to the `{@link animations/group group()}` call, which runs animation steps in
- *parallel.
- *
- * When a sequence is used within a `{@link animations/group group()}` or a `transition()` call,
- * execution continues to the next instruction only after each of the inner animation
- * steps have completed.
- *
- * @publicApi
- **/
-function sequence(steps, options = null) {
-  return {
-    type: AnimationMetadataType.Sequence,
-    steps,
-    options
-  };
-}
-/**
- * Declares a key/value object containing CSS properties/styles that
- * can then be used for an animation [`state`](api/animations/state), within an animation
- *`sequence`, or as styling data for calls to `animate()` and `keyframes()`.
- *
- * @param tokens A set of CSS styles or HTML styles associated with an animation state.
- * The value can be any of the following:
- * - A key-value style pair associating a CSS property with a value.
- * - An array of key-value style pairs.
- * - An asterisk (*), to use auto-styling, where styles are derived from the element
- * being animated and applied to the animation when it starts.
- *
- * Auto-styling can be used to define a state that depends on layout or other
- * environmental factors.
- *
- * @return An object that encapsulates the style data.
- *
- * @usageNotes
- * The following examples create animation styles that collect a set of
- * CSS property values:
- *
- * ```typescript
- * // string values for CSS properties
- * style({ background: "red", color: "blue" })
- *
- * // numerical pixel values
- * style({ width: 100, height: 0 })
- * ```
- *
- * The following example uses auto-styling to allow an element to animate from
- * a height of 0 up to its full height:
- *
- * ```
- * style({ height: 0 }),
- * animate("1s", style({ height: "*" }))
- * ```
- *
- * @publicApi
- **/
-function style(tokens) {
-  return {
-    type: AnimationMetadataType.Style,
-    styles: tokens,
-    offset: null
-  };
-}
-/**
- * Declares an animation state within a trigger attached to an element.
- *
- * @param name One or more names for the defined state in a comma-separated string.
- * The following reserved state names can be supplied to define a style for specific use
- * cases:
- *
- * - `void` You can associate styles with this name to be used when
- * the element is detached from the application. For example, when an `ngIf` evaluates
- * to false, the state of the associated element is void.
- *  - `*` (asterisk) Indicates the default state. You can associate styles with this name
- * to be used as the fallback when the state that is being animated is not declared
- * within the trigger.
- *
- * @param styles A set of CSS styles associated with this state, created using the
- * `style()` function.
- * This set of styles persists on the element once the state has been reached.
- * @param options Parameters that can be passed to the state when it is invoked.
- * 0 or more key-value pairs.
- * @return An object that encapsulates the new state data.
- *
- * @usageNotes
- * Use the `trigger()` function to register states to an animation trigger.
- * Use the `transition()` function to animate between states.
- * When a state is active within a component, its associated styles persist on the element,
- * even when the animation ends.
- *
- * @publicApi
- **/
-function state(name, styles, options) {
-  return {
-    type: AnimationMetadataType.State,
-    name,
-    styles,
-    options
-  };
-}
-/**
- * Defines a set of animation styles, associating each style with an optional `offset` value.
- *
- * @param steps A set of animation styles with optional offset data.
- * The optional `offset` value for a style specifies a percentage of the total animation
- * time at which that style is applied.
- * @returns An object that encapsulates the keyframes data.
- *
- * @usageNotes
- * Use with the `animate()` call. Instead of applying animations
- * from the current state
- * to the destination state, keyframes describe how each style entry is applied and at what point
- * within the animation arc.
- * Compare [CSS Keyframe Animations](https://www.w3schools.com/css/css3_animations.asp).
- *
- * ### Usage
- *
- * In the following example, the offset values describe
- * when each `backgroundColor` value is applied. The color is red at the start, and changes to
- * blue when 20% of the total time has elapsed.
- *
- * ```typescript
- * // the provided offset values
- * animate("5s", keyframes([
- *   style({ backgroundColor: "red", offset: 0 }),
- *   style({ backgroundColor: "blue", offset: 0.2 }),
- *   style({ backgroundColor: "orange", offset: 0.3 }),
- *   style({ backgroundColor: "black", offset: 1 })
- * ]))
- * ```
- *
- * If there are no `offset` values specified in the style entries, the offsets
- * are calculated automatically.
- *
- * ```typescript
- * animate("5s", keyframes([
- *   style({ backgroundColor: "red" }) // offset = 0
- *   style({ backgroundColor: "blue" }) // offset = 0.33
- *   style({ backgroundColor: "orange" }) // offset = 0.66
- *   style({ backgroundColor: "black" }) // offset = 1
- * ]))
- *```
-
- * @publicApi
- */
-function keyframes(steps) {
-  return {
-    type: AnimationMetadataType.Keyframes,
-    steps
-  };
-}
-/**
- * Declares an animation transition which is played when a certain specified condition is met.
- *
- * @param stateChangeExpr A string with a specific format or a function that specifies when the
- * animation transition should occur (see [State Change Expression](#state-change-expression)).
- *
- * @param steps One or more animation objects that represent the animation's instructions.
- *
- * @param options An options object that can be used to specify a delay for the animation or provide
- * custom parameters for it.
- *
- * @returns An object that encapsulates the transition data.
- *
- * @usageNotes
- *
- * ### State Change Expression
- *
- * The State Change Expression instructs Angular when to run the transition's animations, it can
- *either be
- *  - a string with a specific syntax
- *  - or a function that compares the previous and current state (value of the expression bound to
- *    the element's trigger) and returns `true` if the transition should occur or `false` otherwise
- *
- * The string format can be:
- *  - `fromState => toState`, which indicates that the transition's animations should occur then the
- *    expression bound to the trigger's element goes from `fromState` to `toState`
- *
- *    _Example:_
- *      ```typescript
- *        transition('open => closed', animate('.5s ease-out', style({ height: 0 }) ))
- *      ```
- *
- *  - `fromState <=> toState`, which indicates that the transition's animations should occur then
- *    the expression bound to the trigger's element goes from `fromState` to `toState` or vice versa
- *
- *    _Example:_
- *      ```typescript
- *        transition('enabled <=> disabled', animate('1s cubic-bezier(0.8,0.3,0,1)'))
- *      ```
- *
- *  - `:enter`/`:leave`, which indicates that the transition's animations should occur when the
- *    element enters or exists the DOM
- *
- *    _Example:_
- *      ```typescript
- *        transition(':enter', [
- *          style({ opacity: 0 }),
- *          animate('500ms', style({ opacity: 1 }))
- *        ])
- *      ```
- *
- *  - `:increment`/`:decrement`, which indicates that the transition's animations should occur when
- *    the numerical expression bound to the trigger's element has increased in value or decreased
- *
- *    _Example:_
- *      ```typescript
- *        transition(':increment', query('@counter', animateChild()))
- *      ```
- *
- *  - a sequence of any of the above divided by commas, which indicates that transition's animations
- *    should occur whenever one of the state change expressions matches
- *
- *    _Example:_
- *      ```typescript
- *        transition(':increment, * => enabled, :enter', animate('1s ease', keyframes([
- *          style({ transform: 'scale(1)', offset: 0}),
- *          style({ transform: 'scale(1.1)', offset: 0.7}),
- *          style({ transform: 'scale(1)', offset: 1})
- *        ]))),
- *      ```
- *
- * Also note that in such context:
- *  - `void` can be used to indicate the absence of the element
- *  - asterisks can be used as wildcards that match any state
- *  - (as a consequence of the above, `void => *` is equivalent to `:enter` and `* => void` is
- *    equivalent to `:leave`)
- *  - `true` and `false` also match expression values of `1` and `0` respectively (but do not match
- *    _truthy_ and _falsy_ values)
- *
- * <div class="alert is-helpful">
- *
- *  Be careful about entering end leaving elements as their transitions present a common
- *  pitfall for developers.
- *
- *  Note that when an element with a trigger enters the DOM its `:enter` transition always
- *  gets executed, but its `:leave` transition will not be executed if the element is removed
- *  alongside its parent (as it will be removed "without warning" before its transition has
- *  a chance to be executed, the only way that such transition can occur is if the element
- *  is exiting the DOM on its own).
- *
- *
- * </div>
- *
- * ### Animating to a Final State
- *
- * If the final step in a transition is a call to `animate()` that uses a timing value
- * with no `style` data, that step is automatically considered the final animation arc,
- * for the element to reach the final state, in such case Angular automatically adds or removes
- * CSS styles to ensure that the element is in the correct final state.
- *
- *
- * ### Usage Examples
- *
- *  - Transition animations applied based on
- *    the trigger's expression value
- *
- *   ```HTML
- *   <div [@myAnimationTrigger]="myStatusExp">
- *    ...
- *   </div>
- *   ```
- *
- *   ```typescript
- *   trigger("myAnimationTrigger", [
- *     ..., // states
- *     transition("on => off, open => closed", animate(500)),
- *     transition("* <=> error", query('.indicator', animateChild()))
- *   ])
- *   ```
- *
- *  - Transition animations applied based on custom logic dependent
- *    on the trigger's expression value and provided parameters
- *
- *    ```HTML
- *    <div [@myAnimationTrigger]="{
- *     value: stepName,
- *     params: { target: currentTarget }
- *    }">
- *     ...
- *    </div>
- *    ```
- *
- *    ```typescript
- *    trigger("myAnimationTrigger", [
- *      ..., // states
- *      transition(
- *        (fromState, toState, _element, params) =>
- *          ['firststep', 'laststep'].includes(fromState.toLowerCase())
- *          && toState === params?.['target'],
- *        animate('1s')
- *      )
- *    ])
- *    ```
- *
- * @publicApi
- **/
-function transition(stateChangeExpr, steps, options = null) {
-  return {
-    type: AnimationMetadataType.Transition,
-    expr: stateChangeExpr,
-    animation: steps,
-    options
-  };
-}
-/**
- * Produces a reusable animation that can be invoked in another animation or sequence,
- * by calling the `useAnimation()` function.
- *
- * @param steps One or more animation objects, as returned by the `animate()`
- * or `sequence()` function, that form a transformation from one state to another.
- * A sequence is used by default when you pass an array.
- * @param options An options object that can contain a delay value for the start of the
- * animation, and additional developer-defined parameters.
- * Provided values for additional parameters are used as defaults,
- * and override values can be passed to the caller on invocation.
- * @returns An object that encapsulates the animation data.
- *
- * @usageNotes
- * The following example defines a reusable animation, providing some default parameter
- * values.
- *
- * ```typescript
- * var fadeAnimation = animation([
- *   style({ opacity: '{{ start }}' }),
- *   animate('{{ time }}',
- *   style({ opacity: '{{ end }}'}))
- *   ],
- *   { params: { time: '1000ms', start: 0, end: 1 }});
- * ```
- *
- * The following invokes the defined animation with a call to `useAnimation()`,
- * passing in override parameter values.
- *
- * ```js
- * useAnimation(fadeAnimation, {
- *   params: {
- *     time: '2s',
- *     start: 1,
- *     end: 0
- *   }
- * })
- * ```
- *
- * If any of the passed-in parameter values are missing from this call,
- * the default values are used. If one or more parameter values are missing before a step is
- * animated, `useAnimation()` throws an error.
- *
- * @publicApi
- */
-function animation(steps, options = null) {
-  return {
-    type: AnimationMetadataType.Reference,
-    animation: steps,
-    options
-  };
-}
-/**
- * Executes a queried inner animation element within an animation sequence.
- *
- * @param options An options object that can contain a delay value for the start of the
- * animation, and additional override values for developer-defined parameters.
- * @return An object that encapsulates the child animation data.
- *
- * @usageNotes
- * Each time an animation is triggered in Angular, the parent animation
- * has priority and any child animations are blocked. In order
- * for a child animation to run, the parent animation must query each of the elements
- * containing child animations, and run them using this function.
- *
- * Note that this feature is designed to be used with `query()` and it will only work
- * with animations that are assigned using the Angular animation library. CSS keyframes
- * and transitions are not handled by this API.
- *
- * @publicApi
- */
-function animateChild(options = null) {
-  return {
-    type: AnimationMetadataType.AnimateChild,
-    options
-  };
-}
-/**
- * Starts a reusable animation that is created using the `animation()` function.
- *
- * @param animation The reusable animation to start.
- * @param options An options object that can contain a delay value for the start of
- * the animation, and additional override values for developer-defined parameters.
- * @return An object that contains the animation parameters.
- *
- * @publicApi
- */
-function useAnimation(animation, options = null) {
-  return {
-    type: AnimationMetadataType.AnimateRef,
-    animation,
-    options
-  };
-}
-/**
- * Finds one or more inner elements within the current element that is
- * being animated within a sequence. Use with `animate()`.
- *
- * @param selector The element to query, or a set of elements that contain Angular-specific
- * characteristics, specified with one or more of the following tokens.
- *  - `query(":enter")` or `query(":leave")` : Query for newly inserted/removed elements (not
- *     all elements can be queried via these tokens, see
- *     [Entering and Leaving Elements](#entering-and-leaving-elements))
- *  - `query(":animating")` : Query all currently animating elements.
- *  - `query("@triggerName")` : Query elements that contain an animation trigger.
- *  - `query("@*")` : Query all elements that contain an animation triggers.
- *  - `query(":self")` : Include the current element into the animation sequence.
- *
- * @param animation One or more animation steps to apply to the queried element or elements.
- * An array is treated as an animation sequence.
- * @param options An options object. Use the 'limit' field to limit the total number of
- * items to collect.
- * @return An object that encapsulates the query data.
- *
- * @usageNotes
- *
- * ### Multiple Tokens
- *
- * Tokens can be merged into a combined query selector string. For example:
- *
- * ```typescript
- *  query(':self, .record:enter, .record:leave, @subTrigger', [...])
- * ```
- *
- * The `query()` function collects multiple elements and works internally by using
- * `element.querySelectorAll`. Use the `limit` field of an options object to limit
- * the total number of items to be collected. For example:
- *
- * ```js
- * query('div', [
- *   animate(...),
- *   animate(...)
- * ], { limit: 1 })
- * ```
- *
- * By default, throws an error when zero items are found. Set the
- * `optional` flag to ignore this error. For example:
- *
- * ```js
- * query('.some-element-that-may-not-be-there', [
- *   animate(...),
- *   animate(...)
- * ], { optional: true })
- * ```
- *
- * ### Entering and Leaving Elements
- *
- * Not all elements can be queried via the `:enter` and `:leave` tokens, the only ones
- * that can are those that Angular assumes can enter/leave based on their own logic
- * (if their insertion/removal is simply a consequence of that of their parent they
- * should be queried via a different token in their parent's `:enter`/`:leave` transitions).
- *
- * The only elements Angular assumes can enter/leave based on their own logic (thus the only
- * ones that can be queried via the `:enter` and `:leave` tokens) are:
- *  - Those inserted dynamically (via `ViewContainerRef`)
- *  - Those that have a structural directive (which, under the hood, are a subset of the above ones)
- *
- * <div class="alert is-helpful">
- *
- *  Note that elements will be successfully queried via `:enter`/`:leave` even if their
- *  insertion/removal is not done manually via `ViewContainerRef`or caused by their structural
- *  directive (e.g. they enter/exit alongside their parent).
- *
- * </div>
- *
- * <div class="alert is-important">
- *
- *  There is an exception to what previously mentioned, besides elements entering/leaving based on
- *  their own logic, elements with an animation trigger can always be queried via `:leave` when
- * their parent is also leaving.
- *
- * </div>
- *
- * ### Usage Example
- *
- * The following example queries for inner elements and animates them
- * individually using `animate()`.
- *
- * ```typescript
- * @Component({
- *   selector: 'inner',
- *   template: `
- *     <div [@queryAnimation]="exp">
- *       <h1>Title</h1>
- *       <div class="content">
- *         Blah blah blah
- *       </div>
- *     </div>
- *   `,
- *   animations: [
- *    trigger('queryAnimation', [
- *      transition('* => goAnimate', [
- *        // hide the inner elements
- *        query('h1', style({ opacity: 0 })),
- *        query('.content', style({ opacity: 0 })),
- *
- *        // animate the inner elements in, one by one
- *        query('h1', animate(1000, style({ opacity: 1 }))),
- *        query('.content', animate(1000, style({ opacity: 1 }))),
- *      ])
- *    ])
- *  ]
- * })
- * class Cmp {
- *   exp = '';
- *
- *   goAnimate() {
- *     this.exp = 'goAnimate';
- *   }
- * }
- * ```
- *
- * @publicApi
- */
-function query(selector, animation, options = null) {
-  return {
-    type: AnimationMetadataType.Query,
-    selector,
-    animation,
-    options
-  };
-}
-/**
- * Use within an animation `query()` call to issue a timing gap after
- * each queried item is animated.
- *
- * @param timings A delay value.
- * @param animation One ore more animation steps.
- * @returns An object that encapsulates the stagger data.
- *
- * @usageNotes
- * In the following example, a container element wraps a list of items stamped out
- * by an `ngFor`. The container element contains an animation trigger that will later be set
- * to query for each of the inner items.
- *
- * Each time items are added, the opacity fade-in animation runs,
- * and each removed item is faded out.
- * When either of these animations occur, the stagger effect is
- * applied after each item's animation is started.
- *
- * ```html
- * <!-- list.component.html -->
- * <button (click)="toggle()">Show / Hide Items</button>
- * <hr />
- * <div [@listAnimation]="items.length">
- *   <div *ngFor="let item of items">
- *     {{ item }}
- *   </div>
- * </div>
- * ```
- *
- * Here is the component code:
- *
- * ```typescript
- * import {trigger, transition, style, animate, query, stagger} from '@angular/animations';
- * @Component({
- *   templateUrl: 'list.component.html',
- *   animations: [
- *     trigger('listAnimation', [
- *     ...
- *     ])
- *   ]
- * })
- * class ListComponent {
- *   items = [];
- *
- *   showItems() {
- *     this.items = [0,1,2,3,4];
- *   }
- *
- *   hideItems() {
- *     this.items = [];
- *   }
- *
- *   toggle() {
- *     this.items.length ? this.hideItems() : this.showItems();
- *    }
- *  }
- * ```
- *
- * Here is the animation trigger code:
- *
- * ```typescript
- * trigger('listAnimation', [
- *   transition('* => *', [ // each time the binding value changes
- *     query(':leave', [
- *       stagger(100, [
- *         animate('0.5s', style({ opacity: 0 }))
- *       ])
- *     ]),
- *     query(':enter', [
- *       style({ opacity: 0 }),
- *       stagger(100, [
- *         animate('0.5s', style({ opacity: 1 }))
- *       ])
- *     ])
- *   ])
- * ])
- * ```
- *
- * @publicApi
- */
-function stagger(timings, animation) {
-  return {
-    type: AnimationMetadataType.Stagger,
-    timings,
-    animation
-  };
-}
-
-/**
- * An injectable service that produces an animation sequence programmatically within an
- * Angular component or directive.
- * Provided by the `BrowserAnimationsModule` or `NoopAnimationsModule`.
- *
- * @usageNotes
- *
- * To use this service, add it to your component or directive as a dependency.
- * The service is instantiated along with your component.
- *
- * Apps do not typically need to create their own animation players, but if you
- * do need to, follow these steps:
- *
- * 1. Use the <code>[AnimationBuilder.build](api/animations/AnimationBuilder#build)()</code> method
- * to create a programmatic animation. The method returns an `AnimationFactory` instance.
- *
- * 2. Use the factory object to create an `AnimationPlayer` and attach it to a DOM element.
- *
- * 3. Use the player object to control the animation programmatically.
- *
- * For example:
- *
- * ```ts
- * // import the service from BrowserAnimationsModule
- * import {AnimationBuilder} from '@angular/animations';
- * // require the service as a dependency
- * class MyCmp {
- *   constructor(private _builder: AnimationBuilder) {}
- *
- *   makeAnimation(element: any) {
- *     // first define a reusable animation
- *     const myAnimation = this._builder.build([
- *       style({ width: 0 }),
- *       animate(1000, style({ width: '100px' }))
- *     ]);
- *
- *     // use the returned factory object to create a player
- *     const player = myAnimation.create(element);
- *
- *     player.play();
- *   }
- * }
- * ```
- *
- * @publicApi
- */
-class AnimationBuilder {
-  static {
-    this.ɵfac = function AnimationBuilder_Factory(t) {
-      return new (t || AnimationBuilder)();
-    };
-  }
-  static {
-    this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
-      token: AnimationBuilder,
-      factory: () => (() => (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(BrowserAnimationBuilder))(),
-      providedIn: 'root'
-    });
-  }
-}
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AnimationBuilder, [{
-    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
-    args: [{
-      providedIn: 'root',
-      useFactory: () => (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(BrowserAnimationBuilder)
-    }]
-  }], null, null);
-})();
-/**
- * A factory object returned from the
- * <code>[AnimationBuilder.build](api/animations/AnimationBuilder#build)()</code>
- * method.
- *
- * @publicApi
- */
-class AnimationFactory {}
-class BrowserAnimationBuilder extends AnimationBuilder {
-  constructor(rootRenderer, doc) {
-    super();
-    this.animationModuleType = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_0__.ANIMATION_MODULE_TYPE, {
-      optional: true
-    });
-    this._nextAnimationId = 0;
-    const typeData = {
-      id: '0',
-      encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewEncapsulation.None,
-      styles: [],
-      data: {
-        animation: []
-      }
-    };
-    this._renderer = rootRenderer.createRenderer(doc.body, typeData);
-    if (this.animationModuleType === null && !isAnimationRenderer(this._renderer)) {
-      // We only support AnimationRenderer & DynamicDelegationRenderer for this AnimationBuilder
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3600 /* RuntimeErrorCode.BROWSER_ANIMATION_BUILDER_INJECTED_WITHOUT_ANIMATIONS */, (typeof ngDevMode === 'undefined' || ngDevMode) && 'Angular detected that the `AnimationBuilder` was injected, but animation support was not enabled. ' + 'Please make sure that you enable animations in your application by calling `provideAnimations()` or `provideAnimationsAsync()` function.');
-    }
-  }
-  build(animation) {
-    const id = this._nextAnimationId;
-    this._nextAnimationId++;
-    const entry = Array.isArray(animation) ? sequence(animation) : animation;
-    issueAnimationCommand(this._renderer, null, id, 'register', [entry]);
-    return new BrowserAnimationFactory(id, this._renderer);
-  }
-  static {
-    this.ɵfac = function BrowserAnimationBuilder_Factory(t) {
-      return new (t || BrowserAnimationBuilder)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.RendererFactory2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_1__.DOCUMENT));
-    };
-  }
-  static {
-    this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
-      token: BrowserAnimationBuilder,
-      factory: BrowserAnimationBuilder.ɵfac,
-      providedIn: 'root'
-    });
-  }
-}
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BrowserAnimationBuilder, [{
-    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
-    args: [{
-      providedIn: 'root'
-    }]
-  }], () => [{
-    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.RendererFactory2
-  }, {
-    type: Document,
-    decorators: [{
-      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
-      args: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.DOCUMENT]
-    }]
-  }], null);
-})();
-class BrowserAnimationFactory extends AnimationFactory {
-  constructor(_id, _renderer) {
-    super();
-    this._id = _id;
-    this._renderer = _renderer;
-  }
-  create(element, options) {
-    return new RendererAnimationPlayer(this._id, element, options || {}, this._renderer);
-  }
-}
-class RendererAnimationPlayer {
-  constructor(id, element, options, _renderer) {
-    this.id = id;
-    this.element = element;
-    this._renderer = _renderer;
-    this.parentPlayer = null;
-    this._started = false;
-    this.totalTime = 0;
-    this._command('create', options);
-  }
-  _listen(eventName, callback) {
-    return this._renderer.listen(this.element, `@@${this.id}:${eventName}`, callback);
-  }
-  _command(command, ...args) {
-    issueAnimationCommand(this._renderer, this.element, this.id, command, args);
-  }
-  onDone(fn) {
-    this._listen('done', fn);
-  }
-  onStart(fn) {
-    this._listen('start', fn);
-  }
-  onDestroy(fn) {
-    this._listen('destroy', fn);
-  }
-  init() {
-    this._command('init');
-  }
-  hasStarted() {
-    return this._started;
-  }
-  play() {
-    this._command('play');
-    this._started = true;
-  }
-  pause() {
-    this._command('pause');
-  }
-  restart() {
-    this._command('restart');
-  }
-  finish() {
-    this._command('finish');
-  }
-  destroy() {
-    this._command('destroy');
-  }
-  reset() {
-    this._command('reset');
-    this._started = false;
-  }
-  setPosition(p) {
-    this._command('setPosition', p);
-  }
-  getPosition() {
-    return unwrapAnimationRenderer(this._renderer)?.engine?.players[this.id]?.getPosition() ?? 0;
-  }
-}
-function issueAnimationCommand(renderer, element, id, command, args) {
-  renderer.setProperty(element, `@@${id}:${command}`, args);
-}
-/**
- * The following 2 methods cannot reference their correct types (AnimationRenderer &
- * DynamicDelegationRenderer) since this would introduce a import cycle.
- */
-function unwrapAnimationRenderer(renderer) {
-  const type = renderer.ɵtype;
-  if (type === 0 /* AnimationRendererType.Regular */) {
-    return renderer;
-  } else if (type === 1 /* AnimationRendererType.Delegated */) {
-    return renderer.animationRenderer;
-  }
-  return null;
-}
-function isAnimationRenderer(renderer) {
-  const type = renderer.ɵtype;
-  return type === 0 /* AnimationRendererType.Regular */ || type === 1 /* AnimationRendererType.Delegated */;
-}
-
-/**
- * An empty programmatic controller for reusable animations.
- * Used internally when animations are disabled, to avoid
- * checking for the null case when an animation player is expected.
- *
- * @see {@link animate}
- * @see {@link AnimationPlayer}
- * @see {@link ɵAnimationGroupPlayer AnimationGroupPlayer}
- *
- * @publicApi
- */
-class NoopAnimationPlayer {
-  constructor(duration = 0, delay = 0) {
-    this._onDoneFns = [];
-    this._onStartFns = [];
-    this._onDestroyFns = [];
-    this._originalOnDoneFns = [];
-    this._originalOnStartFns = [];
-    this._started = false;
-    this._destroyed = false;
-    this._finished = false;
-    this._position = 0;
-    this.parentPlayer = null;
-    this.totalTime = duration + delay;
-  }
-  _onFinish() {
-    if (!this._finished) {
-      this._finished = true;
-      this._onDoneFns.forEach(fn => fn());
-      this._onDoneFns = [];
-    }
-  }
-  onStart(fn) {
-    this._originalOnStartFns.push(fn);
-    this._onStartFns.push(fn);
-  }
-  onDone(fn) {
-    this._originalOnDoneFns.push(fn);
-    this._onDoneFns.push(fn);
-  }
-  onDestroy(fn) {
-    this._onDestroyFns.push(fn);
-  }
-  hasStarted() {
-    return this._started;
-  }
-  init() {}
-  play() {
-    if (!this.hasStarted()) {
-      this._onStart();
-      this.triggerMicrotask();
-    }
-    this._started = true;
-  }
-  /** @internal */
-  triggerMicrotask() {
-    queueMicrotask(() => this._onFinish());
-  }
-  _onStart() {
-    this._onStartFns.forEach(fn => fn());
-    this._onStartFns = [];
-  }
-  pause() {}
-  restart() {}
-  finish() {
-    this._onFinish();
-  }
-  destroy() {
-    if (!this._destroyed) {
-      this._destroyed = true;
-      if (!this.hasStarted()) {
-        this._onStart();
-      }
-      this.finish();
-      this._onDestroyFns.forEach(fn => fn());
-      this._onDestroyFns = [];
-    }
-  }
-  reset() {
-    this._started = false;
-    this._finished = false;
-    this._onStartFns = this._originalOnStartFns;
-    this._onDoneFns = this._originalOnDoneFns;
-  }
-  setPosition(position) {
-    this._position = this.totalTime ? position * this.totalTime : 1;
-  }
-  getPosition() {
-    return this.totalTime ? this._position / this.totalTime : 1;
-  }
-  /** @internal */
-  triggerCallback(phaseName) {
-    const methods = phaseName == 'start' ? this._onStartFns : this._onDoneFns;
-    methods.forEach(fn => fn());
-    methods.length = 0;
-  }
-}
-
-/**
- * A programmatic controller for a group of reusable animations.
- * Used internally to control animations.
- *
- * @see {@link AnimationPlayer}
- * @see {@link animations/group group}
- *
- */
-class AnimationGroupPlayer {
-  constructor(_players) {
-    this._onDoneFns = [];
-    this._onStartFns = [];
-    this._finished = false;
-    this._started = false;
-    this._destroyed = false;
-    this._onDestroyFns = [];
-    this.parentPlayer = null;
-    this.totalTime = 0;
-    this.players = _players;
-    let doneCount = 0;
-    let destroyCount = 0;
-    let startCount = 0;
-    const total = this.players.length;
-    if (total == 0) {
-      queueMicrotask(() => this._onFinish());
-    } else {
-      this.players.forEach(player => {
-        player.onDone(() => {
-          if (++doneCount == total) {
-            this._onFinish();
-          }
-        });
-        player.onDestroy(() => {
-          if (++destroyCount == total) {
-            this._onDestroy();
-          }
-        });
-        player.onStart(() => {
-          if (++startCount == total) {
-            this._onStart();
-          }
-        });
-      });
-    }
-    this.totalTime = this.players.reduce((time, player) => Math.max(time, player.totalTime), 0);
-  }
-  _onFinish() {
-    if (!this._finished) {
-      this._finished = true;
-      this._onDoneFns.forEach(fn => fn());
-      this._onDoneFns = [];
-    }
-  }
-  init() {
-    this.players.forEach(player => player.init());
-  }
-  onStart(fn) {
-    this._onStartFns.push(fn);
-  }
-  _onStart() {
-    if (!this.hasStarted()) {
-      this._started = true;
-      this._onStartFns.forEach(fn => fn());
-      this._onStartFns = [];
-    }
-  }
-  onDone(fn) {
-    this._onDoneFns.push(fn);
-  }
-  onDestroy(fn) {
-    this._onDestroyFns.push(fn);
-  }
-  hasStarted() {
-    return this._started;
-  }
-  play() {
-    if (!this.parentPlayer) {
-      this.init();
-    }
-    this._onStart();
-    this.players.forEach(player => player.play());
-  }
-  pause() {
-    this.players.forEach(player => player.pause());
-  }
-  restart() {
-    this.players.forEach(player => player.restart());
-  }
-  finish() {
-    this._onFinish();
-    this.players.forEach(player => player.finish());
-  }
-  destroy() {
-    this._onDestroy();
-  }
-  _onDestroy() {
-    if (!this._destroyed) {
-      this._destroyed = true;
-      this._onFinish();
-      this.players.forEach(player => player.destroy());
-      this._onDestroyFns.forEach(fn => fn());
-      this._onDestroyFns = [];
-    }
-  }
-  reset() {
-    this.players.forEach(player => player.reset());
-    this._destroyed = false;
-    this._finished = false;
-    this._started = false;
-  }
-  setPosition(p) {
-    const timeAtPosition = p * this.totalTime;
-    this.players.forEach(player => {
-      const position = player.totalTime ? Math.min(1, timeAtPosition / player.totalTime) : 1;
-      player.setPosition(position);
-    });
-  }
-  getPosition() {
-    const longestPlayer = this.players.reduce((longestSoFar, player) => {
-      const newPlayerIsLongest = longestSoFar === null || player.totalTime > longestSoFar.totalTime;
-      return newPlayerIsLongest ? player : longestSoFar;
-    }, null);
-    return longestPlayer != null ? longestPlayer.getPosition() : 0;
-  }
-  beforeDestroy() {
-    this.players.forEach(player => {
-      if (player.beforeDestroy) {
-        player.beforeDestroy();
-      }
-    });
-  }
-  /** @internal */
-  triggerCallback(phaseName) {
-    const methods = phaseName == 'start' ? this._onStartFns : this._onDoneFns;
-    methods.forEach(fn => fn());
-    methods.length = 0;
-  }
-}
-const ɵPRE_STYLE = '!';
-
-/**
- * @module
- * @description
- * Entry point for all animation APIs of the animation package.
- */
-
-/**
- * @module
- * @description
- * Entry point for all public APIs of this package.
- */
-
-// This file is not used to build this module. It is only used during editing
-
-/**
- * Generated bundle index. Do not edit.
- */
-
-
-
-/***/ }),
-
-/***/ 655:
-/*!***************************************************************!*\
-  !*** ./node_modules/@angular/animations/fesm2022/browser.mjs ***!
-  \***************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   AnimationDriver: () => (/* binding */ AnimationDriver),
-/* harmony export */   NoopAnimationDriver: () => (/* binding */ NoopAnimationDriver),
-/* harmony export */   "ɵAnimation": () => (/* binding */ Animation),
-/* harmony export */   "ɵAnimationEngine": () => (/* binding */ AnimationEngine),
-/* harmony export */   "ɵAnimationRenderer": () => (/* binding */ AnimationRenderer),
-/* harmony export */   "ɵAnimationRendererFactory": () => (/* binding */ AnimationRendererFactory),
-/* harmony export */   "ɵAnimationStyleNormalizer": () => (/* binding */ AnimationStyleNormalizer),
-/* harmony export */   "ɵBaseAnimationRenderer": () => (/* binding */ BaseAnimationRenderer),
-/* harmony export */   "ɵNoopAnimationStyleNormalizer": () => (/* binding */ NoopAnimationStyleNormalizer),
-/* harmony export */   "ɵWebAnimationsDriver": () => (/* binding */ WebAnimationsDriver),
-/* harmony export */   "ɵWebAnimationsPlayer": () => (/* binding */ WebAnimationsPlayer),
-/* harmony export */   "ɵWebAnimationsStyleNormalizer": () => (/* binding */ WebAnimationsStyleNormalizer),
-/* harmony export */   "ɵallowPreviousPlayerStylesMerge": () => (/* binding */ allowPreviousPlayerStylesMerge),
-/* harmony export */   "ɵcamelCaseToDashCase": () => (/* binding */ camelCaseToDashCase),
-/* harmony export */   "ɵcontainsElement": () => (/* binding */ containsElement),
-/* harmony export */   "ɵcreateEngine": () => (/* binding */ createEngine),
-/* harmony export */   "ɵgetParentElement": () => (/* binding */ getParentElement),
-/* harmony export */   "ɵinvokeQuery": () => (/* binding */ invokeQuery),
-/* harmony export */   "ɵnormalizeKeyframes": () => (/* binding */ normalizeKeyframes),
-/* harmony export */   "ɵvalidateStyleProperty": () => (/* binding */ validateStyleProperty),
-/* harmony export */   "ɵvalidateWebAnimatableStyleProperty": () => (/* binding */ validateWebAnimatableStyleProperty)
-/* harmony export */ });
-/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/animations */ 7172);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7580);
-/**
- * @license Angular v17.3.12
- * (c) 2010-2024 Google LLC. https://angular.io/
- * License: MIT
- */
-
-
-
-
-const LINE_START = '\n - ';
-function invalidTimingValue(exp) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3000 /* RuntimeErrorCode.INVALID_TIMING_VALUE */, ngDevMode && `The provided timing value "${exp}" is invalid.`);
-}
-function negativeStepValue() {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3100 /* RuntimeErrorCode.NEGATIVE_STEP_VALUE */, ngDevMode && 'Duration values below 0 are not allowed for this animation step.');
-}
-function negativeDelayValue() {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3101 /* RuntimeErrorCode.NEGATIVE_DELAY_VALUE */, ngDevMode && 'Delay values below 0 are not allowed for this animation step.');
-}
-function invalidStyleParams(varName) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3001 /* RuntimeErrorCode.INVALID_STYLE_PARAMS */, ngDevMode && `Unable to resolve the local animation param ${varName} in the given list of values`);
-}
-function invalidParamValue(varName) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3003 /* RuntimeErrorCode.INVALID_PARAM_VALUE */, ngDevMode && `Please provide a value for the animation param ${varName}`);
-}
-function invalidNodeType(nodeType) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3004 /* RuntimeErrorCode.INVALID_NODE_TYPE */, ngDevMode && `Unable to resolve animation metadata node #${nodeType}`);
-}
-function invalidCssUnitValue(userProvidedProperty, value) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3005 /* RuntimeErrorCode.INVALID_CSS_UNIT_VALUE */, ngDevMode && `Please provide a CSS unit value for ${userProvidedProperty}:${value}`);
-}
-function invalidTrigger() {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3006 /* RuntimeErrorCode.INVALID_TRIGGER */, ngDevMode && "animation triggers cannot be prefixed with an `@` sign (e.g. trigger('@foo', [...]))");
-}
-function invalidDefinition() {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3007 /* RuntimeErrorCode.INVALID_DEFINITION */, ngDevMode && 'only state() and transition() definitions can sit inside of a trigger()');
-}
-function invalidState(metadataName, missingSubs) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3008 /* RuntimeErrorCode.INVALID_STATE */, ngDevMode && `state("${metadataName}", ...) must define default values for all the following style substitutions: ${missingSubs.join(', ')}`);
-}
-function invalidStyleValue(value) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3002 /* RuntimeErrorCode.INVALID_STYLE_VALUE */, ngDevMode && `The provided style string value ${value} is not allowed.`);
-}
-function invalidProperty(prop) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3009 /* RuntimeErrorCode.INVALID_PROPERTY */, ngDevMode && `The provided animation property "${prop}" is not a supported CSS property for animations`);
-}
-function invalidParallelAnimation(prop, firstStart, firstEnd, secondStart, secondEnd) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3010 /* RuntimeErrorCode.INVALID_PARALLEL_ANIMATION */, ngDevMode && `The CSS property "${prop}" that exists between the times of "${firstStart}ms" and "${firstEnd}ms" is also being animated in a parallel animation between the times of "${secondStart}ms" and "${secondEnd}ms"`);
-}
-function invalidKeyframes() {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3011 /* RuntimeErrorCode.INVALID_KEYFRAMES */, ngDevMode && `keyframes() must be placed inside of a call to animate()`);
-}
-function invalidOffset() {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3012 /* RuntimeErrorCode.INVALID_OFFSET */, ngDevMode && `Please ensure that all keyframe offsets are between 0 and 1`);
-}
-function keyframeOffsetsOutOfOrder() {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3200 /* RuntimeErrorCode.KEYFRAME_OFFSETS_OUT_OF_ORDER */, ngDevMode && `Please ensure that all keyframe offsets are in order`);
-}
-function keyframesMissingOffsets() {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3202 /* RuntimeErrorCode.KEYFRAMES_MISSING_OFFSETS */, ngDevMode && `Not all style() steps within the declared keyframes() contain offsets`);
-}
-function invalidStagger() {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3013 /* RuntimeErrorCode.INVALID_STAGGER */, ngDevMode && `stagger() can only be used inside of query()`);
-}
-function invalidQuery(selector) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3014 /* RuntimeErrorCode.INVALID_QUERY */, ngDevMode && `\`query("${selector}")\` returned zero elements. (Use \`query("${selector}", { optional: true })\` if you wish to allow this.)`);
-}
-function invalidExpression(expr) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3015 /* RuntimeErrorCode.INVALID_EXPRESSION */, ngDevMode && `The provided transition expression "${expr}" is not supported`);
-}
-function invalidTransitionAlias(alias) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3016 /* RuntimeErrorCode.INVALID_TRANSITION_ALIAS */, ngDevMode && `The transition alias value "${alias}" is not supported`);
-}
-function validationFailed(errors) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3500 /* RuntimeErrorCode.VALIDATION_FAILED */, ngDevMode && `animation validation failed:\n${errors.map(err => err.message).join('\n')}`);
-}
-function buildingFailed(errors) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3501 /* RuntimeErrorCode.BUILDING_FAILED */, ngDevMode && `animation building failed:\n${errors.map(err => err.message).join('\n')}`);
-}
-function triggerBuildFailed(name, errors) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3404 /* RuntimeErrorCode.TRIGGER_BUILD_FAILED */, ngDevMode && `The animation trigger "${name}" has failed to build due to the following errors:\n - ${errors.map(err => err.message).join('\n - ')}`);
-}
-function animationFailed(errors) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3502 /* RuntimeErrorCode.ANIMATION_FAILED */, ngDevMode && `Unable to animate due to the following errors:${LINE_START}${errors.map(err => err.message).join(LINE_START)}`);
-}
-function registerFailed(errors) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3503 /* RuntimeErrorCode.REGISTRATION_FAILED */, ngDevMode && `Unable to build the animation due to the following errors: ${errors.map(err => err.message).join('\n')}`);
-}
-function missingOrDestroyedAnimation() {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3300 /* RuntimeErrorCode.MISSING_OR_DESTROYED_ANIMATION */, ngDevMode && "The requested animation doesn't exist or has already been destroyed");
-}
-function createAnimationFailed(errors) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3504 /* RuntimeErrorCode.CREATE_ANIMATION_FAILED */, ngDevMode && `Unable to create the animation due to the following errors:${errors.map(err => err.message).join('\n')}`);
-}
-function missingPlayer(id) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3301 /* RuntimeErrorCode.MISSING_PLAYER */, ngDevMode && `Unable to find the timeline player referenced by ${id}`);
-}
-function missingTrigger(phase, name) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3302 /* RuntimeErrorCode.MISSING_TRIGGER */, ngDevMode && `Unable to listen on the animation trigger event "${phase}" because the animation trigger "${name}" doesn\'t exist!`);
-}
-function missingEvent(name) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3303 /* RuntimeErrorCode.MISSING_EVENT */, ngDevMode && `Unable to listen on the animation trigger "${name}" because the provided event is undefined!`);
-}
-function unsupportedTriggerEvent(phase, name) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3400 /* RuntimeErrorCode.UNSUPPORTED_TRIGGER_EVENT */, ngDevMode && `The provided animation trigger event "${phase}" for the animation trigger "${name}" is not supported!`);
-}
-function unregisteredTrigger(name) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3401 /* RuntimeErrorCode.UNREGISTERED_TRIGGER */, ngDevMode && `The provided animation trigger "${name}" has not been registered!`);
-}
-function triggerTransitionsFailed(errors) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3402 /* RuntimeErrorCode.TRIGGER_TRANSITIONS_FAILED */, ngDevMode && `Unable to process animations due to the following failed trigger transitions\n ${errors.map(err => err.message).join('\n')}`);
-}
-function triggerParsingFailed(name, errors) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3403 /* RuntimeErrorCode.TRIGGER_PARSING_FAILED */, ngDevMode && `Animation parsing for the ${name} trigger have failed:${LINE_START}${errors.map(err => err.message).join(LINE_START)}`);
-}
-function transitionFailed(name, errors) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](3505 /* RuntimeErrorCode.TRANSITION_FAILED */, ngDevMode && `@${name} has failed due to:\n ${errors.map(err => err.message).join('\n- ')}`);
-}
-
-/**
- * Set of all animatable CSS properties
- *
- * @see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
- */
-const ANIMATABLE_PROP_SET = new Set(['-moz-outline-radius', '-moz-outline-radius-bottomleft', '-moz-outline-radius-bottomright', '-moz-outline-radius-topleft', '-moz-outline-radius-topright', '-ms-grid-columns', '-ms-grid-rows', '-webkit-line-clamp', '-webkit-text-fill-color', '-webkit-text-stroke', '-webkit-text-stroke-color', 'accent-color', 'all', 'backdrop-filter', 'background', 'background-color', 'background-position', 'background-size', 'block-size', 'border', 'border-block-end', 'border-block-end-color', 'border-block-end-width', 'border-block-start', 'border-block-start-color', 'border-block-start-width', 'border-bottom', 'border-bottom-color', 'border-bottom-left-radius', 'border-bottom-right-radius', 'border-bottom-width', 'border-color', 'border-end-end-radius', 'border-end-start-radius', 'border-image-outset', 'border-image-slice', 'border-image-width', 'border-inline-end', 'border-inline-end-color', 'border-inline-end-width', 'border-inline-start', 'border-inline-start-color', 'border-inline-start-width', 'border-left', 'border-left-color', 'border-left-width', 'border-radius', 'border-right', 'border-right-color', 'border-right-width', 'border-start-end-radius', 'border-start-start-radius', 'border-top', 'border-top-color', 'border-top-left-radius', 'border-top-right-radius', 'border-top-width', 'border-width', 'bottom', 'box-shadow', 'caret-color', 'clip', 'clip-path', 'color', 'column-count', 'column-gap', 'column-rule', 'column-rule-color', 'column-rule-width', 'column-width', 'columns', 'filter', 'flex', 'flex-basis', 'flex-grow', 'flex-shrink', 'font', 'font-size', 'font-size-adjust', 'font-stretch', 'font-variation-settings', 'font-weight', 'gap', 'grid-column-gap', 'grid-gap', 'grid-row-gap', 'grid-template-columns', 'grid-template-rows', 'height', 'inline-size', 'input-security', 'inset', 'inset-block', 'inset-block-end', 'inset-block-start', 'inset-inline', 'inset-inline-end', 'inset-inline-start', 'left', 'letter-spacing', 'line-clamp', 'line-height', 'margin', 'margin-block-end', 'margin-block-start', 'margin-bottom', 'margin-inline-end', 'margin-inline-start', 'margin-left', 'margin-right', 'margin-top', 'mask', 'mask-border', 'mask-position', 'mask-size', 'max-block-size', 'max-height', 'max-inline-size', 'max-lines', 'max-width', 'min-block-size', 'min-height', 'min-inline-size', 'min-width', 'object-position', 'offset', 'offset-anchor', 'offset-distance', 'offset-path', 'offset-position', 'offset-rotate', 'opacity', 'order', 'outline', 'outline-color', 'outline-offset', 'outline-width', 'padding', 'padding-block-end', 'padding-block-start', 'padding-bottom', 'padding-inline-end', 'padding-inline-start', 'padding-left', 'padding-right', 'padding-top', 'perspective', 'perspective-origin', 'right', 'rotate', 'row-gap', 'scale', 'scroll-margin', 'scroll-margin-block', 'scroll-margin-block-end', 'scroll-margin-block-start', 'scroll-margin-bottom', 'scroll-margin-inline', 'scroll-margin-inline-end', 'scroll-margin-inline-start', 'scroll-margin-left', 'scroll-margin-right', 'scroll-margin-top', 'scroll-padding', 'scroll-padding-block', 'scroll-padding-block-end', 'scroll-padding-block-start', 'scroll-padding-bottom', 'scroll-padding-inline', 'scroll-padding-inline-end', 'scroll-padding-inline-start', 'scroll-padding-left', 'scroll-padding-right', 'scroll-padding-top', 'scroll-snap-coordinate', 'scroll-snap-destination', 'scrollbar-color', 'shape-image-threshold', 'shape-margin', 'shape-outside', 'tab-size', 'text-decoration', 'text-decoration-color', 'text-decoration-thickness', 'text-emphasis', 'text-emphasis-color', 'text-indent', 'text-shadow', 'text-underline-offset', 'top', 'transform', 'transform-origin', 'translate', 'vertical-align', 'visibility', 'width', 'word-spacing', 'z-index', 'zoom']);
-function optimizeGroupPlayer(players) {
-  switch (players.length) {
-    case 0:
-      return new _angular_animations__WEBPACK_IMPORTED_MODULE_1__.NoopAnimationPlayer();
-    case 1:
-      return players[0];
-    default:
-      return new _angular_animations__WEBPACK_IMPORTED_MODULE_1__["ɵAnimationGroupPlayer"](players);
-  }
-}
-function normalizeKeyframes$1(normalizer, keyframes, preStyles = new Map(), postStyles = new Map()) {
-  const errors = [];
-  const normalizedKeyframes = [];
-  let previousOffset = -1;
-  let previousKeyframe = null;
-  keyframes.forEach(kf => {
-    const offset = kf.get('offset');
-    const isSameOffset = offset == previousOffset;
-    const normalizedKeyframe = isSameOffset && previousKeyframe || new Map();
-    kf.forEach((val, prop) => {
-      let normalizedProp = prop;
-      let normalizedValue = val;
-      if (prop !== 'offset') {
-        normalizedProp = normalizer.normalizePropertyName(normalizedProp, errors);
-        switch (normalizedValue) {
-          case _angular_animations__WEBPACK_IMPORTED_MODULE_1__["ɵPRE_STYLE"]:
-            normalizedValue = preStyles.get(prop);
-            break;
-          case _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AUTO_STYLE:
-            normalizedValue = postStyles.get(prop);
-            break;
-          default:
-            normalizedValue = normalizer.normalizeStyleValue(prop, normalizedProp, normalizedValue, errors);
-            break;
-        }
-      }
-      normalizedKeyframe.set(normalizedProp, normalizedValue);
-    });
-    if (!isSameOffset) {
-      normalizedKeyframes.push(normalizedKeyframe);
-    }
-    previousKeyframe = normalizedKeyframe;
-    previousOffset = offset;
-  });
-  if (errors.length) {
-    throw animationFailed(errors);
-  }
-  return normalizedKeyframes;
-}
-function listenOnPlayer(player, eventName, event, callback) {
-  switch (eventName) {
-    case 'start':
-      player.onStart(() => callback(event && copyAnimationEvent(event, 'start', player)));
-      break;
-    case 'done':
-      player.onDone(() => callback(event && copyAnimationEvent(event, 'done', player)));
-      break;
-    case 'destroy':
-      player.onDestroy(() => callback(event && copyAnimationEvent(event, 'destroy', player)));
-      break;
-  }
-}
-function copyAnimationEvent(e, phaseName, player) {
-  const totalTime = player.totalTime;
-  const disabled = player.disabled ? true : false;
-  const event = makeAnimationEvent(e.element, e.triggerName, e.fromState, e.toState, phaseName || e.phaseName, totalTime == undefined ? e.totalTime : totalTime, disabled);
-  const data = e['_data'];
-  if (data != null) {
-    event['_data'] = data;
-  }
-  return event;
-}
-function makeAnimationEvent(element, triggerName, fromState, toState, phaseName = '', totalTime = 0, disabled) {
-  return {
-    element,
-    triggerName,
-    fromState,
-    toState,
-    phaseName,
-    totalTime,
-    disabled: !!disabled
-  };
-}
-function getOrSetDefaultValue(map, key, defaultValue) {
-  let value = map.get(key);
-  if (!value) {
-    map.set(key, value = defaultValue);
-  }
-  return value;
-}
-function parseTimelineCommand(command) {
-  const separatorPos = command.indexOf(':');
-  const id = command.substring(1, separatorPos);
-  const action = command.slice(separatorPos + 1);
-  return [id, action];
-}
-const documentElement = /* @__PURE__ */(() => typeof document === 'undefined' ? null : document.documentElement)();
-function getParentElement(element) {
-  const parent = element.parentNode || element.host || null; // consider host to support shadow DOM
-  if (parent === documentElement) {
-    return null;
-  }
-  return parent;
-}
-function containsVendorPrefix(prop) {
-  // Webkit is the only real popular vendor prefix nowadays
-  // cc: http://shouldiprefix.com/
-  return prop.substring(1, 6) == 'ebkit'; // webkit or Webkit
-}
-let _CACHED_BODY = null;
-let _IS_WEBKIT = false;
-function validateStyleProperty(prop) {
-  if (!_CACHED_BODY) {
-    _CACHED_BODY = getBodyNode() || {};
-    _IS_WEBKIT = _CACHED_BODY.style ? 'WebkitAppearance' in _CACHED_BODY.style : false;
-  }
-  let result = true;
-  if (_CACHED_BODY.style && !containsVendorPrefix(prop)) {
-    result = prop in _CACHED_BODY.style;
-    if (!result && _IS_WEBKIT) {
-      const camelProp = 'Webkit' + prop.charAt(0).toUpperCase() + prop.slice(1);
-      result = camelProp in _CACHED_BODY.style;
-    }
-  }
-  return result;
-}
-function validateWebAnimatableStyleProperty(prop) {
-  return ANIMATABLE_PROP_SET.has(prop);
-}
-function getBodyNode() {
-  if (typeof document != 'undefined') {
-    return document.body;
-  }
-  return null;
-}
-function containsElement(elm1, elm2) {
-  while (elm2) {
-    if (elm2 === elm1) {
-      return true;
-    }
-    elm2 = getParentElement(elm2);
-  }
-  return false;
-}
-function invokeQuery(element, selector, multi) {
-  if (multi) {
-    return Array.from(element.querySelectorAll(selector));
-  }
-  const elem = element.querySelector(selector);
-  return elem ? [elem] : [];
-}
-function hypenatePropsKeys(original) {
-  const newMap = new Map();
-  original.forEach((val, prop) => {
-    const newProp = prop.replace(/([a-z])([A-Z])/g, '$1-$2');
-    newMap.set(newProp, val);
-  });
-  return newMap;
-}
-
-/**
- * @publicApi
- *
- * `AnimationDriver` implentation for Noop animations
- */
-class NoopAnimationDriver {
-  /**
-   * @returns Whether `prop` is a valid CSS property
-   */
-  validateStyleProperty(prop) {
-    return validateStyleProperty(prop);
-  }
-  /**
-   * @deprecated unused
-   */
-  matchesElement(_element, _selector) {
-    // This method is deprecated and no longer in use so we return false.
-    return false;
-  }
-  /**
-   *
-   * @returns Whether elm1 contains elm2.
-   */
-  containsElement(elm1, elm2) {
-    return containsElement(elm1, elm2);
-  }
-  /**
-   * @returns Rhe parent of the given element or `null` if the element is the `document`
-   */
-  getParentElement(element) {
-    return getParentElement(element);
-  }
-  /**
-   * @returns The result of the query selector on the element. The array will contain up to 1 item
-   *     if `multi` is  `false`.
-   */
-  query(element, selector, multi) {
-    return invokeQuery(element, selector, multi);
-  }
-  /**
-   * @returns The `defaultValue` or empty string
-   */
-  computeStyle(element, prop, defaultValue) {
-    return defaultValue || '';
-  }
-  /**
-   * @returns An `NoopAnimationPlayer`
-   */
-  animate(element, keyframes, duration, delay, easing, previousPlayers = [], scrubberAccessRequested) {
-    return new _angular_animations__WEBPACK_IMPORTED_MODULE_1__.NoopAnimationPlayer(duration, delay);
-  }
-  static {
-    this.ɵfac = function NoopAnimationDriver_Factory(t) {
-      return new (t || NoopAnimationDriver)();
-    };
-  }
-  static {
-    this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
-      token: NoopAnimationDriver,
-      factory: NoopAnimationDriver.ɵfac
-    });
-  }
-}
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NoopAnimationDriver, [{
-    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable
-  }], null, null);
-})();
-/**
- * @publicApi
- */
-class AnimationDriver {
-  /**
-   * @deprecated Use the NoopAnimationDriver class.
-   */
-  static {
-    this.NOOP = new NoopAnimationDriver();
-  }
-}
-class AnimationStyleNormalizer {}
-class NoopAnimationStyleNormalizer {
-  normalizePropertyName(propertyName, errors) {
-    return propertyName;
-  }
-  normalizeStyleValue(userProvidedProperty, normalizedProperty, value, errors) {
-    return value;
-  }
-}
-const ONE_SECOND = 1000;
-const SUBSTITUTION_EXPR_START = '{{';
-const SUBSTITUTION_EXPR_END = '}}';
-const ENTER_CLASSNAME = 'ng-enter';
-const LEAVE_CLASSNAME = 'ng-leave';
-const NG_TRIGGER_CLASSNAME = 'ng-trigger';
-const NG_TRIGGER_SELECTOR = '.ng-trigger';
-const NG_ANIMATING_CLASSNAME = 'ng-animating';
-const NG_ANIMATING_SELECTOR = '.ng-animating';
-function resolveTimingValue(value) {
-  if (typeof value == 'number') return value;
-  const matches = value.match(/^(-?[\.\d]+)(m?s)/);
-  if (!matches || matches.length < 2) return 0;
-  return _convertTimeValueToMS(parseFloat(matches[1]), matches[2]);
-}
-function _convertTimeValueToMS(value, unit) {
-  switch (unit) {
-    case 's':
-      return value * ONE_SECOND;
-    default:
-      // ms or something else
-      return value;
-  }
-}
-function resolveTiming(timings, errors, allowNegativeValues) {
-  return timings.hasOwnProperty('duration') ? timings : parseTimeExpression(timings, errors, allowNegativeValues);
-}
-function parseTimeExpression(exp, errors, allowNegativeValues) {
-  const regex = /^(-?[\.\d]+)(m?s)(?:\s+(-?[\.\d]+)(m?s))?(?:\s+([-a-z]+(?:\(.+?\))?))?$/i;
-  let duration;
-  let delay = 0;
-  let easing = '';
-  if (typeof exp === 'string') {
-    const matches = exp.match(regex);
-    if (matches === null) {
-      errors.push(invalidTimingValue(exp));
-      return {
-        duration: 0,
-        delay: 0,
-        easing: ''
-      };
-    }
-    duration = _convertTimeValueToMS(parseFloat(matches[1]), matches[2]);
-    const delayMatch = matches[3];
-    if (delayMatch != null) {
-      delay = _convertTimeValueToMS(parseFloat(delayMatch), matches[4]);
-    }
-    const easingVal = matches[5];
-    if (easingVal) {
-      easing = easingVal;
-    }
-  } else {
-    duration = exp;
-  }
-  if (!allowNegativeValues) {
-    let containsErrors = false;
-    let startIndex = errors.length;
-    if (duration < 0) {
-      errors.push(negativeStepValue());
-      containsErrors = true;
-    }
-    if (delay < 0) {
-      errors.push(negativeDelayValue());
-      containsErrors = true;
-    }
-    if (containsErrors) {
-      errors.splice(startIndex, 0, invalidTimingValue(exp));
-    }
-  }
-  return {
-    duration,
-    delay,
-    easing
-  };
-}
-function normalizeKeyframes(keyframes) {
-  if (!keyframes.length) {
-    return [];
-  }
-  if (keyframes[0] instanceof Map) {
-    return keyframes;
-  }
-  return keyframes.map(kf => new Map(Object.entries(kf)));
-}
-function normalizeStyles(styles) {
-  return Array.isArray(styles) ? new Map(...styles) : new Map(styles);
-}
-function setStyles(element, styles, formerStyles) {
-  styles.forEach((val, prop) => {
-    const camelProp = dashCaseToCamelCase(prop);
-    if (formerStyles && !formerStyles.has(prop)) {
-      formerStyles.set(prop, element.style[camelProp]);
-    }
-    element.style[camelProp] = val;
-  });
-}
-function eraseStyles(element, styles) {
-  styles.forEach((_, prop) => {
-    const camelProp = dashCaseToCamelCase(prop);
-    element.style[camelProp] = '';
-  });
-}
-function normalizeAnimationEntry(steps) {
-  if (Array.isArray(steps)) {
-    if (steps.length == 1) return steps[0];
-    return (0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.sequence)(steps);
-  }
-  return steps;
-}
-function validateStyleParams(value, options, errors) {
-  const params = options.params || {};
-  const matches = extractStyleParams(value);
-  if (matches.length) {
-    matches.forEach(varName => {
-      if (!params.hasOwnProperty(varName)) {
-        errors.push(invalidStyleParams(varName));
-      }
-    });
-  }
-}
-const PARAM_REGEX = new RegExp(`${SUBSTITUTION_EXPR_START}\\s*(.+?)\\s*${SUBSTITUTION_EXPR_END}`, 'g');
-function extractStyleParams(value) {
-  let params = [];
-  if (typeof value === 'string') {
-    let match;
-    while (match = PARAM_REGEX.exec(value)) {
-      params.push(match[1]);
-    }
-    PARAM_REGEX.lastIndex = 0;
-  }
-  return params;
-}
-function interpolateParams(value, params, errors) {
-  const original = `${value}`;
-  const str = original.replace(PARAM_REGEX, (_, varName) => {
-    let localVal = params[varName];
-    // this means that the value was never overridden by the data passed in by the user
-    if (localVal == null) {
-      errors.push(invalidParamValue(varName));
-      localVal = '';
-    }
-    return localVal.toString();
-  });
-  // we do this to assert that numeric values stay as they are
-  return str == original ? value : str;
-}
-const DASH_CASE_REGEXP = /-+([a-z0-9])/g;
-function dashCaseToCamelCase(input) {
-  return input.replace(DASH_CASE_REGEXP, (...m) => m[1].toUpperCase());
-}
-function camelCaseToDashCase(input) {
-  return input.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
-}
-function allowPreviousPlayerStylesMerge(duration, delay) {
-  return duration === 0 || delay === 0;
-}
-function balancePreviousStylesIntoKeyframes(element, keyframes, previousStyles) {
-  if (previousStyles.size && keyframes.length) {
-    let startingKeyframe = keyframes[0];
-    let missingStyleProps = [];
-    previousStyles.forEach((val, prop) => {
-      if (!startingKeyframe.has(prop)) {
-        missingStyleProps.push(prop);
-      }
-      startingKeyframe.set(prop, val);
-    });
-    if (missingStyleProps.length) {
-      for (let i = 1; i < keyframes.length; i++) {
-        let kf = keyframes[i];
-        missingStyleProps.forEach(prop => kf.set(prop, computeStyle(element, prop)));
-      }
-    }
-  }
-  return keyframes;
-}
-function visitDslNode(visitor, node, context) {
-  switch (node.type) {
-    case _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Trigger:
-      return visitor.visitTrigger(node, context);
-    case _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.State:
-      return visitor.visitState(node, context);
-    case _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Transition:
-      return visitor.visitTransition(node, context);
-    case _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Sequence:
-      return visitor.visitSequence(node, context);
-    case _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Group:
-      return visitor.visitGroup(node, context);
-    case _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Animate:
-      return visitor.visitAnimate(node, context);
-    case _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Keyframes:
-      return visitor.visitKeyframes(node, context);
-    case _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Style:
-      return visitor.visitStyle(node, context);
-    case _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Reference:
-      return visitor.visitReference(node, context);
-    case _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.AnimateChild:
-      return visitor.visitAnimateChild(node, context);
-    case _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.AnimateRef:
-      return visitor.visitAnimateRef(node, context);
-    case _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Query:
-      return visitor.visitQuery(node, context);
-    case _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Stagger:
-      return visitor.visitStagger(node, context);
-    default:
-      throw invalidNodeType(node.type);
-  }
-}
-function computeStyle(element, prop) {
-  return window.getComputedStyle(element)[prop];
-}
-const DIMENSIONAL_PROP_SET = new Set(['width', 'height', 'minWidth', 'minHeight', 'maxWidth', 'maxHeight', 'left', 'top', 'bottom', 'right', 'fontSize', 'outlineWidth', 'outlineOffset', 'paddingTop', 'paddingLeft', 'paddingBottom', 'paddingRight', 'marginTop', 'marginLeft', 'marginBottom', 'marginRight', 'borderRadius', 'borderWidth', 'borderTopWidth', 'borderLeftWidth', 'borderRightWidth', 'borderBottomWidth', 'textIndent', 'perspective']);
-class WebAnimationsStyleNormalizer extends AnimationStyleNormalizer {
-  normalizePropertyName(propertyName, errors) {
-    return dashCaseToCamelCase(propertyName);
-  }
-  normalizeStyleValue(userProvidedProperty, normalizedProperty, value, errors) {
-    let unit = '';
-    const strVal = value.toString().trim();
-    if (DIMENSIONAL_PROP_SET.has(normalizedProperty) && value !== 0 && value !== '0') {
-      if (typeof value === 'number') {
-        unit = 'px';
-      } else {
-        const valAndSuffixMatch = value.match(/^[+-]?[\d\.]+([a-z]*)$/);
-        if (valAndSuffixMatch && valAndSuffixMatch[1].length == 0) {
-          errors.push(invalidCssUnitValue(userProvidedProperty, value));
-        }
-      }
-    }
-    return strVal + unit;
-  }
-}
-function createListOfWarnings(warnings) {
-  const LINE_START = '\n - ';
-  return `${LINE_START}${warnings.filter(Boolean).map(warning => warning).join(LINE_START)}`;
-}
-function warnValidation(warnings) {
-  (typeof ngDevMode === 'undefined' || ngDevMode) && console.warn(`animation validation warnings:${createListOfWarnings(warnings)}`);
-}
-function warnTriggerBuild(name, warnings) {
-  (typeof ngDevMode === 'undefined' || ngDevMode) && console.warn(`The animation trigger "${name}" has built with the following warnings:${createListOfWarnings(warnings)}`);
-}
-function warnRegister(warnings) {
-  (typeof ngDevMode === 'undefined' || ngDevMode) && console.warn(`Animation built with the following warnings:${createListOfWarnings(warnings)}`);
-}
-function triggerParsingWarnings(name, warnings) {
-  (typeof ngDevMode === 'undefined' || ngDevMode) && console.warn(`Animation parsing for the ${name} trigger presents the following warnings:${createListOfWarnings(warnings)}`);
-}
-function pushUnrecognizedPropertiesWarning(warnings, props) {
-  if (props.length) {
-    warnings.push(`The following provided properties are not recognized: ${props.join(', ')}`);
-  }
-}
-const ANY_STATE = '*';
-function parseTransitionExpr(transitionValue, errors) {
-  const expressions = [];
-  if (typeof transitionValue == 'string') {
-    transitionValue.split(/\s*,\s*/).forEach(str => parseInnerTransitionStr(str, expressions, errors));
-  } else {
-    expressions.push(transitionValue);
-  }
-  return expressions;
-}
-function parseInnerTransitionStr(eventStr, expressions, errors) {
-  if (eventStr[0] == ':') {
-    const result = parseAnimationAlias(eventStr, errors);
-    if (typeof result == 'function') {
-      expressions.push(result);
-      return;
-    }
-    eventStr = result;
-  }
-  const match = eventStr.match(/^(\*|[-\w]+)\s*(<?[=-]>)\s*(\*|[-\w]+)$/);
-  if (match == null || match.length < 4) {
-    errors.push(invalidExpression(eventStr));
-    return expressions;
-  }
-  const fromState = match[1];
-  const separator = match[2];
-  const toState = match[3];
-  expressions.push(makeLambdaFromStates(fromState, toState));
-  const isFullAnyStateExpr = fromState == ANY_STATE && toState == ANY_STATE;
-  if (separator[0] == '<' && !isFullAnyStateExpr) {
-    expressions.push(makeLambdaFromStates(toState, fromState));
-  }
-  return;
-}
-function parseAnimationAlias(alias, errors) {
-  switch (alias) {
-    case ':enter':
-      return 'void => *';
-    case ':leave':
-      return '* => void';
-    case ':increment':
-      return (fromState, toState) => parseFloat(toState) > parseFloat(fromState);
-    case ':decrement':
-      return (fromState, toState) => parseFloat(toState) < parseFloat(fromState);
-    default:
-      errors.push(invalidTransitionAlias(alias));
-      return '* => *';
-  }
-}
-// DO NOT REFACTOR ... keep the follow set instantiations
-// with the values intact (closure compiler for some reason
-// removes follow-up lines that add the values outside of
-// the constructor...
-const TRUE_BOOLEAN_VALUES = new Set(['true', '1']);
-const FALSE_BOOLEAN_VALUES = new Set(['false', '0']);
-function makeLambdaFromStates(lhs, rhs) {
-  const LHS_MATCH_BOOLEAN = TRUE_BOOLEAN_VALUES.has(lhs) || FALSE_BOOLEAN_VALUES.has(lhs);
-  const RHS_MATCH_BOOLEAN = TRUE_BOOLEAN_VALUES.has(rhs) || FALSE_BOOLEAN_VALUES.has(rhs);
-  return (fromState, toState) => {
-    let lhsMatch = lhs == ANY_STATE || lhs == fromState;
-    let rhsMatch = rhs == ANY_STATE || rhs == toState;
-    if (!lhsMatch && LHS_MATCH_BOOLEAN && typeof fromState === 'boolean') {
-      lhsMatch = fromState ? TRUE_BOOLEAN_VALUES.has(lhs) : FALSE_BOOLEAN_VALUES.has(lhs);
-    }
-    if (!rhsMatch && RHS_MATCH_BOOLEAN && typeof toState === 'boolean') {
-      rhsMatch = toState ? TRUE_BOOLEAN_VALUES.has(rhs) : FALSE_BOOLEAN_VALUES.has(rhs);
-    }
-    return lhsMatch && rhsMatch;
-  };
-}
-const SELF_TOKEN = ':self';
-const SELF_TOKEN_REGEX = new RegExp(`s*${SELF_TOKEN}s*,?`, 'g');
-/*
- * [Validation]
- * The visitor code below will traverse the animation AST generated by the animation verb functions
- * (the output is a tree of objects) and attempt to perform a series of validations on the data. The
- * following corner-cases will be validated:
- *
- * 1. Overlap of animations
- * Given that a CSS property cannot be animated in more than one place at the same time, it's
- * important that this behavior is detected and validated. The way in which this occurs is that
- * each time a style property is examined, a string-map containing the property will be updated with
- * the start and end times for when the property is used within an animation step.
- *
- * If there are two or more parallel animations that are currently running (these are invoked by the
- * group()) on the same element then the validator will throw an error. Since the start/end timing
- * values are collected for each property then if the current animation step is animating the same
- * property and its timing values fall anywhere into the window of time that the property is
- * currently being animated within then this is what causes an error.
- *
- * 2. Timing values
- * The validator will validate to see if a timing value of `duration delay easing` or
- * `durationNumber` is valid or not.
- *
- * (note that upon validation the code below will replace the timing data with an object containing
- * {duration,delay,easing}.
- *
- * 3. Offset Validation
- * Each of the style() calls are allowed to have an offset value when placed inside of keyframes().
- * Offsets within keyframes() are considered valid when:
- *
- *   - No offsets are used at all
- *   - Each style() entry contains an offset value
- *   - Each offset is between 0 and 1
- *   - Each offset is greater to or equal than the previous one
- *
- * Otherwise an error will be thrown.
- */
-function buildAnimationAst(driver, metadata, errors, warnings) {
-  return new AnimationAstBuilderVisitor(driver).build(metadata, errors, warnings);
-}
-const ROOT_SELECTOR = '';
-class AnimationAstBuilderVisitor {
-  constructor(_driver) {
-    this._driver = _driver;
-  }
-  build(metadata, errors, warnings) {
-    const context = new AnimationAstBuilderContext(errors);
-    this._resetContextStyleTimingState(context);
-    const ast = visitDslNode(this, normalizeAnimationEntry(metadata), context);
-    if (typeof ngDevMode === 'undefined' || ngDevMode) {
-      if (context.unsupportedCSSPropertiesFound.size) {
-        pushUnrecognizedPropertiesWarning(warnings, [...context.unsupportedCSSPropertiesFound.keys()]);
-      }
-    }
-    return ast;
-  }
-  _resetContextStyleTimingState(context) {
-    context.currentQuerySelector = ROOT_SELECTOR;
-    context.collectedStyles = new Map();
-    context.collectedStyles.set(ROOT_SELECTOR, new Map());
-    context.currentTime = 0;
-  }
-  visitTrigger(metadata, context) {
-    let queryCount = context.queryCount = 0;
-    let depCount = context.depCount = 0;
-    const states = [];
-    const transitions = [];
-    if (metadata.name.charAt(0) == '@') {
-      context.errors.push(invalidTrigger());
-    }
-    metadata.definitions.forEach(def => {
-      this._resetContextStyleTimingState(context);
-      if (def.type == _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.State) {
-        const stateDef = def;
-        const name = stateDef.name;
-        name.toString().split(/\s*,\s*/).forEach(n => {
-          stateDef.name = n;
-          states.push(this.visitState(stateDef, context));
-        });
-        stateDef.name = name;
-      } else if (def.type == _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Transition) {
-        const transition = this.visitTransition(def, context);
-        queryCount += transition.queryCount;
-        depCount += transition.depCount;
-        transitions.push(transition);
-      } else {
-        context.errors.push(invalidDefinition());
-      }
-    });
-    return {
-      type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Trigger,
-      name: metadata.name,
-      states,
-      transitions,
-      queryCount,
-      depCount,
-      options: null
-    };
-  }
-  visitState(metadata, context) {
-    const styleAst = this.visitStyle(metadata.styles, context);
-    const astParams = metadata.options && metadata.options.params || null;
-    if (styleAst.containsDynamicStyles) {
-      const missingSubs = new Set();
-      const params = astParams || {};
-      styleAst.styles.forEach(style => {
-        if (style instanceof Map) {
-          style.forEach(value => {
-            extractStyleParams(value).forEach(sub => {
-              if (!params.hasOwnProperty(sub)) {
-                missingSubs.add(sub);
-              }
-            });
-          });
-        }
-      });
-      if (missingSubs.size) {
-        context.errors.push(invalidState(metadata.name, [...missingSubs.values()]));
-      }
-    }
-    return {
-      type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.State,
-      name: metadata.name,
-      style: styleAst,
-      options: astParams ? {
-        params: astParams
-      } : null
-    };
-  }
-  visitTransition(metadata, context) {
-    context.queryCount = 0;
-    context.depCount = 0;
-    const animation = visitDslNode(this, normalizeAnimationEntry(metadata.animation), context);
-    const matchers = parseTransitionExpr(metadata.expr, context.errors);
-    return {
-      type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Transition,
-      matchers,
-      animation,
-      queryCount: context.queryCount,
-      depCount: context.depCount,
-      options: normalizeAnimationOptions(metadata.options)
-    };
-  }
-  visitSequence(metadata, context) {
-    return {
-      type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Sequence,
-      steps: metadata.steps.map(s => visitDslNode(this, s, context)),
-      options: normalizeAnimationOptions(metadata.options)
-    };
-  }
-  visitGroup(metadata, context) {
-    const currentTime = context.currentTime;
-    let furthestTime = 0;
-    const steps = metadata.steps.map(step => {
-      context.currentTime = currentTime;
-      const innerAst = visitDslNode(this, step, context);
-      furthestTime = Math.max(furthestTime, context.currentTime);
-      return innerAst;
-    });
-    context.currentTime = furthestTime;
-    return {
-      type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Group,
-      steps,
-      options: normalizeAnimationOptions(metadata.options)
-    };
-  }
-  visitAnimate(metadata, context) {
-    const timingAst = constructTimingAst(metadata.timings, context.errors);
-    context.currentAnimateTimings = timingAst;
-    let styleAst;
-    let styleMetadata = metadata.styles ? metadata.styles : (0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.style)({});
-    if (styleMetadata.type == _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Keyframes) {
-      styleAst = this.visitKeyframes(styleMetadata, context);
-    } else {
-      let styleMetadata = metadata.styles;
-      let isEmpty = false;
-      if (!styleMetadata) {
-        isEmpty = true;
-        const newStyleData = {};
-        if (timingAst.easing) {
-          newStyleData['easing'] = timingAst.easing;
-        }
-        styleMetadata = (0,_angular_animations__WEBPACK_IMPORTED_MODULE_1__.style)(newStyleData);
-      }
-      context.currentTime += timingAst.duration + timingAst.delay;
-      const _styleAst = this.visitStyle(styleMetadata, context);
-      _styleAst.isEmptyStep = isEmpty;
-      styleAst = _styleAst;
-    }
-    context.currentAnimateTimings = null;
-    return {
-      type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Animate,
-      timings: timingAst,
-      style: styleAst,
-      options: null
-    };
-  }
-  visitStyle(metadata, context) {
-    const ast = this._makeStyleAst(metadata, context);
-    this._validateStyleAst(ast, context);
-    return ast;
-  }
-  _makeStyleAst(metadata, context) {
-    const styles = [];
-    const metadataStyles = Array.isArray(metadata.styles) ? metadata.styles : [metadata.styles];
-    for (let styleTuple of metadataStyles) {
-      if (typeof styleTuple === 'string') {
-        if (styleTuple === _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AUTO_STYLE) {
-          styles.push(styleTuple);
-        } else {
-          context.errors.push(invalidStyleValue(styleTuple));
-        }
-      } else {
-        styles.push(new Map(Object.entries(styleTuple)));
-      }
-    }
-    let containsDynamicStyles = false;
-    let collectedEasing = null;
-    styles.forEach(styleData => {
-      if (styleData instanceof Map) {
-        if (styleData.has('easing')) {
-          collectedEasing = styleData.get('easing');
-          styleData.delete('easing');
-        }
-        if (!containsDynamicStyles) {
-          for (let value of styleData.values()) {
-            if (value.toString().indexOf(SUBSTITUTION_EXPR_START) >= 0) {
-              containsDynamicStyles = true;
-              break;
-            }
-          }
-        }
-      }
-    });
-    return {
-      type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Style,
-      styles,
-      easing: collectedEasing,
-      offset: metadata.offset,
-      containsDynamicStyles,
-      options: null
-    };
-  }
-  _validateStyleAst(ast, context) {
-    const timings = context.currentAnimateTimings;
-    let endTime = context.currentTime;
-    let startTime = context.currentTime;
-    if (timings && startTime > 0) {
-      startTime -= timings.duration + timings.delay;
-    }
-    ast.styles.forEach(tuple => {
-      if (typeof tuple === 'string') return;
-      tuple.forEach((value, prop) => {
-        if (typeof ngDevMode === 'undefined' || ngDevMode) {
-          if (!this._driver.validateStyleProperty(prop)) {
-            tuple.delete(prop);
-            context.unsupportedCSSPropertiesFound.add(prop);
-            return;
-          }
-        }
-        // This is guaranteed to have a defined Map at this querySelector location making it
-        // safe to add the assertion here. It is set as a default empty map in prior methods.
-        const collectedStyles = context.collectedStyles.get(context.currentQuerySelector);
-        const collectedEntry = collectedStyles.get(prop);
-        let updateCollectedStyle = true;
-        if (collectedEntry) {
-          if (startTime != endTime && startTime >= collectedEntry.startTime && endTime <= collectedEntry.endTime) {
-            context.errors.push(invalidParallelAnimation(prop, collectedEntry.startTime, collectedEntry.endTime, startTime, endTime));
-            updateCollectedStyle = false;
-          }
-          // we always choose the smaller start time value since we
-          // want to have a record of the entire animation window where
-          // the style property is being animated in between
-          startTime = collectedEntry.startTime;
-        }
-        if (updateCollectedStyle) {
-          collectedStyles.set(prop, {
-            startTime,
-            endTime
-          });
-        }
-        if (context.options) {
-          validateStyleParams(value, context.options, context.errors);
-        }
-      });
-    });
-  }
-  visitKeyframes(metadata, context) {
-    const ast = {
-      type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Keyframes,
-      styles: [],
-      options: null
-    };
-    if (!context.currentAnimateTimings) {
-      context.errors.push(invalidKeyframes());
-      return ast;
-    }
-    const MAX_KEYFRAME_OFFSET = 1;
-    let totalKeyframesWithOffsets = 0;
-    const offsets = [];
-    let offsetsOutOfOrder = false;
-    let keyframesOutOfRange = false;
-    let previousOffset = 0;
-    const keyframes = metadata.steps.map(styles => {
-      const style = this._makeStyleAst(styles, context);
-      let offsetVal = style.offset != null ? style.offset : consumeOffset(style.styles);
-      let offset = 0;
-      if (offsetVal != null) {
-        totalKeyframesWithOffsets++;
-        offset = style.offset = offsetVal;
-      }
-      keyframesOutOfRange = keyframesOutOfRange || offset < 0 || offset > 1;
-      offsetsOutOfOrder = offsetsOutOfOrder || offset < previousOffset;
-      previousOffset = offset;
-      offsets.push(offset);
-      return style;
-    });
-    if (keyframesOutOfRange) {
-      context.errors.push(invalidOffset());
-    }
-    if (offsetsOutOfOrder) {
-      context.errors.push(keyframeOffsetsOutOfOrder());
-    }
-    const length = metadata.steps.length;
-    let generatedOffset = 0;
-    if (totalKeyframesWithOffsets > 0 && totalKeyframesWithOffsets < length) {
-      context.errors.push(keyframesMissingOffsets());
-    } else if (totalKeyframesWithOffsets == 0) {
-      generatedOffset = MAX_KEYFRAME_OFFSET / (length - 1);
-    }
-    const limit = length - 1;
-    const currentTime = context.currentTime;
-    const currentAnimateTimings = context.currentAnimateTimings;
-    const animateDuration = currentAnimateTimings.duration;
-    keyframes.forEach((kf, i) => {
-      const offset = generatedOffset > 0 ? i == limit ? 1 : generatedOffset * i : offsets[i];
-      const durationUpToThisFrame = offset * animateDuration;
-      context.currentTime = currentTime + currentAnimateTimings.delay + durationUpToThisFrame;
-      currentAnimateTimings.duration = durationUpToThisFrame;
-      this._validateStyleAst(kf, context);
-      kf.offset = offset;
-      ast.styles.push(kf);
-    });
-    return ast;
-  }
-  visitReference(metadata, context) {
-    return {
-      type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Reference,
-      animation: visitDslNode(this, normalizeAnimationEntry(metadata.animation), context),
-      options: normalizeAnimationOptions(metadata.options)
-    };
-  }
-  visitAnimateChild(metadata, context) {
-    context.depCount++;
-    return {
-      type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.AnimateChild,
-      options: normalizeAnimationOptions(metadata.options)
-    };
-  }
-  visitAnimateRef(metadata, context) {
-    return {
-      type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.AnimateRef,
-      animation: this.visitReference(metadata.animation, context),
-      options: normalizeAnimationOptions(metadata.options)
-    };
-  }
-  visitQuery(metadata, context) {
-    const parentSelector = context.currentQuerySelector;
-    const options = metadata.options || {};
-    context.queryCount++;
-    context.currentQuery = metadata;
-    const [selector, includeSelf] = normalizeSelector(metadata.selector);
-    context.currentQuerySelector = parentSelector.length ? parentSelector + ' ' + selector : selector;
-    getOrSetDefaultValue(context.collectedStyles, context.currentQuerySelector, new Map());
-    const animation = visitDslNode(this, normalizeAnimationEntry(metadata.animation), context);
-    context.currentQuery = null;
-    context.currentQuerySelector = parentSelector;
-    return {
-      type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Query,
-      selector,
-      limit: options.limit || 0,
-      optional: !!options.optional,
-      includeSelf,
-      animation,
-      originalSelector: metadata.selector,
-      options: normalizeAnimationOptions(metadata.options)
-    };
-  }
-  visitStagger(metadata, context) {
-    if (!context.currentQuery) {
-      context.errors.push(invalidStagger());
-    }
-    const timings = metadata.timings === 'full' ? {
-      duration: 0,
-      delay: 0,
-      easing: 'full'
-    } : resolveTiming(metadata.timings, context.errors, true);
-    return {
-      type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Stagger,
-      animation: visitDslNode(this, normalizeAnimationEntry(metadata.animation), context),
-      timings,
-      options: null
-    };
-  }
-}
-function normalizeSelector(selector) {
-  const hasAmpersand = selector.split(/\s*,\s*/).find(token => token == SELF_TOKEN) ? true : false;
-  if (hasAmpersand) {
-    selector = selector.replace(SELF_TOKEN_REGEX, '');
-  }
-  // Note: the :enter and :leave aren't normalized here since those
-  // selectors are filled in at runtime during timeline building
-  selector = selector.replace(/@\*/g, NG_TRIGGER_SELECTOR).replace(/@\w+/g, match => NG_TRIGGER_SELECTOR + '-' + match.slice(1)).replace(/:animating/g, NG_ANIMATING_SELECTOR);
-  return [selector, hasAmpersand];
-}
-function normalizeParams(obj) {
-  return obj ? {
-    ...obj
-  } : null;
-}
-class AnimationAstBuilderContext {
-  constructor(errors) {
-    this.errors = errors;
-    this.queryCount = 0;
-    this.depCount = 0;
-    this.currentTransition = null;
-    this.currentQuery = null;
-    this.currentQuerySelector = null;
-    this.currentAnimateTimings = null;
-    this.currentTime = 0;
-    this.collectedStyles = new Map();
-    this.options = null;
-    this.unsupportedCSSPropertiesFound = new Set();
-  }
-}
-function consumeOffset(styles) {
-  if (typeof styles == 'string') return null;
-  let offset = null;
-  if (Array.isArray(styles)) {
-    styles.forEach(styleTuple => {
-      if (styleTuple instanceof Map && styleTuple.has('offset')) {
-        const obj = styleTuple;
-        offset = parseFloat(obj.get('offset'));
-        obj.delete('offset');
-      }
-    });
-  } else if (styles instanceof Map && styles.has('offset')) {
-    const obj = styles;
-    offset = parseFloat(obj.get('offset'));
-    obj.delete('offset');
-  }
-  return offset;
-}
-function constructTimingAst(value, errors) {
-  if (value.hasOwnProperty('duration')) {
-    return value;
-  }
-  if (typeof value == 'number') {
-    const duration = resolveTiming(value, errors).duration;
-    return makeTimingAst(duration, 0, '');
-  }
-  const strValue = value;
-  const isDynamic = strValue.split(/\s+/).some(v => v.charAt(0) == '{' && v.charAt(1) == '{');
-  if (isDynamic) {
-    const ast = makeTimingAst(0, 0, '');
-    ast.dynamic = true;
-    ast.strValue = strValue;
-    return ast;
-  }
-  const timings = resolveTiming(strValue, errors);
-  return makeTimingAst(timings.duration, timings.delay, timings.easing);
-}
-function normalizeAnimationOptions(options) {
-  if (options) {
-    options = {
-      ...options
-    };
-    if (options['params']) {
-      options['params'] = normalizeParams(options['params']);
-    }
-  } else {
-    options = {};
-  }
-  return options;
-}
-function makeTimingAst(duration, delay, easing) {
-  return {
-    duration,
-    delay,
-    easing
-  };
-}
-function createTimelineInstruction(element, keyframes, preStyleProps, postStyleProps, duration, delay, easing = null, subTimeline = false) {
-  return {
-    type: 1 /* AnimationTransitionInstructionType.TimelineAnimation */,
-    element,
-    keyframes,
-    preStyleProps,
-    postStyleProps,
-    duration,
-    delay,
-    totalTime: duration + delay,
-    easing,
-    subTimeline
-  };
-}
-class ElementInstructionMap {
-  constructor() {
-    this._map = new Map();
-  }
-  get(element) {
-    return this._map.get(element) || [];
-  }
-  append(element, instructions) {
-    let existingInstructions = this._map.get(element);
-    if (!existingInstructions) {
-      this._map.set(element, existingInstructions = []);
-    }
-    existingInstructions.push(...instructions);
-  }
-  has(element) {
-    return this._map.has(element);
-  }
-  clear() {
-    this._map.clear();
-  }
-}
-const ONE_FRAME_IN_MILLISECONDS = 1;
-const ENTER_TOKEN = ':enter';
-const ENTER_TOKEN_REGEX = new RegExp(ENTER_TOKEN, 'g');
-const LEAVE_TOKEN = ':leave';
-const LEAVE_TOKEN_REGEX = new RegExp(LEAVE_TOKEN, 'g');
-/*
- * The code within this file aims to generate web-animations-compatible keyframes from Angular's
- * animation DSL code.
- *
- * The code below will be converted from:
- *
- * ```
- * sequence([
- *   style({ opacity: 0 }),
- *   animate(1000, style({ opacity: 0 }))
- * ])
- * ```
- *
- * To:
- * ```
- * keyframes = [{ opacity: 0, offset: 0 }, { opacity: 1, offset: 1 }]
- * duration = 1000
- * delay = 0
- * easing = ''
- * ```
- *
- * For this operation to cover the combination of animation verbs (style, animate, group, etc...) a
- * combination of AST traversal and merge-sort-like algorithms are used.
- *
- * [AST Traversal]
- * Each of the animation verbs, when executed, will return an string-map object representing what
- * type of action it is (style, animate, group, etc...) and the data associated with it. This means
- * that when functional composition mix of these functions is evaluated (like in the example above)
- * then it will end up producing a tree of objects representing the animation itself.
- *
- * When this animation object tree is processed by the visitor code below it will visit each of the
- * verb statements within the visitor. And during each visit it will build the context of the
- * animation keyframes by interacting with the `TimelineBuilder`.
- *
- * [TimelineBuilder]
- * This class is responsible for tracking the styles and building a series of keyframe objects for a
- * timeline between a start and end time. The builder starts off with an initial timeline and each
- * time the AST comes across a `group()`, `keyframes()` or a combination of the two within a
- * `sequence()` then it will generate a sub timeline for each step as well as a new one after
- * they are complete.
- *
- * As the AST is traversed, the timing state on each of the timelines will be incremented. If a sub
- * timeline was created (based on one of the cases above) then the parent timeline will attempt to
- * merge the styles used within the sub timelines into itself (only with group() this will happen).
- * This happens with a merge operation (much like how the merge works in mergeSort) and it will only
- * copy the most recently used styles from the sub timelines into the parent timeline. This ensures
- * that if the styles are used later on in another phase of the animation then they will be the most
- * up-to-date values.
- *
- * [How Missing Styles Are Updated]
- * Each timeline has a `backFill` property which is responsible for filling in new styles into
- * already processed keyframes if a new style shows up later within the animation sequence.
- *
- * ```
- * sequence([
- *   style({ width: 0 }),
- *   animate(1000, style({ width: 100 })),
- *   animate(1000, style({ width: 200 })),
- *   animate(1000, style({ width: 300 }))
- *   animate(1000, style({ width: 400, height: 400 })) // notice how `height` doesn't exist anywhere
- * else
- * ])
- * ```
- *
- * What is happening here is that the `height` value is added later in the sequence, but is missing
- * from all previous animation steps. Therefore when a keyframe is created it would also be missing
- * from all previous keyframes up until where it is first used. For the timeline keyframe generation
- * to properly fill in the style it will place the previous value (the value from the parent
- * timeline) or a default value of `*` into the backFill map.
- *
- * When a sub-timeline is created it will have its own backFill property. This is done so that
- * styles present within the sub-timeline do not accidentally seep into the previous/future timeline
- * keyframes
- *
- * [Validation]
- * The code in this file is not responsible for validation. That functionality happens with within
- * the `AnimationValidatorVisitor` code.
- */
-function buildAnimationTimelines(driver, rootElement, ast, enterClassName, leaveClassName, startingStyles = new Map(), finalStyles = new Map(), options, subInstructions, errors = []) {
-  return new AnimationTimelineBuilderVisitor().buildKeyframes(driver, rootElement, ast, enterClassName, leaveClassName, startingStyles, finalStyles, options, subInstructions, errors);
-}
-class AnimationTimelineBuilderVisitor {
-  buildKeyframes(driver, rootElement, ast, enterClassName, leaveClassName, startingStyles, finalStyles, options, subInstructions, errors = []) {
-    subInstructions = subInstructions || new ElementInstructionMap();
-    const context = new AnimationTimelineContext(driver, rootElement, subInstructions, enterClassName, leaveClassName, errors, []);
-    context.options = options;
-    const delay = options.delay ? resolveTimingValue(options.delay) : 0;
-    context.currentTimeline.delayNextStep(delay);
-    context.currentTimeline.setStyles([startingStyles], null, context.errors, options);
-    visitDslNode(this, ast, context);
-    // this checks to see if an actual animation happened
-    const timelines = context.timelines.filter(timeline => timeline.containsAnimation());
-    // note: we just want to apply the final styles for the rootElement, so we do not
-    //       just apply the styles to the last timeline but the last timeline which
-    //       element is the root one (basically `*`-styles are replaced with the actual
-    //       state style values only for the root element)
-    if (timelines.length && finalStyles.size) {
-      let lastRootTimeline;
-      for (let i = timelines.length - 1; i >= 0; i--) {
-        const timeline = timelines[i];
-        if (timeline.element === rootElement) {
-          lastRootTimeline = timeline;
-          break;
-        }
-      }
-      if (lastRootTimeline && !lastRootTimeline.allowOnlyTimelineStyles()) {
-        lastRootTimeline.setStyles([finalStyles], null, context.errors, options);
-      }
-    }
-    return timelines.length ? timelines.map(timeline => timeline.buildKeyframes()) : [createTimelineInstruction(rootElement, [], [], [], 0, delay, '', false)];
-  }
-  visitTrigger(ast, context) {
-    // these values are not visited in this AST
-  }
-  visitState(ast, context) {
-    // these values are not visited in this AST
-  }
-  visitTransition(ast, context) {
-    // these values are not visited in this AST
-  }
-  visitAnimateChild(ast, context) {
-    const elementInstructions = context.subInstructions.get(context.element);
-    if (elementInstructions) {
-      const innerContext = context.createSubContext(ast.options);
-      const startTime = context.currentTimeline.currentTime;
-      const endTime = this._visitSubInstructions(elementInstructions, innerContext, innerContext.options);
-      if (startTime != endTime) {
-        // we do this on the upper context because we created a sub context for
-        // the sub child animations
-        context.transformIntoNewTimeline(endTime);
-      }
-    }
-    context.previousNode = ast;
-  }
-  visitAnimateRef(ast, context) {
-    const innerContext = context.createSubContext(ast.options);
-    innerContext.transformIntoNewTimeline();
-    this._applyAnimationRefDelays([ast.options, ast.animation.options], context, innerContext);
-    this.visitReference(ast.animation, innerContext);
-    context.transformIntoNewTimeline(innerContext.currentTimeline.currentTime);
-    context.previousNode = ast;
-  }
-  _applyAnimationRefDelays(animationsRefsOptions, context, innerContext) {
-    for (const animationRefOptions of animationsRefsOptions) {
-      const animationDelay = animationRefOptions?.delay;
-      if (animationDelay) {
-        const animationDelayValue = typeof animationDelay === 'number' ? animationDelay : resolveTimingValue(interpolateParams(animationDelay, animationRefOptions?.params ?? {}, context.errors));
-        innerContext.delayNextStep(animationDelayValue);
-      }
-    }
-  }
-  _visitSubInstructions(instructions, context, options) {
-    const startTime = context.currentTimeline.currentTime;
-    let furthestTime = startTime;
-    // this is a special-case for when a user wants to skip a sub
-    // animation from being fired entirely.
-    const duration = options.duration != null ? resolveTimingValue(options.duration) : null;
-    const delay = options.delay != null ? resolveTimingValue(options.delay) : null;
-    if (duration !== 0) {
-      instructions.forEach(instruction => {
-        const instructionTimings = context.appendInstructionToTimeline(instruction, duration, delay);
-        furthestTime = Math.max(furthestTime, instructionTimings.duration + instructionTimings.delay);
-      });
-    }
-    return furthestTime;
-  }
-  visitReference(ast, context) {
-    context.updateOptions(ast.options, true);
-    visitDslNode(this, ast.animation, context);
-    context.previousNode = ast;
-  }
-  visitSequence(ast, context) {
-    const subContextCount = context.subContextCount;
-    let ctx = context;
-    const options = ast.options;
-    if (options && (options.params || options.delay)) {
-      ctx = context.createSubContext(options);
-      ctx.transformIntoNewTimeline();
-      if (options.delay != null) {
-        if (ctx.previousNode.type == _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Style) {
-          ctx.currentTimeline.snapshotCurrentStyles();
-          ctx.previousNode = DEFAULT_NOOP_PREVIOUS_NODE;
-        }
-        const delay = resolveTimingValue(options.delay);
-        ctx.delayNextStep(delay);
-      }
-    }
-    if (ast.steps.length) {
-      ast.steps.forEach(s => visitDslNode(this, s, ctx));
-      // this is here just in case the inner steps only contain or end with a style() call
-      ctx.currentTimeline.applyStylesToKeyframe();
-      // this means that some animation function within the sequence
-      // ended up creating a sub timeline (which means the current
-      // timeline cannot overlap with the contents of the sequence)
-      if (ctx.subContextCount > subContextCount) {
-        ctx.transformIntoNewTimeline();
-      }
-    }
-    context.previousNode = ast;
-  }
-  visitGroup(ast, context) {
-    const innerTimelines = [];
-    let furthestTime = context.currentTimeline.currentTime;
-    const delay = ast.options && ast.options.delay ? resolveTimingValue(ast.options.delay) : 0;
-    ast.steps.forEach(s => {
-      const innerContext = context.createSubContext(ast.options);
-      if (delay) {
-        innerContext.delayNextStep(delay);
-      }
-      visitDslNode(this, s, innerContext);
-      furthestTime = Math.max(furthestTime, innerContext.currentTimeline.currentTime);
-      innerTimelines.push(innerContext.currentTimeline);
-    });
-    // this operation is run after the AST loop because otherwise
-    // if the parent timeline's collected styles were updated then
-    // it would pass in invalid data into the new-to-be forked items
-    innerTimelines.forEach(timeline => context.currentTimeline.mergeTimelineCollectedStyles(timeline));
-    context.transformIntoNewTimeline(furthestTime);
-    context.previousNode = ast;
-  }
-  _visitTiming(ast, context) {
-    if (ast.dynamic) {
-      const strValue = ast.strValue;
-      const timingValue = context.params ? interpolateParams(strValue, context.params, context.errors) : strValue;
-      return resolveTiming(timingValue, context.errors);
-    } else {
-      return {
-        duration: ast.duration,
-        delay: ast.delay,
-        easing: ast.easing
-      };
-    }
-  }
-  visitAnimate(ast, context) {
-    const timings = context.currentAnimateTimings = this._visitTiming(ast.timings, context);
-    const timeline = context.currentTimeline;
-    if (timings.delay) {
-      context.incrementTime(timings.delay);
-      timeline.snapshotCurrentStyles();
-    }
-    const style = ast.style;
-    if (style.type == _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Keyframes) {
-      this.visitKeyframes(style, context);
-    } else {
-      context.incrementTime(timings.duration);
-      this.visitStyle(style, context);
-      timeline.applyStylesToKeyframe();
-    }
-    context.currentAnimateTimings = null;
-    context.previousNode = ast;
-  }
-  visitStyle(ast, context) {
-    const timeline = context.currentTimeline;
-    const timings = context.currentAnimateTimings;
-    // this is a special case for when a style() call
-    // directly follows  an animate() call (but not inside of an animate() call)
-    if (!timings && timeline.hasCurrentStyleProperties()) {
-      timeline.forwardFrame();
-    }
-    const easing = timings && timings.easing || ast.easing;
-    if (ast.isEmptyStep) {
-      timeline.applyEmptyStep(easing);
-    } else {
-      timeline.setStyles(ast.styles, easing, context.errors, context.options);
-    }
-    context.previousNode = ast;
-  }
-  visitKeyframes(ast, context) {
-    const currentAnimateTimings = context.currentAnimateTimings;
-    const startTime = context.currentTimeline.duration;
-    const duration = currentAnimateTimings.duration;
-    const innerContext = context.createSubContext();
-    const innerTimeline = innerContext.currentTimeline;
-    innerTimeline.easing = currentAnimateTimings.easing;
-    ast.styles.forEach(step => {
-      const offset = step.offset || 0;
-      innerTimeline.forwardTime(offset * duration);
-      innerTimeline.setStyles(step.styles, step.easing, context.errors, context.options);
-      innerTimeline.applyStylesToKeyframe();
-    });
-    // this will ensure that the parent timeline gets all the styles from
-    // the child even if the new timeline below is not used
-    context.currentTimeline.mergeTimelineCollectedStyles(innerTimeline);
-    // we do this because the window between this timeline and the sub timeline
-    // should ensure that the styles within are exactly the same as they were before
-    context.transformIntoNewTimeline(startTime + duration);
-    context.previousNode = ast;
-  }
-  visitQuery(ast, context) {
-    // in the event that the first step before this is a style step we need
-    // to ensure the styles are applied before the children are animated
-    const startTime = context.currentTimeline.currentTime;
-    const options = ast.options || {};
-    const delay = options.delay ? resolveTimingValue(options.delay) : 0;
-    if (delay && (context.previousNode.type === _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Style || startTime == 0 && context.currentTimeline.hasCurrentStyleProperties())) {
-      context.currentTimeline.snapshotCurrentStyles();
-      context.previousNode = DEFAULT_NOOP_PREVIOUS_NODE;
-    }
-    let furthestTime = startTime;
-    const elms = context.invokeQuery(ast.selector, ast.originalSelector, ast.limit, ast.includeSelf, options.optional ? true : false, context.errors);
-    context.currentQueryTotal = elms.length;
-    let sameElementTimeline = null;
-    elms.forEach((element, i) => {
-      context.currentQueryIndex = i;
-      const innerContext = context.createSubContext(ast.options, element);
-      if (delay) {
-        innerContext.delayNextStep(delay);
-      }
-      if (element === context.element) {
-        sameElementTimeline = innerContext.currentTimeline;
-      }
-      visitDslNode(this, ast.animation, innerContext);
-      // this is here just incase the inner steps only contain or end
-      // with a style() call (which is here to signal that this is a preparatory
-      // call to style an element before it is animated again)
-      innerContext.currentTimeline.applyStylesToKeyframe();
-      const endTime = innerContext.currentTimeline.currentTime;
-      furthestTime = Math.max(furthestTime, endTime);
-    });
-    context.currentQueryIndex = 0;
-    context.currentQueryTotal = 0;
-    context.transformIntoNewTimeline(furthestTime);
-    if (sameElementTimeline) {
-      context.currentTimeline.mergeTimelineCollectedStyles(sameElementTimeline);
-      context.currentTimeline.snapshotCurrentStyles();
-    }
-    context.previousNode = ast;
-  }
-  visitStagger(ast, context) {
-    const parentContext = context.parentContext;
-    const tl = context.currentTimeline;
-    const timings = ast.timings;
-    const duration = Math.abs(timings.duration);
-    const maxTime = duration * (context.currentQueryTotal - 1);
-    let delay = duration * context.currentQueryIndex;
-    let staggerTransformer = timings.duration < 0 ? 'reverse' : timings.easing;
-    switch (staggerTransformer) {
-      case 'reverse':
-        delay = maxTime - delay;
-        break;
-      case 'full':
-        delay = parentContext.currentStaggerTime;
-        break;
-    }
-    const timeline = context.currentTimeline;
-    if (delay) {
-      timeline.delayNextStep(delay);
-    }
-    const startingTime = timeline.currentTime;
-    visitDslNode(this, ast.animation, context);
-    context.previousNode = ast;
-    // time = duration + delay
-    // the reason why this computation is so complex is because
-    // the inner timeline may either have a delay value or a stretched
-    // keyframe depending on if a subtimeline is not used or is used.
-    parentContext.currentStaggerTime = tl.currentTime - startingTime + (tl.startTime - parentContext.currentTimeline.startTime);
-  }
-}
-const DEFAULT_NOOP_PREVIOUS_NODE = {};
-class AnimationTimelineContext {
-  constructor(_driver, element, subInstructions, _enterClassName, _leaveClassName, errors, timelines, initialTimeline) {
-    this._driver = _driver;
-    this.element = element;
-    this.subInstructions = subInstructions;
-    this._enterClassName = _enterClassName;
-    this._leaveClassName = _leaveClassName;
-    this.errors = errors;
-    this.timelines = timelines;
-    this.parentContext = null;
-    this.currentAnimateTimings = null;
-    this.previousNode = DEFAULT_NOOP_PREVIOUS_NODE;
-    this.subContextCount = 0;
-    this.options = {};
-    this.currentQueryIndex = 0;
-    this.currentQueryTotal = 0;
-    this.currentStaggerTime = 0;
-    this.currentTimeline = initialTimeline || new TimelineBuilder(this._driver, element, 0);
-    timelines.push(this.currentTimeline);
-  }
-  get params() {
-    return this.options.params;
-  }
-  updateOptions(options, skipIfExists) {
-    if (!options) return;
-    const newOptions = options;
-    let optionsToUpdate = this.options;
-    // NOTE: this will get patched up when other animation methods support duration overrides
-    if (newOptions.duration != null) {
-      optionsToUpdate.duration = resolveTimingValue(newOptions.duration);
-    }
-    if (newOptions.delay != null) {
-      optionsToUpdate.delay = resolveTimingValue(newOptions.delay);
-    }
-    const newParams = newOptions.params;
-    if (newParams) {
-      let paramsToUpdate = optionsToUpdate.params;
-      if (!paramsToUpdate) {
-        paramsToUpdate = this.options.params = {};
-      }
-      Object.keys(newParams).forEach(name => {
-        if (!skipIfExists || !paramsToUpdate.hasOwnProperty(name)) {
-          paramsToUpdate[name] = interpolateParams(newParams[name], paramsToUpdate, this.errors);
-        }
-      });
-    }
-  }
-  _copyOptions() {
-    const options = {};
-    if (this.options) {
-      const oldParams = this.options.params;
-      if (oldParams) {
-        const params = options['params'] = {};
-        Object.keys(oldParams).forEach(name => {
-          params[name] = oldParams[name];
-        });
-      }
-    }
-    return options;
-  }
-  createSubContext(options = null, element, newTime) {
-    const target = element || this.element;
-    const context = new AnimationTimelineContext(this._driver, target, this.subInstructions, this._enterClassName, this._leaveClassName, this.errors, this.timelines, this.currentTimeline.fork(target, newTime || 0));
-    context.previousNode = this.previousNode;
-    context.currentAnimateTimings = this.currentAnimateTimings;
-    context.options = this._copyOptions();
-    context.updateOptions(options);
-    context.currentQueryIndex = this.currentQueryIndex;
-    context.currentQueryTotal = this.currentQueryTotal;
-    context.parentContext = this;
-    this.subContextCount++;
-    return context;
-  }
-  transformIntoNewTimeline(newTime) {
-    this.previousNode = DEFAULT_NOOP_PREVIOUS_NODE;
-    this.currentTimeline = this.currentTimeline.fork(this.element, newTime);
-    this.timelines.push(this.currentTimeline);
-    return this.currentTimeline;
-  }
-  appendInstructionToTimeline(instruction, duration, delay) {
-    const updatedTimings = {
-      duration: duration != null ? duration : instruction.duration,
-      delay: this.currentTimeline.currentTime + (delay != null ? delay : 0) + instruction.delay,
-      easing: ''
-    };
-    const builder = new SubTimelineBuilder(this._driver, instruction.element, instruction.keyframes, instruction.preStyleProps, instruction.postStyleProps, updatedTimings, instruction.stretchStartingKeyframe);
-    this.timelines.push(builder);
-    return updatedTimings;
-  }
-  incrementTime(time) {
-    this.currentTimeline.forwardTime(this.currentTimeline.duration + time);
-  }
-  delayNextStep(delay) {
-    // negative delays are not yet supported
-    if (delay > 0) {
-      this.currentTimeline.delayNextStep(delay);
-    }
-  }
-  invokeQuery(selector, originalSelector, limit, includeSelf, optional, errors) {
-    let results = [];
-    if (includeSelf) {
-      results.push(this.element);
-    }
-    if (selector.length > 0) {
-      // only if :self is used then the selector can be empty
-      selector = selector.replace(ENTER_TOKEN_REGEX, '.' + this._enterClassName);
-      selector = selector.replace(LEAVE_TOKEN_REGEX, '.' + this._leaveClassName);
-      const multi = limit != 1;
-      let elements = this._driver.query(this.element, selector, multi);
-      if (limit !== 0) {
-        elements = limit < 0 ? elements.slice(elements.length + limit, elements.length) : elements.slice(0, limit);
-      }
-      results.push(...elements);
-    }
-    if (!optional && results.length == 0) {
-      errors.push(invalidQuery(originalSelector));
-    }
-    return results;
-  }
-}
-class TimelineBuilder {
-  constructor(_driver, element, startTime, _elementTimelineStylesLookup) {
-    this._driver = _driver;
-    this.element = element;
-    this.startTime = startTime;
-    this._elementTimelineStylesLookup = _elementTimelineStylesLookup;
-    this.duration = 0;
-    this.easing = null;
-    this._previousKeyframe = new Map();
-    this._currentKeyframe = new Map();
-    this._keyframes = new Map();
-    this._styleSummary = new Map();
-    this._localTimelineStyles = new Map();
-    this._pendingStyles = new Map();
-    this._backFill = new Map();
-    this._currentEmptyStepKeyframe = null;
-    if (!this._elementTimelineStylesLookup) {
-      this._elementTimelineStylesLookup = new Map();
-    }
-    this._globalTimelineStyles = this._elementTimelineStylesLookup.get(element);
-    if (!this._globalTimelineStyles) {
-      this._globalTimelineStyles = this._localTimelineStyles;
-      this._elementTimelineStylesLookup.set(element, this._localTimelineStyles);
-    }
-    this._loadKeyframe();
-  }
-  containsAnimation() {
-    switch (this._keyframes.size) {
-      case 0:
-        return false;
-      case 1:
-        return this.hasCurrentStyleProperties();
-      default:
-        return true;
-    }
-  }
-  hasCurrentStyleProperties() {
-    return this._currentKeyframe.size > 0;
-  }
-  get currentTime() {
-    return this.startTime + this.duration;
-  }
-  delayNextStep(delay) {
-    // in the event that a style() step is placed right before a stagger()
-    // and that style() step is the very first style() value in the animation
-    // then we need to make a copy of the keyframe [0, copy, 1] so that the delay
-    // properly applies the style() values to work with the stagger...
-    const hasPreStyleStep = this._keyframes.size === 1 && this._pendingStyles.size;
-    if (this.duration || hasPreStyleStep) {
-      this.forwardTime(this.currentTime + delay);
-      if (hasPreStyleStep) {
-        this.snapshotCurrentStyles();
-      }
-    } else {
-      this.startTime += delay;
-    }
-  }
-  fork(element, currentTime) {
-    this.applyStylesToKeyframe();
-    return new TimelineBuilder(this._driver, element, currentTime || this.currentTime, this._elementTimelineStylesLookup);
-  }
-  _loadKeyframe() {
-    if (this._currentKeyframe) {
-      this._previousKeyframe = this._currentKeyframe;
-    }
-    this._currentKeyframe = this._keyframes.get(this.duration);
-    if (!this._currentKeyframe) {
-      this._currentKeyframe = new Map();
-      this._keyframes.set(this.duration, this._currentKeyframe);
-    }
-  }
-  forwardFrame() {
-    this.duration += ONE_FRAME_IN_MILLISECONDS;
-    this._loadKeyframe();
-  }
-  forwardTime(time) {
-    this.applyStylesToKeyframe();
-    this.duration = time;
-    this._loadKeyframe();
-  }
-  _updateStyle(prop, value) {
-    this._localTimelineStyles.set(prop, value);
-    this._globalTimelineStyles.set(prop, value);
-    this._styleSummary.set(prop, {
-      time: this.currentTime,
-      value
-    });
-  }
-  allowOnlyTimelineStyles() {
-    return this._currentEmptyStepKeyframe !== this._currentKeyframe;
-  }
-  applyEmptyStep(easing) {
-    if (easing) {
-      this._previousKeyframe.set('easing', easing);
-    }
-    // special case for animate(duration):
-    // all missing styles are filled with a `*` value then
-    // if any destination styles are filled in later on the same
-    // keyframe then they will override the overridden styles
-    // We use `_globalTimelineStyles` here because there may be
-    // styles in previous keyframes that are not present in this timeline
-    for (let [prop, value] of this._globalTimelineStyles) {
-      this._backFill.set(prop, value || _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AUTO_STYLE);
-      this._currentKeyframe.set(prop, _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AUTO_STYLE);
-    }
-    this._currentEmptyStepKeyframe = this._currentKeyframe;
-  }
-  setStyles(input, easing, errors, options) {
-    if (easing) {
-      this._previousKeyframe.set('easing', easing);
-    }
-    const params = options && options.params || {};
-    const styles = flattenStyles(input, this._globalTimelineStyles);
-    for (let [prop, value] of styles) {
-      const val = interpolateParams(value, params, errors);
-      this._pendingStyles.set(prop, val);
-      if (!this._localTimelineStyles.has(prop)) {
-        this._backFill.set(prop, this._globalTimelineStyles.get(prop) ?? _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AUTO_STYLE);
-      }
-      this._updateStyle(prop, val);
-    }
-  }
-  applyStylesToKeyframe() {
-    if (this._pendingStyles.size == 0) return;
-    this._pendingStyles.forEach((val, prop) => {
-      this._currentKeyframe.set(prop, val);
-    });
-    this._pendingStyles.clear();
-    this._localTimelineStyles.forEach((val, prop) => {
-      if (!this._currentKeyframe.has(prop)) {
-        this._currentKeyframe.set(prop, val);
-      }
-    });
-  }
-  snapshotCurrentStyles() {
-    for (let [prop, val] of this._localTimelineStyles) {
-      this._pendingStyles.set(prop, val);
-      this._updateStyle(prop, val);
-    }
-  }
-  getFinalKeyframe() {
-    return this._keyframes.get(this.duration);
-  }
-  get properties() {
-    const properties = [];
-    for (let prop in this._currentKeyframe) {
-      properties.push(prop);
-    }
-    return properties;
-  }
-  mergeTimelineCollectedStyles(timeline) {
-    timeline._styleSummary.forEach((details1, prop) => {
-      const details0 = this._styleSummary.get(prop);
-      if (!details0 || details1.time > details0.time) {
-        this._updateStyle(prop, details1.value);
-      }
-    });
-  }
-  buildKeyframes() {
-    this.applyStylesToKeyframe();
-    const preStyleProps = new Set();
-    const postStyleProps = new Set();
-    const isEmpty = this._keyframes.size === 1 && this.duration === 0;
-    let finalKeyframes = [];
-    this._keyframes.forEach((keyframe, time) => {
-      const finalKeyframe = new Map([...this._backFill, ...keyframe]);
-      finalKeyframe.forEach((value, prop) => {
-        if (value === _angular_animations__WEBPACK_IMPORTED_MODULE_1__["ɵPRE_STYLE"]) {
-          preStyleProps.add(prop);
-        } else if (value === _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AUTO_STYLE) {
-          postStyleProps.add(prop);
-        }
-      });
-      if (!isEmpty) {
-        finalKeyframe.set('offset', time / this.duration);
-      }
-      finalKeyframes.push(finalKeyframe);
-    });
-    const preProps = [...preStyleProps.values()];
-    const postProps = [...postStyleProps.values()];
-    // special case for a 0-second animation (which is designed just to place styles onscreen)
-    if (isEmpty) {
-      const kf0 = finalKeyframes[0];
-      const kf1 = new Map(kf0);
-      kf0.set('offset', 0);
-      kf1.set('offset', 1);
-      finalKeyframes = [kf0, kf1];
-    }
-    return createTimelineInstruction(this.element, finalKeyframes, preProps, postProps, this.duration, this.startTime, this.easing, false);
-  }
-}
-class SubTimelineBuilder extends TimelineBuilder {
-  constructor(driver, element, keyframes, preStyleProps, postStyleProps, timings, _stretchStartingKeyframe = false) {
-    super(driver, element, timings.delay);
-    this.keyframes = keyframes;
-    this.preStyleProps = preStyleProps;
-    this.postStyleProps = postStyleProps;
-    this._stretchStartingKeyframe = _stretchStartingKeyframe;
-    this.timings = {
-      duration: timings.duration,
-      delay: timings.delay,
-      easing: timings.easing
-    };
-  }
-  containsAnimation() {
-    return this.keyframes.length > 1;
-  }
-  buildKeyframes() {
-    let keyframes = this.keyframes;
-    let {
-      delay,
-      duration,
-      easing
-    } = this.timings;
-    if (this._stretchStartingKeyframe && delay) {
-      const newKeyframes = [];
-      const totalTime = duration + delay;
-      const startingGap = delay / totalTime;
-      // the original starting keyframe now starts once the delay is done
-      const newFirstKeyframe = new Map(keyframes[0]);
-      newFirstKeyframe.set('offset', 0);
-      newKeyframes.push(newFirstKeyframe);
-      const oldFirstKeyframe = new Map(keyframes[0]);
-      oldFirstKeyframe.set('offset', roundOffset(startingGap));
-      newKeyframes.push(oldFirstKeyframe);
-      /*
-        When the keyframe is stretched then it means that the delay before the animation
-        starts is gone. Instead the first keyframe is placed at the start of the animation
-        and it is then copied to where it starts when the original delay is over. This basically
-        means nothing animates during that delay, but the styles are still rendered. For this
-        to work the original offset values that exist in the original keyframes must be "warped"
-        so that they can take the new keyframe + delay into account.
-               delay=1000, duration=1000, keyframes = 0 .5 1
-               turns into
-               delay=0, duration=2000, keyframes = 0 .33 .66 1
-       */
-      // offsets between 1 ... n -1 are all warped by the keyframe stretch
-      const limit = keyframes.length - 1;
-      for (let i = 1; i <= limit; i++) {
-        let kf = new Map(keyframes[i]);
-        const oldOffset = kf.get('offset');
-        const timeAtKeyframe = delay + oldOffset * duration;
-        kf.set('offset', roundOffset(timeAtKeyframe / totalTime));
-        newKeyframes.push(kf);
-      }
-      // the new starting keyframe should be added at the start
-      duration = totalTime;
-      delay = 0;
-      easing = '';
-      keyframes = newKeyframes;
-    }
-    return createTimelineInstruction(this.element, keyframes, this.preStyleProps, this.postStyleProps, duration, delay, easing, true);
-  }
-}
-function roundOffset(offset, decimalPoints = 3) {
-  const mult = Math.pow(10, decimalPoints - 1);
-  return Math.round(offset * mult) / mult;
-}
-function flattenStyles(input, allStyles) {
-  const styles = new Map();
-  let allProperties;
-  input.forEach(token => {
-    if (token === '*') {
-      allProperties ??= allStyles.keys();
-      for (let prop of allProperties) {
-        styles.set(prop, _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AUTO_STYLE);
-      }
-    } else {
-      for (let [prop, val] of token) {
-        styles.set(prop, val);
-      }
-    }
-  });
-  return styles;
-}
-function createTransitionInstruction(element, triggerName, fromState, toState, isRemovalTransition, fromStyles, toStyles, timelines, queriedElements, preStyleProps, postStyleProps, totalTime, errors) {
-  return {
-    type: 0 /* AnimationTransitionInstructionType.TransitionAnimation */,
-    element,
-    triggerName,
-    isRemovalTransition,
-    fromState,
-    fromStyles,
-    toState,
-    toStyles,
-    timelines,
-    queriedElements,
-    preStyleProps,
-    postStyleProps,
-    totalTime,
-    errors
-  };
-}
-const EMPTY_OBJECT = {};
-class AnimationTransitionFactory {
-  constructor(_triggerName, ast, _stateStyles) {
-    this._triggerName = _triggerName;
-    this.ast = ast;
-    this._stateStyles = _stateStyles;
-  }
-  match(currentState, nextState, element, params) {
-    return oneOrMoreTransitionsMatch(this.ast.matchers, currentState, nextState, element, params);
-  }
-  buildStyles(stateName, params, errors) {
-    let styler = this._stateStyles.get('*');
-    if (stateName !== undefined) {
-      styler = this._stateStyles.get(stateName?.toString()) || styler;
-    }
-    return styler ? styler.buildStyles(params, errors) : new Map();
-  }
-  build(driver, element, currentState, nextState, enterClassName, leaveClassName, currentOptions, nextOptions, subInstructions, skipAstBuild) {
-    const errors = [];
-    const transitionAnimationParams = this.ast.options && this.ast.options.params || EMPTY_OBJECT;
-    const currentAnimationParams = currentOptions && currentOptions.params || EMPTY_OBJECT;
-    const currentStateStyles = this.buildStyles(currentState, currentAnimationParams, errors);
-    const nextAnimationParams = nextOptions && nextOptions.params || EMPTY_OBJECT;
-    const nextStateStyles = this.buildStyles(nextState, nextAnimationParams, errors);
-    const queriedElements = new Set();
-    const preStyleMap = new Map();
-    const postStyleMap = new Map();
-    const isRemoval = nextState === 'void';
-    const animationOptions = {
-      params: applyParamDefaults(nextAnimationParams, transitionAnimationParams),
-      delay: this.ast.options?.delay
-    };
-    const timelines = skipAstBuild ? [] : buildAnimationTimelines(driver, element, this.ast.animation, enterClassName, leaveClassName, currentStateStyles, nextStateStyles, animationOptions, subInstructions, errors);
-    let totalTime = 0;
-    timelines.forEach(tl => {
-      totalTime = Math.max(tl.duration + tl.delay, totalTime);
-    });
-    if (errors.length) {
-      return createTransitionInstruction(element, this._triggerName, currentState, nextState, isRemoval, currentStateStyles, nextStateStyles, [], [], preStyleMap, postStyleMap, totalTime, errors);
-    }
-    timelines.forEach(tl => {
-      const elm = tl.element;
-      const preProps = getOrSetDefaultValue(preStyleMap, elm, new Set());
-      tl.preStyleProps.forEach(prop => preProps.add(prop));
-      const postProps = getOrSetDefaultValue(postStyleMap, elm, new Set());
-      tl.postStyleProps.forEach(prop => postProps.add(prop));
-      if (elm !== element) {
-        queriedElements.add(elm);
-      }
-    });
-    if (typeof ngDevMode === 'undefined' || ngDevMode) {
-      checkNonAnimatableInTimelines(timelines, this._triggerName, driver);
-    }
-    return createTransitionInstruction(element, this._triggerName, currentState, nextState, isRemoval, currentStateStyles, nextStateStyles, timelines, [...queriedElements.values()], preStyleMap, postStyleMap, totalTime);
-  }
-}
-/**
- * Checks inside a set of timelines if they try to animate a css property which is not considered
- * animatable, in that case it prints a warning on the console.
- * Besides that the function doesn't have any other effect.
- *
- * Note: this check is done here after the timelines are built instead of doing on a lower level so
- * that we can make sure that the warning appears only once per instruction (we can aggregate here
- * all the issues instead of finding them separately).
- *
- * @param timelines The built timelines for the current instruction.
- * @param triggerName The name of the trigger for the current instruction.
- * @param driver Animation driver used to perform the check.
- *
- */
-function checkNonAnimatableInTimelines(timelines, triggerName, driver) {
-  if (!driver.validateAnimatableStyleProperty) {
-    return;
-  }
-  const allowedNonAnimatableProps = new Set([
-  // 'easing' is a utility/synthetic prop we use to represent
-  // easing functions, it represents a property of the animation
-  // which is not animatable but different values can be used
-  // in different steps
-  'easing']);
-  const invalidNonAnimatableProps = new Set();
-  timelines.forEach(({
-    keyframes
-  }) => {
-    const nonAnimatablePropsInitialValues = new Map();
-    keyframes.forEach(keyframe => {
-      const entriesToCheck = Array.from(keyframe.entries()).filter(([prop]) => !allowedNonAnimatableProps.has(prop));
-      for (const [prop, value] of entriesToCheck) {
-        if (!driver.validateAnimatableStyleProperty(prop)) {
-          if (nonAnimatablePropsInitialValues.has(prop) && !invalidNonAnimatableProps.has(prop)) {
-            const propInitialValue = nonAnimatablePropsInitialValues.get(prop);
-            if (propInitialValue !== value) {
-              invalidNonAnimatableProps.add(prop);
-            }
-          } else {
-            nonAnimatablePropsInitialValues.set(prop, value);
-          }
-        }
-      }
-    });
-  });
-  if (invalidNonAnimatableProps.size > 0) {
-    console.warn(`Warning: The animation trigger "${triggerName}" is attempting to animate the following` + ' not animatable properties: ' + Array.from(invalidNonAnimatableProps).join(', ') + '\n' + '(to check the list of all animatable properties visit https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)');
-  }
-}
-function oneOrMoreTransitionsMatch(matchFns, currentState, nextState, element, params) {
-  return matchFns.some(fn => fn(currentState, nextState, element, params));
-}
-function applyParamDefaults(userParams, defaults) {
-  const result = {
-    ...defaults
-  };
-  Object.entries(userParams).forEach(([key, value]) => {
-    if (value != null) {
-      result[key] = value;
-    }
-  });
-  return result;
-}
-class AnimationStateStyles {
-  constructor(styles, defaultParams, normalizer) {
-    this.styles = styles;
-    this.defaultParams = defaultParams;
-    this.normalizer = normalizer;
-  }
-  buildStyles(params, errors) {
-    const finalStyles = new Map();
-    const combinedParams = applyParamDefaults(params, this.defaultParams);
-    this.styles.styles.forEach(value => {
-      if (typeof value !== 'string') {
-        value.forEach((val, prop) => {
-          if (val) {
-            val = interpolateParams(val, combinedParams, errors);
-          }
-          const normalizedProp = this.normalizer.normalizePropertyName(prop, errors);
-          val = this.normalizer.normalizeStyleValue(prop, normalizedProp, val, errors);
-          finalStyles.set(prop, val);
-        });
-      }
-    });
-    return finalStyles;
-  }
-}
-function buildTrigger(name, ast, normalizer) {
-  return new AnimationTrigger(name, ast, normalizer);
-}
-class AnimationTrigger {
-  constructor(name, ast, _normalizer) {
-    this.name = name;
-    this.ast = ast;
-    this._normalizer = _normalizer;
-    this.transitionFactories = [];
-    this.states = new Map();
-    ast.states.forEach(ast => {
-      const defaultParams = ast.options && ast.options.params || {};
-      this.states.set(ast.name, new AnimationStateStyles(ast.style, defaultParams, _normalizer));
-    });
-    balanceProperties(this.states, 'true', '1');
-    balanceProperties(this.states, 'false', '0');
-    ast.transitions.forEach(ast => {
-      this.transitionFactories.push(new AnimationTransitionFactory(name, ast, this.states));
-    });
-    this.fallbackTransition = createFallbackTransition(name, this.states, this._normalizer);
-  }
-  get containsQueries() {
-    return this.ast.queryCount > 0;
-  }
-  matchTransition(currentState, nextState, element, params) {
-    const entry = this.transitionFactories.find(f => f.match(currentState, nextState, element, params));
-    return entry || null;
-  }
-  matchStyles(currentState, params, errors) {
-    return this.fallbackTransition.buildStyles(currentState, params, errors);
-  }
-}
-function createFallbackTransition(triggerName, states, normalizer) {
-  const matchers = [(fromState, toState) => true];
-  const animation = {
-    type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Sequence,
-    steps: [],
-    options: null
-  };
-  const transition = {
-    type: _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AnimationMetadataType.Transition,
-    animation,
-    matchers,
-    options: null,
-    queryCount: 0,
-    depCount: 0
-  };
-  return new AnimationTransitionFactory(triggerName, transition, states);
-}
-function balanceProperties(stateMap, key1, key2) {
-  if (stateMap.has(key1)) {
-    if (!stateMap.has(key2)) {
-      stateMap.set(key2, stateMap.get(key1));
-    }
-  } else if (stateMap.has(key2)) {
-    stateMap.set(key1, stateMap.get(key2));
-  }
-}
-const EMPTY_INSTRUCTION_MAP = new ElementInstructionMap();
-class TimelineAnimationEngine {
-  constructor(bodyNode, _driver, _normalizer) {
-    this.bodyNode = bodyNode;
-    this._driver = _driver;
-    this._normalizer = _normalizer;
-    this._animations = new Map();
-    this._playersById = new Map();
-    this.players = [];
-  }
-  register(id, metadata) {
-    const errors = [];
-    const warnings = [];
-    const ast = buildAnimationAst(this._driver, metadata, errors, warnings);
-    if (errors.length) {
-      throw registerFailed(errors);
-    } else {
-      if (warnings.length) {
-        warnRegister(warnings);
-      }
-      this._animations.set(id, ast);
-    }
-  }
-  _buildPlayer(i, preStyles, postStyles) {
-    const element = i.element;
-    const keyframes = normalizeKeyframes$1(this._normalizer, i.keyframes, preStyles, postStyles);
-    return this._driver.animate(element, keyframes, i.duration, i.delay, i.easing, [], true);
-  }
-  create(id, element, options = {}) {
-    const errors = [];
-    const ast = this._animations.get(id);
-    let instructions;
-    const autoStylesMap = new Map();
-    if (ast) {
-      instructions = buildAnimationTimelines(this._driver, element, ast, ENTER_CLASSNAME, LEAVE_CLASSNAME, new Map(), new Map(), options, EMPTY_INSTRUCTION_MAP, errors);
-      instructions.forEach(inst => {
-        const styles = getOrSetDefaultValue(autoStylesMap, inst.element, new Map());
-        inst.postStyleProps.forEach(prop => styles.set(prop, null));
-      });
-    } else {
-      errors.push(missingOrDestroyedAnimation());
-      instructions = [];
-    }
-    if (errors.length) {
-      throw createAnimationFailed(errors);
-    }
-    autoStylesMap.forEach((styles, element) => {
-      styles.forEach((_, prop) => {
-        styles.set(prop, this._driver.computeStyle(element, prop, _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AUTO_STYLE));
-      });
-    });
-    const players = instructions.map(i => {
-      const styles = autoStylesMap.get(i.element);
-      return this._buildPlayer(i, new Map(), styles);
-    });
-    const player = optimizeGroupPlayer(players);
-    this._playersById.set(id, player);
-    player.onDestroy(() => this.destroy(id));
-    this.players.push(player);
-    return player;
-  }
-  destroy(id) {
-    const player = this._getPlayer(id);
-    player.destroy();
-    this._playersById.delete(id);
-    const index = this.players.indexOf(player);
-    if (index >= 0) {
-      this.players.splice(index, 1);
-    }
-  }
-  _getPlayer(id) {
-    const player = this._playersById.get(id);
-    if (!player) {
-      throw missingPlayer(id);
-    }
-    return player;
-  }
-  listen(id, element, eventName, callback) {
-    // triggerName, fromState, toState are all ignored for timeline animations
-    const baseEvent = makeAnimationEvent(element, '', '', '');
-    listenOnPlayer(this._getPlayer(id), eventName, baseEvent, callback);
-    return () => {};
-  }
-  command(id, element, command, args) {
-    if (command == 'register') {
-      this.register(id, args[0]);
-      return;
-    }
-    if (command == 'create') {
-      const options = args[0] || {};
-      this.create(id, element, options);
-      return;
-    }
-    const player = this._getPlayer(id);
-    switch (command) {
-      case 'play':
-        player.play();
-        break;
-      case 'pause':
-        player.pause();
-        break;
-      case 'reset':
-        player.reset();
-        break;
-      case 'restart':
-        player.restart();
-        break;
-      case 'finish':
-        player.finish();
-        break;
-      case 'init':
-        player.init();
-        break;
-      case 'setPosition':
-        player.setPosition(parseFloat(args[0]));
-        break;
-      case 'destroy':
-        this.destroy(id);
-        break;
-    }
-  }
-}
-const QUEUED_CLASSNAME = 'ng-animate-queued';
-const QUEUED_SELECTOR = '.ng-animate-queued';
-const DISABLED_CLASSNAME = 'ng-animate-disabled';
-const DISABLED_SELECTOR = '.ng-animate-disabled';
-const STAR_CLASSNAME = 'ng-star-inserted';
-const STAR_SELECTOR = '.ng-star-inserted';
-const EMPTY_PLAYER_ARRAY = [];
-const NULL_REMOVAL_STATE = {
-  namespaceId: '',
-  setForRemoval: false,
-  setForMove: false,
-  hasAnimation: false,
-  removedBeforeQueried: false
-};
-const NULL_REMOVED_QUERIED_STATE = {
-  namespaceId: '',
-  setForMove: false,
-  setForRemoval: false,
-  hasAnimation: false,
-  removedBeforeQueried: true
-};
-const REMOVAL_FLAG = '__ng_removed';
-class StateValue {
-  get params() {
-    return this.options.params;
-  }
-  constructor(input, namespaceId = '') {
-    this.namespaceId = namespaceId;
-    const isObj = input && input.hasOwnProperty('value');
-    const value = isObj ? input['value'] : input;
-    this.value = normalizeTriggerValue(value);
-    if (isObj) {
-      // we drop the value property from options.
-      const {
-        value,
-        ...options
-      } = input;
-      this.options = options;
-    } else {
-      this.options = {};
-    }
-    if (!this.options.params) {
-      this.options.params = {};
-    }
-  }
-  absorbOptions(options) {
-    const newParams = options.params;
-    if (newParams) {
-      const oldParams = this.options.params;
-      Object.keys(newParams).forEach(prop => {
-        if (oldParams[prop] == null) {
-          oldParams[prop] = newParams[prop];
-        }
-      });
-    }
-  }
-}
-const VOID_VALUE = 'void';
-const DEFAULT_STATE_VALUE = new StateValue(VOID_VALUE);
-class AnimationTransitionNamespace {
-  constructor(id, hostElement, _engine) {
-    this.id = id;
-    this.hostElement = hostElement;
-    this._engine = _engine;
-    this.players = [];
-    this._triggers = new Map();
-    this._queue = [];
-    this._elementListeners = new Map();
-    this._hostClassName = 'ng-tns-' + id;
-    addClass(hostElement, this._hostClassName);
-  }
-  listen(element, name, phase, callback) {
-    if (!this._triggers.has(name)) {
-      throw missingTrigger(phase, name);
-    }
-    if (phase == null || phase.length == 0) {
-      throw missingEvent(name);
-    }
-    if (!isTriggerEventValid(phase)) {
-      throw unsupportedTriggerEvent(phase, name);
-    }
-    const listeners = getOrSetDefaultValue(this._elementListeners, element, []);
-    const data = {
-      name,
-      phase,
-      callback
-    };
-    listeners.push(data);
-    const triggersWithStates = getOrSetDefaultValue(this._engine.statesByElement, element, new Map());
-    if (!triggersWithStates.has(name)) {
-      addClass(element, NG_TRIGGER_CLASSNAME);
-      addClass(element, NG_TRIGGER_CLASSNAME + '-' + name);
-      triggersWithStates.set(name, DEFAULT_STATE_VALUE);
-    }
-    return () => {
-      // the event listener is removed AFTER the flush has occurred such
-      // that leave animations callbacks can fire (otherwise if the node
-      // is removed in between then the listeners would be deregistered)
-      this._engine.afterFlush(() => {
-        const index = listeners.indexOf(data);
-        if (index >= 0) {
-          listeners.splice(index, 1);
-        }
-        if (!this._triggers.has(name)) {
-          triggersWithStates.delete(name);
-        }
-      });
-    };
-  }
-  register(name, ast) {
-    if (this._triggers.has(name)) {
-      // throw
-      return false;
-    } else {
-      this._triggers.set(name, ast);
-      return true;
-    }
-  }
-  _getTrigger(name) {
-    const trigger = this._triggers.get(name);
-    if (!trigger) {
-      throw unregisteredTrigger(name);
-    }
-    return trigger;
-  }
-  trigger(element, triggerName, value, defaultToFallback = true) {
-    const trigger = this._getTrigger(triggerName);
-    const player = new TransitionAnimationPlayer(this.id, triggerName, element);
-    let triggersWithStates = this._engine.statesByElement.get(element);
-    if (!triggersWithStates) {
-      addClass(element, NG_TRIGGER_CLASSNAME);
-      addClass(element, NG_TRIGGER_CLASSNAME + '-' + triggerName);
-      this._engine.statesByElement.set(element, triggersWithStates = new Map());
-    }
-    let fromState = triggersWithStates.get(triggerName);
-    const toState = new StateValue(value, this.id);
-    const isObj = value && value.hasOwnProperty('value');
-    if (!isObj && fromState) {
-      toState.absorbOptions(fromState.options);
-    }
-    triggersWithStates.set(triggerName, toState);
-    if (!fromState) {
-      fromState = DEFAULT_STATE_VALUE;
-    }
-    const isRemoval = toState.value === VOID_VALUE;
-    // normally this isn't reached by here, however, if an object expression
-    // is passed in then it may be a new object each time. Comparing the value
-    // is important since that will stay the same despite there being a new object.
-    // The removal arc here is special cased because the same element is triggered
-    // twice in the event that it contains animations on the outer/inner portions
-    // of the host container
-    if (!isRemoval && fromState.value === toState.value) {
-      // this means that despite the value not changing, some inner params
-      // have changed which means that the animation final styles need to be applied
-      if (!objEquals(fromState.params, toState.params)) {
-        const errors = [];
-        const fromStyles = trigger.matchStyles(fromState.value, fromState.params, errors);
-        const toStyles = trigger.matchStyles(toState.value, toState.params, errors);
-        if (errors.length) {
-          this._engine.reportError(errors);
-        } else {
-          this._engine.afterFlush(() => {
-            eraseStyles(element, fromStyles);
-            setStyles(element, toStyles);
-          });
-        }
-      }
-      return;
-    }
-    const playersOnElement = getOrSetDefaultValue(this._engine.playersByElement, element, []);
-    playersOnElement.forEach(player => {
-      // only remove the player if it is queued on the EXACT same trigger/namespace
-      // we only also deal with queued players here because if the animation has
-      // started then we want to keep the player alive until the flush happens
-      // (which is where the previousPlayers are passed into the new player)
-      if (player.namespaceId == this.id && player.triggerName == triggerName && player.queued) {
-        player.destroy();
-      }
-    });
-    let transition = trigger.matchTransition(fromState.value, toState.value, element, toState.params);
-    let isFallbackTransition = false;
-    if (!transition) {
-      if (!defaultToFallback) return;
-      transition = trigger.fallbackTransition;
-      isFallbackTransition = true;
-    }
-    this._engine.totalQueuedPlayers++;
-    this._queue.push({
-      element,
-      triggerName,
-      transition,
-      fromState,
-      toState,
-      player,
-      isFallbackTransition
-    });
-    if (!isFallbackTransition) {
-      addClass(element, QUEUED_CLASSNAME);
-      player.onStart(() => {
-        removeClass(element, QUEUED_CLASSNAME);
-      });
-    }
-    player.onDone(() => {
-      let index = this.players.indexOf(player);
-      if (index >= 0) {
-        this.players.splice(index, 1);
-      }
-      const players = this._engine.playersByElement.get(element);
-      if (players) {
-        let index = players.indexOf(player);
-        if (index >= 0) {
-          players.splice(index, 1);
-        }
-      }
-    });
-    this.players.push(player);
-    playersOnElement.push(player);
-    return player;
-  }
-  deregister(name) {
-    this._triggers.delete(name);
-    this._engine.statesByElement.forEach(stateMap => stateMap.delete(name));
-    this._elementListeners.forEach((listeners, element) => {
-      this._elementListeners.set(element, listeners.filter(entry => {
-        return entry.name != name;
-      }));
-    });
-  }
-  clearElementCache(element) {
-    this._engine.statesByElement.delete(element);
-    this._elementListeners.delete(element);
-    const elementPlayers = this._engine.playersByElement.get(element);
-    if (elementPlayers) {
-      elementPlayers.forEach(player => player.destroy());
-      this._engine.playersByElement.delete(element);
-    }
-  }
-  _signalRemovalForInnerTriggers(rootElement, context) {
-    const elements = this._engine.driver.query(rootElement, NG_TRIGGER_SELECTOR, true);
-    // emulate a leave animation for all inner nodes within this node.
-    // If there are no animations found for any of the nodes then clear the cache
-    // for the element.
-    elements.forEach(elm => {
-      // this means that an inner remove() operation has already kicked off
-      // the animation on this element...
-      if (elm[REMOVAL_FLAG]) return;
-      const namespaces = this._engine.fetchNamespacesByElement(elm);
-      if (namespaces.size) {
-        namespaces.forEach(ns => ns.triggerLeaveAnimation(elm, context, false, true));
-      } else {
-        this.clearElementCache(elm);
-      }
-    });
-    // If the child elements were removed along with the parent, their animations might not
-    // have completed. Clear all the elements from the cache so we don't end up with a memory leak.
-    this._engine.afterFlushAnimationsDone(() => elements.forEach(elm => this.clearElementCache(elm)));
-  }
-  triggerLeaveAnimation(element, context, destroyAfterComplete, defaultToFallback) {
-    const triggerStates = this._engine.statesByElement.get(element);
-    const previousTriggersValues = new Map();
-    if (triggerStates) {
-      const players = [];
-      triggerStates.forEach((state, triggerName) => {
-        previousTriggersValues.set(triggerName, state.value);
-        // this check is here in the event that an element is removed
-        // twice (both on the host level and the component level)
-        if (this._triggers.has(triggerName)) {
-          const player = this.trigger(element, triggerName, VOID_VALUE, defaultToFallback);
-          if (player) {
-            players.push(player);
-          }
-        }
-      });
-      if (players.length) {
-        this._engine.markElementAsRemoved(this.id, element, true, context, previousTriggersValues);
-        if (destroyAfterComplete) {
-          optimizeGroupPlayer(players).onDone(() => this._engine.processLeaveNode(element));
-        }
-        return true;
-      }
-    }
-    return false;
-  }
-  prepareLeaveAnimationListeners(element) {
-    const listeners = this._elementListeners.get(element);
-    const elementStates = this._engine.statesByElement.get(element);
-    // if this statement fails then it means that the element was picked up
-    // by an earlier flush (or there are no listeners at all to track the leave).
-    if (listeners && elementStates) {
-      const visitedTriggers = new Set();
-      listeners.forEach(listener => {
-        const triggerName = listener.name;
-        if (visitedTriggers.has(triggerName)) return;
-        visitedTriggers.add(triggerName);
-        const trigger = this._triggers.get(triggerName);
-        const transition = trigger.fallbackTransition;
-        const fromState = elementStates.get(triggerName) || DEFAULT_STATE_VALUE;
-        const toState = new StateValue(VOID_VALUE);
-        const player = new TransitionAnimationPlayer(this.id, triggerName, element);
-        this._engine.totalQueuedPlayers++;
-        this._queue.push({
-          element,
-          triggerName,
-          transition,
-          fromState,
-          toState,
-          player,
-          isFallbackTransition: true
-        });
-      });
-    }
-  }
-  removeNode(element, context) {
-    const engine = this._engine;
-    if (element.childElementCount) {
-      this._signalRemovalForInnerTriggers(element, context);
-    }
-    // this means that a * => VOID animation was detected and kicked off
-    if (this.triggerLeaveAnimation(element, context, true)) return;
-    // find the player that is animating and make sure that the
-    // removal is delayed until that player has completed
-    let containsPotentialParentTransition = false;
-    if (engine.totalAnimations) {
-      const currentPlayers = engine.players.length ? engine.playersByQueriedElement.get(element) : [];
-      // when this `if statement` does not continue forward it means that
-      // a previous animation query has selected the current element and
-      // is animating it. In this situation want to continue forwards and
-      // allow the element to be queued up for animation later.
-      if (currentPlayers && currentPlayers.length) {
-        containsPotentialParentTransition = true;
-      } else {
-        let parent = element;
-        while (parent = parent.parentNode) {
-          const triggers = engine.statesByElement.get(parent);
-          if (triggers) {
-            containsPotentialParentTransition = true;
-            break;
-          }
-        }
-      }
-    }
-    // at this stage we know that the element will either get removed
-    // during flush or will be picked up by a parent query. Either way
-    // we need to fire the listeners for this element when it DOES get
-    // removed (once the query parent animation is done or after flush)
-    this.prepareLeaveAnimationListeners(element);
-    // whether or not a parent has an animation we need to delay the deferral of the leave
-    // operation until we have more information (which we do after flush() has been called)
-    if (containsPotentialParentTransition) {
-      engine.markElementAsRemoved(this.id, element, false, context);
-    } else {
-      const removalFlag = element[REMOVAL_FLAG];
-      if (!removalFlag || removalFlag === NULL_REMOVAL_STATE) {
-        // we do this after the flush has occurred such
-        // that the callbacks can be fired
-        engine.afterFlush(() => this.clearElementCache(element));
-        engine.destroyInnerAnimations(element);
-        engine._onRemovalComplete(element, context);
-      }
-    }
-  }
-  insertNode(element, parent) {
-    addClass(element, this._hostClassName);
-  }
-  drainQueuedTransitions(microtaskId) {
-    const instructions = [];
-    this._queue.forEach(entry => {
-      const player = entry.player;
-      if (player.destroyed) return;
-      const element = entry.element;
-      const listeners = this._elementListeners.get(element);
-      if (listeners) {
-        listeners.forEach(listener => {
-          if (listener.name == entry.triggerName) {
-            const baseEvent = makeAnimationEvent(element, entry.triggerName, entry.fromState.value, entry.toState.value);
-            baseEvent['_data'] = microtaskId;
-            listenOnPlayer(entry.player, listener.phase, baseEvent, listener.callback);
-          }
-        });
-      }
-      if (player.markedForDestroy) {
-        this._engine.afterFlush(() => {
-          // now we can destroy the element properly since the event listeners have
-          // been bound to the player
-          player.destroy();
-        });
-      } else {
-        instructions.push(entry);
-      }
-    });
-    this._queue = [];
-    return instructions.sort((a, b) => {
-      // if depCount == 0 them move to front
-      // otherwise if a contains b then move back
-      const d0 = a.transition.ast.depCount;
-      const d1 = b.transition.ast.depCount;
-      if (d0 == 0 || d1 == 0) {
-        return d0 - d1;
-      }
-      return this._engine.driver.containsElement(a.element, b.element) ? 1 : -1;
-    });
-  }
-  destroy(context) {
-    this.players.forEach(p => p.destroy());
-    this._signalRemovalForInnerTriggers(this.hostElement, context);
-  }
-}
-class TransitionAnimationEngine {
-  /** @internal */
-  _onRemovalComplete(element, context) {
-    this.onRemovalComplete(element, context);
-  }
-  constructor(bodyNode, driver, _normalizer, scheduler) {
-    this.bodyNode = bodyNode;
-    this.driver = driver;
-    this._normalizer = _normalizer;
-    this.scheduler = scheduler;
-    this.players = [];
-    this.newHostElements = new Map();
-    this.playersByElement = new Map();
-    this.playersByQueriedElement = new Map();
-    this.statesByElement = new Map();
-    this.disabledNodes = new Set();
-    this.totalAnimations = 0;
-    this.totalQueuedPlayers = 0;
-    this._namespaceLookup = {};
-    this._namespaceList = [];
-    this._flushFns = [];
-    this._whenQuietFns = [];
-    this.namespacesByHostElement = new Map();
-    this.collectedEnterElements = [];
-    this.collectedLeaveElements = [];
-    // this method is designed to be overridden by the code that uses this engine
-    this.onRemovalComplete = (element, context) => {};
-  }
-  get queuedPlayers() {
-    const players = [];
-    this._namespaceList.forEach(ns => {
-      ns.players.forEach(player => {
-        if (player.queued) {
-          players.push(player);
-        }
-      });
-    });
-    return players;
-  }
-  createNamespace(namespaceId, hostElement) {
-    const ns = new AnimationTransitionNamespace(namespaceId, hostElement, this);
-    if (this.bodyNode && this.driver.containsElement(this.bodyNode, hostElement)) {
-      this._balanceNamespaceList(ns, hostElement);
-    } else {
-      // defer this later until flush during when the host element has
-      // been inserted so that we know exactly where to place it in
-      // the namespace list
-      this.newHostElements.set(hostElement, ns);
-      // given that this host element is a part of the animation code, it
-      // may or may not be inserted by a parent node that is of an
-      // animation renderer type. If this happens then we can still have
-      // access to this item when we query for :enter nodes. If the parent
-      // is a renderer then the set data-structure will normalize the entry
-      this.collectEnterElement(hostElement);
-    }
-    return this._namespaceLookup[namespaceId] = ns;
-  }
-  _balanceNamespaceList(ns, hostElement) {
-    const namespaceList = this._namespaceList;
-    const namespacesByHostElement = this.namespacesByHostElement;
-    const limit = namespaceList.length - 1;
-    if (limit >= 0) {
-      let found = false;
-      // Find the closest ancestor with an existing namespace so we can then insert `ns` after it,
-      // establishing a top-down ordering of namespaces in `this._namespaceList`.
-      let ancestor = this.driver.getParentElement(hostElement);
-      while (ancestor) {
-        const ancestorNs = namespacesByHostElement.get(ancestor);
-        if (ancestorNs) {
-          // An animation namespace has been registered for this ancestor, so we insert `ns`
-          // right after it to establish top-down ordering of animation namespaces.
-          const index = namespaceList.indexOf(ancestorNs);
-          namespaceList.splice(index + 1, 0, ns);
-          found = true;
-          break;
-        }
-        ancestor = this.driver.getParentElement(ancestor);
-      }
-      if (!found) {
-        // No namespace exists that is an ancestor of `ns`, so `ns` is inserted at the front to
-        // ensure that any existing descendants are ordered after `ns`, retaining the desired
-        // top-down ordering.
-        namespaceList.unshift(ns);
-      }
-    } else {
-      namespaceList.push(ns);
-    }
-    namespacesByHostElement.set(hostElement, ns);
-    return ns;
-  }
-  register(namespaceId, hostElement) {
-    let ns = this._namespaceLookup[namespaceId];
-    if (!ns) {
-      ns = this.createNamespace(namespaceId, hostElement);
-    }
-    return ns;
-  }
-  registerTrigger(namespaceId, name, trigger) {
-    let ns = this._namespaceLookup[namespaceId];
-    if (ns && ns.register(name, trigger)) {
-      this.totalAnimations++;
-    }
-  }
-  destroy(namespaceId, context) {
-    if (!namespaceId) return;
-    this.afterFlush(() => {});
-    this.afterFlushAnimationsDone(() => {
-      const ns = this._fetchNamespace(namespaceId);
-      this.namespacesByHostElement.delete(ns.hostElement);
-      const index = this._namespaceList.indexOf(ns);
-      if (index >= 0) {
-        this._namespaceList.splice(index, 1);
-      }
-      ns.destroy(context);
-      delete this._namespaceLookup[namespaceId];
-    });
-  }
-  _fetchNamespace(id) {
-    return this._namespaceLookup[id];
-  }
-  fetchNamespacesByElement(element) {
-    // normally there should only be one namespace per element, however
-    // if @triggers are placed on both the component element and then
-    // its host element (within the component code) then there will be
-    // two namespaces returned. We use a set here to simply deduplicate
-    // the namespaces in case (for the reason described above) there are multiple triggers
-    const namespaces = new Set();
-    const elementStates = this.statesByElement.get(element);
-    if (elementStates) {
-      for (let stateValue of elementStates.values()) {
-        if (stateValue.namespaceId) {
-          const ns = this._fetchNamespace(stateValue.namespaceId);
-          if (ns) {
-            namespaces.add(ns);
-          }
-        }
-      }
-    }
-    return namespaces;
-  }
-  trigger(namespaceId, element, name, value) {
-    if (isElementNode(element)) {
-      const ns = this._fetchNamespace(namespaceId);
-      if (ns) {
-        ns.trigger(element, name, value);
-        return true;
-      }
-    }
-    return false;
-  }
-  insertNode(namespaceId, element, parent, insertBefore) {
-    if (!isElementNode(element)) return;
-    // special case for when an element is removed and reinserted (move operation)
-    // when this occurs we do not want to use the element for deletion later
-    const details = element[REMOVAL_FLAG];
-    if (details && details.setForRemoval) {
-      details.setForRemoval = false;
-      details.setForMove = true;
-      const index = this.collectedLeaveElements.indexOf(element);
-      if (index >= 0) {
-        this.collectedLeaveElements.splice(index, 1);
-      }
-    }
-    // in the event that the namespaceId is blank then the caller
-    // code does not contain any animation code in it, but it is
-    // just being called so that the node is marked as being inserted
-    if (namespaceId) {
-      const ns = this._fetchNamespace(namespaceId);
-      // This if-statement is a workaround for router issue #21947.
-      // The router sometimes hits a race condition where while a route
-      // is being instantiated a new navigation arrives, triggering leave
-      // animation of DOM that has not been fully initialized, until this
-      // is resolved, we need to handle the scenario when DOM is not in a
-      // consistent state during the animation.
-      if (ns) {
-        ns.insertNode(element, parent);
-      }
-    }
-    // only *directives and host elements are inserted before
-    if (insertBefore) {
-      this.collectEnterElement(element);
-    }
-  }
-  collectEnterElement(element) {
-    this.collectedEnterElements.push(element);
-  }
-  markElementAsDisabled(element, value) {
-    if (value) {
-      if (!this.disabledNodes.has(element)) {
-        this.disabledNodes.add(element);
-        addClass(element, DISABLED_CLASSNAME);
-      }
-    } else if (this.disabledNodes.has(element)) {
-      this.disabledNodes.delete(element);
-      removeClass(element, DISABLED_CLASSNAME);
-    }
-  }
-  removeNode(namespaceId, element, context) {
-    if (isElementNode(element)) {
-      this.scheduler?.notify();
-      const ns = namespaceId ? this._fetchNamespace(namespaceId) : null;
-      if (ns) {
-        ns.removeNode(element, context);
-      } else {
-        this.markElementAsRemoved(namespaceId, element, false, context);
-      }
-      const hostNS = this.namespacesByHostElement.get(element);
-      if (hostNS && hostNS.id !== namespaceId) {
-        hostNS.removeNode(element, context);
-      }
-    } else {
-      this._onRemovalComplete(element, context);
-    }
-  }
-  markElementAsRemoved(namespaceId, element, hasAnimation, context, previousTriggersValues) {
-    this.collectedLeaveElements.push(element);
-    element[REMOVAL_FLAG] = {
-      namespaceId,
-      setForRemoval: context,
-      hasAnimation,
-      removedBeforeQueried: false,
-      previousTriggersValues
-    };
-  }
-  listen(namespaceId, element, name, phase, callback) {
-    if (isElementNode(element)) {
-      return this._fetchNamespace(namespaceId).listen(element, name, phase, callback);
-    }
-    return () => {};
-  }
-  _buildInstruction(entry, subTimelines, enterClassName, leaveClassName, skipBuildAst) {
-    return entry.transition.build(this.driver, entry.element, entry.fromState.value, entry.toState.value, enterClassName, leaveClassName, entry.fromState.options, entry.toState.options, subTimelines, skipBuildAst);
-  }
-  destroyInnerAnimations(containerElement) {
-    let elements = this.driver.query(containerElement, NG_TRIGGER_SELECTOR, true);
-    elements.forEach(element => this.destroyActiveAnimationsForElement(element));
-    if (this.playersByQueriedElement.size == 0) return;
-    elements = this.driver.query(containerElement, NG_ANIMATING_SELECTOR, true);
-    elements.forEach(element => this.finishActiveQueriedAnimationOnElement(element));
-  }
-  destroyActiveAnimationsForElement(element) {
-    const players = this.playersByElement.get(element);
-    if (players) {
-      players.forEach(player => {
-        // special case for when an element is set for destruction, but hasn't started.
-        // in this situation we want to delay the destruction until the flush occurs
-        // so that any event listeners attached to the player are triggered.
-        if (player.queued) {
-          player.markedForDestroy = true;
-        } else {
-          player.destroy();
-        }
-      });
-    }
-  }
-  finishActiveQueriedAnimationOnElement(element) {
-    const players = this.playersByQueriedElement.get(element);
-    if (players) {
-      players.forEach(player => player.finish());
-    }
-  }
-  whenRenderingDone() {
-    return new Promise(resolve => {
-      if (this.players.length) {
-        return optimizeGroupPlayer(this.players).onDone(() => resolve());
-      } else {
-        resolve();
-      }
-    });
-  }
-  processLeaveNode(element) {
-    const details = element[REMOVAL_FLAG];
-    if (details && details.setForRemoval) {
-      // this will prevent it from removing it twice
-      element[REMOVAL_FLAG] = NULL_REMOVAL_STATE;
-      if (details.namespaceId) {
-        this.destroyInnerAnimations(element);
-        const ns = this._fetchNamespace(details.namespaceId);
-        if (ns) {
-          ns.clearElementCache(element);
-        }
-      }
-      this._onRemovalComplete(element, details.setForRemoval);
-    }
-    if (element.classList?.contains(DISABLED_CLASSNAME)) {
-      this.markElementAsDisabled(element, false);
-    }
-    this.driver.query(element, DISABLED_SELECTOR, true).forEach(node => {
-      this.markElementAsDisabled(node, false);
-    });
-  }
-  flush(microtaskId = -1) {
-    let players = [];
-    if (this.newHostElements.size) {
-      this.newHostElements.forEach((ns, element) => this._balanceNamespaceList(ns, element));
-      this.newHostElements.clear();
-    }
-    if (this.totalAnimations && this.collectedEnterElements.length) {
-      for (let i = 0; i < this.collectedEnterElements.length; i++) {
-        const elm = this.collectedEnterElements[i];
-        addClass(elm, STAR_CLASSNAME);
-      }
-    }
-    if (this._namespaceList.length && (this.totalQueuedPlayers || this.collectedLeaveElements.length)) {
-      const cleanupFns = [];
-      try {
-        players = this._flushAnimations(cleanupFns, microtaskId);
-      } finally {
-        for (let i = 0; i < cleanupFns.length; i++) {
-          cleanupFns[i]();
-        }
-      }
-    } else {
-      for (let i = 0; i < this.collectedLeaveElements.length; i++) {
-        const element = this.collectedLeaveElements[i];
-        this.processLeaveNode(element);
-      }
-    }
-    this.totalQueuedPlayers = 0;
-    this.collectedEnterElements.length = 0;
-    this.collectedLeaveElements.length = 0;
-    this._flushFns.forEach(fn => fn());
-    this._flushFns = [];
-    if (this._whenQuietFns.length) {
-      // we move these over to a variable so that
-      // if any new callbacks are registered in another
-      // flush they do not populate the existing set
-      const quietFns = this._whenQuietFns;
-      this._whenQuietFns = [];
-      if (players.length) {
-        optimizeGroupPlayer(players).onDone(() => {
-          quietFns.forEach(fn => fn());
-        });
-      } else {
-        quietFns.forEach(fn => fn());
-      }
-    }
-  }
-  reportError(errors) {
-    throw triggerTransitionsFailed(errors);
-  }
-  _flushAnimations(cleanupFns, microtaskId) {
-    const subTimelines = new ElementInstructionMap();
-    const skippedPlayers = [];
-    const skippedPlayersMap = new Map();
-    const queuedInstructions = [];
-    const queriedElements = new Map();
-    const allPreStyleElements = new Map();
-    const allPostStyleElements = new Map();
-    const disabledElementsSet = new Set();
-    this.disabledNodes.forEach(node => {
-      disabledElementsSet.add(node);
-      const nodesThatAreDisabled = this.driver.query(node, QUEUED_SELECTOR, true);
-      for (let i = 0; i < nodesThatAreDisabled.length; i++) {
-        disabledElementsSet.add(nodesThatAreDisabled[i]);
-      }
-    });
-    const bodyNode = this.bodyNode;
-    const allTriggerElements = Array.from(this.statesByElement.keys());
-    const enterNodeMap = buildRootMap(allTriggerElements, this.collectedEnterElements);
-    // this must occur before the instructions are built below such that
-    // the :enter queries match the elements (since the timeline queries
-    // are fired during instruction building).
-    const enterNodeMapIds = new Map();
-    let i = 0;
-    enterNodeMap.forEach((nodes, root) => {
-      const className = ENTER_CLASSNAME + i++;
-      enterNodeMapIds.set(root, className);
-      nodes.forEach(node => addClass(node, className));
-    });
-    const allLeaveNodes = [];
-    const mergedLeaveNodes = new Set();
-    const leaveNodesWithoutAnimations = new Set();
-    for (let i = 0; i < this.collectedLeaveElements.length; i++) {
-      const element = this.collectedLeaveElements[i];
-      const details = element[REMOVAL_FLAG];
-      if (details && details.setForRemoval) {
-        allLeaveNodes.push(element);
-        mergedLeaveNodes.add(element);
-        if (details.hasAnimation) {
-          this.driver.query(element, STAR_SELECTOR, true).forEach(elm => mergedLeaveNodes.add(elm));
-        } else {
-          leaveNodesWithoutAnimations.add(element);
-        }
-      }
-    }
-    const leaveNodeMapIds = new Map();
-    const leaveNodeMap = buildRootMap(allTriggerElements, Array.from(mergedLeaveNodes));
-    leaveNodeMap.forEach((nodes, root) => {
-      const className = LEAVE_CLASSNAME + i++;
-      leaveNodeMapIds.set(root, className);
-      nodes.forEach(node => addClass(node, className));
-    });
-    cleanupFns.push(() => {
-      enterNodeMap.forEach((nodes, root) => {
-        const className = enterNodeMapIds.get(root);
-        nodes.forEach(node => removeClass(node, className));
-      });
-      leaveNodeMap.forEach((nodes, root) => {
-        const className = leaveNodeMapIds.get(root);
-        nodes.forEach(node => removeClass(node, className));
-      });
-      allLeaveNodes.forEach(element => {
-        this.processLeaveNode(element);
-      });
-    });
-    const allPlayers = [];
-    const erroneousTransitions = [];
-    for (let i = this._namespaceList.length - 1; i >= 0; i--) {
-      const ns = this._namespaceList[i];
-      ns.drainQueuedTransitions(microtaskId).forEach(entry => {
-        const player = entry.player;
-        const element = entry.element;
-        allPlayers.push(player);
-        if (this.collectedEnterElements.length) {
-          const details = element[REMOVAL_FLAG];
-          // animations for move operations (elements being removed and reinserted,
-          // e.g. when the order of an *ngFor list changes) are currently not supported
-          if (details && details.setForMove) {
-            if (details.previousTriggersValues && details.previousTriggersValues.has(entry.triggerName)) {
-              const previousValue = details.previousTriggersValues.get(entry.triggerName);
-              // we need to restore the previous trigger value since the element has
-              // only been moved and hasn't actually left the DOM
-              const triggersWithStates = this.statesByElement.get(entry.element);
-              if (triggersWithStates && triggersWithStates.has(entry.triggerName)) {
-                const state = triggersWithStates.get(entry.triggerName);
-                state.value = previousValue;
-                triggersWithStates.set(entry.triggerName, state);
-              }
-            }
-            player.destroy();
-            return;
-          }
-        }
-        const nodeIsOrphaned = !bodyNode || !this.driver.containsElement(bodyNode, element);
-        const leaveClassName = leaveNodeMapIds.get(element);
-        const enterClassName = enterNodeMapIds.get(element);
-        const instruction = this._buildInstruction(entry, subTimelines, enterClassName, leaveClassName, nodeIsOrphaned);
-        if (instruction.errors && instruction.errors.length) {
-          erroneousTransitions.push(instruction);
-          return;
-        }
-        // even though the element may not be in the DOM, it may still
-        // be added at a later point (due to the mechanics of content
-        // projection and/or dynamic component insertion) therefore it's
-        // important to still style the element.
-        if (nodeIsOrphaned) {
-          player.onStart(() => eraseStyles(element, instruction.fromStyles));
-          player.onDestroy(() => setStyles(element, instruction.toStyles));
-          skippedPlayers.push(player);
-          return;
-        }
-        // if an unmatched transition is queued and ready to go
-        // then it SHOULD NOT render an animation and cancel the
-        // previously running animations.
-        if (entry.isFallbackTransition) {
-          player.onStart(() => eraseStyles(element, instruction.fromStyles));
-          player.onDestroy(() => setStyles(element, instruction.toStyles));
-          skippedPlayers.push(player);
-          return;
-        }
-        // this means that if a parent animation uses this animation as a sub-trigger
-        // then it will instruct the timeline builder not to add a player delay, but
-        // instead stretch the first keyframe gap until the animation starts. This is
-        // important in order to prevent extra initialization styles from being
-        // required by the user for the animation.
-        const timelines = [];
-        instruction.timelines.forEach(tl => {
-          tl.stretchStartingKeyframe = true;
-          if (!this.disabledNodes.has(tl.element)) {
-            timelines.push(tl);
-          }
-        });
-        instruction.timelines = timelines;
-        subTimelines.append(element, instruction.timelines);
-        const tuple = {
-          instruction,
-          player,
-          element
-        };
-        queuedInstructions.push(tuple);
-        instruction.queriedElements.forEach(element => getOrSetDefaultValue(queriedElements, element, []).push(player));
-        instruction.preStyleProps.forEach((stringMap, element) => {
-          if (stringMap.size) {
-            let setVal = allPreStyleElements.get(element);
-            if (!setVal) {
-              allPreStyleElements.set(element, setVal = new Set());
-            }
-            stringMap.forEach((_, prop) => setVal.add(prop));
-          }
-        });
-        instruction.postStyleProps.forEach((stringMap, element) => {
-          let setVal = allPostStyleElements.get(element);
-          if (!setVal) {
-            allPostStyleElements.set(element, setVal = new Set());
-          }
-          stringMap.forEach((_, prop) => setVal.add(prop));
-        });
-      });
-    }
-    if (erroneousTransitions.length) {
-      const errors = [];
-      erroneousTransitions.forEach(instruction => {
-        errors.push(transitionFailed(instruction.triggerName, instruction.errors));
-      });
-      allPlayers.forEach(player => player.destroy());
-      this.reportError(errors);
-    }
-    const allPreviousPlayersMap = new Map();
-    // this map tells us which element in the DOM tree is contained by
-    // which animation. Further down this map will get populated once
-    // the players are built and in doing so we can use it to efficiently
-    // figure out if a sub player is skipped due to a parent player having priority.
-    const animationElementMap = new Map();
-    queuedInstructions.forEach(entry => {
-      const element = entry.element;
-      if (subTimelines.has(element)) {
-        animationElementMap.set(element, element);
-        this._beforeAnimationBuild(entry.player.namespaceId, entry.instruction, allPreviousPlayersMap);
-      }
-    });
-    skippedPlayers.forEach(player => {
-      const element = player.element;
-      const previousPlayers = this._getPreviousPlayers(element, false, player.namespaceId, player.triggerName, null);
-      previousPlayers.forEach(prevPlayer => {
-        getOrSetDefaultValue(allPreviousPlayersMap, element, []).push(prevPlayer);
-        prevPlayer.destroy();
-      });
-    });
-    // this is a special case for nodes that will be removed either by
-    // having their own leave animations or by being queried in a container
-    // that will be removed once a parent animation is complete. The idea
-    // here is that * styles must be identical to ! styles because of
-    // backwards compatibility (* is also filled in by default in many places).
-    // Otherwise * styles will return an empty value or "auto" since the element
-    // passed to getComputedStyle will not be visible (since * === destination)
-    const replaceNodes = allLeaveNodes.filter(node => {
-      return replacePostStylesAsPre(node, allPreStyleElements, allPostStyleElements);
-    });
-    // POST STAGE: fill the * styles
-    const postStylesMap = new Map();
-    const allLeaveQueriedNodes = cloakAndComputeStyles(postStylesMap, this.driver, leaveNodesWithoutAnimations, allPostStyleElements, _angular_animations__WEBPACK_IMPORTED_MODULE_1__.AUTO_STYLE);
-    allLeaveQueriedNodes.forEach(node => {
-      if (replacePostStylesAsPre(node, allPreStyleElements, allPostStyleElements)) {
-        replaceNodes.push(node);
-      }
-    });
-    // PRE STAGE: fill the ! styles
-    const preStylesMap = new Map();
-    enterNodeMap.forEach((nodes, root) => {
-      cloakAndComputeStyles(preStylesMap, this.driver, new Set(nodes), allPreStyleElements, _angular_animations__WEBPACK_IMPORTED_MODULE_1__["ɵPRE_STYLE"]);
-    });
-    replaceNodes.forEach(node => {
-      const post = postStylesMap.get(node);
-      const pre = preStylesMap.get(node);
-      postStylesMap.set(node, new Map([...(post?.entries() ?? []), ...(pre?.entries() ?? [])]));
-    });
-    const rootPlayers = [];
-    const subPlayers = [];
-    const NO_PARENT_ANIMATION_ELEMENT_DETECTED = {};
-    queuedInstructions.forEach(entry => {
-      const {
-        element,
-        player,
-        instruction
-      } = entry;
-      // this means that it was never consumed by a parent animation which
-      // means that it is independent and therefore should be set for animation
-      if (subTimelines.has(element)) {
-        if (disabledElementsSet.has(element)) {
-          player.onDestroy(() => setStyles(element, instruction.toStyles));
-          player.disabled = true;
-          player.overrideTotalTime(instruction.totalTime);
-          skippedPlayers.push(player);
-          return;
-        }
-        // this will flow up the DOM and query the map to figure out
-        // if a parent animation has priority over it. In the situation
-        // that a parent is detected then it will cancel the loop. If
-        // nothing is detected, or it takes a few hops to find a parent,
-        // then it will fill in the missing nodes and signal them as having
-        // a detected parent (or a NO_PARENT value via a special constant).
-        let parentWithAnimation = NO_PARENT_ANIMATION_ELEMENT_DETECTED;
-        if (animationElementMap.size > 1) {
-          let elm = element;
-          const parentsToAdd = [];
-          while (elm = elm.parentNode) {
-            const detectedParent = animationElementMap.get(elm);
-            if (detectedParent) {
-              parentWithAnimation = detectedParent;
-              break;
-            }
-            parentsToAdd.push(elm);
-          }
-          parentsToAdd.forEach(parent => animationElementMap.set(parent, parentWithAnimation));
-        }
-        const innerPlayer = this._buildAnimation(player.namespaceId, instruction, allPreviousPlayersMap, skippedPlayersMap, preStylesMap, postStylesMap);
-        player.setRealPlayer(innerPlayer);
-        if (parentWithAnimation === NO_PARENT_ANIMATION_ELEMENT_DETECTED) {
-          rootPlayers.push(player);
-        } else {
-          const parentPlayers = this.playersByElement.get(parentWithAnimation);
-          if (parentPlayers && parentPlayers.length) {
-            player.parentPlayer = optimizeGroupPlayer(parentPlayers);
-          }
-          skippedPlayers.push(player);
-        }
-      } else {
-        eraseStyles(element, instruction.fromStyles);
-        player.onDestroy(() => setStyles(element, instruction.toStyles));
-        // there still might be a ancestor player animating this
-        // element therefore we will still add it as a sub player
-        // even if its animation may be disabled
-        subPlayers.push(player);
-        if (disabledElementsSet.has(element)) {
-          skippedPlayers.push(player);
-        }
-      }
-    });
-    // find all of the sub players' corresponding inner animation players
-    subPlayers.forEach(player => {
-      // even if no players are found for a sub animation it
-      // will still complete itself after the next tick since it's Noop
-      const playersForElement = skippedPlayersMap.get(player.element);
-      if (playersForElement && playersForElement.length) {
-        const innerPlayer = optimizeGroupPlayer(playersForElement);
-        player.setRealPlayer(innerPlayer);
-      }
-    });
-    // the reason why we don't actually play the animation is
-    // because all that a skipped player is designed to do is to
-    // fire the start/done transition callback events
-    skippedPlayers.forEach(player => {
-      if (player.parentPlayer) {
-        player.syncPlayerEvents(player.parentPlayer);
-      } else {
-        player.destroy();
-      }
-    });
-    // run through all of the queued removals and see if they
-    // were picked up by a query. If not then perform the removal
-    // operation right away unless a parent animation is ongoing.
-    for (let i = 0; i < allLeaveNodes.length; i++) {
-      const element = allLeaveNodes[i];
-      const details = element[REMOVAL_FLAG];
-      removeClass(element, LEAVE_CLASSNAME);
-      // this means the element has a removal animation that is being
-      // taken care of and therefore the inner elements will hang around
-      // until that animation is over (or the parent queried animation)
-      if (details && details.hasAnimation) continue;
-      let players = [];
-      // if this element is queried or if it contains queried children
-      // then we want for the element not to be removed from the page
-      // until the queried animations have finished
-      if (queriedElements.size) {
-        let queriedPlayerResults = queriedElements.get(element);
-        if (queriedPlayerResults && queriedPlayerResults.length) {
-          players.push(...queriedPlayerResults);
-        }
-        let queriedInnerElements = this.driver.query(element, NG_ANIMATING_SELECTOR, true);
-        for (let j = 0; j < queriedInnerElements.length; j++) {
-          let queriedPlayers = queriedElements.get(queriedInnerElements[j]);
-          if (queriedPlayers && queriedPlayers.length) {
-            players.push(...queriedPlayers);
-          }
-        }
-      }
-      const activePlayers = players.filter(p => !p.destroyed);
-      if (activePlayers.length) {
-        removeNodesAfterAnimationDone(this, element, activePlayers);
-      } else {
-        this.processLeaveNode(element);
-      }
-    }
-    // this is required so the cleanup method doesn't remove them
-    allLeaveNodes.length = 0;
-    rootPlayers.forEach(player => {
-      this.players.push(player);
-      player.onDone(() => {
-        player.destroy();
-        const index = this.players.indexOf(player);
-        this.players.splice(index, 1);
-      });
-      player.play();
-    });
-    return rootPlayers;
-  }
-  afterFlush(callback) {
-    this._flushFns.push(callback);
-  }
-  afterFlushAnimationsDone(callback) {
-    this._whenQuietFns.push(callback);
-  }
-  _getPreviousPlayers(element, isQueriedElement, namespaceId, triggerName, toStateValue) {
-    let players = [];
-    if (isQueriedElement) {
-      const queriedElementPlayers = this.playersByQueriedElement.get(element);
-      if (queriedElementPlayers) {
-        players = queriedElementPlayers;
-      }
-    } else {
-      const elementPlayers = this.playersByElement.get(element);
-      if (elementPlayers) {
-        const isRemovalAnimation = !toStateValue || toStateValue == VOID_VALUE;
-        elementPlayers.forEach(player => {
-          if (player.queued) return;
-          if (!isRemovalAnimation && player.triggerName != triggerName) return;
-          players.push(player);
-        });
-      }
-    }
-    if (namespaceId || triggerName) {
-      players = players.filter(player => {
-        if (namespaceId && namespaceId != player.namespaceId) return false;
-        if (triggerName && triggerName != player.triggerName) return false;
-        return true;
-      });
-    }
-    return players;
-  }
-  _beforeAnimationBuild(namespaceId, instruction, allPreviousPlayersMap) {
-    const triggerName = instruction.triggerName;
-    const rootElement = instruction.element;
-    // when a removal animation occurs, ALL previous players are collected
-    // and destroyed (even if they are outside of the current namespace)
-    const targetNameSpaceId = instruction.isRemovalTransition ? undefined : namespaceId;
-    const targetTriggerName = instruction.isRemovalTransition ? undefined : triggerName;
-    for (const timelineInstruction of instruction.timelines) {
-      const element = timelineInstruction.element;
-      const isQueriedElement = element !== rootElement;
-      const players = getOrSetDefaultValue(allPreviousPlayersMap, element, []);
-      const previousPlayers = this._getPreviousPlayers(element, isQueriedElement, targetNameSpaceId, targetTriggerName, instruction.toState);
-      previousPlayers.forEach(player => {
-        const realPlayer = player.getRealPlayer();
-        if (realPlayer.beforeDestroy) {
-          realPlayer.beforeDestroy();
-        }
-        player.destroy();
-        players.push(player);
-      });
-    }
-    // this needs to be done so that the PRE/POST styles can be
-    // computed properly without interfering with the previous animation
-    eraseStyles(rootElement, instruction.fromStyles);
-  }
-  _buildAnimation(namespaceId, instruction, allPreviousPlayersMap, skippedPlayersMap, preStylesMap, postStylesMap) {
-    const triggerName = instruction.triggerName;
-    const rootElement = instruction.element;
-    // we first run this so that the previous animation player
-    // data can be passed into the successive animation players
-    const allQueriedPlayers = [];
-    const allConsumedElements = new Set();
-    const allSubElements = new Set();
-    const allNewPlayers = instruction.timelines.map(timelineInstruction => {
-      const element = timelineInstruction.element;
-      allConsumedElements.add(element);
-      // FIXME (matsko): make sure to-be-removed animations are removed properly
-      const details = element[REMOVAL_FLAG];
-      if (details && details.removedBeforeQueried) return new _angular_animations__WEBPACK_IMPORTED_MODULE_1__.NoopAnimationPlayer(timelineInstruction.duration, timelineInstruction.delay);
-      const isQueriedElement = element !== rootElement;
-      const previousPlayers = flattenGroupPlayers((allPreviousPlayersMap.get(element) || EMPTY_PLAYER_ARRAY).map(p => p.getRealPlayer())).filter(p => {
-        // the `element` is not apart of the AnimationPlayer definition, but
-        // Mock/WebAnimations
-        // use the element within their implementation. This will be added in Angular5 to
-        // AnimationPlayer
-        const pp = p;
-        return pp.element ? pp.element === element : false;
-      });
-      const preStyles = preStylesMap.get(element);
-      const postStyles = postStylesMap.get(element);
-      const keyframes = normalizeKeyframes$1(this._normalizer, timelineInstruction.keyframes, preStyles, postStyles);
-      const player = this._buildPlayer(timelineInstruction, keyframes, previousPlayers);
-      // this means that this particular player belongs to a sub trigger. It is
-      // important that we match this player up with the corresponding (@trigger.listener)
-      if (timelineInstruction.subTimeline && skippedPlayersMap) {
-        allSubElements.add(element);
-      }
-      if (isQueriedElement) {
-        const wrappedPlayer = new TransitionAnimationPlayer(namespaceId, triggerName, element);
-        wrappedPlayer.setRealPlayer(player);
-        allQueriedPlayers.push(wrappedPlayer);
-      }
-      return player;
-    });
-    allQueriedPlayers.forEach(player => {
-      getOrSetDefaultValue(this.playersByQueriedElement, player.element, []).push(player);
-      player.onDone(() => deleteOrUnsetInMap(this.playersByQueriedElement, player.element, player));
-    });
-    allConsumedElements.forEach(element => addClass(element, NG_ANIMATING_CLASSNAME));
-    const player = optimizeGroupPlayer(allNewPlayers);
-    player.onDestroy(() => {
-      allConsumedElements.forEach(element => removeClass(element, NG_ANIMATING_CLASSNAME));
-      setStyles(rootElement, instruction.toStyles);
-    });
-    // this basically makes all of the callbacks for sub element animations
-    // be dependent on the upper players for when they finish
-    allSubElements.forEach(element => {
-      getOrSetDefaultValue(skippedPlayersMap, element, []).push(player);
-    });
-    return player;
-  }
-  _buildPlayer(instruction, keyframes, previousPlayers) {
-    if (keyframes.length > 0) {
-      return this.driver.animate(instruction.element, keyframes, instruction.duration, instruction.delay, instruction.easing, previousPlayers);
-    }
-    // special case for when an empty transition|definition is provided
-    // ... there is no point in rendering an empty animation
-    return new _angular_animations__WEBPACK_IMPORTED_MODULE_1__.NoopAnimationPlayer(instruction.duration, instruction.delay);
-  }
-}
-class TransitionAnimationPlayer {
-  constructor(namespaceId, triggerName, element) {
-    this.namespaceId = namespaceId;
-    this.triggerName = triggerName;
-    this.element = element;
-    this._player = new _angular_animations__WEBPACK_IMPORTED_MODULE_1__.NoopAnimationPlayer();
-    this._containsRealPlayer = false;
-    this._queuedCallbacks = new Map();
-    this.destroyed = false;
-    this.parentPlayer = null;
-    this.markedForDestroy = false;
-    this.disabled = false;
-    this.queued = true;
-    this.totalTime = 0;
-  }
-  setRealPlayer(player) {
-    if (this._containsRealPlayer) return;
-    this._player = player;
-    this._queuedCallbacks.forEach((callbacks, phase) => {
-      callbacks.forEach(callback => listenOnPlayer(player, phase, undefined, callback));
-    });
-    this._queuedCallbacks.clear();
-    this._containsRealPlayer = true;
-    this.overrideTotalTime(player.totalTime);
-    this.queued = false;
-  }
-  getRealPlayer() {
-    return this._player;
-  }
-  overrideTotalTime(totalTime) {
-    this.totalTime = totalTime;
-  }
-  syncPlayerEvents(player) {
-    const p = this._player;
-    if (p.triggerCallback) {
-      player.onStart(() => p.triggerCallback('start'));
-    }
-    player.onDone(() => this.finish());
-    player.onDestroy(() => this.destroy());
-  }
-  _queueEvent(name, callback) {
-    getOrSetDefaultValue(this._queuedCallbacks, name, []).push(callback);
-  }
-  onDone(fn) {
-    if (this.queued) {
-      this._queueEvent('done', fn);
-    }
-    this._player.onDone(fn);
-  }
-  onStart(fn) {
-    if (this.queued) {
-      this._queueEvent('start', fn);
-    }
-    this._player.onStart(fn);
-  }
-  onDestroy(fn) {
-    if (this.queued) {
-      this._queueEvent('destroy', fn);
-    }
-    this._player.onDestroy(fn);
-  }
-  init() {
-    this._player.init();
-  }
-  hasStarted() {
-    return this.queued ? false : this._player.hasStarted();
-  }
-  play() {
-    !this.queued && this._player.play();
-  }
-  pause() {
-    !this.queued && this._player.pause();
-  }
-  restart() {
-    !this.queued && this._player.restart();
-  }
-  finish() {
-    this._player.finish();
-  }
-  destroy() {
-    this.destroyed = true;
-    this._player.destroy();
-  }
-  reset() {
-    !this.queued && this._player.reset();
-  }
-  setPosition(p) {
-    if (!this.queued) {
-      this._player.setPosition(p);
-    }
-  }
-  getPosition() {
-    return this.queued ? 0 : this._player.getPosition();
-  }
-  /** @internal */
-  triggerCallback(phaseName) {
-    const p = this._player;
-    if (p.triggerCallback) {
-      p.triggerCallback(phaseName);
-    }
-  }
-}
-function deleteOrUnsetInMap(map, key, value) {
-  let currentValues = map.get(key);
-  if (currentValues) {
-    if (currentValues.length) {
-      const index = currentValues.indexOf(value);
-      currentValues.splice(index, 1);
-    }
-    if (currentValues.length == 0) {
-      map.delete(key);
-    }
-  }
-  return currentValues;
-}
-function normalizeTriggerValue(value) {
-  // we use `!= null` here because it's the most simple
-  // way to test against a "falsy" value without mixing
-  // in empty strings or a zero value. DO NOT OPTIMIZE.
-  return value != null ? value : null;
-}
-function isElementNode(node) {
-  return node && node['nodeType'] === 1;
-}
-function isTriggerEventValid(eventName) {
-  return eventName == 'start' || eventName == 'done';
-}
-function cloakElement(element, value) {
-  const oldValue = element.style.display;
-  element.style.display = value != null ? value : 'none';
-  return oldValue;
-}
-function cloakAndComputeStyles(valuesMap, driver, elements, elementPropsMap, defaultStyle) {
-  const cloakVals = [];
-  elements.forEach(element => cloakVals.push(cloakElement(element)));
-  const failedElements = [];
-  elementPropsMap.forEach((props, element) => {
-    const styles = new Map();
-    props.forEach(prop => {
-      const value = driver.computeStyle(element, prop, defaultStyle);
-      styles.set(prop, value);
-      // there is no easy way to detect this because a sub element could be removed
-      // by a parent animation element being detached.
-      if (!value || value.length == 0) {
-        element[REMOVAL_FLAG] = NULL_REMOVED_QUERIED_STATE;
-        failedElements.push(element);
-      }
-    });
-    valuesMap.set(element, styles);
-  });
-  // we use a index variable here since Set.forEach(a, i) does not return
-  // an index value for the closure (but instead just the value)
-  let i = 0;
-  elements.forEach(element => cloakElement(element, cloakVals[i++]));
-  return failedElements;
-}
-/*
-Since the Angular renderer code will return a collection of inserted
-nodes in all areas of a DOM tree, it's up to this algorithm to figure
-out which nodes are roots for each animation @trigger.
-
-By placing each inserted node into a Set and traversing upwards, it
-is possible to find the @trigger elements and well any direct *star
-insertion nodes, if a @trigger root is found then the enter element
-is placed into the Map[@trigger] spot.
- */
-function buildRootMap(roots, nodes) {
-  const rootMap = new Map();
-  roots.forEach(root => rootMap.set(root, []));
-  if (nodes.length == 0) return rootMap;
-  const NULL_NODE = 1;
-  const nodeSet = new Set(nodes);
-  const localRootMap = new Map();
-  function getRoot(node) {
-    if (!node) return NULL_NODE;
-    let root = localRootMap.get(node);
-    if (root) return root;
-    const parent = node.parentNode;
-    if (rootMap.has(parent)) {
-      // ngIf inside @trigger
-      root = parent;
-    } else if (nodeSet.has(parent)) {
-      // ngIf inside ngIf
-      root = NULL_NODE;
-    } else {
-      // recurse upwards
-      root = getRoot(parent);
-    }
-    localRootMap.set(node, root);
-    return root;
-  }
-  nodes.forEach(node => {
-    const root = getRoot(node);
-    if (root !== NULL_NODE) {
-      rootMap.get(root).push(node);
-    }
-  });
-  return rootMap;
-}
-function addClass(element, className) {
-  element.classList?.add(className);
-}
-function removeClass(element, className) {
-  element.classList?.remove(className);
-}
-function removeNodesAfterAnimationDone(engine, element, players) {
-  optimizeGroupPlayer(players).onDone(() => engine.processLeaveNode(element));
-}
-function flattenGroupPlayers(players) {
-  const finalPlayers = [];
-  _flattenGroupPlayersRecur(players, finalPlayers);
-  return finalPlayers;
-}
-function _flattenGroupPlayersRecur(players, finalPlayers) {
-  for (let i = 0; i < players.length; i++) {
-    const player = players[i];
-    if (player instanceof _angular_animations__WEBPACK_IMPORTED_MODULE_1__["ɵAnimationGroupPlayer"]) {
-      _flattenGroupPlayersRecur(player.players, finalPlayers);
-    } else {
-      finalPlayers.push(player);
-    }
-  }
-}
-function objEquals(a, b) {
-  const k1 = Object.keys(a);
-  const k2 = Object.keys(b);
-  if (k1.length != k2.length) return false;
-  for (let i = 0; i < k1.length; i++) {
-    const prop = k1[i];
-    if (!b.hasOwnProperty(prop) || a[prop] !== b[prop]) return false;
-  }
-  return true;
-}
-function replacePostStylesAsPre(element, allPreStyleElements, allPostStyleElements) {
-  const postEntry = allPostStyleElements.get(element);
-  if (!postEntry) return false;
-  let preEntry = allPreStyleElements.get(element);
-  if (preEntry) {
-    postEntry.forEach(data => preEntry.add(data));
-  } else {
-    allPreStyleElements.set(element, postEntry);
-  }
-  allPostStyleElements.delete(element);
-  return true;
-}
-class AnimationEngine {
-  constructor(doc, _driver, _normalizer, scheduler) {
-    this._driver = _driver;
-    this._normalizer = _normalizer;
-    this._triggerCache = {};
-    // this method is designed to be overridden by the code that uses this engine
-    this.onRemovalComplete = (element, context) => {};
-    this._transitionEngine = new TransitionAnimationEngine(doc.body, _driver, _normalizer, scheduler);
-    this._timelineEngine = new TimelineAnimationEngine(doc.body, _driver, _normalizer);
-    this._transitionEngine.onRemovalComplete = (element, context) => this.onRemovalComplete(element, context);
-  }
-  registerTrigger(componentId, namespaceId, hostElement, name, metadata) {
-    const cacheKey = componentId + '-' + name;
-    let trigger = this._triggerCache[cacheKey];
-    if (!trigger) {
-      const errors = [];
-      const warnings = [];
-      const ast = buildAnimationAst(this._driver, metadata, errors, warnings);
-      if (errors.length) {
-        throw triggerBuildFailed(name, errors);
-      }
-      if (warnings.length) {
-        warnTriggerBuild(name, warnings);
-      }
-      trigger = buildTrigger(name, ast, this._normalizer);
-      this._triggerCache[cacheKey] = trigger;
-    }
-    this._transitionEngine.registerTrigger(namespaceId, name, trigger);
-  }
-  register(namespaceId, hostElement) {
-    this._transitionEngine.register(namespaceId, hostElement);
-  }
-  destroy(namespaceId, context) {
-    this._transitionEngine.destroy(namespaceId, context);
-  }
-  onInsert(namespaceId, element, parent, insertBefore) {
-    this._transitionEngine.insertNode(namespaceId, element, parent, insertBefore);
-  }
-  onRemove(namespaceId, element, context) {
-    this._transitionEngine.removeNode(namespaceId, element, context);
-  }
-  disableAnimations(element, disable) {
-    this._transitionEngine.markElementAsDisabled(element, disable);
-  }
-  process(namespaceId, element, property, value) {
-    if (property.charAt(0) == '@') {
-      const [id, action] = parseTimelineCommand(property);
-      const args = value;
-      this._timelineEngine.command(id, element, action, args);
-    } else {
-      this._transitionEngine.trigger(namespaceId, element, property, value);
-    }
-  }
-  listen(namespaceId, element, eventName, eventPhase, callback) {
-    // @@listen
-    if (eventName.charAt(0) == '@') {
-      const [id, action] = parseTimelineCommand(eventName);
-      return this._timelineEngine.listen(id, element, action, callback);
-    }
-    return this._transitionEngine.listen(namespaceId, element, eventName, eventPhase, callback);
-  }
-  flush(microtaskId = -1) {
-    this._transitionEngine.flush(microtaskId);
-  }
-  get players() {
-    return [...this._transitionEngine.players, ...this._timelineEngine.players];
-  }
-  whenRenderingDone() {
-    return this._transitionEngine.whenRenderingDone();
-  }
-  afterFlushAnimationsDone(cb) {
-    this._transitionEngine.afterFlushAnimationsDone(cb);
-  }
-}
-
-/**
- * Returns an instance of `SpecialCasedStyles` if and when any special (non animateable) styles are
- * detected.
- *
- * In CSS there exist properties that cannot be animated within a keyframe animation
- * (whether it be via CSS keyframes or web-animations) and the animation implementation
- * will ignore them. This function is designed to detect those special cased styles and
- * return a container that will be executed at the start and end of the animation.
- *
- * @returns an instance of `SpecialCasedStyles` if any special styles are detected otherwise `null`
- */
-function packageNonAnimatableStyles(element, styles) {
-  let startStyles = null;
-  let endStyles = null;
-  if (Array.isArray(styles) && styles.length) {
-    startStyles = filterNonAnimatableStyles(styles[0]);
-    if (styles.length > 1) {
-      endStyles = filterNonAnimatableStyles(styles[styles.length - 1]);
-    }
-  } else if (styles instanceof Map) {
-    startStyles = filterNonAnimatableStyles(styles);
-  }
-  return startStyles || endStyles ? new SpecialCasedStyles(element, startStyles, endStyles) : null;
-}
-/**
- * Designed to be executed during a keyframe-based animation to apply any special-cased styles.
- *
- * When started (when the `start()` method is run) then the provided `startStyles`
- * will be applied. When finished (when the `finish()` method is called) the
- * `endStyles` will be applied as well any any starting styles. Finally when
- * `destroy()` is called then all styles will be removed.
- */
-class SpecialCasedStyles {
-  static {
-    this.initialStylesByElement = new WeakMap();
-  }
-  constructor(_element, _startStyles, _endStyles) {
-    this._element = _element;
-    this._startStyles = _startStyles;
-    this._endStyles = _endStyles;
-    this._state = 0 /* SpecialCasedStylesState.Pending */;
-    let initialStyles = SpecialCasedStyles.initialStylesByElement.get(_element);
-    if (!initialStyles) {
-      SpecialCasedStyles.initialStylesByElement.set(_element, initialStyles = new Map());
-    }
-    this._initialStyles = initialStyles;
-  }
-  start() {
-    if (this._state < 1 /* SpecialCasedStylesState.Started */) {
-      if (this._startStyles) {
-        setStyles(this._element, this._startStyles, this._initialStyles);
-      }
-      this._state = 1 /* SpecialCasedStylesState.Started */;
-    }
-  }
-  finish() {
-    this.start();
-    if (this._state < 2 /* SpecialCasedStylesState.Finished */) {
-      setStyles(this._element, this._initialStyles);
-      if (this._endStyles) {
-        setStyles(this._element, this._endStyles);
-        this._endStyles = null;
-      }
-      this._state = 1 /* SpecialCasedStylesState.Started */;
-    }
-  }
-  destroy() {
-    this.finish();
-    if (this._state < 3 /* SpecialCasedStylesState.Destroyed */) {
-      SpecialCasedStyles.initialStylesByElement.delete(this._element);
-      if (this._startStyles) {
-        eraseStyles(this._element, this._startStyles);
-        this._endStyles = null;
-      }
-      if (this._endStyles) {
-        eraseStyles(this._element, this._endStyles);
-        this._endStyles = null;
-      }
-      setStyles(this._element, this._initialStyles);
-      this._state = 3 /* SpecialCasedStylesState.Destroyed */;
-    }
-  }
-}
-function filterNonAnimatableStyles(styles) {
-  let result = null;
-  styles.forEach((val, prop) => {
-    if (isNonAnimatableStyle(prop)) {
-      result = result || new Map();
-      result.set(prop, val);
-    }
-  });
-  return result;
-}
-function isNonAnimatableStyle(prop) {
-  return prop === 'display' || prop === 'position';
-}
-class WebAnimationsPlayer {
-  constructor(element, keyframes, options, _specialStyles) {
-    this.element = element;
-    this.keyframes = keyframes;
-    this.options = options;
-    this._specialStyles = _specialStyles;
-    this._onDoneFns = [];
-    this._onStartFns = [];
-    this._onDestroyFns = [];
-    this._initialized = false;
-    this._finished = false;
-    this._started = false;
-    this._destroyed = false;
-    // the following original fns are persistent copies of the _onStartFns and _onDoneFns
-    // and are used to reset the fns to their original values upon reset()
-    // (since the _onStartFns and _onDoneFns get deleted after they are called)
-    this._originalOnDoneFns = [];
-    this._originalOnStartFns = [];
-    this.time = 0;
-    this.parentPlayer = null;
-    this.currentSnapshot = new Map();
-    this._duration = options['duration'];
-    this._delay = options['delay'] || 0;
-    this.time = this._duration + this._delay;
-  }
-  _onFinish() {
-    if (!this._finished) {
-      this._finished = true;
-      this._onDoneFns.forEach(fn => fn());
-      this._onDoneFns = [];
-    }
-  }
-  init() {
-    this._buildPlayer();
-    this._preparePlayerBeforeStart();
-  }
-  _buildPlayer() {
-    if (this._initialized) return;
-    this._initialized = true;
-    const keyframes = this.keyframes;
-    // @ts-expect-error overwriting a readonly property
-    this.domPlayer = this._triggerWebAnimation(this.element, keyframes, this.options);
-    this._finalKeyframe = keyframes.length ? keyframes[keyframes.length - 1] : new Map();
-    const onFinish = () => this._onFinish();
-    this.domPlayer.addEventListener('finish', onFinish);
-    this.onDestroy(() => {
-      // We must remove the `finish` event listener once an animation has completed all its
-      // iterations. This action is necessary to prevent a memory leak since the listener captures
-      // `this`, creating a closure that prevents `this` from being garbage collected.
-      this.domPlayer.removeEventListener('finish', onFinish);
-    });
-  }
-  _preparePlayerBeforeStart() {
-    // this is required so that the player doesn't start to animate right away
-    if (this._delay) {
-      this._resetDomPlayerState();
-    } else {
-      this.domPlayer.pause();
-    }
-  }
-  _convertKeyframesToObject(keyframes) {
-    const kfs = [];
-    keyframes.forEach(frame => {
-      kfs.push(Object.fromEntries(frame));
-    });
-    return kfs;
-  }
-  /** @internal */
-  _triggerWebAnimation(element, keyframes, options) {
-    return element.animate(this._convertKeyframesToObject(keyframes), options);
-  }
-  onStart(fn) {
-    this._originalOnStartFns.push(fn);
-    this._onStartFns.push(fn);
-  }
-  onDone(fn) {
-    this._originalOnDoneFns.push(fn);
-    this._onDoneFns.push(fn);
-  }
-  onDestroy(fn) {
-    this._onDestroyFns.push(fn);
-  }
-  play() {
-    this._buildPlayer();
-    if (!this.hasStarted()) {
-      this._onStartFns.forEach(fn => fn());
-      this._onStartFns = [];
-      this._started = true;
-      if (this._specialStyles) {
-        this._specialStyles.start();
-      }
-    }
-    this.domPlayer.play();
-  }
-  pause() {
-    this.init();
-    this.domPlayer.pause();
-  }
-  finish() {
-    this.init();
-    if (this._specialStyles) {
-      this._specialStyles.finish();
-    }
-    this._onFinish();
-    this.domPlayer.finish();
-  }
-  reset() {
-    this._resetDomPlayerState();
-    this._destroyed = false;
-    this._finished = false;
-    this._started = false;
-    this._onStartFns = this._originalOnStartFns;
-    this._onDoneFns = this._originalOnDoneFns;
-  }
-  _resetDomPlayerState() {
-    if (this.domPlayer) {
-      this.domPlayer.cancel();
-    }
-  }
-  restart() {
-    this.reset();
-    this.play();
-  }
-  hasStarted() {
-    return this._started;
-  }
-  destroy() {
-    if (!this._destroyed) {
-      this._destroyed = true;
-      this._resetDomPlayerState();
-      this._onFinish();
-      if (this._specialStyles) {
-        this._specialStyles.destroy();
-      }
-      this._onDestroyFns.forEach(fn => fn());
-      this._onDestroyFns = [];
-    }
-  }
-  setPosition(p) {
-    if (this.domPlayer === undefined) {
-      this.init();
-    }
-    this.domPlayer.currentTime = p * this.time;
-  }
-  getPosition() {
-    // tsc is complaining with TS2362 without the conversion to number
-    return +(this.domPlayer.currentTime ?? 0) / this.time;
-  }
-  get totalTime() {
-    return this._delay + this._duration;
-  }
-  beforeDestroy() {
-    const styles = new Map();
-    if (this.hasStarted()) {
-      // note: this code is invoked only when the `play` function was called prior to this
-      // (thus `hasStarted` returns true), this implies that the code that initializes
-      // `_finalKeyframe` has also been executed and the non-null assertion can be safely used here
-      const finalKeyframe = this._finalKeyframe;
-      finalKeyframe.forEach((val, prop) => {
-        if (prop !== 'offset') {
-          styles.set(prop, this._finished ? val : computeStyle(this.element, prop));
-        }
-      });
-    }
-    this.currentSnapshot = styles;
-  }
-  /** @internal */
-  triggerCallback(phaseName) {
-    const methods = phaseName === 'start' ? this._onStartFns : this._onDoneFns;
-    methods.forEach(fn => fn());
-    methods.length = 0;
-  }
-}
-class WebAnimationsDriver {
-  validateStyleProperty(prop) {
-    // Perform actual validation in dev mode only, in prod mode this check is a noop.
-    if (typeof ngDevMode === 'undefined' || ngDevMode) {
-      return validateStyleProperty(prop);
-    }
-    return true;
-  }
-  validateAnimatableStyleProperty(prop) {
-    // Perform actual validation in dev mode only, in prod mode this check is a noop.
-    if (typeof ngDevMode === 'undefined' || ngDevMode) {
-      const cssProp = camelCaseToDashCase(prop);
-      return validateWebAnimatableStyleProperty(cssProp);
-    }
-    return true;
-  }
-  matchesElement(_element, _selector) {
-    // This method is deprecated and no longer in use so we return false.
-    return false;
-  }
-  containsElement(elm1, elm2) {
-    return containsElement(elm1, elm2);
-  }
-  getParentElement(element) {
-    return getParentElement(element);
-  }
-  query(element, selector, multi) {
-    return invokeQuery(element, selector, multi);
-  }
-  computeStyle(element, prop, defaultValue) {
-    return computeStyle(element, prop);
-  }
-  animate(element, keyframes, duration, delay, easing, previousPlayers = []) {
-    const fill = delay == 0 ? 'both' : 'forwards';
-    const playerOptions = {
-      duration,
-      delay,
-      fill
-    };
-    // we check for this to avoid having a null|undefined value be present
-    // for the easing (which results in an error for certain browsers #9752)
-    if (easing) {
-      playerOptions['easing'] = easing;
-    }
-    const previousStyles = new Map();
-    const previousWebAnimationPlayers = previousPlayers.filter(player => player instanceof WebAnimationsPlayer);
-    if (allowPreviousPlayerStylesMerge(duration, delay)) {
-      previousWebAnimationPlayers.forEach(player => {
-        player.currentSnapshot.forEach((val, prop) => previousStyles.set(prop, val));
-      });
-    }
-    let _keyframes = normalizeKeyframes(keyframes).map(styles => new Map(styles));
-    _keyframes = balancePreviousStylesIntoKeyframes(element, _keyframes, previousStyles);
-    const specialStyles = packageNonAnimatableStyles(element, _keyframes);
-    return new WebAnimationsPlayer(element, _keyframes, playerOptions, specialStyles);
-  }
-}
-function createEngine(type, doc, scheduler) {
-  // TODO: find a way to make this tree shakable.
-  if (type === 'noop') {
-    return new AnimationEngine(doc, new NoopAnimationDriver(), new NoopAnimationStyleNormalizer(), scheduler);
-  }
-  return new AnimationEngine(doc, new WebAnimationsDriver(), new WebAnimationsStyleNormalizer(), scheduler);
-}
-class Animation {
-  constructor(_driver, input) {
-    this._driver = _driver;
-    const errors = [];
-    const warnings = [];
-    const ast = buildAnimationAst(_driver, input, errors, warnings);
-    if (errors.length) {
-      throw validationFailed(errors);
-    }
-    if (warnings.length) {
-      warnValidation(warnings);
-    }
-    this._animationAst = ast;
-  }
-  buildTimelines(element, startingStyles, destinationStyles, options, subInstructions) {
-    const start = Array.isArray(startingStyles) ? normalizeStyles(startingStyles) : startingStyles;
-    const dest = Array.isArray(destinationStyles) ? normalizeStyles(destinationStyles) : destinationStyles;
-    const errors = [];
-    subInstructions = subInstructions || new ElementInstructionMap();
-    const result = buildAnimationTimelines(this._driver, element, this._animationAst, ENTER_CLASSNAME, LEAVE_CLASSNAME, start, dest, options, subInstructions, errors);
-    if (errors.length) {
-      throw buildingFailed(errors);
-    }
-    return result;
-  }
-}
-const ANIMATION_PREFIX = '@';
-const DISABLE_ANIMATIONS_FLAG = '@.disabled';
-class BaseAnimationRenderer {
-  constructor(namespaceId, delegate, engine, _onDestroy) {
-    this.namespaceId = namespaceId;
-    this.delegate = delegate;
-    this.engine = engine;
-    this._onDestroy = _onDestroy;
-    // We need to explicitly type this property because of an api-extractor bug
-    // See https://github.com/microsoft/rushstack/issues/4390
-    this.ɵtype = 0 /* AnimationRendererType.Regular */;
-  }
-  get data() {
-    return this.delegate.data;
-  }
-  destroyNode(node) {
-    this.delegate.destroyNode?.(node);
-  }
-  destroy() {
-    this.engine.destroy(this.namespaceId, this.delegate);
-    this.engine.afterFlushAnimationsDone(() => {
-      // Call the renderer destroy method after the animations has finished as otherwise
-      // styles will be removed too early which will cause an unstyled animation.
-      queueMicrotask(() => {
-        this.delegate.destroy();
-      });
-    });
-    this._onDestroy?.();
-  }
-  createElement(name, namespace) {
-    return this.delegate.createElement(name, namespace);
-  }
-  createComment(value) {
-    return this.delegate.createComment(value);
-  }
-  createText(value) {
-    return this.delegate.createText(value);
-  }
-  appendChild(parent, newChild) {
-    this.delegate.appendChild(parent, newChild);
-    this.engine.onInsert(this.namespaceId, newChild, parent, false);
-  }
-  insertBefore(parent, newChild, refChild, isMove = true) {
-    this.delegate.insertBefore(parent, newChild, refChild);
-    // If `isMove` true than we should animate this insert.
-    this.engine.onInsert(this.namespaceId, newChild, parent, isMove);
-  }
-  removeChild(parent, oldChild, isHostElement) {
-    this.engine.onRemove(this.namespaceId, oldChild, this.delegate);
-  }
-  selectRootElement(selectorOrNode, preserveContent) {
-    return this.delegate.selectRootElement(selectorOrNode, preserveContent);
-  }
-  parentNode(node) {
-    return this.delegate.parentNode(node);
-  }
-  nextSibling(node) {
-    return this.delegate.nextSibling(node);
-  }
-  setAttribute(el, name, value, namespace) {
-    this.delegate.setAttribute(el, name, value, namespace);
-  }
-  removeAttribute(el, name, namespace) {
-    this.delegate.removeAttribute(el, name, namespace);
-  }
-  addClass(el, name) {
-    this.delegate.addClass(el, name);
-  }
-  removeClass(el, name) {
-    this.delegate.removeClass(el, name);
-  }
-  setStyle(el, style, value, flags) {
-    this.delegate.setStyle(el, style, value, flags);
-  }
-  removeStyle(el, style, flags) {
-    this.delegate.removeStyle(el, style, flags);
-  }
-  setProperty(el, name, value) {
-    if (name.charAt(0) == ANIMATION_PREFIX && name == DISABLE_ANIMATIONS_FLAG) {
-      this.disableAnimations(el, !!value);
-    } else {
-      this.delegate.setProperty(el, name, value);
-    }
-  }
-  setValue(node, value) {
-    this.delegate.setValue(node, value);
-  }
-  listen(target, eventName, callback) {
-    return this.delegate.listen(target, eventName, callback);
-  }
-  disableAnimations(element, value) {
-    this.engine.disableAnimations(element, value);
-  }
-}
-class AnimationRenderer extends BaseAnimationRenderer {
-  constructor(factory, namespaceId, delegate, engine, onDestroy) {
-    super(namespaceId, delegate, engine, onDestroy);
-    this.factory = factory;
-    this.namespaceId = namespaceId;
-  }
-  setProperty(el, name, value) {
-    if (name.charAt(0) == ANIMATION_PREFIX) {
-      if (name.charAt(1) == '.' && name == DISABLE_ANIMATIONS_FLAG) {
-        value = value === undefined ? true : !!value;
-        this.disableAnimations(el, value);
-      } else {
-        this.engine.process(this.namespaceId, el, name.slice(1), value);
-      }
-    } else {
-      this.delegate.setProperty(el, name, value);
-    }
-  }
-  listen(target, eventName, callback) {
-    if (eventName.charAt(0) == ANIMATION_PREFIX) {
-      const element = resolveElementFromTarget(target);
-      let name = eventName.slice(1);
-      let phase = '';
-      // @listener.phase is for trigger animation callbacks
-      // @@listener is for animation builder callbacks
-      if (name.charAt(0) != ANIMATION_PREFIX) {
-        [name, phase] = parseTriggerCallbackName(name);
-      }
-      return this.engine.listen(this.namespaceId, element, name, phase, event => {
-        const countId = event['_data'] || -1;
-        this.factory.scheduleListenerCallback(countId, callback, event);
-      });
-    }
-    return this.delegate.listen(target, eventName, callback);
-  }
-}
-function resolveElementFromTarget(target) {
-  switch (target) {
-    case 'body':
-      return document.body;
-    case 'document':
-      return document;
-    case 'window':
-      return window;
-    default:
-      return target;
-  }
-}
-function parseTriggerCallbackName(triggerName) {
-  const dotIndex = triggerName.indexOf('.');
-  const trigger = triggerName.substring(0, dotIndex);
-  const phase = triggerName.slice(dotIndex + 1);
-  return [trigger, phase];
-}
-class AnimationRendererFactory {
-  constructor(delegate, engine, _zone) {
-    this.delegate = delegate;
-    this.engine = engine;
-    this._zone = _zone;
-    this._currentId = 0;
-    this._microtaskId = 1;
-    this._animationCallbacksBuffer = [];
-    this._rendererCache = new Map();
-    this._cdRecurDepth = 0;
-    engine.onRemovalComplete = (element, delegate) => {
-      // Note: if a component element has a leave animation, and a host leave animation,
-      // the view engine will call `removeChild` for the parent
-      // component renderer as well as for the child component renderer.
-      // Therefore, we need to check if we already removed the element.
-      const parentNode = delegate?.parentNode(element);
-      if (parentNode) {
-        delegate.removeChild(parentNode, element);
-      }
-    };
-  }
-  createRenderer(hostElement, type) {
-    const EMPTY_NAMESPACE_ID = '';
-    // cache the delegates to find out which cached delegate can
-    // be used by which cached renderer
-    const delegate = this.delegate.createRenderer(hostElement, type);
-    if (!hostElement || !type?.data?.['animation']) {
-      const cache = this._rendererCache;
-      let renderer = cache.get(delegate);
-      if (!renderer) {
-        // Ensure that the renderer is removed from the cache on destroy
-        // since it may contain references to detached DOM nodes.
-        const onRendererDestroy = () => cache.delete(delegate);
-        renderer = new BaseAnimationRenderer(EMPTY_NAMESPACE_ID, delegate, this.engine, onRendererDestroy);
-        // only cache this result when the base renderer is used
-        cache.set(delegate, renderer);
-      }
-      return renderer;
-    }
-    const componentId = type.id;
-    const namespaceId = type.id + '-' + this._currentId;
-    this._currentId++;
-    this.engine.register(namespaceId, hostElement);
-    const registerTrigger = trigger => {
-      if (Array.isArray(trigger)) {
-        trigger.forEach(registerTrigger);
-      } else {
-        this.engine.registerTrigger(componentId, namespaceId, hostElement, trigger.name, trigger);
-      }
-    };
-    const animationTriggers = type.data['animation'];
-    animationTriggers.forEach(registerTrigger);
-    return new AnimationRenderer(this, namespaceId, delegate, this.engine);
-  }
-  begin() {
-    this._cdRecurDepth++;
-    if (this.delegate.begin) {
-      this.delegate.begin();
-    }
-  }
-  _scheduleCountTask() {
-    queueMicrotask(() => {
-      this._microtaskId++;
-    });
-  }
-  /** @internal */
-  scheduleListenerCallback(count, fn, data) {
-    if (count >= 0 && count < this._microtaskId) {
-      this._zone.run(() => fn(data));
-      return;
-    }
-    const animationCallbacksBuffer = this._animationCallbacksBuffer;
-    if (animationCallbacksBuffer.length == 0) {
-      queueMicrotask(() => {
-        this._zone.run(() => {
-          animationCallbacksBuffer.forEach(tuple => {
-            const [fn, data] = tuple;
-            fn(data);
-          });
-          this._animationCallbacksBuffer = [];
-        });
-      });
-    }
-    animationCallbacksBuffer.push([fn, data]);
-  }
-  end() {
-    this._cdRecurDepth--;
-    // this is to prevent animations from running twice when an inner
-    // component does CD when a parent component instead has inserted it
-    if (this._cdRecurDepth == 0) {
-      this._zone.runOutsideAngular(() => {
-        this._scheduleCountTask();
-        this.engine.flush(this._microtaskId);
-      });
-    }
-    if (this.delegate.end) {
-      this.delegate.end();
-    }
-  }
-  whenRenderingDone() {
-    return this.engine.whenRenderingDone();
-  }
-}
-
-/**
- * @module
- * @description
- * Entry point for all animation APIs of the animation browser package.
- */
-
-/**
- * @module
- * @description
- * Entry point for all public APIs of this package.
- */
-
-// This file is not used to build this module. It is only used during editing
-
-/**
- * Generated bundle index. Do not edit.
- */
-
-
 
 /***/ }),
 
@@ -39496,7 +33465,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵPRIMARY_HTTP_BACKEND": () => (/* binding */ PRIMARY_HTTP_BACKEND),
 /* harmony export */   "ɵwithHttpTransferCache": () => (/* binding */ withHttpTransferCache)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 7580);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 9452);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ 3942);
@@ -41023,7 +34992,7 @@ class FetchBackend {
   }
   doRequest(request, signal, observer) {
     var _this = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const init = _this.createRequestInit(request);
       let response;
       try {
@@ -41077,7 +35046,7 @@ class FetchBackend {
         // Perform response processing outside of Angular zone to
         // ensure no excessive change detection runs are executed
         // Here calling the async ReadableStreamDefaultReader.read() is responsible for triggering CD
-        yield _this.ngZone.runOutsideAngular(/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        yield _this.ngZone.runOutsideAngular(/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           while (true) {
             const {
               done,
@@ -43316,7 +37285,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵɵviewQuery": () => (/* binding */ ɵɵviewQuery),
 /* harmony export */   "ɵɵviewQuerySignal": () => (/* binding */ ɵɵviewQuerySignal)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _angular_core_primitives_signals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core/primitives/signals */ 5689);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 819);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 2510);
@@ -77852,7 +71821,7 @@ class ChangeDetectionSchedulerImpl {
    */
   raceTimeoutAndRequestAnimationFrame() {
     var _this = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const timeout = new Promise(resolve => setTimeout(resolve));
       const rAF = typeof _global['requestAnimationFrame'] === 'function' ? new Promise(resolve => requestAnimationFrame(() => resolve())) : null;
       yield Promise.race([timeout, rAF]);
@@ -88046,279 +82015,6 @@ class ReactiveFormsModule {
 
 /***/ }),
 
-/***/ 3835:
-/*!************************************************************************!*\
-  !*** ./node_modules/@angular/platform-browser/fesm2022/animations.mjs ***!
-  \************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ANIMATION_MODULE_TYPE: () => (/* reexport safe */ _angular_core__WEBPACK_IMPORTED_MODULE_0__.ANIMATION_MODULE_TYPE),
-/* harmony export */   BrowserAnimationsModule: () => (/* binding */ BrowserAnimationsModule),
-/* harmony export */   NoopAnimationsModule: () => (/* binding */ NoopAnimationsModule),
-/* harmony export */   provideAnimations: () => (/* binding */ provideAnimations),
-/* harmony export */   provideNoopAnimations: () => (/* binding */ provideNoopAnimations),
-/* harmony export */   "ɵInjectableAnimationEngine": () => (/* binding */ InjectableAnimationEngine)
-/* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7580);
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ 436);
-/* harmony import */ var _angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/animations/browser */ 655);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 316);
-/**
- * @license Angular v17.3.12
- * (c) 2010-2024 Google LLC. https://angular.io/
- * License: MIT
- */
-
-
-
-
-
-
-
-
-class InjectableAnimationEngine extends _angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__["ɵAnimationEngine"] {
-  // The `ApplicationRef` is injected here explicitly to force the dependency ordering.
-  // Since the `ApplicationRef` should be created earlier before the `AnimationEngine`, they
-  // both have `ngOnDestroy` hooks and `flush()` must be called after all views are destroyed.
-  constructor(doc, driver, normalizer) {
-    super(doc, driver, normalizer, (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵChangeDetectionScheduler"], {
-      optional: true
-    }));
-  }
-  ngOnDestroy() {
-    this.flush();
-  }
-  static {
-    this.ɵfac = function InjectableAnimationEngine_Factory(t) {
-      return new (t || InjectableAnimationEngine)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_2__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__.AnimationDriver), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__["ɵAnimationStyleNormalizer"]));
-    };
-  }
-  static {
-    this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
-      token: InjectableAnimationEngine,
-      factory: InjectableAnimationEngine.ɵfac
-    });
-  }
-}
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](InjectableAnimationEngine, [{
-    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable
-  }], () => [{
-    type: Document,
-    decorators: [{
-      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
-      args: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.DOCUMENT]
-    }]
-  }, {
-    type: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__.AnimationDriver
-  }, {
-    type: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__["ɵAnimationStyleNormalizer"]
-  }], null);
-})();
-function instantiateDefaultStyleNormalizer() {
-  return new _angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__["ɵWebAnimationsStyleNormalizer"]();
-}
-function instantiateRendererFactory(renderer, engine, zone) {
-  return new _angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__["ɵAnimationRendererFactory"](renderer, engine, zone);
-}
-const SHARED_ANIMATION_PROVIDERS = [{
-  provide: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__["ɵAnimationStyleNormalizer"],
-  useFactory: instantiateDefaultStyleNormalizer
-}, {
-  provide: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__["ɵAnimationEngine"],
-  useClass: InjectableAnimationEngine
-}, {
-  provide: _angular_core__WEBPACK_IMPORTED_MODULE_0__.RendererFactory2,
-  useFactory: instantiateRendererFactory,
-  deps: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["ɵDomRendererFactory2"], _angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__["ɵAnimationEngine"], _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone]
-}];
-/**
- * Separate providers from the actual module so that we can do a local modification in Google3 to
- * include them in the BrowserModule.
- */
-const BROWSER_ANIMATIONS_PROVIDERS = [{
-  provide: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__.AnimationDriver,
-  useFactory: () => new _angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__["ɵWebAnimationsDriver"]()
-}, {
-  provide: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ANIMATION_MODULE_TYPE,
-  useValue: 'BrowserAnimations'
-}, ...SHARED_ANIMATION_PROVIDERS];
-/**
- * Separate providers from the actual module so that we can do a local modification in Google3 to
- * include them in the BrowserTestingModule.
- */
-const BROWSER_NOOP_ANIMATIONS_PROVIDERS = [{
-  provide: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__.AnimationDriver,
-  useClass: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_1__.NoopAnimationDriver
-}, {
-  provide: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ANIMATION_MODULE_TYPE,
-  useValue: 'NoopAnimations'
-}, ...SHARED_ANIMATION_PROVIDERS];
-
-/**
- * Exports `BrowserModule` with additional [dependency-injection providers](guide/glossary#provider)
- * for use with animations. See [Animations](guide/animations).
- * @publicApi
- */
-class BrowserAnimationsModule {
-  /**
-   * Configures the module based on the specified object.
-   *
-   * @param config Object used to configure the behavior of the `BrowserAnimationsModule`.
-   * @see {@link BrowserAnimationsModuleConfig}
-   *
-   * @usageNotes
-   * When registering the `BrowserAnimationsModule`, you can use the `withConfig`
-   * function as follows:
-   * ```
-   * @NgModule({
-   *   imports: [BrowserAnimationsModule.withConfig(config)]
-   * })
-   * class MyNgModule {}
-   * ```
-   */
-  static withConfig(config) {
-    return {
-      ngModule: BrowserAnimationsModule,
-      providers: config.disableAnimations ? BROWSER_NOOP_ANIMATIONS_PROVIDERS : BROWSER_ANIMATIONS_PROVIDERS
-    };
-  }
-  static {
-    this.ɵfac = function BrowserAnimationsModule_Factory(t) {
-      return new (t || BrowserAnimationsModule)();
-    };
-  }
-  static {
-    this.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({
-      type: BrowserAnimationsModule
-    });
-  }
-  static {
-    this.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({
-      providers: BROWSER_ANIMATIONS_PROVIDERS,
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.BrowserModule]
-    });
-  }
-}
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BrowserAnimationsModule, [{
-    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgModule,
-    args: [{
-      exports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.BrowserModule],
-      providers: BROWSER_ANIMATIONS_PROVIDERS
-    }]
-  }], null, null);
-})();
-/**
- * Returns the set of [dependency-injection providers](guide/glossary#provider)
- * to enable animations in an application. See [animations guide](guide/animations)
- * to learn more about animations in Angular.
- *
- * @usageNotes
- *
- * The function is useful when you want to enable animations in an application
- * bootstrapped using the `bootstrapApplication` function. In this scenario there
- * is no need to import the `BrowserAnimationsModule` NgModule at all, just add
- * providers returned by this function to the `providers` list as show below.
- *
- * ```typescript
- * bootstrapApplication(RootComponent, {
- *   providers: [
- *     provideAnimations()
- *   ]
- * });
- * ```
- *
- * @publicApi
- */
-function provideAnimations() {
-  (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵperformanceMarkFeature"])('NgEagerAnimations');
-  // Return a copy to prevent changes to the original array in case any in-place
-  // alterations are performed to the `provideAnimations` call results in app code.
-  return [...BROWSER_ANIMATIONS_PROVIDERS];
-}
-/**
- * A null player that must be imported to allow disabling of animations.
- * @publicApi
- */
-class NoopAnimationsModule {
-  static {
-    this.ɵfac = function NoopAnimationsModule_Factory(t) {
-      return new (t || NoopAnimationsModule)();
-    };
-  }
-  static {
-    this.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({
-      type: NoopAnimationsModule
-    });
-  }
-  static {
-    this.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({
-      providers: BROWSER_NOOP_ANIMATIONS_PROVIDERS,
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.BrowserModule]
-    });
-  }
-}
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NoopAnimationsModule, [{
-    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgModule,
-    args: [{
-      exports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.BrowserModule],
-      providers: BROWSER_NOOP_ANIMATIONS_PROVIDERS
-    }]
-  }], null, null);
-})();
-/**
- * Returns the set of [dependency-injection providers](guide/glossary#provider)
- * to disable animations in an application. See [animations guide](guide/animations)
- * to learn more about animations in Angular.
- *
- * @usageNotes
- *
- * The function is useful when you want to bootstrap an application using
- * the `bootstrapApplication` function, but you need to disable animations
- * (for example, when running tests).
- *
- * ```typescript
- * bootstrapApplication(RootComponent, {
- *   providers: [
- *     provideNoopAnimations()
- *   ]
- * });
- * ```
- *
- * @publicApi
- */
-function provideNoopAnimations() {
-  // Return a copy to prevent changes to the original array in case any in-place
-  // alterations are performed to the `provideNoopAnimations` call results in app code.
-  return [...BROWSER_NOOP_ANIMATIONS_PROVIDERS];
-}
-
-/**
- * @module
- * @description
- * Entry point for all animation APIs of the animation browser package.
- */
-
-/**
- * @module
- * @description
- * Entry point for all public APIs of this package.
- */
-
-// This file is not used to build this module. It is only used during editing
-
-/**
- * Generated bundle index. Do not edit.
- */
-
-
-
-/***/ }),
-
 /***/ 436:
 /*!******************************************************************************!*\
   !*** ./node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs ***!
@@ -90773,7 +84469,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵafterNextNavigation": () => (/* binding */ afterNextNavigation),
 /* harmony export */   "ɵloadChildren": () => (/* binding */ loadChildren)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7580);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 2551);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 5429);
@@ -97507,7 +91203,7 @@ class RouterScroller {
   }
   scheduleScrollEvent(routerEvent, anchor) {
     var _this = this;
-    this.zone.runOutsideAngular(/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    this.zone.runOutsideAngular(/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // The scroll event needs to be delayed until after change detection. Otherwise we may
       // attempt to restore the scroll position before the router outlet has fully rendered the
       // component by executing its update block of the template function.
@@ -99322,7 +93018,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   PostgrestTransformBuilder: () => (/* binding */ PostgrestTransformBuilder),
 /* harmony export */   "default": () => (/* binding */ src_default)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 
 //#region src/PostgrestError.ts
 /**
@@ -99411,7 +93107,7 @@ var PostgrestBuilder = class {
       body: JSON.stringify(this.body),
       signal: this.signal
     }).then(/*#__PURE__*/function () {
-      var _ref = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (res$1) {
+      var _ref = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (res$1) {
         let error = null;
         let data = null;
         let count = null;
@@ -100622,7 +94318,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   resolveResponse: () => (/* binding */ resolveResponse),
 /* harmony export */   validateVectorDimension: () => (/* binding */ validateVectorDimension)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var iceberg_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! iceberg-js */ 7493);
 
 
@@ -100787,7 +94483,7 @@ const _getErrorMessage$1 = err => {
   return err.msg || err.message || err.error_description || (typeof err.error === "string" ? err.error : (_err$error = err.error) === null || _err$error === void 0 ? void 0 : _err$error.message) || JSON.stringify(err);
 };
 const handleError$1 = /*#__PURE__*/function () {
-  var _ref = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (error, reject, options) {
+  var _ref = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (error, reject, options) {
     if (error instanceof (yield resolveResponse$1()) && !(options === null || options === void 0 ? void 0 : options.noResolveJson)) error.json().then(err => {
       const status = error.status || 500;
       const statusCode = (err === null || err === void 0 ? void 0 : err.statusCode) || status + "";
@@ -100819,7 +94515,7 @@ function _handleRequest$1(_x4, _x5, _x6, _x7, _x8, _x9) {
   return _handleRequest$.apply(this, arguments);
 }
 function _handleRequest$() {
-  _handleRequest$ = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options, parameters, body) {
+  _handleRequest$ = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options, parameters, body) {
     return new Promise((resolve, reject) => {
       fetcher(url, _getRequestParams$1(method, options, parameters, body)).then(result => {
         if (!result.ok) throw result;
@@ -100834,7 +94530,7 @@ function get(_x0, _x1, _x10, _x11) {
   return _get.apply(this, arguments);
 }
 function _get() {
-  _get = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, options, parameters) {
+  _get = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, options, parameters) {
     return _handleRequest$1(fetcher, "GET", url, options, parameters);
   });
   return _get.apply(this, arguments);
@@ -100843,7 +94539,7 @@ function post$1(_x12, _x13, _x14, _x15, _x16) {
   return _post$.apply(this, arguments);
 }
 function _post$() {
-  _post$ = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
+  _post$ = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
     return _handleRequest$1(fetcher, "POST", url, options, parameters, body);
   });
   return _post$.apply(this, arguments);
@@ -100852,7 +94548,7 @@ function put(_x17, _x18, _x19, _x20, _x21) {
   return _put.apply(this, arguments);
 }
 function _put() {
-  _put = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
+  _put = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
     return _handleRequest$1(fetcher, "PUT", url, options, parameters, body);
   });
   return _put.apply(this, arguments);
@@ -100861,7 +94557,7 @@ function head(_x22, _x23, _x24, _x25) {
   return _head.apply(this, arguments);
 }
 function _head() {
-  _head = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, options, parameters) {
+  _head = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, options, parameters) {
     return _handleRequest$1(fetcher, "HEAD", url, _objectSpread2(_objectSpread2({}, options), {}, {
       noResolveJson: true
     }), parameters);
@@ -100873,7 +94569,7 @@ function remove(_x26, _x27, _x28, _x29, _x30) {
 } //#endregion
 //#region src/packages/StreamDownloadBuilder.ts
 function _remove() {
-  _remove = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
+  _remove = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
     return _handleRequest$1(fetcher, "DELETE", url, options, parameters, body);
   });
   return _remove.apply(this, arguments);
@@ -100888,7 +94584,7 @@ var StreamDownloadBuilder = class {
   }
   execute() {
     var _this0 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this0;
       try {
         return {
@@ -100936,7 +94632,7 @@ var BlobDownloadBuilder = class {
   }
   execute() {
     var _this1 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this1;
       try {
         return {
@@ -100996,7 +94692,7 @@ var StorageFileApi = class {
   */
   uploadOrUpdate(method, path, fileBody, fileOptions) {
     var _this15 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this15;
       try {
         let body;
@@ -101093,7 +94789,7 @@ var StorageFileApi = class {
   */
   upload(path, fileBody, fileOptions) {
     var _this16 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this16.uploadOrUpdate("POST", path, fileBody, fileOptions);
     })();
   }
@@ -101130,7 +94826,7 @@ var StorageFileApi = class {
   */
   uploadToSignedUrl(path, token, fileBody, fileOptions) {
     var _this17 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this3 = _this17;
       const cleanPath = _this3._removeEmptyFolders(path);
       const _path = _this3._getFinalPath(cleanPath);
@@ -101207,7 +94903,7 @@ var StorageFileApi = class {
   */
   createSignedUploadUrl(path, options) {
     var _this18 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this4 = _this18;
       try {
         let _path = _this4._getFinalPath(path);
@@ -101283,7 +94979,7 @@ var StorageFileApi = class {
   */
   update(path, fileBody, fileOptions) {
     var _this19 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this19.uploadOrUpdate("PUT", path, fileBody, fileOptions);
     })();
   }
@@ -101316,7 +95012,7 @@ var StorageFileApi = class {
   */
   move(fromPath, toPath, options) {
     var _this20 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this6 = _this20;
       try {
         return {
@@ -101369,7 +95065,7 @@ var StorageFileApi = class {
   */
   copy(fromPath, toPath, options) {
     var _this21 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this7 = _this21;
       try {
         return {
@@ -101448,7 +95144,7 @@ var StorageFileApi = class {
   */
   createSignedUrl(path, expiresIn, options) {
     var _this22 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this8 = _this22;
       try {
         let _path = _this8._getFinalPath(path);
@@ -101517,7 +95213,7 @@ var StorageFileApi = class {
   */
   createSignedUrls(paths, expiresIn, options) {
     var _this23 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this9 = _this23;
       try {
         const data = yield post$1(_this9.fetch, `${_this9.url}/object/sign/${_this9.bucketId}`, {
@@ -101609,7 +95305,7 @@ var StorageFileApi = class {
   */
   info(path) {
     var _this24 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this10 = _this24;
       const _path = _this10._getFinalPath(path);
       try {
@@ -101646,7 +95342,7 @@ var StorageFileApi = class {
   */
   exists(path) {
     var _this25 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this11 = _this25;
       const _path = _this11._getFinalPath(path);
       try {
@@ -101761,7 +95457,7 @@ var StorageFileApi = class {
   */
   remove(paths) {
     var _this26 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this12 = _this26;
       try {
         return {
@@ -101852,7 +95548,7 @@ var StorageFileApi = class {
   */
   list(path, options, parameters) {
     var _this27 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this13 = _this27;
       try {
         const body = _objectSpread2(_objectSpread2(_objectSpread2({}, DEFAULT_SEARCH_OPTIONS), options), {}, {
@@ -101883,7 +95579,7 @@ var StorageFileApi = class {
   */
   listV2(options, parameters) {
     var _this28 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this14 = _this28;
       try {
         const body = _objectSpread2({}, options);
@@ -101993,7 +95689,7 @@ var StorageBucketApi = class {
   */
   listBuckets(options) {
     var _this29 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this29;
       try {
         const queryString = _this.listBucketOptionsToQueryString(options);
@@ -102048,7 +95744,7 @@ var StorageBucketApi = class {
   */
   getBucket(id) {
     var _this30 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this2 = _this30;
       try {
         return {
@@ -102106,7 +95802,7 @@ var StorageBucketApi = class {
   */
   createBucket(_x31) {
     var _this31 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (id, options = {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (id, options = {
       public: false
     }) {
       var _this3 = _this31;
@@ -102171,7 +95867,7 @@ var StorageBucketApi = class {
   */
   updateBucket(id, options) {
     var _this32 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this4 = _this32;
       try {
         return {
@@ -102222,7 +95918,7 @@ var StorageBucketApi = class {
   */
   emptyBucket(id) {
     var _this33 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this5 = _this33;
       try {
         return {
@@ -102268,7 +95964,7 @@ var StorageBucketApi = class {
   */
   deleteBucket(id) {
     var _this34 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this6 = _this34;
       try {
         return {
@@ -102381,7 +96077,7 @@ var StorageAnalyticsClient = class {
   */
   createBucket(name) {
     var _this35 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this35;
       try {
         return {
@@ -102450,7 +96146,7 @@ var StorageAnalyticsClient = class {
   */
   listBuckets(options) {
     var _this36 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this2 = _this36;
       try {
         const queryParams = new URLSearchParams();
@@ -102510,7 +96206,7 @@ var StorageAnalyticsClient = class {
   */
   deleteBucket(bucketName) {
     var _this37 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this3 = _this37;
       try {
         return {
@@ -102661,7 +96357,7 @@ var StorageAnalyticsClient = class {
       auth: {
         type: "custom",
         getHeaders: function () {
-          var _ref2 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+          var _ref2 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
             return _this4.headers;
           });
           return function getHeaders() {
@@ -102676,7 +96372,7 @@ var StorageAnalyticsClient = class {
       get(target, prop) {
         const value = target[prop];
         if (typeof value !== "function") return value;
-        return /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
+        return /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
           try {
             return {
               data: yield value.apply(target, args),
@@ -102845,7 +96541,7 @@ const _getErrorMessage = err => err.msg || err.message || err.error_description 
 * @param options - Fetch options that may affect error handling
 */
 const handleError = /*#__PURE__*/function () {
-  var _ref4 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (error, reject, options) {
+  var _ref4 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (error, reject, options) {
     if (error && typeof error === "object" && "status" in error && "ok" in error && typeof error.status === "number" && !(options === null || options === void 0 ? void 0 : options.noResolveJson)) {
       const status = error.status || 500;
       const responseError = error;
@@ -102910,7 +96606,7 @@ function _handleRequest(_x35, _x36, _x37, _x38, _x39, _x40) {
 * @returns Promise with parsed response
 */
 function _handleRequest2() {
-  _handleRequest2 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options, parameters, body) {
+  _handleRequest2 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options, parameters, body) {
     return new Promise((resolve, reject) => {
       fetcher(url, _getRequestParams(method, options, parameters, body)).then(result => {
         if (!result.ok) throw result;
@@ -102933,7 +96629,7 @@ function post(_x41, _x42, _x43, _x44, _x45) {
 * Use {@link VectorBucketScope} via `supabase.storage.vectors.from('bucket')` instead.
 */
 function _post() {
-  _post = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
+  _post = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
     return _handleRequest(fetcher, "POST", url, options, parameters, body);
   });
   return _post.apply(this, arguments);
@@ -102954,7 +96650,7 @@ var VectorIndexApi = class {
   /** Creates a new vector index within a bucket */
   createIndex(options) {
     var _this38 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this38;
       try {
         return {
@@ -102976,7 +96672,7 @@ var VectorIndexApi = class {
   /** Retrieves metadata for a specific vector index */
   getIndex(vectorBucketName, indexName) {
     var _this39 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this2 = _this39;
       try {
         return {
@@ -103001,7 +96697,7 @@ var VectorIndexApi = class {
   /** Lists vector indexes within a bucket with optional filtering and pagination */
   listIndexes(options) {
     var _this40 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this3 = _this40;
       try {
         return {
@@ -103023,7 +96719,7 @@ var VectorIndexApi = class {
   /** Deletes a vector index and all its data */
   deleteIndex(vectorBucketName, indexName) {
     var _this41 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this4 = _this41;
       try {
         return {
@@ -103070,7 +96766,7 @@ var VectorDataApi = class {
   /** Inserts or updates vectors in batch (1-500 per request) */
   putVectors(options) {
     var _this42 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this42;
       try {
         if (options.vectors.length < 1 || options.vectors.length > 500) throw new Error("Vector batch size must be between 1 and 500 items");
@@ -103093,7 +96789,7 @@ var VectorDataApi = class {
   /** Retrieves vectors by their keys in batch */
   getVectors(options) {
     var _this43 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this2 = _this43;
       try {
         return {
@@ -103115,7 +96811,7 @@ var VectorDataApi = class {
   /** Lists vectors in an index with pagination */
   listVectors(options) {
     var _this44 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this3 = _this44;
       try {
         if (options.segmentCount !== void 0) {
@@ -103143,7 +96839,7 @@ var VectorDataApi = class {
   /** Queries for similar vectors using approximate nearest neighbor search */
   queryVectors(options) {
     var _this45 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this4 = _this45;
       try {
         return {
@@ -103165,7 +96861,7 @@ var VectorDataApi = class {
   /** Deletes vectors by their keys in batch (1-500 per request) */
   deleteVectors(options) {
     var _this46 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this5 = _this46;
       try {
         if (options.keys.length < 1 || options.keys.length > 500) throw new Error("Keys batch size must be between 1 and 500 items");
@@ -103210,7 +96906,7 @@ var VectorBucketApi = class {
   /** Creates a new vector bucket */
   createBucket(vectorBucketName) {
     var _this47 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this47;
       try {
         return {
@@ -103234,7 +96930,7 @@ var VectorBucketApi = class {
   /** Retrieves metadata for a specific vector bucket */
   getBucket(vectorBucketName) {
     var _this48 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this2 = _this48;
       try {
         return {
@@ -103258,7 +96954,7 @@ var VectorBucketApi = class {
   /** Lists vector buckets with optional filtering and pagination */
   listBuckets() {
     var _this49 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
       var _this3 = _this49;
       try {
         return {
@@ -103280,7 +96976,7 @@ var VectorBucketApi = class {
   /** Deletes a vector bucket (must be empty first) */
   deleteBucket(vectorBucketName) {
     var _this50 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this4 = _this50;
       try {
         return {
@@ -103413,7 +97109,7 @@ var StorageVectorsClient = class extends VectorBucketApi {
   createBucket(vectorBucketName) {
     var _superprop_getCreateBucket2 = () => super.createBucket,
       _this51 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getCreateBucket = () => _superprop_getCreateBucket2(),
         _this = _this51;
       return _superprop_getCreateBucket().call(_this, vectorBucketName);
@@ -103444,7 +97140,7 @@ var StorageVectorsClient = class extends VectorBucketApi {
   getBucket(vectorBucketName) {
     var _superprop_getGetBucket2 = () => super.getBucket,
       _this52 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getGetBucket = () => _superprop_getGetBucket2(),
         _this2 = _this52;
       return _superprop_getGetBucket().call(_this2, vectorBucketName);
@@ -103477,7 +97173,7 @@ var StorageVectorsClient = class extends VectorBucketApi {
   listBuckets() {
     var _superprop_getListBuckets2 = () => super.listBuckets,
       _this53 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
       var _superprop_getListBuckets = () => _superprop_getListBuckets2(),
         _this3 = _this53;
       return _superprop_getListBuckets().call(_this3, options);
@@ -103507,7 +97203,7 @@ var StorageVectorsClient = class extends VectorBucketApi {
   deleteBucket(vectorBucketName) {
     var _superprop_getDeleteBucket2 = () => super.deleteBucket,
       _this54 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getDeleteBucket = () => _superprop_getDeleteBucket2(),
         _this4 = _this54;
       return _superprop_getDeleteBucket().call(_this4, vectorBucketName);
@@ -103571,7 +97267,7 @@ var VectorBucketScope = class extends VectorIndexApi {
   createIndex(options) {
     var _superprop_getCreateIndex2 = () => super.createIndex,
       _this55 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getCreateIndex = () => _superprop_getCreateIndex2(),
         _this5 = _this55;
       return _superprop_getCreateIndex().call(_this5, _objectSpread2(_objectSpread2({}, options), {}, {
@@ -103601,7 +97297,7 @@ var VectorBucketScope = class extends VectorIndexApi {
   listIndexes() {
     var _superprop_getListIndexes2 = () => super.listIndexes,
       _this56 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
       var _superprop_getListIndexes = () => _superprop_getListIndexes2(),
         _this6 = _this56;
       return _superprop_getListIndexes().call(_this6, _objectSpread2(_objectSpread2({}, options), {}, {
@@ -103632,7 +97328,7 @@ var VectorBucketScope = class extends VectorIndexApi {
   getIndex(indexName) {
     var _superprop_getGetIndex2 = () => super.getIndex,
       _this57 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getGetIndex = () => _superprop_getGetIndex2(),
         _this7 = _this57;
       return _superprop_getGetIndex().call(_this7, _this7.vectorBucketName, indexName);
@@ -103660,7 +97356,7 @@ var VectorBucketScope = class extends VectorIndexApi {
   deleteIndex(indexName) {
     var _superprop_getDeleteIndex2 = () => super.deleteIndex,
       _this58 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getDeleteIndex = () => _superprop_getDeleteIndex2(),
         _this8 = _this58;
       return _superprop_getDeleteIndex().call(_this8, _this8.vectorBucketName, indexName);
@@ -103760,7 +97456,7 @@ var VectorIndexScope = class extends VectorDataApi {
   putVectors(options) {
     var _superprop_getPutVectors2 = () => super.putVectors,
       _this59 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getPutVectors = () => _superprop_getPutVectors2(),
         _this9 = _this59;
       return _superprop_getPutVectors().call(_this9, _objectSpread2(_objectSpread2({}, options), {}, {
@@ -103794,7 +97490,7 @@ var VectorIndexScope = class extends VectorDataApi {
   getVectors(options) {
     var _superprop_getGetVectors2 = () => super.getVectors,
       _this60 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getGetVectors = () => _superprop_getGetVectors2(),
         _this10 = _this60;
       return _superprop_getGetVectors().call(_this10, _objectSpread2(_objectSpread2({}, options), {}, {
@@ -103828,7 +97524,7 @@ var VectorIndexScope = class extends VectorDataApi {
   listVectors() {
     var _superprop_getListVectors2 = () => super.listVectors,
       _this61 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
       var _superprop_getListVectors = () => _superprop_getListVectors2(),
         _this11 = _this61;
       return _superprop_getListVectors().call(_this11, _objectSpread2(_objectSpread2({}, options), {}, {
@@ -103865,7 +97561,7 @@ var VectorIndexScope = class extends VectorDataApi {
   queryVectors(options) {
     var _superprop_getQueryVectors2 = () => super.queryVectors,
       _this62 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getQueryVectors = () => _superprop_getQueryVectors2(),
         _this12 = _this62;
       return _superprop_getQueryVectors().call(_this12, _objectSpread2(_objectSpread2({}, options), {}, {
@@ -103898,7 +97594,7 @@ var VectorIndexScope = class extends VectorDataApi {
   deleteVectors(options) {
     var _superprop_getDeleteVectors2 = () => super.deleteVectors,
       _this63 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getDeleteVectors = () => _superprop_getDeleteVectors2(),
         _this13 = _this63;
       return _superprop_getDeleteVectors().call(_this13, _objectSpread2(_objectSpread2({}, options), {}, {
@@ -104036,7 +97732,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   navigatorLock: () => (/* reexport safe */ _supabase_auth_js__WEBPACK_IMPORTED_MODULE_3__.navigatorLock),
 /* harmony export */   processLock: () => (/* reexport safe */ _supabase_auth_js__WEBPACK_IMPORTED_MODULE_3__.processLock)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _supabase_functions_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @supabase/functions-js */ 9977);
 /* harmony import */ var _supabase_functions_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @supabase/functions-js */ 422);
 /* harmony import */ var _supabase_postgrest_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @supabase/postgrest-js */ 1590);
@@ -104156,7 +97852,7 @@ const fetchWithAuth = (supabaseKey, getAccessToken, customFetch) => {
   const fetch$1 = resolveFetch(customFetch);
   const HeadersConstructor = resolveHeadersConstructor();
   return /*#__PURE__*/function () {
-    var _ref = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (input, init) {
+    var _ref = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (input, init) {
       var _await$getAccessToken;
       const accessToken = (_await$getAccessToken = yield getAccessToken()) !== null && _await$getAccessToken !== void 0 ? _await$getAccessToken : supabaseKey;
       let headers = new HeadersConstructor(init === null || init === void 0 ? void 0 : init.headers);
@@ -104200,7 +97896,7 @@ function applySettingDefaults(options, defaults) {
       headers: _objectSpread2(_objectSpread2({}, (_DEFAULT_GLOBAL_OPTIO = DEFAULT_GLOBAL_OPTIONS$1 === null || DEFAULT_GLOBAL_OPTIONS$1 === void 0 ? void 0 : DEFAULT_GLOBAL_OPTIONS$1.headers) !== null && _DEFAULT_GLOBAL_OPTIO !== void 0 ? _DEFAULT_GLOBAL_OPTIO : {}), (_globalOptions$header = globalOptions === null || globalOptions === void 0 ? void 0 : globalOptions.headers) !== null && _globalOptions$header !== void 0 ? _globalOptions$header : {})
     }),
     accessToken: function () {
-      var _ref2 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      var _ref2 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return "";
       });
       return function accessToken() {
@@ -104405,7 +98101,7 @@ var SupabaseClient = class {
   }
   _getAccessToken() {
     var _this2 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this2;
       var _data$session$access_, _data$session;
       if (_this.accessToken) return yield _this.accessToken();
@@ -104521,7 +98217,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   parseFixedType: () => (/* binding */ parseFixedType),
 /* harmony export */   typesEqual: () => (/* binding */ typesEqual)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 
 // src/errors/IcebergError.ts
 var IcebergError = class extends Error {
@@ -104572,7 +98268,7 @@ function buildAuthHeaders(_x) {
   return _buildAuthHeaders.apply(this, arguments);
 }
 function _buildAuthHeaders() {
-  _buildAuthHeaders = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (auth) {
+  _buildAuthHeaders = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (auth) {
     if (!auth || auth.type === "none") {
       return {};
     }
@@ -104597,7 +98293,7 @@ function createFetchClient(options) {
   const fetchFn = options.fetchImpl ?? globalThis.fetch;
   return {
     request(_x2) {
-      return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
+      return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
         method,
         path,
         query,
@@ -104651,7 +98347,7 @@ var NamespaceOperations = class {
   }
   listNamespaces(parent) {
     var _this = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const query = parent ? {
         parent: namespaceToPath(parent.namespace)
       } : void 0;
@@ -104667,7 +98363,7 @@ var NamespaceOperations = class {
   }
   createNamespace(id, metadata) {
     var _this2 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const request = {
         namespace: id.namespace,
         properties: metadata?.properties
@@ -104682,7 +98378,7 @@ var NamespaceOperations = class {
   }
   dropNamespace(id) {
     var _this3 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this3.client.request({
         method: "DELETE",
         path: `${_this3.prefix}/namespaces/${namespaceToPath(id.namespace)}`
@@ -104691,7 +98387,7 @@ var NamespaceOperations = class {
   }
   loadNamespaceMetadata(id) {
     var _this4 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const response = yield _this4.client.request({
         method: "GET",
         path: `${_this4.prefix}/namespaces/${namespaceToPath(id.namespace)}`
@@ -104703,7 +98399,7 @@ var NamespaceOperations = class {
   }
   namespaceExists(id) {
     var _this5 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         yield _this5.client.request({
           method: "HEAD",
@@ -104720,7 +98416,7 @@ var NamespaceOperations = class {
   }
   createNamespaceIfNotExists(id, metadata) {
     var _this6 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this6.createNamespace(id, metadata);
       } catch (error) {
@@ -104745,7 +98441,7 @@ var TableOperations = class {
   }
   listTables(namespace) {
     var _this7 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const response = yield _this7.client.request({
         method: "GET",
         path: `${_this7.prefix}/namespaces/${namespaceToPath2(namespace.namespace)}/tables`
@@ -104755,7 +98451,7 @@ var TableOperations = class {
   }
   createTable(namespace, request) {
     var _this8 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const headers = {};
       if (_this8.accessDelegation) {
         headers["X-Iceberg-Access-Delegation"] = _this8.accessDelegation;
@@ -104771,7 +98467,7 @@ var TableOperations = class {
   }
   updateTable(id, request) {
     var _this9 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const response = yield _this9.client.request({
         method: "POST",
         path: `${_this9.prefix}/namespaces/${namespaceToPath2(id.namespace)}/tables/${id.name}`,
@@ -104785,7 +98481,7 @@ var TableOperations = class {
   }
   dropTable(id, options) {
     var _this0 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this0.client.request({
         method: "DELETE",
         path: `${_this0.prefix}/namespaces/${namespaceToPath2(id.namespace)}/tables/${id.name}`,
@@ -104797,7 +98493,7 @@ var TableOperations = class {
   }
   loadTable(id) {
     var _this1 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const headers = {};
       if (_this1.accessDelegation) {
         headers["X-Iceberg-Access-Delegation"] = _this1.accessDelegation;
@@ -104812,7 +98508,7 @@ var TableOperations = class {
   }
   tableExists(id) {
     var _this10 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const headers = {};
       if (_this10.accessDelegation) {
         headers["X-Iceberg-Access-Delegation"] = _this10.accessDelegation;
@@ -104834,7 +98530,7 @@ var TableOperations = class {
   }
   createTableIfNotExists(namespace, request) {
     var _this11 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this11.createTable(namespace, request);
       } catch (error) {
@@ -104889,7 +98585,7 @@ var IcebergRestCatalog = class {
    */
   listNamespaces(parent) {
     var _this12 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this12.namespaceOps.listNamespaces(parent);
     })();
   }
@@ -104912,7 +98608,7 @@ var IcebergRestCatalog = class {
    */
   createNamespace(id, metadata) {
     var _this13 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this13.namespaceOps.createNamespace(id, metadata);
     })();
   }
@@ -104930,7 +98626,7 @@ var IcebergRestCatalog = class {
    */
   dropNamespace(id) {
     var _this14 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this14.namespaceOps.dropNamespace(id);
     })();
   }
@@ -104948,7 +98644,7 @@ var IcebergRestCatalog = class {
    */
   loadNamespaceMetadata(id) {
     var _this15 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this15.namespaceOps.loadNamespaceMetadata(id);
     })();
   }
@@ -104966,7 +98662,7 @@ var IcebergRestCatalog = class {
    */
   listTables(namespace) {
     var _this16 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this16.tableOps.listTables(namespace);
     })();
   }
@@ -105003,7 +98699,7 @@ var IcebergRestCatalog = class {
    */
   createTable(namespace, request) {
     var _this17 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this17.tableOps.createTable(namespace, request);
     })();
   }
@@ -105030,7 +98726,7 @@ var IcebergRestCatalog = class {
    */
   updateTable(id, request) {
     var _this18 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this18.tableOps.updateTable(id, request);
     })();
   }
@@ -105046,7 +98742,7 @@ var IcebergRestCatalog = class {
    */
   dropTable(id, options) {
     var _this19 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this19.tableOps.dropTable(id, options);
     })();
   }
@@ -105065,7 +98761,7 @@ var IcebergRestCatalog = class {
    */
   loadTable(id) {
     var _this20 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this20.tableOps.loadTable(id);
     })();
   }
@@ -105083,7 +98779,7 @@ var IcebergRestCatalog = class {
    */
   namespaceExists(id) {
     var _this21 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this21.namespaceOps.namespaceExists(id);
     })();
   }
@@ -105101,7 +98797,7 @@ var IcebergRestCatalog = class {
    */
   tableExists(id) {
     var _this22 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this22.tableOps.tableExists(id);
     })();
   }
@@ -105129,7 +98825,7 @@ var IcebergRestCatalog = class {
    */
   createNamespaceIfNotExists(id, metadata) {
     var _this23 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this23.namespaceOps.createNamespaceIfNotExists(id, metadata);
     })();
   }
@@ -105162,7 +98858,7 @@ var IcebergRestCatalog = class {
    */
   createTableIfNotExists(namespace, request) {
     var _this24 = this;
-    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this24.tableOps.createTableIfNotExists(namespace, request);
     })();
   }
@@ -105211,2344 +98907,6 @@ function getCurrentSchema(metadata) {
 
 
 //# sourceMappingURL=index.mjs.map
-
-/***/ }),
-
-/***/ 997:
-/*!***********************************************!*\
-  !*** ./node_modules/marked/lib/marked.esm.js ***!
-  \***********************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Hooks: () => (/* binding */ _Hooks),
-/* harmony export */   Lexer: () => (/* binding */ _Lexer),
-/* harmony export */   Marked: () => (/* binding */ Marked),
-/* harmony export */   Parser: () => (/* binding */ _Parser),
-/* harmony export */   Renderer: () => (/* binding */ _Renderer),
-/* harmony export */   TextRenderer: () => (/* binding */ _TextRenderer),
-/* harmony export */   Tokenizer: () => (/* binding */ _Tokenizer),
-/* harmony export */   defaults: () => (/* binding */ _defaults),
-/* harmony export */   getDefaults: () => (/* binding */ _getDefaults),
-/* harmony export */   lexer: () => (/* binding */ lexer),
-/* harmony export */   marked: () => (/* binding */ marked),
-/* harmony export */   options: () => (/* binding */ options),
-/* harmony export */   parse: () => (/* binding */ parse),
-/* harmony export */   parseInline: () => (/* binding */ parseInline),
-/* harmony export */   parser: () => (/* binding */ parser),
-/* harmony export */   setOptions: () => (/* binding */ setOptions),
-/* harmony export */   use: () => (/* binding */ use),
-/* harmony export */   walkTokens: () => (/* binding */ walkTokens)
-/* harmony export */ });
-/**
- * marked v11.2.0 - a markdown parser
- * Copyright (c) 2011-2024, Christopher Jeffrey. (MIT Licensed)
- * https://github.com/markedjs/marked
- */
-
-/**
- * DO NOT EDIT THIS FILE
- * The code in this file is generated from files in ./src/
- */
-
-/**
- * Gets the original marked default options.
- */
-function _getDefaults() {
-  return {
-    async: false,
-    breaks: false,
-    extensions: null,
-    gfm: true,
-    hooks: null,
-    pedantic: false,
-    renderer: null,
-    silent: false,
-    tokenizer: null,
-    walkTokens: null
-  };
-}
-let _defaults = _getDefaults();
-function changeDefaults(newDefaults) {
-  _defaults = newDefaults;
-}
-
-/**
- * Helpers
- */
-const escapeTest = /[&<>"']/;
-const escapeReplace = new RegExp(escapeTest.source, 'g');
-const escapeTestNoEncode = /[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/;
-const escapeReplaceNoEncode = new RegExp(escapeTestNoEncode.source, 'g');
-const escapeReplacements = {
-  '&': '&amp;',
-  '<': '&lt;',
-  '>': '&gt;',
-  '"': '&quot;',
-  "'": '&#39;'
-};
-const getEscapeReplacement = ch => escapeReplacements[ch];
-function escape$1(html, encode) {
-  if (encode) {
-    if (escapeTest.test(html)) {
-      return html.replace(escapeReplace, getEscapeReplacement);
-    }
-  } else {
-    if (escapeTestNoEncode.test(html)) {
-      return html.replace(escapeReplaceNoEncode, getEscapeReplacement);
-    }
-  }
-  return html;
-}
-const unescapeTest = /&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/ig;
-function unescape(html) {
-  // explicitly match decimal, hex, and named HTML entities
-  return html.replace(unescapeTest, (_, n) => {
-    n = n.toLowerCase();
-    if (n === 'colon') return ':';
-    if (n.charAt(0) === '#') {
-      return n.charAt(1) === 'x' ? String.fromCharCode(parseInt(n.substring(2), 16)) : String.fromCharCode(+n.substring(1));
-    }
-    return '';
-  });
-}
-const caret = /(^|[^\[])\^/g;
-function edit(regex, opt) {
-  let source = typeof regex === 'string' ? regex : regex.source;
-  opt = opt || '';
-  const obj = {
-    replace: (name, val) => {
-      let valSource = typeof val === 'string' ? val : val.source;
-      valSource = valSource.replace(caret, '$1');
-      source = source.replace(name, valSource);
-      return obj;
-    },
-    getRegex: () => {
-      return new RegExp(source, opt);
-    }
-  };
-  return obj;
-}
-function cleanUrl(href) {
-  try {
-    href = encodeURI(href).replace(/%25/g, '%');
-  } catch (e) {
-    return null;
-  }
-  return href;
-}
-const noopTest = {
-  exec: () => null
-};
-function splitCells(tableRow, count) {
-  // ensure that every cell-delimiting pipe has a space
-  // before it to distinguish it from an escaped pipe
-  const row = tableRow.replace(/\|/g, (match, offset, str) => {
-      let escaped = false;
-      let curr = offset;
-      while (--curr >= 0 && str[curr] === '\\') escaped = !escaped;
-      if (escaped) {
-        // odd number of slashes means | is escaped
-        // so we leave it alone
-        return '|';
-      } else {
-        // add space before unescaped |
-        return ' |';
-      }
-    }),
-    cells = row.split(/ \|/);
-  let i = 0;
-  // First/last cell in a row cannot be empty if it has no leading/trailing pipe
-  if (!cells[0].trim()) {
-    cells.shift();
-  }
-  if (cells.length > 0 && !cells[cells.length - 1].trim()) {
-    cells.pop();
-  }
-  if (count) {
-    if (cells.length > count) {
-      cells.splice(count);
-    } else {
-      while (cells.length < count) cells.push('');
-    }
-  }
-  for (; i < cells.length; i++) {
-    // leading or trailing whitespace is ignored per the gfm spec
-    cells[i] = cells[i].trim().replace(/\\\|/g, '|');
-  }
-  return cells;
-}
-/**
- * Remove trailing 'c's. Equivalent to str.replace(/c*$/, '').
- * /c*$/ is vulnerable to REDOS.
- *
- * @param str
- * @param c
- * @param invert Remove suffix of non-c chars instead. Default falsey.
- */
-function rtrim(str, c, invert) {
-  const l = str.length;
-  if (l === 0) {
-    return '';
-  }
-  // Length of suffix matching the invert condition.
-  let suffLen = 0;
-  // Step left until we fail to match the invert condition.
-  while (suffLen < l) {
-    const currChar = str.charAt(l - suffLen - 1);
-    if (currChar === c && !invert) {
-      suffLen++;
-    } else if (currChar !== c && invert) {
-      suffLen++;
-    } else {
-      break;
-    }
-  }
-  return str.slice(0, l - suffLen);
-}
-function findClosingBracket(str, b) {
-  if (str.indexOf(b[1]) === -1) {
-    return -1;
-  }
-  let level = 0;
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === '\\') {
-      i++;
-    } else if (str[i] === b[0]) {
-      level++;
-    } else if (str[i] === b[1]) {
-      level--;
-      if (level < 0) {
-        return i;
-      }
-    }
-  }
-  return -1;
-}
-function outputLink(cap, link, raw, lexer) {
-  const href = link.href;
-  const title = link.title ? escape$1(link.title) : null;
-  const text = cap[1].replace(/\\([\[\]])/g, '$1');
-  if (cap[0].charAt(0) !== '!') {
-    lexer.state.inLink = true;
-    const token = {
-      type: 'link',
-      raw,
-      href,
-      title,
-      text,
-      tokens: lexer.inlineTokens(text)
-    };
-    lexer.state.inLink = false;
-    return token;
-  }
-  return {
-    type: 'image',
-    raw,
-    href,
-    title,
-    text: escape$1(text)
-  };
-}
-function indentCodeCompensation(raw, text) {
-  const matchIndentToCode = raw.match(/^(\s+)(?:```)/);
-  if (matchIndentToCode === null) {
-    return text;
-  }
-  const indentToCode = matchIndentToCode[1];
-  return text.split('\n').map(node => {
-    const matchIndentInNode = node.match(/^\s+/);
-    if (matchIndentInNode === null) {
-      return node;
-    }
-    const [indentInNode] = matchIndentInNode;
-    if (indentInNode.length >= indentToCode.length) {
-      return node.slice(indentToCode.length);
-    }
-    return node;
-  }).join('\n');
-}
-/**
- * Tokenizer
- */
-class _Tokenizer {
-  options;
-  rules; // set by the lexer
-  lexer; // set by the lexer
-  constructor(options) {
-    this.options = options || _defaults;
-  }
-  space(src) {
-    const cap = this.rules.block.newline.exec(src);
-    if (cap && cap[0].length > 0) {
-      return {
-        type: 'space',
-        raw: cap[0]
-      };
-    }
-  }
-  code(src) {
-    const cap = this.rules.block.code.exec(src);
-    if (cap) {
-      const text = cap[0].replace(/^ {1,4}/gm, '');
-      return {
-        type: 'code',
-        raw: cap[0],
-        codeBlockStyle: 'indented',
-        text: !this.options.pedantic ? rtrim(text, '\n') : text
-      };
-    }
-  }
-  fences(src) {
-    const cap = this.rules.block.fences.exec(src);
-    if (cap) {
-      const raw = cap[0];
-      const text = indentCodeCompensation(raw, cap[3] || '');
-      return {
-        type: 'code',
-        raw,
-        lang: cap[2] ? cap[2].trim().replace(this.rules.inline.anyPunctuation, '$1') : cap[2],
-        text
-      };
-    }
-  }
-  heading(src) {
-    const cap = this.rules.block.heading.exec(src);
-    if (cap) {
-      let text = cap[2].trim();
-      // remove trailing #s
-      if (/#$/.test(text)) {
-        const trimmed = rtrim(text, '#');
-        if (this.options.pedantic) {
-          text = trimmed.trim();
-        } else if (!trimmed || / $/.test(trimmed)) {
-          // CommonMark requires space before trailing #s
-          text = trimmed.trim();
-        }
-      }
-      return {
-        type: 'heading',
-        raw: cap[0],
-        depth: cap[1].length,
-        text,
-        tokens: this.lexer.inline(text)
-      };
-    }
-  }
-  hr(src) {
-    const cap = this.rules.block.hr.exec(src);
-    if (cap) {
-      return {
-        type: 'hr',
-        raw: cap[0]
-      };
-    }
-  }
-  blockquote(src) {
-    const cap = this.rules.block.blockquote.exec(src);
-    if (cap) {
-      const text = rtrim(cap[0].replace(/^ *>[ \t]?/gm, ''), '\n');
-      const top = this.lexer.state.top;
-      this.lexer.state.top = true;
-      const tokens = this.lexer.blockTokens(text);
-      this.lexer.state.top = top;
-      return {
-        type: 'blockquote',
-        raw: cap[0],
-        tokens,
-        text
-      };
-    }
-  }
-  list(src) {
-    let cap = this.rules.block.list.exec(src);
-    if (cap) {
-      let bull = cap[1].trim();
-      const isordered = bull.length > 1;
-      const list = {
-        type: 'list',
-        raw: '',
-        ordered: isordered,
-        start: isordered ? +bull.slice(0, -1) : '',
-        loose: false,
-        items: []
-      };
-      bull = isordered ? `\\d{1,9}\\${bull.slice(-1)}` : `\\${bull}`;
-      if (this.options.pedantic) {
-        bull = isordered ? bull : '[*+-]';
-      }
-      // Get next list item
-      const itemRegex = new RegExp(`^( {0,3}${bull})((?:[\t ][^\\n]*)?(?:\\n|$))`);
-      let raw = '';
-      let itemContents = '';
-      let endsWithBlankLine = false;
-      // Check if current bullet point can start a new List Item
-      while (src) {
-        let endEarly = false;
-        if (!(cap = itemRegex.exec(src))) {
-          break;
-        }
-        if (this.rules.block.hr.test(src)) {
-          // End list if bullet was actually HR (possibly move into itemRegex?)
-          break;
-        }
-        raw = cap[0];
-        src = src.substring(raw.length);
-        let line = cap[2].split('\n', 1)[0].replace(/^\t+/, t => ' '.repeat(3 * t.length));
-        let nextLine = src.split('\n', 1)[0];
-        let indent = 0;
-        if (this.options.pedantic) {
-          indent = 2;
-          itemContents = line.trimStart();
-        } else {
-          indent = cap[2].search(/[^ ]/); // Find first non-space char
-          indent = indent > 4 ? 1 : indent; // Treat indented code blocks (> 4 spaces) as having only 1 indent
-          itemContents = line.slice(indent);
-          indent += cap[1].length;
-        }
-        let blankLine = false;
-        if (!line && /^ *$/.test(nextLine)) {
-          // Items begin with at most one blank line
-          raw += nextLine + '\n';
-          src = src.substring(nextLine.length + 1);
-          endEarly = true;
-        }
-        if (!endEarly) {
-          const nextBulletRegex = new RegExp(`^ {0,${Math.min(3, indent - 1)}}(?:[*+-]|\\d{1,9}[.)])((?:[ \t][^\\n]*)?(?:\\n|$))`);
-          const hrRegex = new RegExp(`^ {0,${Math.min(3, indent - 1)}}((?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$)`);
-          const fencesBeginRegex = new RegExp(`^ {0,${Math.min(3, indent - 1)}}(?:\`\`\`|~~~)`);
-          const headingBeginRegex = new RegExp(`^ {0,${Math.min(3, indent - 1)}}#`);
-          // Check if following lines should be included in List Item
-          while (src) {
-            const rawLine = src.split('\n', 1)[0];
-            nextLine = rawLine;
-            // Re-align to follow commonmark nesting rules
-            if (this.options.pedantic) {
-              nextLine = nextLine.replace(/^ {1,4}(?=( {4})*[^ ])/g, '  ');
-            }
-            // End list item if found code fences
-            if (fencesBeginRegex.test(nextLine)) {
-              break;
-            }
-            // End list item if found start of new heading
-            if (headingBeginRegex.test(nextLine)) {
-              break;
-            }
-            // End list item if found start of new bullet
-            if (nextBulletRegex.test(nextLine)) {
-              break;
-            }
-            // Horizontal rule found
-            if (hrRegex.test(src)) {
-              break;
-            }
-            if (nextLine.search(/[^ ]/) >= indent || !nextLine.trim()) {
-              // Dedent if possible
-              itemContents += '\n' + nextLine.slice(indent);
-            } else {
-              // not enough indentation
-              if (blankLine) {
-                break;
-              }
-              // paragraph continuation unless last line was a different block level element
-              if (line.search(/[^ ]/) >= 4) {
-                // indented code block
-                break;
-              }
-              if (fencesBeginRegex.test(line)) {
-                break;
-              }
-              if (headingBeginRegex.test(line)) {
-                break;
-              }
-              if (hrRegex.test(line)) {
-                break;
-              }
-              itemContents += '\n' + nextLine;
-            }
-            if (!blankLine && !nextLine.trim()) {
-              // Check if current line is blank
-              blankLine = true;
-            }
-            raw += rawLine + '\n';
-            src = src.substring(rawLine.length + 1);
-            line = nextLine.slice(indent);
-          }
-        }
-        if (!list.loose) {
-          // If the previous item ended with a blank line, the list is loose
-          if (endsWithBlankLine) {
-            list.loose = true;
-          } else if (/\n *\n *$/.test(raw)) {
-            endsWithBlankLine = true;
-          }
-        }
-        let istask = null;
-        let ischecked;
-        // Check for task list items
-        if (this.options.gfm) {
-          istask = /^\[[ xX]\] /.exec(itemContents);
-          if (istask) {
-            ischecked = istask[0] !== '[ ] ';
-            itemContents = itemContents.replace(/^\[[ xX]\] +/, '');
-          }
-        }
-        list.items.push({
-          type: 'list_item',
-          raw,
-          task: !!istask,
-          checked: ischecked,
-          loose: false,
-          text: itemContents,
-          tokens: []
-        });
-        list.raw += raw;
-      }
-      // Do not consume newlines at end of final item. Alternatively, make itemRegex *start* with any newlines to simplify/speed up endsWithBlankLine logic
-      list.items[list.items.length - 1].raw = raw.trimEnd();
-      list.items[list.items.length - 1].text = itemContents.trimEnd();
-      list.raw = list.raw.trimEnd();
-      // Item child tokens handled here at end because we needed to have the final item to trim it first
-      for (let i = 0; i < list.items.length; i++) {
-        this.lexer.state.top = false;
-        list.items[i].tokens = this.lexer.blockTokens(list.items[i].text, []);
-        if (!list.loose) {
-          // Check if list should be loose
-          const spacers = list.items[i].tokens.filter(t => t.type === 'space');
-          const hasMultipleLineBreaks = spacers.length > 0 && spacers.some(t => /\n.*\n/.test(t.raw));
-          list.loose = hasMultipleLineBreaks;
-        }
-      }
-      // Set all items to loose if list is loose
-      if (list.loose) {
-        for (let i = 0; i < list.items.length; i++) {
-          list.items[i].loose = true;
-        }
-      }
-      return list;
-    }
-  }
-  html(src) {
-    const cap = this.rules.block.html.exec(src);
-    if (cap) {
-      const token = {
-        type: 'html',
-        block: true,
-        raw: cap[0],
-        pre: cap[1] === 'pre' || cap[1] === 'script' || cap[1] === 'style',
-        text: cap[0]
-      };
-      return token;
-    }
-  }
-  def(src) {
-    const cap = this.rules.block.def.exec(src);
-    if (cap) {
-      const tag = cap[1].toLowerCase().replace(/\s+/g, ' ');
-      const href = cap[2] ? cap[2].replace(/^<(.*)>$/, '$1').replace(this.rules.inline.anyPunctuation, '$1') : '';
-      const title = cap[3] ? cap[3].substring(1, cap[3].length - 1).replace(this.rules.inline.anyPunctuation, '$1') : cap[3];
-      return {
-        type: 'def',
-        tag,
-        raw: cap[0],
-        href,
-        title
-      };
-    }
-  }
-  table(src) {
-    const cap = this.rules.block.table.exec(src);
-    if (!cap) {
-      return;
-    }
-    if (!/[:|]/.test(cap[2])) {
-      // delimiter row must have a pipe (|) or colon (:) otherwise it is a setext heading
-      return;
-    }
-    const headers = splitCells(cap[1]);
-    const aligns = cap[2].replace(/^\||\| *$/g, '').split('|');
-    const rows = cap[3] && cap[3].trim() ? cap[3].replace(/\n[ \t]*$/, '').split('\n') : [];
-    const item = {
-      type: 'table',
-      raw: cap[0],
-      header: [],
-      align: [],
-      rows: []
-    };
-    if (headers.length !== aligns.length) {
-      // header and align columns must be equal, rows can be different.
-      return;
-    }
-    for (const align of aligns) {
-      if (/^ *-+: *$/.test(align)) {
-        item.align.push('right');
-      } else if (/^ *:-+: *$/.test(align)) {
-        item.align.push('center');
-      } else if (/^ *:-+ *$/.test(align)) {
-        item.align.push('left');
-      } else {
-        item.align.push(null);
-      }
-    }
-    for (const header of headers) {
-      item.header.push({
-        text: header,
-        tokens: this.lexer.inline(header)
-      });
-    }
-    for (const row of rows) {
-      item.rows.push(splitCells(row, item.header.length).map(cell => {
-        return {
-          text: cell,
-          tokens: this.lexer.inline(cell)
-        };
-      }));
-    }
-    return item;
-  }
-  lheading(src) {
-    const cap = this.rules.block.lheading.exec(src);
-    if (cap) {
-      return {
-        type: 'heading',
-        raw: cap[0],
-        depth: cap[2].charAt(0) === '=' ? 1 : 2,
-        text: cap[1],
-        tokens: this.lexer.inline(cap[1])
-      };
-    }
-  }
-  paragraph(src) {
-    const cap = this.rules.block.paragraph.exec(src);
-    if (cap) {
-      const text = cap[1].charAt(cap[1].length - 1) === '\n' ? cap[1].slice(0, -1) : cap[1];
-      return {
-        type: 'paragraph',
-        raw: cap[0],
-        text,
-        tokens: this.lexer.inline(text)
-      };
-    }
-  }
-  text(src) {
-    const cap = this.rules.block.text.exec(src);
-    if (cap) {
-      return {
-        type: 'text',
-        raw: cap[0],
-        text: cap[0],
-        tokens: this.lexer.inline(cap[0])
-      };
-    }
-  }
-  escape(src) {
-    const cap = this.rules.inline.escape.exec(src);
-    if (cap) {
-      return {
-        type: 'escape',
-        raw: cap[0],
-        text: escape$1(cap[1])
-      };
-    }
-  }
-  tag(src) {
-    const cap = this.rules.inline.tag.exec(src);
-    if (cap) {
-      if (!this.lexer.state.inLink && /^<a /i.test(cap[0])) {
-        this.lexer.state.inLink = true;
-      } else if (this.lexer.state.inLink && /^<\/a>/i.test(cap[0])) {
-        this.lexer.state.inLink = false;
-      }
-      if (!this.lexer.state.inRawBlock && /^<(pre|code|kbd|script)(\s|>)/i.test(cap[0])) {
-        this.lexer.state.inRawBlock = true;
-      } else if (this.lexer.state.inRawBlock && /^<\/(pre|code|kbd|script)(\s|>)/i.test(cap[0])) {
-        this.lexer.state.inRawBlock = false;
-      }
-      return {
-        type: 'html',
-        raw: cap[0],
-        inLink: this.lexer.state.inLink,
-        inRawBlock: this.lexer.state.inRawBlock,
-        block: false,
-        text: cap[0]
-      };
-    }
-  }
-  link(src) {
-    const cap = this.rules.inline.link.exec(src);
-    if (cap) {
-      const trimmedUrl = cap[2].trim();
-      if (!this.options.pedantic && /^</.test(trimmedUrl)) {
-        // commonmark requires matching angle brackets
-        if (!/>$/.test(trimmedUrl)) {
-          return;
-        }
-        // ending angle bracket cannot be escaped
-        const rtrimSlash = rtrim(trimmedUrl.slice(0, -1), '\\');
-        if ((trimmedUrl.length - rtrimSlash.length) % 2 === 0) {
-          return;
-        }
-      } else {
-        // find closing parenthesis
-        const lastParenIndex = findClosingBracket(cap[2], '()');
-        if (lastParenIndex > -1) {
-          const start = cap[0].indexOf('!') === 0 ? 5 : 4;
-          const linkLen = start + cap[1].length + lastParenIndex;
-          cap[2] = cap[2].substring(0, lastParenIndex);
-          cap[0] = cap[0].substring(0, linkLen).trim();
-          cap[3] = '';
-        }
-      }
-      let href = cap[2];
-      let title = '';
-      if (this.options.pedantic) {
-        // split pedantic href and title
-        const link = /^([^'"]*[^\s])\s+(['"])(.*)\2/.exec(href);
-        if (link) {
-          href = link[1];
-          title = link[3];
-        }
-      } else {
-        title = cap[3] ? cap[3].slice(1, -1) : '';
-      }
-      href = href.trim();
-      if (/^</.test(href)) {
-        if (this.options.pedantic && !/>$/.test(trimmedUrl)) {
-          // pedantic allows starting angle bracket without ending angle bracket
-          href = href.slice(1);
-        } else {
-          href = href.slice(1, -1);
-        }
-      }
-      return outputLink(cap, {
-        href: href ? href.replace(this.rules.inline.anyPunctuation, '$1') : href,
-        title: title ? title.replace(this.rules.inline.anyPunctuation, '$1') : title
-      }, cap[0], this.lexer);
-    }
-  }
-  reflink(src, links) {
-    let cap;
-    if ((cap = this.rules.inline.reflink.exec(src)) || (cap = this.rules.inline.nolink.exec(src))) {
-      const linkString = (cap[2] || cap[1]).replace(/\s+/g, ' ');
-      const link = links[linkString.toLowerCase()];
-      if (!link) {
-        const text = cap[0].charAt(0);
-        return {
-          type: 'text',
-          raw: text,
-          text
-        };
-      }
-      return outputLink(cap, link, cap[0], this.lexer);
-    }
-  }
-  emStrong(src, maskedSrc, prevChar = '') {
-    let match = this.rules.inline.emStrongLDelim.exec(src);
-    if (!match) return;
-    // _ can't be between two alphanumerics. \p{L}\p{N} includes non-english alphabet/numbers as well
-    if (match[3] && prevChar.match(/[\p{L}\p{N}]/u)) return;
-    const nextChar = match[1] || match[2] || '';
-    if (!nextChar || !prevChar || this.rules.inline.punctuation.exec(prevChar)) {
-      // unicode Regex counts emoji as 1 char; spread into array for proper count (used multiple times below)
-      const lLength = [...match[0]].length - 1;
-      let rDelim,
-        rLength,
-        delimTotal = lLength,
-        midDelimTotal = 0;
-      const endReg = match[0][0] === '*' ? this.rules.inline.emStrongRDelimAst : this.rules.inline.emStrongRDelimUnd;
-      endReg.lastIndex = 0;
-      // Clip maskedSrc to same section of string as src (move to lexer?)
-      maskedSrc = maskedSrc.slice(-1 * src.length + lLength);
-      while ((match = endReg.exec(maskedSrc)) != null) {
-        rDelim = match[1] || match[2] || match[3] || match[4] || match[5] || match[6];
-        if (!rDelim) continue; // skip single * in __abc*abc__
-        rLength = [...rDelim].length;
-        if (match[3] || match[4]) {
-          // found another Left Delim
-          delimTotal += rLength;
-          continue;
-        } else if (match[5] || match[6]) {
-          // either Left or Right Delim
-          if (lLength % 3 && !((lLength + rLength) % 3)) {
-            midDelimTotal += rLength;
-            continue; // CommonMark Emphasis Rules 9-10
-          }
-        }
-        delimTotal -= rLength;
-        if (delimTotal > 0) continue; // Haven't found enough closing delimiters
-        // Remove extra characters. *a*** -> *a*
-        rLength = Math.min(rLength, rLength + delimTotal + midDelimTotal);
-        // char length can be >1 for unicode characters;
-        const lastCharLength = [...match[0]][0].length;
-        const raw = src.slice(0, lLength + match.index + lastCharLength + rLength);
-        // Create `em` if smallest delimiter has odd char count. *a***
-        if (Math.min(lLength, rLength) % 2) {
-          const text = raw.slice(1, -1);
-          return {
-            type: 'em',
-            raw,
-            text,
-            tokens: this.lexer.inlineTokens(text)
-          };
-        }
-        // Create 'strong' if smallest delimiter has even char count. **a***
-        const text = raw.slice(2, -2);
-        return {
-          type: 'strong',
-          raw,
-          text,
-          tokens: this.lexer.inlineTokens(text)
-        };
-      }
-    }
-  }
-  codespan(src) {
-    const cap = this.rules.inline.code.exec(src);
-    if (cap) {
-      let text = cap[2].replace(/\n/g, ' ');
-      const hasNonSpaceChars = /[^ ]/.test(text);
-      const hasSpaceCharsOnBothEnds = /^ /.test(text) && / $/.test(text);
-      if (hasNonSpaceChars && hasSpaceCharsOnBothEnds) {
-        text = text.substring(1, text.length - 1);
-      }
-      text = escape$1(text, true);
-      return {
-        type: 'codespan',
-        raw: cap[0],
-        text
-      };
-    }
-  }
-  br(src) {
-    const cap = this.rules.inline.br.exec(src);
-    if (cap) {
-      return {
-        type: 'br',
-        raw: cap[0]
-      };
-    }
-  }
-  del(src) {
-    const cap = this.rules.inline.del.exec(src);
-    if (cap) {
-      return {
-        type: 'del',
-        raw: cap[0],
-        text: cap[2],
-        tokens: this.lexer.inlineTokens(cap[2])
-      };
-    }
-  }
-  autolink(src) {
-    const cap = this.rules.inline.autolink.exec(src);
-    if (cap) {
-      let text, href;
-      if (cap[2] === '@') {
-        text = escape$1(cap[1]);
-        href = 'mailto:' + text;
-      } else {
-        text = escape$1(cap[1]);
-        href = text;
-      }
-      return {
-        type: 'link',
-        raw: cap[0],
-        text,
-        href,
-        tokens: [{
-          type: 'text',
-          raw: text,
-          text
-        }]
-      };
-    }
-  }
-  url(src) {
-    let cap;
-    if (cap = this.rules.inline.url.exec(src)) {
-      let text, href;
-      if (cap[2] === '@') {
-        text = escape$1(cap[0]);
-        href = 'mailto:' + text;
-      } else {
-        // do extended autolink path validation
-        let prevCapZero;
-        do {
-          prevCapZero = cap[0];
-          cap[0] = this.rules.inline._backpedal.exec(cap[0])?.[0] ?? '';
-        } while (prevCapZero !== cap[0]);
-        text = escape$1(cap[0]);
-        if (cap[1] === 'www.') {
-          href = 'http://' + cap[0];
-        } else {
-          href = cap[0];
-        }
-      }
-      return {
-        type: 'link',
-        raw: cap[0],
-        text,
-        href,
-        tokens: [{
-          type: 'text',
-          raw: text,
-          text
-        }]
-      };
-    }
-  }
-  inlineText(src) {
-    const cap = this.rules.inline.text.exec(src);
-    if (cap) {
-      let text;
-      if (this.lexer.state.inRawBlock) {
-        text = cap[0];
-      } else {
-        text = escape$1(cap[0]);
-      }
-      return {
-        type: 'text',
-        raw: cap[0],
-        text
-      };
-    }
-  }
-}
-
-/**
- * Block-Level Grammar
- */
-const newline = /^(?: *(?:\n|$))+/;
-const blockCode = /^( {4}[^\n]+(?:\n(?: *(?:\n|$))*)?)+/;
-const fences = /^ {0,3}(`{3,}(?=[^`\n]*(?:\n|$))|~{3,})([^\n]*)(?:\n|$)(?:|([\s\S]*?)(?:\n|$))(?: {0,3}\1[~`]* *(?=\n|$)|$)/;
-const hr = /^ {0,3}((?:-[\t ]*){3,}|(?:_[ \t]*){3,}|(?:\*[ \t]*){3,})(?:\n+|$)/;
-const heading = /^ {0,3}(#{1,6})(?=\s|$)(.*)(?:\n+|$)/;
-const bullet = /(?:[*+-]|\d{1,9}[.)])/;
-const lheading = edit(/^(?!bull )((?:.|\n(?!\s*?\n|bull ))+?)\n {0,3}(=+|-+) *(?:\n+|$)/).replace(/bull/g, bullet) // lists can interrupt
-.getRegex();
-const _paragraph = /^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html|table| +\n)[^\n]+)*)/;
-const blockText = /^[^\n]+/;
-const _blockLabel = /(?!\s*\])(?:\\.|[^\[\]\\])+/;
-const def = edit(/^ {0,3}\[(label)\]: *(?:\n *)?([^<\s][^\s]*|<.*?>)(?:(?: +(?:\n *)?| *\n *)(title))? *(?:\n+|$)/).replace('label', _blockLabel).replace('title', /(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/).getRegex();
-const list = edit(/^( {0,3}bull)([ \t][^\n]+?)?(?:\n|$)/).replace(/bull/g, bullet).getRegex();
-const _tag = 'address|article|aside|base|basefont|blockquote|body|caption' + '|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption' + '|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe' + '|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option' + '|p|param|section|source|summary|table|tbody|td|tfoot|th|thead|title|tr' + '|track|ul';
-const _comment = /<!--(?!-?>)[\s\S]*?(?:-->|$)/;
-const html = edit('^ {0,3}(?:' // optional indentation
-+ '<(script|pre|style|textarea)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)' // (1)
-+ '|comment[^\\n]*(\\n+|$)' // (2)
-+ '|<\\?[\\s\\S]*?(?:\\?>\\n*|$)' // (3)
-+ '|<![A-Z][\\s\\S]*?(?:>\\n*|$)' // (4)
-+ '|<!\\[CDATA\\[[\\s\\S]*?(?:\\]\\]>\\n*|$)' // (5)
-+ '|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:(?:\\n *)+\\n|$)' // (6)
-+ '|<(?!script|pre|style|textarea)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n *)+\\n|$)' // (7) open tag
-+ '|</(?!script|pre|style|textarea)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n *)+\\n|$)' // (7) closing tag
-+ ')', 'i').replace('comment', _comment).replace('tag', _tag).replace('attribute', / +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex();
-const paragraph = edit(_paragraph).replace('hr', hr).replace('heading', ' {0,3}#{1,6}(?:\\s|$)').replace('|lheading', '') // setex headings don't interrupt commonmark paragraphs
-.replace('|table', '').replace('blockquote', ' {0,3}>').replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n').replace('list', ' {0,3}(?:[*+-]|1[.)]) ') // only lists starting from 1 can interrupt
-.replace('html', '</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)').replace('tag', _tag) // pars can be interrupted by type (6) html blocks
-.getRegex();
-const blockquote = edit(/^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/).replace('paragraph', paragraph).getRegex();
-/**
- * Normal Block Grammar
- */
-const blockNormal = {
-  blockquote,
-  code: blockCode,
-  def,
-  fences,
-  heading,
-  hr,
-  html,
-  lheading,
-  list,
-  newline,
-  paragraph,
-  table: noopTest,
-  text: blockText
-};
-/**
- * GFM Block Grammar
- */
-const gfmTable = edit('^ *([^\\n ].*)\\n' // Header
-+ ' {0,3}((?:\\| *)?:?-+:? *(?:\\| *:?-+:? *)*(?:\\| *)?)' // Align
-+ '(?:\\n((?:(?! *\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)') // Cells
-.replace('hr', hr).replace('heading', ' {0,3}#{1,6}(?:\\s|$)').replace('blockquote', ' {0,3}>').replace('code', ' {4}[^\\n]').replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n').replace('list', ' {0,3}(?:[*+-]|1[.)]) ') // only lists starting from 1 can interrupt
-.replace('html', '</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)').replace('tag', _tag) // tables can be interrupted by type (6) html blocks
-.getRegex();
-const blockGfm = {
-  ...blockNormal,
-  table: gfmTable,
-  paragraph: edit(_paragraph).replace('hr', hr).replace('heading', ' {0,3}#{1,6}(?:\\s|$)').replace('|lheading', '') // setex headings don't interrupt commonmark paragraphs
-  .replace('table', gfmTable) // interrupt paragraphs with table
-  .replace('blockquote', ' {0,3}>').replace('fences', ' {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n').replace('list', ' {0,3}(?:[*+-]|1[.)]) ') // only lists starting from 1 can interrupt
-  .replace('html', '</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)').replace('tag', _tag) // pars can be interrupted by type (6) html blocks
-  .getRegex()
-};
-/**
- * Pedantic grammar (original John Gruber's loose markdown specification)
- */
-const blockPedantic = {
-  ...blockNormal,
-  html: edit('^ *(?:comment *(?:\\n|\\s*$)' + '|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)' // closed tag
-  + '|<tag(?:"[^"]*"|\'[^\']*\'|\\s[^\'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))').replace('comment', _comment).replace(/tag/g, '(?!(?:' + 'a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub' + '|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)' + '\\b)\\w+(?!:|[^\\w\\s@]*@)\\b').getRegex(),
-  def: /^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,
-  heading: /^(#{1,6})(.*)(?:\n+|$)/,
-  fences: noopTest,
-  // fences not supported
-  lheading: /^(.+?)\n {0,3}(=+|-+) *(?:\n+|$)/,
-  paragraph: edit(_paragraph).replace('hr', hr).replace('heading', ' *#{1,6} *[^\n]').replace('lheading', lheading).replace('|table', '').replace('blockquote', ' {0,3}>').replace('|fences', '').replace('|list', '').replace('|html', '').replace('|tag', '').getRegex()
-};
-/**
- * Inline-Level Grammar
- */
-const escape = /^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/;
-const inlineCode = /^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/;
-const br = /^( {2,}|\\)\n(?!\s*$)/;
-const inlineText = /^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*_]|\b_|$)|[^ ](?= {2,}\n)))/;
-// list of unicode punctuation marks, plus any missing characters from CommonMark spec
-const _punctuation = '\\p{P}$+<=>`^|~';
-const punctuation = edit(/^((?![*_])[\spunctuation])/, 'u').replace(/punctuation/g, _punctuation).getRegex();
-// sequences em should skip over [title](link), `code`, <html>
-const blockSkip = /\[[^[\]]*?\]\([^\(\)]*?\)|`[^`]*?`|<[^<>]*?>/g;
-const emStrongLDelim = edit(/^(?:\*+(?:((?!\*)[punct])|[^\s*]))|^_+(?:((?!_)[punct])|([^\s_]))/, 'u').replace(/punct/g, _punctuation).getRegex();
-const emStrongRDelimAst = edit('^[^_*]*?__[^_*]*?\\*[^_*]*?(?=__)' // Skip orphan inside strong
-+ '|[^*]+(?=[^*])' // Consume to delim
-+ '|(?!\\*)[punct](\\*+)(?=[\\s]|$)' // (1) #*** can only be a Right Delimiter
-+ '|[^punct\\s](\\*+)(?!\\*)(?=[punct\\s]|$)' // (2) a***#, a*** can only be a Right Delimiter
-+ '|(?!\\*)[punct\\s](\\*+)(?=[^punct\\s])' // (3) #***a, ***a can only be Left Delimiter
-+ '|[\\s](\\*+)(?!\\*)(?=[punct])' // (4) ***# can only be Left Delimiter
-+ '|(?!\\*)[punct](\\*+)(?!\\*)(?=[punct])' // (5) #***# can be either Left or Right Delimiter
-+ '|[^punct\\s](\\*+)(?=[^punct\\s])', 'gu') // (6) a***a can be either Left or Right Delimiter
-.replace(/punct/g, _punctuation).getRegex();
-// (6) Not allowed for _
-const emStrongRDelimUnd = edit('^[^_*]*?\\*\\*[^_*]*?_[^_*]*?(?=\\*\\*)' // Skip orphan inside strong
-+ '|[^_]+(?=[^_])' // Consume to delim
-+ '|(?!_)[punct](_+)(?=[\\s]|$)' // (1) #___ can only be a Right Delimiter
-+ '|[^punct\\s](_+)(?!_)(?=[punct\\s]|$)' // (2) a___#, a___ can only be a Right Delimiter
-+ '|(?!_)[punct\\s](_+)(?=[^punct\\s])' // (3) #___a, ___a can only be Left Delimiter
-+ '|[\\s](_+)(?!_)(?=[punct])' // (4) ___# can only be Left Delimiter
-+ '|(?!_)[punct](_+)(?!_)(?=[punct])', 'gu') // (5) #___# can be either Left or Right Delimiter
-.replace(/punct/g, _punctuation).getRegex();
-const anyPunctuation = edit(/\\([punct])/, 'gu').replace(/punct/g, _punctuation).getRegex();
-const autolink = edit(/^<(scheme:[^\s\x00-\x1f<>]*|email)>/).replace('scheme', /[a-zA-Z][a-zA-Z0-9+.-]{1,31}/).replace('email', /[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/).getRegex();
-const _inlineComment = edit(_comment).replace('(?:-->|$)', '-->').getRegex();
-const tag = edit('^comment' + '|^</[a-zA-Z][\\w:-]*\\s*>' // self-closing tag
-+ '|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>' // open tag
-+ '|^<\\?[\\s\\S]*?\\?>' // processing instruction, e.g. <?php ?>
-+ '|^<![a-zA-Z]+\\s[\\s\\S]*?>' // declaration, e.g. <!DOCTYPE html>
-+ '|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>') // CDATA section
-.replace('comment', _inlineComment).replace('attribute', /\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/).getRegex();
-const _inlineLabel = /(?:\[(?:\\.|[^\[\]\\])*\]|\\.|`[^`]*`|[^\[\]\\`])*?/;
-const link = edit(/^!?\[(label)\]\(\s*(href)(?:\s+(title))?\s*\)/).replace('label', _inlineLabel).replace('href', /<(?:\\.|[^\n<>\\])+>|[^\s\x00-\x1f]*/).replace('title', /"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/).getRegex();
-const reflink = edit(/^!?\[(label)\]\[(ref)\]/).replace('label', _inlineLabel).replace('ref', _blockLabel).getRegex();
-const nolink = edit(/^!?\[(ref)\](?:\[\])?/).replace('ref', _blockLabel).getRegex();
-const reflinkSearch = edit('reflink|nolink(?!\\()', 'g').replace('reflink', reflink).replace('nolink', nolink).getRegex();
-/**
- * Normal Inline Grammar
- */
-const inlineNormal = {
-  _backpedal: noopTest,
-  // only used for GFM url
-  anyPunctuation,
-  autolink,
-  blockSkip,
-  br,
-  code: inlineCode,
-  del: noopTest,
-  emStrongLDelim,
-  emStrongRDelimAst,
-  emStrongRDelimUnd,
-  escape,
-  link,
-  nolink,
-  punctuation,
-  reflink,
-  reflinkSearch,
-  tag,
-  text: inlineText,
-  url: noopTest
-};
-/**
- * Pedantic Inline Grammar
- */
-const inlinePedantic = {
-  ...inlineNormal,
-  link: edit(/^!?\[(label)\]\((.*?)\)/).replace('label', _inlineLabel).getRegex(),
-  reflink: edit(/^!?\[(label)\]\s*\[([^\]]*)\]/).replace('label', _inlineLabel).getRegex()
-};
-/**
- * GFM Inline Grammar
- */
-const inlineGfm = {
-  ...inlineNormal,
-  escape: edit(escape).replace('])', '~|])').getRegex(),
-  url: edit(/^((?:ftp|https?):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/, 'i').replace('email', /[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![-_])/).getRegex(),
-  _backpedal: /(?:[^?!.,:;*_'"~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_'"~)]+(?!$))+/,
-  del: /^(~~?)(?=[^\s~])([\s\S]*?[^\s~])\1(?=[^~]|$)/,
-  text: /^([`~]+|[^`~])(?:(?= {2,}\n)|(?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@)|[\s\S]*?(?:(?=[\\<!\[`*~_]|\b_|https?:\/\/|ftp:\/\/|www\.|$)|[^ ](?= {2,}\n)|[^a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-](?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@)))/
-};
-/**
- * GFM + Line Breaks Inline Grammar
- */
-const inlineBreaks = {
-  ...inlineGfm,
-  br: edit(br).replace('{2,}', '*').getRegex(),
-  text: edit(inlineGfm.text).replace('\\b_', '\\b_| {2,}\\n').replace(/\{2,\}/g, '*').getRegex()
-};
-/**
- * exports
- */
-const block = {
-  normal: blockNormal,
-  gfm: blockGfm,
-  pedantic: blockPedantic
-};
-const inline = {
-  normal: inlineNormal,
-  gfm: inlineGfm,
-  breaks: inlineBreaks,
-  pedantic: inlinePedantic
-};
-
-/**
- * Block Lexer
- */
-class _Lexer {
-  tokens;
-  options;
-  state;
-  tokenizer;
-  inlineQueue;
-  constructor(options) {
-    // TokenList cannot be created in one go
-    this.tokens = [];
-    this.tokens.links = Object.create(null);
-    this.options = options || _defaults;
-    this.options.tokenizer = this.options.tokenizer || new _Tokenizer();
-    this.tokenizer = this.options.tokenizer;
-    this.tokenizer.options = this.options;
-    this.tokenizer.lexer = this;
-    this.inlineQueue = [];
-    this.state = {
-      inLink: false,
-      inRawBlock: false,
-      top: true
-    };
-    const rules = {
-      block: block.normal,
-      inline: inline.normal
-    };
-    if (this.options.pedantic) {
-      rules.block = block.pedantic;
-      rules.inline = inline.pedantic;
-    } else if (this.options.gfm) {
-      rules.block = block.gfm;
-      if (this.options.breaks) {
-        rules.inline = inline.breaks;
-      } else {
-        rules.inline = inline.gfm;
-      }
-    }
-    this.tokenizer.rules = rules;
-  }
-  /**
-   * Expose Rules
-   */
-  static get rules() {
-    return {
-      block,
-      inline
-    };
-  }
-  /**
-   * Static Lex Method
-   */
-  static lex(src, options) {
-    const lexer = new _Lexer(options);
-    return lexer.lex(src);
-  }
-  /**
-   * Static Lex Inline Method
-   */
-  static lexInline(src, options) {
-    const lexer = new _Lexer(options);
-    return lexer.inlineTokens(src);
-  }
-  /**
-   * Preprocessing
-   */
-  lex(src) {
-    src = src.replace(/\r\n|\r/g, '\n');
-    this.blockTokens(src, this.tokens);
-    for (let i = 0; i < this.inlineQueue.length; i++) {
-      const next = this.inlineQueue[i];
-      this.inlineTokens(next.src, next.tokens);
-    }
-    this.inlineQueue = [];
-    return this.tokens;
-  }
-  blockTokens(src, tokens = []) {
-    if (this.options.pedantic) {
-      src = src.replace(/\t/g, '    ').replace(/^ +$/gm, '');
-    } else {
-      src = src.replace(/^( *)(\t+)/gm, (_, leading, tabs) => {
-        return leading + '    '.repeat(tabs.length);
-      });
-    }
-    let token;
-    let lastToken;
-    let cutSrc;
-    let lastParagraphClipped;
-    while (src) {
-      if (this.options.extensions && this.options.extensions.block && this.options.extensions.block.some(extTokenizer => {
-        if (token = extTokenizer.call({
-          lexer: this
-        }, src, tokens)) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          return true;
-        }
-        return false;
-      })) {
-        continue;
-      }
-      // newline
-      if (token = this.tokenizer.space(src)) {
-        src = src.substring(token.raw.length);
-        if (token.raw.length === 1 && tokens.length > 0) {
-          // if there's a single \n as a spacer, it's terminating the last line,
-          // so move it there so that we don't get unnecessary paragraph tags
-          tokens[tokens.length - 1].raw += '\n';
-        } else {
-          tokens.push(token);
-        }
-        continue;
-      }
-      // code
-      if (token = this.tokenizer.code(src)) {
-        src = src.substring(token.raw.length);
-        lastToken = tokens[tokens.length - 1];
-        // An indented code block cannot interrupt a paragraph.
-        if (lastToken && (lastToken.type === 'paragraph' || lastToken.type === 'text')) {
-          lastToken.raw += '\n' + token.raw;
-          lastToken.text += '\n' + token.text;
-          this.inlineQueue[this.inlineQueue.length - 1].src = lastToken.text;
-        } else {
-          tokens.push(token);
-        }
-        continue;
-      }
-      // fences
-      if (token = this.tokenizer.fences(src)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // heading
-      if (token = this.tokenizer.heading(src)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // hr
-      if (token = this.tokenizer.hr(src)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // blockquote
-      if (token = this.tokenizer.blockquote(src)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // list
-      if (token = this.tokenizer.list(src)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // html
-      if (token = this.tokenizer.html(src)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // def
-      if (token = this.tokenizer.def(src)) {
-        src = src.substring(token.raw.length);
-        lastToken = tokens[tokens.length - 1];
-        if (lastToken && (lastToken.type === 'paragraph' || lastToken.type === 'text')) {
-          lastToken.raw += '\n' + token.raw;
-          lastToken.text += '\n' + token.raw;
-          this.inlineQueue[this.inlineQueue.length - 1].src = lastToken.text;
-        } else if (!this.tokens.links[token.tag]) {
-          this.tokens.links[token.tag] = {
-            href: token.href,
-            title: token.title
-          };
-        }
-        continue;
-      }
-      // table (gfm)
-      if (token = this.tokenizer.table(src)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // lheading
-      if (token = this.tokenizer.lheading(src)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // top-level paragraph
-      // prevent paragraph consuming extensions by clipping 'src' to extension start
-      cutSrc = src;
-      if (this.options.extensions && this.options.extensions.startBlock) {
-        let startIndex = Infinity;
-        const tempSrc = src.slice(1);
-        let tempStart;
-        this.options.extensions.startBlock.forEach(getStartIndex => {
-          tempStart = getStartIndex.call({
-            lexer: this
-          }, tempSrc);
-          if (typeof tempStart === 'number' && tempStart >= 0) {
-            startIndex = Math.min(startIndex, tempStart);
-          }
-        });
-        if (startIndex < Infinity && startIndex >= 0) {
-          cutSrc = src.substring(0, startIndex + 1);
-        }
-      }
-      if (this.state.top && (token = this.tokenizer.paragraph(cutSrc))) {
-        lastToken = tokens[tokens.length - 1];
-        if (lastParagraphClipped && lastToken.type === 'paragraph') {
-          lastToken.raw += '\n' + token.raw;
-          lastToken.text += '\n' + token.text;
-          this.inlineQueue.pop();
-          this.inlineQueue[this.inlineQueue.length - 1].src = lastToken.text;
-        } else {
-          tokens.push(token);
-        }
-        lastParagraphClipped = cutSrc.length !== src.length;
-        src = src.substring(token.raw.length);
-        continue;
-      }
-      // text
-      if (token = this.tokenizer.text(src)) {
-        src = src.substring(token.raw.length);
-        lastToken = tokens[tokens.length - 1];
-        if (lastToken && lastToken.type === 'text') {
-          lastToken.raw += '\n' + token.raw;
-          lastToken.text += '\n' + token.text;
-          this.inlineQueue.pop();
-          this.inlineQueue[this.inlineQueue.length - 1].src = lastToken.text;
-        } else {
-          tokens.push(token);
-        }
-        continue;
-      }
-      if (src) {
-        const errMsg = 'Infinite loop on byte: ' + src.charCodeAt(0);
-        if (this.options.silent) {
-          console.error(errMsg);
-          break;
-        } else {
-          throw new Error(errMsg);
-        }
-      }
-    }
-    this.state.top = true;
-    return tokens;
-  }
-  inline(src, tokens = []) {
-    this.inlineQueue.push({
-      src,
-      tokens
-    });
-    return tokens;
-  }
-  /**
-   * Lexing/Compiling
-   */
-  inlineTokens(src, tokens = []) {
-    let token, lastToken, cutSrc;
-    // String with links masked to avoid interference with em and strong
-    let maskedSrc = src;
-    let match;
-    let keepPrevChar, prevChar;
-    // Mask out reflinks
-    if (this.tokens.links) {
-      const links = Object.keys(this.tokens.links);
-      if (links.length > 0) {
-        while ((match = this.tokenizer.rules.inline.reflinkSearch.exec(maskedSrc)) != null) {
-          if (links.includes(match[0].slice(match[0].lastIndexOf('[') + 1, -1))) {
-            maskedSrc = maskedSrc.slice(0, match.index) + '[' + 'a'.repeat(match[0].length - 2) + ']' + maskedSrc.slice(this.tokenizer.rules.inline.reflinkSearch.lastIndex);
-          }
-        }
-      }
-    }
-    // Mask out other blocks
-    while ((match = this.tokenizer.rules.inline.blockSkip.exec(maskedSrc)) != null) {
-      maskedSrc = maskedSrc.slice(0, match.index) + '[' + 'a'.repeat(match[0].length - 2) + ']' + maskedSrc.slice(this.tokenizer.rules.inline.blockSkip.lastIndex);
-    }
-    // Mask out escaped characters
-    while ((match = this.tokenizer.rules.inline.anyPunctuation.exec(maskedSrc)) != null) {
-      maskedSrc = maskedSrc.slice(0, match.index) + '++' + maskedSrc.slice(this.tokenizer.rules.inline.anyPunctuation.lastIndex);
-    }
-    while (src) {
-      if (!keepPrevChar) {
-        prevChar = '';
-      }
-      keepPrevChar = false;
-      // extensions
-      if (this.options.extensions && this.options.extensions.inline && this.options.extensions.inline.some(extTokenizer => {
-        if (token = extTokenizer.call({
-          lexer: this
-        }, src, tokens)) {
-          src = src.substring(token.raw.length);
-          tokens.push(token);
-          return true;
-        }
-        return false;
-      })) {
-        continue;
-      }
-      // escape
-      if (token = this.tokenizer.escape(src)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // tag
-      if (token = this.tokenizer.tag(src)) {
-        src = src.substring(token.raw.length);
-        lastToken = tokens[tokens.length - 1];
-        if (lastToken && token.type === 'text' && lastToken.type === 'text') {
-          lastToken.raw += token.raw;
-          lastToken.text += token.text;
-        } else {
-          tokens.push(token);
-        }
-        continue;
-      }
-      // link
-      if (token = this.tokenizer.link(src)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // reflink, nolink
-      if (token = this.tokenizer.reflink(src, this.tokens.links)) {
-        src = src.substring(token.raw.length);
-        lastToken = tokens[tokens.length - 1];
-        if (lastToken && token.type === 'text' && lastToken.type === 'text') {
-          lastToken.raw += token.raw;
-          lastToken.text += token.text;
-        } else {
-          tokens.push(token);
-        }
-        continue;
-      }
-      // em & strong
-      if (token = this.tokenizer.emStrong(src, maskedSrc, prevChar)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // code
-      if (token = this.tokenizer.codespan(src)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // br
-      if (token = this.tokenizer.br(src)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // del (gfm)
-      if (token = this.tokenizer.del(src)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // autolink
-      if (token = this.tokenizer.autolink(src)) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // url (gfm)
-      if (!this.state.inLink && (token = this.tokenizer.url(src))) {
-        src = src.substring(token.raw.length);
-        tokens.push(token);
-        continue;
-      }
-      // text
-      // prevent inlineText consuming extensions by clipping 'src' to extension start
-      cutSrc = src;
-      if (this.options.extensions && this.options.extensions.startInline) {
-        let startIndex = Infinity;
-        const tempSrc = src.slice(1);
-        let tempStart;
-        this.options.extensions.startInline.forEach(getStartIndex => {
-          tempStart = getStartIndex.call({
-            lexer: this
-          }, tempSrc);
-          if (typeof tempStart === 'number' && tempStart >= 0) {
-            startIndex = Math.min(startIndex, tempStart);
-          }
-        });
-        if (startIndex < Infinity && startIndex >= 0) {
-          cutSrc = src.substring(0, startIndex + 1);
-        }
-      }
-      if (token = this.tokenizer.inlineText(cutSrc)) {
-        src = src.substring(token.raw.length);
-        if (token.raw.slice(-1) !== '_') {
-          // Track prevChar before string of ____ started
-          prevChar = token.raw.slice(-1);
-        }
-        keepPrevChar = true;
-        lastToken = tokens[tokens.length - 1];
-        if (lastToken && lastToken.type === 'text') {
-          lastToken.raw += token.raw;
-          lastToken.text += token.text;
-        } else {
-          tokens.push(token);
-        }
-        continue;
-      }
-      if (src) {
-        const errMsg = 'Infinite loop on byte: ' + src.charCodeAt(0);
-        if (this.options.silent) {
-          console.error(errMsg);
-          break;
-        } else {
-          throw new Error(errMsg);
-        }
-      }
-    }
-    return tokens;
-  }
-}
-
-/**
- * Renderer
- */
-class _Renderer {
-  options;
-  constructor(options) {
-    this.options = options || _defaults;
-  }
-  code(code, infostring, escaped) {
-    const lang = (infostring || '').match(/^\S*/)?.[0];
-    code = code.replace(/\n$/, '') + '\n';
-    if (!lang) {
-      return '<pre><code>' + (escaped ? code : escape$1(code, true)) + '</code></pre>\n';
-    }
-    return '<pre><code class="language-' + escape$1(lang) + '">' + (escaped ? code : escape$1(code, true)) + '</code></pre>\n';
-  }
-  blockquote(quote) {
-    return `<blockquote>\n${quote}</blockquote>\n`;
-  }
-  html(html, block) {
-    return html;
-  }
-  heading(text, level, raw) {
-    // ignore IDs
-    return `<h${level}>${text}</h${level}>\n`;
-  }
-  hr() {
-    return '<hr>\n';
-  }
-  list(body, ordered, start) {
-    const type = ordered ? 'ol' : 'ul';
-    const startatt = ordered && start !== 1 ? ' start="' + start + '"' : '';
-    return '<' + type + startatt + '>\n' + body + '</' + type + '>\n';
-  }
-  listitem(text, task, checked) {
-    return `<li>${text}</li>\n`;
-  }
-  checkbox(checked) {
-    return '<input ' + (checked ? 'checked="" ' : '') + 'disabled="" type="checkbox">';
-  }
-  paragraph(text) {
-    return `<p>${text}</p>\n`;
-  }
-  table(header, body) {
-    if (body) body = `<tbody>${body}</tbody>`;
-    return '<table>\n' + '<thead>\n' + header + '</thead>\n' + body + '</table>\n';
-  }
-  tablerow(content) {
-    return `<tr>\n${content}</tr>\n`;
-  }
-  tablecell(content, flags) {
-    const type = flags.header ? 'th' : 'td';
-    const tag = flags.align ? `<${type} align="${flags.align}">` : `<${type}>`;
-    return tag + content + `</${type}>\n`;
-  }
-  /**
-   * span level renderer
-   */
-  strong(text) {
-    return `<strong>${text}</strong>`;
-  }
-  em(text) {
-    return `<em>${text}</em>`;
-  }
-  codespan(text) {
-    return `<code>${text}</code>`;
-  }
-  br() {
-    return '<br>';
-  }
-  del(text) {
-    return `<del>${text}</del>`;
-  }
-  link(href, title, text) {
-    const cleanHref = cleanUrl(href);
-    if (cleanHref === null) {
-      return text;
-    }
-    href = cleanHref;
-    let out = '<a href="' + href + '"';
-    if (title) {
-      out += ' title="' + title + '"';
-    }
-    out += '>' + text + '</a>';
-    return out;
-  }
-  image(href, title, text) {
-    const cleanHref = cleanUrl(href);
-    if (cleanHref === null) {
-      return text;
-    }
-    href = cleanHref;
-    let out = `<img src="${href}" alt="${text}"`;
-    if (title) {
-      out += ` title="${title}"`;
-    }
-    out += '>';
-    return out;
-  }
-  text(text) {
-    return text;
-  }
-}
-
-/**
- * TextRenderer
- * returns only the textual part of the token
- */
-class _TextRenderer {
-  // no need for block level renderers
-  strong(text) {
-    return text;
-  }
-  em(text) {
-    return text;
-  }
-  codespan(text) {
-    return text;
-  }
-  del(text) {
-    return text;
-  }
-  html(text) {
-    return text;
-  }
-  text(text) {
-    return text;
-  }
-  link(href, title, text) {
-    return '' + text;
-  }
-  image(href, title, text) {
-    return '' + text;
-  }
-  br() {
-    return '';
-  }
-}
-
-/**
- * Parsing & Compiling
- */
-class _Parser {
-  options;
-  renderer;
-  textRenderer;
-  constructor(options) {
-    this.options = options || _defaults;
-    this.options.renderer = this.options.renderer || new _Renderer();
-    this.renderer = this.options.renderer;
-    this.renderer.options = this.options;
-    this.textRenderer = new _TextRenderer();
-  }
-  /**
-   * Static Parse Method
-   */
-  static parse(tokens, options) {
-    const parser = new _Parser(options);
-    return parser.parse(tokens);
-  }
-  /**
-   * Static Parse Inline Method
-   */
-  static parseInline(tokens, options) {
-    const parser = new _Parser(options);
-    return parser.parseInline(tokens);
-  }
-  /**
-   * Parse Loop
-   */
-  parse(tokens, top = true) {
-    let out = '';
-    for (let i = 0; i < tokens.length; i++) {
-      const token = tokens[i];
-      // Run any renderer extensions
-      if (this.options.extensions && this.options.extensions.renderers && this.options.extensions.renderers[token.type]) {
-        const genericToken = token;
-        const ret = this.options.extensions.renderers[genericToken.type].call({
-          parser: this
-        }, genericToken);
-        if (ret !== false || !['space', 'hr', 'heading', 'code', 'table', 'blockquote', 'list', 'html', 'paragraph', 'text'].includes(genericToken.type)) {
-          out += ret || '';
-          continue;
-        }
-      }
-      switch (token.type) {
-        case 'space':
-          {
-            continue;
-          }
-        case 'hr':
-          {
-            out += this.renderer.hr();
-            continue;
-          }
-        case 'heading':
-          {
-            const headingToken = token;
-            out += this.renderer.heading(this.parseInline(headingToken.tokens), headingToken.depth, unescape(this.parseInline(headingToken.tokens, this.textRenderer)));
-            continue;
-          }
-        case 'code':
-          {
-            const codeToken = token;
-            out += this.renderer.code(codeToken.text, codeToken.lang, !!codeToken.escaped);
-            continue;
-          }
-        case 'table':
-          {
-            const tableToken = token;
-            let header = '';
-            // header
-            let cell = '';
-            for (let j = 0; j < tableToken.header.length; j++) {
-              cell += this.renderer.tablecell(this.parseInline(tableToken.header[j].tokens), {
-                header: true,
-                align: tableToken.align[j]
-              });
-            }
-            header += this.renderer.tablerow(cell);
-            let body = '';
-            for (let j = 0; j < tableToken.rows.length; j++) {
-              const row = tableToken.rows[j];
-              cell = '';
-              for (let k = 0; k < row.length; k++) {
-                cell += this.renderer.tablecell(this.parseInline(row[k].tokens), {
-                  header: false,
-                  align: tableToken.align[k]
-                });
-              }
-              body += this.renderer.tablerow(cell);
-            }
-            out += this.renderer.table(header, body);
-            continue;
-          }
-        case 'blockquote':
-          {
-            const blockquoteToken = token;
-            const body = this.parse(blockquoteToken.tokens);
-            out += this.renderer.blockquote(body);
-            continue;
-          }
-        case 'list':
-          {
-            const listToken = token;
-            const ordered = listToken.ordered;
-            const start = listToken.start;
-            const loose = listToken.loose;
-            let body = '';
-            for (let j = 0; j < listToken.items.length; j++) {
-              const item = listToken.items[j];
-              const checked = item.checked;
-              const task = item.task;
-              let itemBody = '';
-              if (item.task) {
-                const checkbox = this.renderer.checkbox(!!checked);
-                if (loose) {
-                  if (item.tokens.length > 0 && item.tokens[0].type === 'paragraph') {
-                    item.tokens[0].text = checkbox + ' ' + item.tokens[0].text;
-                    if (item.tokens[0].tokens && item.tokens[0].tokens.length > 0 && item.tokens[0].tokens[0].type === 'text') {
-                      item.tokens[0].tokens[0].text = checkbox + ' ' + item.tokens[0].tokens[0].text;
-                    }
-                  } else {
-                    item.tokens.unshift({
-                      type: 'text',
-                      text: checkbox + ' '
-                    });
-                  }
-                } else {
-                  itemBody += checkbox + ' ';
-                }
-              }
-              itemBody += this.parse(item.tokens, loose);
-              body += this.renderer.listitem(itemBody, task, !!checked);
-            }
-            out += this.renderer.list(body, ordered, start);
-            continue;
-          }
-        case 'html':
-          {
-            const htmlToken = token;
-            out += this.renderer.html(htmlToken.text, htmlToken.block);
-            continue;
-          }
-        case 'paragraph':
-          {
-            const paragraphToken = token;
-            out += this.renderer.paragraph(this.parseInline(paragraphToken.tokens));
-            continue;
-          }
-        case 'text':
-          {
-            let textToken = token;
-            let body = textToken.tokens ? this.parseInline(textToken.tokens) : textToken.text;
-            while (i + 1 < tokens.length && tokens[i + 1].type === 'text') {
-              textToken = tokens[++i];
-              body += '\n' + (textToken.tokens ? this.parseInline(textToken.tokens) : textToken.text);
-            }
-            out += top ? this.renderer.paragraph(body) : body;
-            continue;
-          }
-        default:
-          {
-            const errMsg = 'Token with "' + token.type + '" type was not found.';
-            if (this.options.silent) {
-              console.error(errMsg);
-              return '';
-            } else {
-              throw new Error(errMsg);
-            }
-          }
-      }
-    }
-    return out;
-  }
-  /**
-   * Parse Inline Tokens
-   */
-  parseInline(tokens, renderer) {
-    renderer = renderer || this.renderer;
-    let out = '';
-    for (let i = 0; i < tokens.length; i++) {
-      const token = tokens[i];
-      // Run any renderer extensions
-      if (this.options.extensions && this.options.extensions.renderers && this.options.extensions.renderers[token.type]) {
-        const ret = this.options.extensions.renderers[token.type].call({
-          parser: this
-        }, token);
-        if (ret !== false || !['escape', 'html', 'link', 'image', 'strong', 'em', 'codespan', 'br', 'del', 'text'].includes(token.type)) {
-          out += ret || '';
-          continue;
-        }
-      }
-      switch (token.type) {
-        case 'escape':
-          {
-            const escapeToken = token;
-            out += renderer.text(escapeToken.text);
-            break;
-          }
-        case 'html':
-          {
-            const tagToken = token;
-            out += renderer.html(tagToken.text);
-            break;
-          }
-        case 'link':
-          {
-            const linkToken = token;
-            out += renderer.link(linkToken.href, linkToken.title, this.parseInline(linkToken.tokens, renderer));
-            break;
-          }
-        case 'image':
-          {
-            const imageToken = token;
-            out += renderer.image(imageToken.href, imageToken.title, imageToken.text);
-            break;
-          }
-        case 'strong':
-          {
-            const strongToken = token;
-            out += renderer.strong(this.parseInline(strongToken.tokens, renderer));
-            break;
-          }
-        case 'em':
-          {
-            const emToken = token;
-            out += renderer.em(this.parseInline(emToken.tokens, renderer));
-            break;
-          }
-        case 'codespan':
-          {
-            const codespanToken = token;
-            out += renderer.codespan(codespanToken.text);
-            break;
-          }
-        case 'br':
-          {
-            out += renderer.br();
-            break;
-          }
-        case 'del':
-          {
-            const delToken = token;
-            out += renderer.del(this.parseInline(delToken.tokens, renderer));
-            break;
-          }
-        case 'text':
-          {
-            const textToken = token;
-            out += renderer.text(textToken.text);
-            break;
-          }
-        default:
-          {
-            const errMsg = 'Token with "' + token.type + '" type was not found.';
-            if (this.options.silent) {
-              console.error(errMsg);
-              return '';
-            } else {
-              throw new Error(errMsg);
-            }
-          }
-      }
-    }
-    return out;
-  }
-}
-class _Hooks {
-  options;
-  constructor(options) {
-    this.options = options || _defaults;
-  }
-  static passThroughHooks = new Set(['preprocess', 'postprocess', 'processAllTokens']);
-  /**
-   * Process markdown before marked
-   */
-  preprocess(markdown) {
-    return markdown;
-  }
-  /**
-   * Process HTML after marked is finished
-   */
-  postprocess(html) {
-    return html;
-  }
-  /**
-   * Process all tokens before walk tokens
-   */
-  processAllTokens(tokens) {
-    return tokens;
-  }
-}
-class Marked {
-  defaults = _getDefaults();
-  options = this.setOptions;
-  parse = this.#parseMarkdown(_Lexer.lex, _Parser.parse);
-  parseInline = this.#parseMarkdown(_Lexer.lexInline, _Parser.parseInline);
-  Parser = _Parser;
-  Renderer = _Renderer;
-  TextRenderer = _TextRenderer;
-  Lexer = _Lexer;
-  Tokenizer = _Tokenizer;
-  Hooks = _Hooks;
-  constructor(...args) {
-    this.use(...args);
-  }
-  /**
-   * Run callback for every token
-   */
-  walkTokens(tokens, callback) {
-    let values = [];
-    for (const token of tokens) {
-      values = values.concat(callback.call(this, token));
-      switch (token.type) {
-        case 'table':
-          {
-            const tableToken = token;
-            for (const cell of tableToken.header) {
-              values = values.concat(this.walkTokens(cell.tokens, callback));
-            }
-            for (const row of tableToken.rows) {
-              for (const cell of row) {
-                values = values.concat(this.walkTokens(cell.tokens, callback));
-              }
-            }
-            break;
-          }
-        case 'list':
-          {
-            const listToken = token;
-            values = values.concat(this.walkTokens(listToken.items, callback));
-            break;
-          }
-        default:
-          {
-            const genericToken = token;
-            if (this.defaults.extensions?.childTokens?.[genericToken.type]) {
-              this.defaults.extensions.childTokens[genericToken.type].forEach(childTokens => {
-                const tokens = genericToken[childTokens].flat(Infinity);
-                values = values.concat(this.walkTokens(tokens, callback));
-              });
-            } else if (genericToken.tokens) {
-              values = values.concat(this.walkTokens(genericToken.tokens, callback));
-            }
-          }
-      }
-    }
-    return values;
-  }
-  use(...args) {
-    const extensions = this.defaults.extensions || {
-      renderers: {},
-      childTokens: {}
-    };
-    args.forEach(pack => {
-      // copy options to new object
-      const opts = {
-        ...pack
-      };
-      // set async to true if it was set to true before
-      opts.async = this.defaults.async || opts.async || false;
-      // ==-- Parse "addon" extensions --== //
-      if (pack.extensions) {
-        pack.extensions.forEach(ext => {
-          if (!ext.name) {
-            throw new Error('extension name required');
-          }
-          if ('renderer' in ext) {
-            // Renderer extensions
-            const prevRenderer = extensions.renderers[ext.name];
-            if (prevRenderer) {
-              // Replace extension with func to run new extension but fall back if false
-              extensions.renderers[ext.name] = function (...args) {
-                let ret = ext.renderer.apply(this, args);
-                if (ret === false) {
-                  ret = prevRenderer.apply(this, args);
-                }
-                return ret;
-              };
-            } else {
-              extensions.renderers[ext.name] = ext.renderer;
-            }
-          }
-          if ('tokenizer' in ext) {
-            // Tokenizer Extensions
-            if (!ext.level || ext.level !== 'block' && ext.level !== 'inline') {
-              throw new Error("extension level must be 'block' or 'inline'");
-            }
-            const extLevel = extensions[ext.level];
-            if (extLevel) {
-              extLevel.unshift(ext.tokenizer);
-            } else {
-              extensions[ext.level] = [ext.tokenizer];
-            }
-            if (ext.start) {
-              // Function to check for start of token
-              if (ext.level === 'block') {
-                if (extensions.startBlock) {
-                  extensions.startBlock.push(ext.start);
-                } else {
-                  extensions.startBlock = [ext.start];
-                }
-              } else if (ext.level === 'inline') {
-                if (extensions.startInline) {
-                  extensions.startInline.push(ext.start);
-                } else {
-                  extensions.startInline = [ext.start];
-                }
-              }
-            }
-          }
-          if ('childTokens' in ext && ext.childTokens) {
-            // Child tokens to be visited by walkTokens
-            extensions.childTokens[ext.name] = ext.childTokens;
-          }
-        });
-        opts.extensions = extensions;
-      }
-      // ==-- Parse "overwrite" extensions --== //
-      if (pack.renderer) {
-        const renderer = this.defaults.renderer || new _Renderer(this.defaults);
-        for (const prop in pack.renderer) {
-          if (!(prop in renderer)) {
-            throw new Error(`renderer '${prop}' does not exist`);
-          }
-          if (prop === 'options') {
-            // ignore options property
-            continue;
-          }
-          const rendererProp = prop;
-          const rendererFunc = pack.renderer[rendererProp];
-          const prevRenderer = renderer[rendererProp];
-          // Replace renderer with func to run extension, but fall back if false
-          renderer[rendererProp] = (...args) => {
-            let ret = rendererFunc.apply(renderer, args);
-            if (ret === false) {
-              ret = prevRenderer.apply(renderer, args);
-            }
-            return ret || '';
-          };
-        }
-        opts.renderer = renderer;
-      }
-      if (pack.tokenizer) {
-        const tokenizer = this.defaults.tokenizer || new _Tokenizer(this.defaults);
-        for (const prop in pack.tokenizer) {
-          if (!(prop in tokenizer)) {
-            throw new Error(`tokenizer '${prop}' does not exist`);
-          }
-          if (['options', 'rules', 'lexer'].includes(prop)) {
-            // ignore options, rules, and lexer properties
-            continue;
-          }
-          const tokenizerProp = prop;
-          const tokenizerFunc = pack.tokenizer[tokenizerProp];
-          const prevTokenizer = tokenizer[tokenizerProp];
-          // Replace tokenizer with func to run extension, but fall back if false
-          // @ts-expect-error cannot type tokenizer function dynamically
-          tokenizer[tokenizerProp] = (...args) => {
-            let ret = tokenizerFunc.apply(tokenizer, args);
-            if (ret === false) {
-              ret = prevTokenizer.apply(tokenizer, args);
-            }
-            return ret;
-          };
-        }
-        opts.tokenizer = tokenizer;
-      }
-      // ==-- Parse Hooks extensions --== //
-      if (pack.hooks) {
-        const hooks = this.defaults.hooks || new _Hooks();
-        for (const prop in pack.hooks) {
-          if (!(prop in hooks)) {
-            throw new Error(`hook '${prop}' does not exist`);
-          }
-          if (prop === 'options') {
-            // ignore options property
-            continue;
-          }
-          const hooksProp = prop;
-          const hooksFunc = pack.hooks[hooksProp];
-          const prevHook = hooks[hooksProp];
-          if (_Hooks.passThroughHooks.has(prop)) {
-            // @ts-expect-error cannot type hook function dynamically
-            hooks[hooksProp] = arg => {
-              if (this.defaults.async) {
-                return Promise.resolve(hooksFunc.call(hooks, arg)).then(ret => {
-                  return prevHook.call(hooks, ret);
-                });
-              }
-              const ret = hooksFunc.call(hooks, arg);
-              return prevHook.call(hooks, ret);
-            };
-          } else {
-            // @ts-expect-error cannot type hook function dynamically
-            hooks[hooksProp] = (...args) => {
-              let ret = hooksFunc.apply(hooks, args);
-              if (ret === false) {
-                ret = prevHook.apply(hooks, args);
-              }
-              return ret;
-            };
-          }
-        }
-        opts.hooks = hooks;
-      }
-      // ==-- Parse WalkTokens extensions --== //
-      if (pack.walkTokens) {
-        const walkTokens = this.defaults.walkTokens;
-        const packWalktokens = pack.walkTokens;
-        opts.walkTokens = function (token) {
-          let values = [];
-          values.push(packWalktokens.call(this, token));
-          if (walkTokens) {
-            values = values.concat(walkTokens.call(this, token));
-          }
-          return values;
-        };
-      }
-      this.defaults = {
-        ...this.defaults,
-        ...opts
-      };
-    });
-    return this;
-  }
-  setOptions(opt) {
-    this.defaults = {
-      ...this.defaults,
-      ...opt
-    };
-    return this;
-  }
-  lexer(src, options) {
-    return _Lexer.lex(src, options ?? this.defaults);
-  }
-  parser(tokens, options) {
-    return _Parser.parse(tokens, options ?? this.defaults);
-  }
-  #parseMarkdown(lexer, parser) {
-    return (src, options) => {
-      const origOpt = {
-        ...options
-      };
-      const opt = {
-        ...this.defaults,
-        ...origOpt
-      };
-      // Show warning if an extension set async to true but the parse was called with async: false
-      if (this.defaults.async === true && origOpt.async === false) {
-        if (!opt.silent) {
-          console.warn('marked(): The async option was set to true by an extension. The async: false option sent to parse will be ignored.');
-        }
-        opt.async = true;
-      }
-      const throwError = this.#onError(!!opt.silent, !!opt.async);
-      // throw error in case of non string input
-      if (typeof src === 'undefined' || src === null) {
-        return throwError(new Error('marked(): input parameter is undefined or null'));
-      }
-      if (typeof src !== 'string') {
-        return throwError(new Error('marked(): input parameter is of type ' + Object.prototype.toString.call(src) + ', string expected'));
-      }
-      if (opt.hooks) {
-        opt.hooks.options = opt;
-      }
-      if (opt.async) {
-        return Promise.resolve(opt.hooks ? opt.hooks.preprocess(src) : src).then(src => lexer(src, opt)).then(tokens => opt.hooks ? opt.hooks.processAllTokens(tokens) : tokens).then(tokens => opt.walkTokens ? Promise.all(this.walkTokens(tokens, opt.walkTokens)).then(() => tokens) : tokens).then(tokens => parser(tokens, opt)).then(html => opt.hooks ? opt.hooks.postprocess(html) : html).catch(throwError);
-      }
-      try {
-        if (opt.hooks) {
-          src = opt.hooks.preprocess(src);
-        }
-        let tokens = lexer(src, opt);
-        if (opt.hooks) {
-          tokens = opt.hooks.processAllTokens(tokens);
-        }
-        if (opt.walkTokens) {
-          this.walkTokens(tokens, opt.walkTokens);
-        }
-        let html = parser(tokens, opt);
-        if (opt.hooks) {
-          html = opt.hooks.postprocess(html);
-        }
-        return html;
-      } catch (e) {
-        return throwError(e);
-      }
-    };
-  }
-  #onError(silent, async) {
-    return e => {
-      e.message += '\nPlease report this to https://github.com/markedjs/marked.';
-      if (silent) {
-        const msg = '<p>An error occurred:</p><pre>' + escape$1(e.message + '', true) + '</pre>';
-        if (async) {
-          return Promise.resolve(msg);
-        }
-        return msg;
-      }
-      if (async) {
-        return Promise.reject(e);
-      }
-      throw e;
-    };
-  }
-}
-const markedInstance = new Marked();
-function marked(src, opt) {
-  return markedInstance.parse(src, opt);
-}
-/**
- * Sets the default options.
- *
- * @param options Hash of options
- */
-marked.options = marked.setOptions = function (options) {
-  markedInstance.setOptions(options);
-  marked.defaults = markedInstance.defaults;
-  changeDefaults(marked.defaults);
-  return marked;
-};
-/**
- * Gets the original marked default options.
- */
-marked.getDefaults = _getDefaults;
-marked.defaults = _defaults;
-/**
- * Use Extension
- */
-marked.use = function (...args) {
-  markedInstance.use(...args);
-  marked.defaults = markedInstance.defaults;
-  changeDefaults(marked.defaults);
-  return marked;
-};
-/**
- * Run callback for every token
- */
-marked.walkTokens = function (tokens, callback) {
-  return markedInstance.walkTokens(tokens, callback);
-};
-/**
- * Compiles markdown to HTML without enclosing `p` tag.
- *
- * @param src String of markdown source to be compiled
- * @param options Hash of options
- * @return String of compiled HTML
- */
-marked.parseInline = markedInstance.parseInline;
-/**
- * Expose
- */
-marked.Parser = _Parser;
-marked.parser = _Parser.parse;
-marked.Renderer = _Renderer;
-marked.TextRenderer = _TextRenderer;
-marked.Lexer = _Lexer;
-marked.lexer = _Lexer.lex;
-marked.Tokenizer = _Tokenizer;
-marked.Hooks = _Hooks;
-marked.parse = marked;
-const options = marked.options;
-const setOptions = marked.setOptions;
-const use = marked.use;
-const walkTokens = marked.walkTokens;
-const parseInline = marked.parseInline;
-const parse = marked;
-const parser = _Parser.parse;
-const lexer = _Lexer.lex;
-
 
 /***/ }),
 
