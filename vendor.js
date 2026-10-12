@@ -12462,7 +12462,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ GoTrueAdminApi)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tslib */ 4398);
 /* harmony import */ var _lib_fetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/fetch */ 7694);
 /* harmony import */ var _lib_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/helpers */ 9379);
@@ -12516,7 +12516,7 @@ class GoTrueAdminApi {
    */
   signOut(_x) {
     var _this = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (jwt, scope = _lib_types__WEBPACK_IMPORTED_MODULE_3__.SIGN_OUT_SCOPES[0]) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (jwt, scope = _lib_types__WEBPACK_IMPORTED_MODULE_3__.SIGN_OUT_SCOPES[0]) {
       if (_lib_types__WEBPACK_IMPORTED_MODULE_3__.SIGN_OUT_SCOPES.indexOf(scope) < 0) {
         throw new Error(`@supabase/auth-js: Parameter scope must be one of ${_lib_types__WEBPACK_IMPORTED_MODULE_3__.SIGN_OUT_SCOPES.join(', ')}`);
       }
@@ -12548,7 +12548,7 @@ class GoTrueAdminApi {
    */
   inviteUserByEmail(_x2) {
     var _this2 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (email, options = {}) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (email, options = {}) {
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this2.fetch, 'POST', `${_this2.url}/invite`, {
           body: {
@@ -12581,7 +12581,7 @@ class GoTrueAdminApi {
    */
   generateLink(params) {
     var _this3 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const {
             options
@@ -12620,7 +12620,7 @@ class GoTrueAdminApi {
    */
   createUser(attributes) {
     var _this4 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this4.fetch, 'POST', `${_this4.url}/admin/users`, {
           body: attributes,
@@ -12648,7 +12648,7 @@ class GoTrueAdminApi {
    */
   listUsers(params) {
     var _this5 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c, _d, _e, _f, _g;
       try {
         const pagination = {
@@ -12703,7 +12703,7 @@ class GoTrueAdminApi {
    */
   getUserById(uid) {
     var _this6 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.validateUUID)(uid);
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this6.fetch, 'GET', `${_this6.url}/admin/users/${uid}`, {
@@ -12732,7 +12732,7 @@ class GoTrueAdminApi {
    */
   updateUserById(uid, attributes) {
     var _this7 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.validateUUID)(uid);
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this7.fetch, 'PUT', `${_this7.url}/admin/users/${uid}`, {
@@ -12764,7 +12764,7 @@ class GoTrueAdminApi {
    */
   deleteUser(_x3) {
     var _this8 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (id, shouldSoftDelete = false) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (id, shouldSoftDelete = false) {
       (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.validateUUID)(id);
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this8.fetch, 'DELETE', `${_this8.url}/admin/users/${id}`, {
@@ -12789,7 +12789,7 @@ class GoTrueAdminApi {
   }
   _listFactors(params) {
     var _this9 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.validateUUID)(params.userId);
       try {
         const {
@@ -12823,7 +12823,7 @@ class GoTrueAdminApi {
   }
   _deleteFactor(params) {
     var _this0 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.validateUUID)(params.userId);
       (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_2__.validateUUID)(params.id);
       try {
@@ -12853,7 +12853,7 @@ class GoTrueAdminApi {
    */
   _listOAuthClients(params) {
     var _this1 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c, _d, _e, _f, _g;
       try {
         const pagination = {
@@ -12907,7 +12907,7 @@ class GoTrueAdminApi {
    */
   _createOAuthClient(params) {
     var _this10 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this10.fetch, 'POST', `${_this10.url}/admin/oauth/clients`, {
           body: params,
@@ -12938,7 +12938,7 @@ class GoTrueAdminApi {
    */
   _getOAuthClient(clientId) {
     var _this11 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this11.fetch, 'GET', `${_this11.url}/admin/oauth/clients/${clientId}`, {
           headers: _this11.headers,
@@ -12968,7 +12968,7 @@ class GoTrueAdminApi {
    */
   _updateOAuthClient(clientId, params) {
     var _this12 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this12.fetch, 'PUT', `${_this12.url}/admin/oauth/clients/${clientId}`, {
           body: params,
@@ -12999,7 +12999,7 @@ class GoTrueAdminApi {
    */
   _deleteOAuthClient(clientId) {
     var _this13 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this13.fetch, 'DELETE', `${_this13.url}/admin/oauth/clients/${clientId}`, {
           headers: _this13.headers,
@@ -13028,7 +13028,7 @@ class GoTrueAdminApi {
    */
   _regenerateOAuthClientSecret(clientId) {
     var _this14 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_1__._request)(_this14.fetch, 'POST', `${_this14.url}/admin/oauth/clients/${clientId}/regenerate_secret`, {
           headers: _this14.headers,
@@ -13064,7 +13064,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _GoTrueAdminApi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GoTrueAdminApi */ 8299);
 /* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/constants */ 3171);
 /* harmony import */ var _lib_errors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/errors */ 5127);
@@ -13115,7 +13115,7 @@ function lockNoOp(_x, _x2, _x3) {
  * JWTs.
  */
 function _lockNoOp() {
-  _lockNoOp = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (name, acquireTimeout, fn) {
+  _lockNoOp = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (name, acquireTimeout, fn) {
     return yield fn();
   });
   return _lockNoOp.apply(this, arguments);
@@ -13273,7 +13273,7 @@ class GoTrueClient {
         console.error('Failed to create a new BroadcastChannel, multi-tab state changes will not be available', e);
       }
       (_c = this.broadcastChannel) === null || _c === void 0 ? void 0 : _c.addEventListener('message', /*#__PURE__*/function () {
-        var _ref = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (event) {
+        var _ref = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (event) {
           _this._debug('received broadcast notification from other tab or client', event);
           yield _this._notifyAllSubscribers(event.data.event, event.data.session, false); // broadcast = false so we don't get an endless loop of messages
         });
@@ -13317,12 +13317,12 @@ class GoTrueClient {
    */
   initialize() {
     var _this2 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (_this2.initializePromise) {
         return yield _this2.initializePromise;
       }
-      _this2.initializePromise = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-        return yield _this2._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      _this2.initializePromise = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        return yield _this2._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           return yield _this2._initialize();
         }));
       })();
@@ -13337,7 +13337,7 @@ class GoTrueClient {
    */
   _initialize() {
     var _this3 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a;
       try {
         let params = {};
@@ -13384,7 +13384,7 @@ class GoTrueClient {
           } = data;
           _this3._debug('#_initialize()', 'detected session in URL', session, 'redirect type', redirectType);
           yield _this3._saveSession(session);
-          setTimeout(/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+          setTimeout(/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
             if (redirectType === 'recovery') {
               yield _this3._notifyAllSubscribers('PASSWORD_RECOVERY', session);
             } else {
@@ -13422,7 +13422,7 @@ class GoTrueClient {
    */
   signInAnonymously(credentials) {
     var _this4 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c;
       try {
         const res = yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_4__._request)(_this4.fetch, 'POST', `${_this4.url}/signup`, {
@@ -13487,7 +13487,7 @@ class GoTrueClient {
    */
   signUp(credentials) {
     var _this5 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c;
       try {
         let res;
@@ -13592,7 +13592,7 @@ class GoTrueClient {
    */
   signInWithPassword(credentials) {
     var _this6 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         let res;
         if ('email' in credentials) {
@@ -13687,7 +13687,7 @@ class GoTrueClient {
    */
   signInWithOAuth(credentials) {
     var _this7 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c, _d;
       return yield _this7._handleProviderSignIn(credentials.provider, {
         redirectTo: (_a = credentials.options) === null || _a === void 0 ? void 0 : _a.redirectTo,
@@ -13702,9 +13702,9 @@ class GoTrueClient {
    */
   exchangeCodeForSession(authCode) {
     var _this8 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this8.initializePromise;
-      return _this8._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return _this8._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return _this8._exchangeCodeForSession(authCode);
       }));
     })();
@@ -13718,7 +13718,7 @@ class GoTrueClient {
    */
   signInWithWeb3(credentials) {
     var _this9 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const {
         chain
       } = credentials;
@@ -13734,7 +13734,7 @@ class GoTrueClient {
   }
   signInWithEthereum(credentials) {
     var _this0 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l;
       // TODO: flatten type
       let message;
@@ -13857,7 +13857,7 @@ class GoTrueClient {
   }
   signInWithSolana(credentials) {
     var _this1 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m;
       let message;
       let signature;
@@ -13979,7 +13979,7 @@ class GoTrueClient {
   }
   _exchangeCodeForSession(authCode) {
     var _this10 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const storageItem = yield (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_5__.getItemAsync)(_this10.storage, `${_this10.storageKey}-code-verifier`);
       const [codeVerifier, redirectType] = (storageItem !== null && storageItem !== void 0 ? storageItem : '').split('/');
       try {
@@ -14044,7 +14044,7 @@ class GoTrueClient {
    */
   signInWithIdToken(credentials) {
     var _this11 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const {
           options,
@@ -14129,7 +14129,7 @@ class GoTrueClient {
    */
   signInWithOtp(credentials) {
     var _this12 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c, _d, _e;
       try {
         if ('email' in credentials) {
@@ -14217,7 +14217,7 @@ class GoTrueClient {
    */
   verifyOtp(params) {
     var _this13 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b;
       try {
         let redirectTo = undefined;
@@ -14289,7 +14289,7 @@ class GoTrueClient {
    */
   signInWithSSO(params) {
     var _this14 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b, _c, _d, _e;
       try {
         let codeChallenge = null;
@@ -14340,19 +14340,19 @@ class GoTrueClient {
    */
   reauthenticate() {
     var _this15 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this15.initializePromise;
-      return yield _this15._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return yield _this15._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return yield _this15._reauthenticate();
       }));
     })();
   }
   _reauthenticate() {
     var _this16 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this16._useSession(/*#__PURE__*/function () {
-          var _ref7 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref7 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             const {
               data: {
                 session
@@ -14398,7 +14398,7 @@ class GoTrueClient {
    */
   resend(credentials) {
     var _this17 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const endpoint = `${_this17.url}/resend`;
         if ('email' in credentials) {
@@ -14483,11 +14483,11 @@ class GoTrueClient {
    */
   getSession() {
     var _this18 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this18.initializePromise;
-      const result = yield _this18._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      const result = yield _this18._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return _this18._useSession(/*#__PURE__*/function () {
-          var _ref9 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref9 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             return result;
           });
           return function (_x6) {
@@ -14503,16 +14503,16 @@ class GoTrueClient {
    */
   _acquireLock(acquireTimeout, fn) {
     var _this19 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this19._debug('#_acquireLock', 'begin', acquireTimeout);
       try {
         if (_this19.lockAcquired) {
           const last = _this19.pendingInLock.length ? _this19.pendingInLock[_this19.pendingInLock.length - 1] : Promise.resolve();
-          const result = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+          const result = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
             yield last;
             return yield fn();
           })();
-          _this19.pendingInLock.push((0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+          _this19.pendingInLock.push((0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
             try {
               yield result;
             } catch (e) {
@@ -14521,12 +14521,12 @@ class GoTrueClient {
           })());
           return result;
         }
-        return yield _this19.lock(`lock:${_this19.storageKey}`, acquireTimeout, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        return yield _this19.lock(`lock:${_this19.storageKey}`, acquireTimeout, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           _this19._debug('#_acquireLock', 'lock acquired for storage key', _this19.storageKey);
           try {
             _this19.lockAcquired = true;
             const result = fn();
-            _this19.pendingInLock.push((0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+            _this19.pendingInLock.push((0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
               try {
                 yield result;
               } catch (e) {
@@ -14559,7 +14559,7 @@ class GoTrueClient {
    */
   _useSession(fn) {
     var _this20 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this20._debug('#_useSession', 'begin');
       try {
         // the use of __loadSession here is the only correct use of the function!
@@ -14577,7 +14577,7 @@ class GoTrueClient {
    */
   __loadSession() {
     var _this21 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this21._debug('#__loadSession()', 'begin');
       if (!_this21.lockAcquired) {
         _this21._debug('#__loadSession()', 'used outside of an acquired lock!', new Error().stack);
@@ -14669,12 +14669,12 @@ class GoTrueClient {
    */
   getUser(jwt) {
     var _this22 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (jwt) {
         return yield _this22._getUser(jwt);
       }
       yield _this22.initializePromise;
-      const result = yield _this22._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      const result = yield _this22._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return yield _this22._getUser();
       }));
       if (result.data.user) {
@@ -14685,7 +14685,7 @@ class GoTrueClient {
   }
   _getUser(jwt) {
     var _this23 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         if (jwt) {
           return yield (0,_lib_fetch__WEBPACK_IMPORTED_MODULE_4__._request)(_this23.fetch, 'GET', `${_this23.url}/user`, {
@@ -14695,7 +14695,7 @@ class GoTrueClient {
           });
         }
         return yield _this23._useSession(/*#__PURE__*/function () {
-          var _ref13 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref13 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             var _a, _b, _c;
             const {
               data,
@@ -14747,19 +14747,19 @@ class GoTrueClient {
    */
   updateUser(_x8) {
     var _this24 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (attributes, options = {}) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (attributes, options = {}) {
       yield _this24.initializePromise;
-      return yield _this24._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return yield _this24._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return yield _this24._updateUser(attributes, options);
       }));
     }).apply(this, arguments);
   }
   _updateUser(_x9) {
     var _this25 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (attributes, options = {}) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (attributes, options = {}) {
       try {
         return yield _this25._useSession(/*#__PURE__*/function () {
-          var _ref15 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref15 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             const {
               data: sessionData,
               error: sessionError
@@ -14828,16 +14828,16 @@ class GoTrueClient {
    */
   setSession(currentSession) {
     var _this26 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this26.initializePromise;
-      return yield _this26._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return yield _this26._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return yield _this26._setSession(currentSession);
       }));
     })();
   }
   _setSession(currentSession) {
     var _this27 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         if (!currentSession.access_token || !currentSession.refresh_token) {
           throw new _lib_errors__WEBPACK_IMPORTED_MODULE_3__.AuthSessionMissingError();
@@ -14925,19 +14925,19 @@ class GoTrueClient {
    */
   refreshSession(currentSession) {
     var _this28 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this28.initializePromise;
-      return yield _this28._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return yield _this28._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return yield _this28._refreshSession(currentSession);
       }));
     })();
   }
   _refreshSession(currentSession) {
     var _this29 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this29._useSession(/*#__PURE__*/function () {
-          var _ref18 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref18 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             var _a;
             if (!currentSession) {
               const {
@@ -15005,7 +15005,7 @@ class GoTrueClient {
    */
   _getSessionFromURL(params, callbackUrlType) {
     var _this30 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         if (!(0,_lib_helpers__WEBPACK_IMPORTED_MODULE_5__.isBrowser)()) throw new _lib_errors__WEBPACK_IMPORTED_MODULE_3__.AuthImplicitGrantRedirectError('No browser detected.');
         // If there's an error in the URL, it doesn't matter what flow it is, we just return the error.
@@ -15137,7 +15137,7 @@ class GoTrueClient {
    */
   _isPKCECallback(params) {
     var _this31 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const currentStorageContent = yield (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_5__.getItemAsync)(_this31.storage, `${_this31.storageKey}-code-verifier`);
       return !!(params.code && currentStorageContent);
     })();
@@ -15152,24 +15152,24 @@ class GoTrueClient {
    */
   signOut() {
     var _this32 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {
       scope: 'global'
     }) {
       yield _this32.initializePromise;
-      return yield _this32._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return yield _this32._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return yield _this32._signOut(options);
       }));
     }).apply(this, arguments);
   }
   _signOut() {
     var _this33 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
       scope
     } = {
       scope: 'global'
     }) {
       return yield _this33._useSession(/*#__PURE__*/function () {
-        var _ref20 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+        var _ref20 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
           var _a;
           const {
             data,
@@ -15222,9 +15222,9 @@ class GoTrueClient {
     };
     this._debug('#onAuthStateChange()', 'registered callback with id', id);
     this.stateChangeEmitters.set(id, subscription);
-    (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this34.initializePromise;
-      yield _this34._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      yield _this34._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         _this34._emitInitialSession(id);
       }));
     })();
@@ -15236,9 +15236,9 @@ class GoTrueClient {
   }
   _emitInitialSession(id) {
     var _this35 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield _this35._useSession(/*#__PURE__*/function () {
-        var _ref23 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+        var _ref23 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
           var _a, _b;
           try {
             const {
@@ -15271,7 +15271,7 @@ class GoTrueClient {
    */
   resetPasswordForEmail(_x12) {
     var _this36 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (email, options = {}) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (email, options = {}) {
       let codeChallenge = null;
       let codeChallengeMethod = null;
       if (_this36.flowType === 'pkce') {
@@ -15309,7 +15309,7 @@ class GoTrueClient {
    */
   getUserIdentities() {
     var _this37 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a;
       try {
         const {
@@ -15336,7 +15336,7 @@ class GoTrueClient {
   }
   linkIdentity(credentials) {
     var _this38 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if ('token' in credentials) {
         return _this38.linkIdentityIdToken(credentials);
       }
@@ -15345,14 +15345,14 @@ class GoTrueClient {
   }
   linkIdentityOAuth(credentials) {
     var _this39 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a;
       try {
         const {
           data,
           error
         } = yield _this39._useSession(/*#__PURE__*/function () {
-          var _ref24 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref24 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             var _a, _b, _c, _d, _e;
             const {
               data,
@@ -15401,9 +15401,9 @@ class GoTrueClient {
   }
   linkIdentityIdToken(credentials) {
     var _this40 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield _this40._useSession(/*#__PURE__*/function () {
-        var _ref25 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+        var _ref25 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
           var _a;
           try {
             const {
@@ -15489,10 +15489,10 @@ class GoTrueClient {
    */
   unlinkIdentity(identity) {
     var _this41 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this41._useSession(/*#__PURE__*/function () {
-          var _ref26 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref26 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             var _a, _b;
             const {
               data,
@@ -15527,14 +15527,14 @@ class GoTrueClient {
    */
   _refreshAccessToken(refreshToken) {
     var _this42 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const debugName = `#_refreshAccessToken(${refreshToken.substring(0, 5)}...)`;
       _this42._debug(debugName, 'begin');
       try {
         const startedAt = Date.now();
         // will attempt to refresh the token with exponential backoff
         return yield (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_5__.retryable)(/*#__PURE__*/function () {
-          var _ref27 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (attempt) {
+          var _ref27 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (attempt) {
             if (attempt > 0) {
               yield (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_5__.sleep)(200 * Math.pow(2, attempt - 1)); // 200, 400, 800, ...
             }
@@ -15579,7 +15579,7 @@ class GoTrueClient {
   }
   _handleProviderSignIn(provider, options) {
     var _this43 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const url = yield _this43._getUrlForProvider(`${_this43.url}/authorize`, provider, {
         redirectTo: options.redirectTo,
         scopes: options.scopes,
@@ -15605,7 +15605,7 @@ class GoTrueClient {
    */
   _recoverAndRefresh() {
     var _this44 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b;
       const debugName = '#_recoverAndRefresh()';
       _this44._debug(debugName, 'begin');
@@ -15697,7 +15697,7 @@ class GoTrueClient {
   }
   _callRefreshToken(refreshToken) {
     var _this45 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b;
       if (!refreshToken) {
         throw new _lib_errors__WEBPACK_IMPORTED_MODULE_3__.AuthSessionMissingError();
@@ -15747,7 +15747,7 @@ class GoTrueClient {
   }
   _notifyAllSubscribers(_x17, _x18) {
     var _this46 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (event, session, broadcast = true) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (event, session, broadcast = true) {
       const debugName = `#_notifyAllSubscribers(${event})`;
       _this46._debug(debugName, 'begin', session, `broadcast = ${broadcast}`);
       try {
@@ -15759,7 +15759,7 @@ class GoTrueClient {
         }
         const errors = [];
         const promises = Array.from(_this46.stateChangeEmitters.values()).map(/*#__PURE__*/function () {
-          var _ref28 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (x) {
+          var _ref28 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (x) {
             try {
               yield x.callback(event, session);
             } catch (e) {
@@ -15788,7 +15788,7 @@ class GoTrueClient {
    */
   _saveSession(session) {
     var _this47 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this47._debug('#_saveSession()', session);
       // _saveSession is always called whenever a new session has been acquired
       // so we can safely suppress the warning returned by future getSession calls
@@ -15826,7 +15826,7 @@ class GoTrueClient {
   }
   _removeSession() {
     var _this48 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this48._debug('#_removeSession()');
       _this48.suppressGetSessionWarning = false;
       yield (0,_lib_helpers__WEBPACK_IMPORTED_MODULE_5__.removeItemAsync)(_this48.storage, _this48.storageKey);
@@ -15862,7 +15862,7 @@ class GoTrueClient {
    */
   _startAutoRefresh() {
     var _this49 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this49._stopAutoRefresh();
       _this49._debug('#_startAutoRefresh()');
       const ticker = setInterval(() => _this49._autoRefreshTokenTick(), _lib_constants__WEBPACK_IMPORTED_MODULE_2__.AUTO_REFRESH_TICK_DURATION_MS);
@@ -15885,7 +15885,7 @@ class GoTrueClient {
       // run the tick immediately, but in the next pass of the event loop so that
       // #_initialize can be allowed to complete without recursively waiting on
       // itself
-      setTimeout(/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      setTimeout(/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         yield _this49.initializePromise;
         yield _this49._autoRefreshTokenTick();
       }), 0);
@@ -15897,7 +15897,7 @@ class GoTrueClient {
    */
   _stopAutoRefresh() {
     var _this50 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this50._debug('#_stopAutoRefresh()');
       const ticker = _this50.autoRefreshTicker;
       _this50.autoRefreshTicker = null;
@@ -15930,7 +15930,7 @@ class GoTrueClient {
    */
   startAutoRefresh() {
     var _this51 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this51._removeVisibilityChangedCallback();
       yield _this51._startAutoRefresh();
     })();
@@ -15945,7 +15945,7 @@ class GoTrueClient {
    */
   stopAutoRefresh() {
     var _this52 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this52._removeVisibilityChangedCallback();
       yield _this52._stopAutoRefresh();
     })();
@@ -15955,15 +15955,15 @@ class GoTrueClient {
    */
   _autoRefreshTokenTick() {
     var _this53 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this53._debug('#_autoRefreshTokenTick()', 'begin');
       try {
-        yield _this53._acquireLock(0, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        yield _this53._acquireLock(0, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           try {
             const now = Date.now();
             try {
               return yield _this53._useSession(/*#__PURE__*/function () {
-                var _ref31 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+                var _ref31 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
                   const {
                     data: {
                       session
@@ -16007,7 +16007,7 @@ class GoTrueClient {
    */
   _handleVisibilityChange() {
     var _this54 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this54._debug('#_handleVisibilityChange()');
       if (!(0,_lib_helpers__WEBPACK_IMPORTED_MODULE_5__.isBrowser)() || !(window === null || window === void 0 ? void 0 : window.addEventListener)) {
         if (_this54.autoRefreshToken) {
@@ -16017,7 +16017,7 @@ class GoTrueClient {
         return false;
       }
       try {
-        _this54.visibilityChangedCallback = /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        _this54.visibilityChangedCallback = /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           return yield _this54._onVisibilityChanged(false);
         });
         window === null || window === void 0 ? void 0 : window.addEventListener('visibilitychange', _this54.visibilityChangedCallback);
@@ -16034,7 +16034,7 @@ class GoTrueClient {
    */
   _onVisibilityChanged(calledFromInitialize) {
     var _this55 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const methodName = `#_onVisibilityChanged(${calledFromInitialize})`;
       _this55._debug(methodName, 'visibilityState', document.visibilityState);
       if (document.visibilityState === 'visible') {
@@ -16049,7 +16049,7 @@ class GoTrueClient {
           // should be recovered immediately... but to do that we need to acquire
           // the lock first asynchronously
           yield _this55.initializePromise;
-          yield _this55._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+          yield _this55._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
             if (document.visibilityState !== 'visible') {
               _this55._debug(methodName, 'acquired the lock to recover the session, but the browser visibilityState is no longer visible, aborting');
               // visibility has changed while waiting for the lock, abort
@@ -16074,7 +16074,7 @@ class GoTrueClient {
    */
   _getUrlForProvider(url, provider, options) {
     var _this56 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const urlParams = [`provider=${encodeURIComponent(provider)}`];
       if (options === null || options === void 0 ? void 0 : options.redirectTo) {
         urlParams.push(`redirect_to=${encodeURIComponent(options.redirectTo)}`);
@@ -16102,10 +16102,10 @@ class GoTrueClient {
   }
   _unenroll(params) {
     var _this57 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this57._useSession(/*#__PURE__*/function () {
-          var _ref34 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref34 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             var _a;
             const {
               data: sessionData,
@@ -16139,10 +16139,10 @@ class GoTrueClient {
   }
   _enroll(params) {
     var _this58 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this58._useSession(/*#__PURE__*/function () {
-          var _ref35 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref35 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             var _a, _b;
             const {
               data: sessionData,
@@ -16201,11 +16201,11 @@ class GoTrueClient {
   }
   _verify(params) {
     var _this59 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      return _this59._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return _this59._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         try {
           return yield _this59._useSession(/*#__PURE__*/function () {
-            var _ref37 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+            var _ref37 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
               var _a;
               const {
                 data: sessionData,
@@ -16267,11 +16267,11 @@ class GoTrueClient {
   }
   _challenge(params) {
     var _this60 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      return _this60._acquireLock(-1, /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return _this60._acquireLock(-1, /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         try {
           return yield _this60._useSession(/*#__PURE__*/function () {
-            var _ref39 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+            var _ref39 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
               var _a;
               const {
                 data: sessionData,
@@ -16346,7 +16346,7 @@ class GoTrueClient {
    */
   _challengeAndVerify(params) {
     var _this61 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // both _challenge and _verify independently acquire the lock, so no need
       // to acquire it here
       const {
@@ -16373,7 +16373,7 @@ class GoTrueClient {
    */
   _listFactors() {
     var _this62 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a;
       // use #getUser instead of #_getUser as the former acquires a lock
       const {
@@ -16413,7 +16413,7 @@ class GoTrueClient {
    */
   _getAuthenticatorAssuranceLevel() {
     var _this63 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a, _b;
       const {
         data: {
@@ -16470,10 +16470,10 @@ class GoTrueClient {
    */
   _getAuthorizationDetails(authorizationId) {
     var _this64 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this64._useSession(/*#__PURE__*/function () {
-          var _ref40 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref40 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             const {
               data: {
                 session
@@ -16522,10 +16522,10 @@ class GoTrueClient {
    */
   _approveAuthorization(authorizationId, options) {
     var _this65 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this65._useSession(/*#__PURE__*/function () {
-          var _ref41 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref41 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             const {
               data: {
                 session
@@ -16584,10 +16584,10 @@ class GoTrueClient {
    */
   _denyAuthorization(authorizationId, options) {
     var _this66 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this66._useSession(/*#__PURE__*/function () {
-          var _ref42 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref42 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             const {
               data: {
                 session
@@ -16646,10 +16646,10 @@ class GoTrueClient {
    */
   _listOAuthGrants() {
     var _this67 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this67._useSession(/*#__PURE__*/function () {
-          var _ref43 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref43 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             const {
               data: {
                 session
@@ -16698,10 +16698,10 @@ class GoTrueClient {
    */
   _revokeOAuthGrant(options) {
     var _this68 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this68._useSession(/*#__PURE__*/function () {
-          var _ref44 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
+          var _ref44 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (result) {
             const {
               data: {
                 session
@@ -16750,7 +16750,7 @@ class GoTrueClient {
   }
   fetchJwk(_x30) {
     var _this69 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (kid, jwks = {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (kid, jwks = {
       keys: []
     }) {
       // try fetching from the supplied jwks
@@ -16806,7 +16806,7 @@ class GoTrueClient {
    */
   getClaims(_x31) {
     var _this70 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (jwt, options = {}) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (jwt, options = {}) {
       try {
         let token = jwt;
         if (!token) {
@@ -17591,7 +17591,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   _userResponse: () => (/* binding */ _userResponse),
 /* harmony export */   handleError: () => (/* binding */ handleError)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ 4398);
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants */ 3171);
 /* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./helpers */ 9379);
@@ -17607,7 +17607,7 @@ function handleError(_x) {
   return _handleError.apply(this, arguments);
 }
 function _handleError() {
-  _handleError = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (error) {
+  _handleError = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (error) {
     var _a;
     if (!(0,_helpers__WEBPACK_IMPORTED_MODULE_2__.looksLikeFetchResponse)(error)) {
       throw new _errors__WEBPACK_IMPORTED_MODULE_3__.AuthRetryableFetchError(_getErrorMessage(error), 0);
@@ -17664,7 +17664,7 @@ function _request(_x2, _x3, _x4, _x5) {
   return _request2.apply(this, arguments);
 }
 function _request2() {
-  _request2 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options) {
+  _request2 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options) {
     var _a;
     const headers = Object.assign({}, options === null || options === void 0 ? void 0 : options.headers);
     if (!headers[_constants__WEBPACK_IMPORTED_MODULE_1__.API_VERSION_HEADER_NAME]) {
@@ -17693,7 +17693,7 @@ function _handleRequest(_x6, _x7, _x8, _x9, _x0, _x1) {
   return _handleRequest2.apply(this, arguments);
 }
 function _handleRequest2() {
-  _handleRequest2 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options, parameters, body) {
+  _handleRequest2 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options, parameters, body) {
     const requestParams = _getRequestParams(method, options, parameters, body);
     let result;
     try {
@@ -17830,7 +17830,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   validateExp: () => (/* binding */ validateExp),
 /* harmony export */   validateUUID: () => (/* binding */ validateUUID)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./constants */ 3171);
 /* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./errors */ 5127);
 /* harmony import */ var _base64url__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./base64url */ 5262);
@@ -17928,7 +17928,7 @@ const looksLikeFetchResponse = maybeResponse => {
 };
 // Storage helpers
 const setItemAsync = /*#__PURE__*/function () {
-  var _ref = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, key, data) {
+  var _ref = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, key, data) {
     yield storage.setItem(key, JSON.stringify(data));
   });
   return function setItemAsync(_x, _x2, _x3) {
@@ -17936,7 +17936,7 @@ const setItemAsync = /*#__PURE__*/function () {
   };
 }();
 const getItemAsync = /*#__PURE__*/function () {
-  var _ref2 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, key) {
+  var _ref2 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, key) {
     const value = yield storage.getItem(key);
     if (!value) {
       return null;
@@ -17952,7 +17952,7 @@ const getItemAsync = /*#__PURE__*/function () {
   };
 }();
 const removeItemAsync = /*#__PURE__*/function () {
-  var _ref3 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, key) {
+  var _ref3 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, key) {
     yield storage.removeItem(key);
   });
   return function removeItemAsync(_x6, _x7) {
@@ -18012,7 +18012,7 @@ function sleep(_x8) {
  * if the function should run again.
  */
 function _sleep() {
-  _sleep = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (time) {
+  _sleep = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (time) {
     return yield new Promise(accept => {
       setTimeout(() => accept(null), time);
     });
@@ -18023,7 +18023,7 @@ function retryable(fn, isRetryable) {
   const promise = new Promise((accept, reject) => {
     // eslint-disable-next-line @typescript-eslint/no-extra-semi
     ;
-    (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       for (let attempt = 0; attempt < Infinity; attempt++) {
         try {
           const result = yield fn(attempt);
@@ -18065,7 +18065,7 @@ function sha256(_x9) {
   return _sha.apply(this, arguments);
 }
 function _sha() {
-  _sha = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (randomString) {
+  _sha = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (randomString) {
     const encoder = new TextEncoder();
     const encodedData = encoder.encode(randomString);
     const hash = yield crypto.subtle.digest('SHA-256', encodedData);
@@ -18078,7 +18078,7 @@ function generatePKCEChallenge(_x0) {
   return _generatePKCEChallenge.apply(this, arguments);
 }
 function _generatePKCEChallenge() {
-  _generatePKCEChallenge = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (verifier) {
+  _generatePKCEChallenge = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (verifier) {
     const hasCryptoSupport = typeof crypto !== 'undefined' && typeof crypto.subtle !== 'undefined' && typeof TextEncoder !== 'undefined';
     if (!hasCryptoSupport) {
       console.warn('WebCrypto API is not supported. Code challenge method will default to use plain instead of sha256.');
@@ -18094,7 +18094,7 @@ function getCodeChallengeAndMethod(_x1, _x10) {
 }
 /** Parses the API version which is 2YYY-MM-DD. */
 function _getCodeChallengeAndMethod() {
-  _getCodeChallengeAndMethod = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, storageKey, isPasswordRecovery = false) {
+  _getCodeChallengeAndMethod = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (storage, storageKey, isPasswordRecovery = false) {
     const codeVerifier = generatePKCEVerifier();
     let storedCodeVerifier = codeVerifier;
     if (isPasswordRecovery) {
@@ -18273,7 +18273,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   navigatorLock: () => (/* binding */ navigatorLock),
 /* harmony export */   processLock: () => (/* binding */ processLock)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./helpers */ 9379);
 
 
@@ -18365,7 +18365,7 @@ function navigatorLock(_x, _x2, _x3) {
   return _navigatorLock.apply(this, arguments);
 }
 function _navigatorLock() {
-  _navigatorLock = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (name, acquireTimeout, fn) {
+  _navigatorLock = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (name, acquireTimeout, fn) {
     if (internals.debug) {
       console.log('@supabase/gotrue-js: navigatorLock: acquire lock', name, acquireTimeout);
     }
@@ -18393,7 +18393,7 @@ function _navigatorLock() {
       mode: 'exclusive',
       signal: abortController.signal
     }, /*#__PURE__*/function () {
-      var _ref = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (lock) {
+      var _ref = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (lock) {
         if (lock) {
           if (internals.debug) {
             console.log('@supabase/gotrue-js: navigatorLock: acquired', name, lock.name);
@@ -18461,7 +18461,7 @@ function processLock(_x4, _x5, _x6) {
   return _processLock.apply(this, arguments);
 }
 function _processLock() {
-  _processLock = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (name, acquireTimeout, fn) {
+  _processLock = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (name, acquireTimeout, fn) {
     var _a;
     const previousOperation = (_a = PROCESS_LOCKS[name]) !== null && _a !== void 0 ? _a : Promise.resolve();
     const currentOperation = Promise.race([previousOperation.catch(() => {
@@ -18476,13 +18476,13 @@ function _processLock() {
         throw e;
       }
       return null;
-    }).then(/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    }).then(/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // previous operations finished and we didn't get a race on the acquire
       // timeout, so the current operation can finally start
       return yield fn();
     }));
     PROCESS_LOCKS[name] = currentOperation.catch(/*#__PURE__*/function () {
-      var _ref3 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (e) {
+      var _ref3 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (e) {
         if (e && e.isAcquireTimeout) {
           // if the current operation timed out, it doesn't mean that the previous
           // operation finished, so we need contnue waiting for it to finish
@@ -18959,7 +18959,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   serializeCredentialRequestResponse: () => (/* binding */ serializeCredentialRequestResponse),
 /* harmony export */   webAuthnAbortService: () => (/* binding */ webAuthnAbortService)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tslib */ 4398);
 /* harmony import */ var _base64url__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./base64url */ 5262);
 /* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./errors */ 5127);
@@ -19243,7 +19243,7 @@ function createCredential(_x) {
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/CredentialsContainer/get MDN - credentials.get}
  */
 function _createCredential() {
-  _createCredential = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options) {
+  _createCredential = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options) {
     try {
       const response = yield navigator.credentials.create(/** we assert the type here until typescript types are updated */
       options);
@@ -19279,7 +19279,7 @@ function getCredential(_x2) {
   return _getCredential.apply(this, arguments);
 }
 function _getCredential() {
-  _getCredential = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options) {
+  _getCredential = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options) {
     try {
       const response = yield navigator.credentials.get(/** we assert the type here until typescript types are updated */
       options);
@@ -19410,7 +19410,7 @@ class WebAuthnApi {
    */
   _enroll(params) {
     var _this = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this.client.mfa.enroll(Object.assign(Object.assign({}, params), {
         factorType: 'webauthn'
       }));
@@ -19432,7 +19432,7 @@ class WebAuthnApi {
    */
   _challenge(_x3, _x4) {
     var _this2 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
       factorId,
       webauthn,
       friendlyName,
@@ -19552,7 +19552,7 @@ class WebAuthnApi {
    * */
   _verify(_x5) {
     var _this3 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
       challengeId,
       factorId,
       webauthn
@@ -19582,7 +19582,7 @@ class WebAuthnApi {
    */
   _authenticate(_x6, _x7) {
     var _this4 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
       factorId,
       webauthn: {
         rpId = typeof window !== 'undefined' ? window.location.hostname : undefined,
@@ -19668,7 +19668,7 @@ class WebAuthnApi {
    */
   _register(_x8, _x9) {
     var _this5 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
       friendlyName,
       webauthn: {
         rpId = typeof window !== 'undefined' ? window.location.hostname : undefined,
@@ -20075,7 +20075,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   REALTIME_SUBSCRIBE_STATES: () => (/* binding */ REALTIME_SUBSCRIBE_STATES),
 /* harmony export */   "default": () => (/* binding */ RealtimeChannel)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/constants */ 574);
 /* harmony import */ var _lib_push__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/push */ 5608);
 /* harmony import */ var _lib_timer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/timer */ 3474);
@@ -20242,7 +20242,7 @@ class RealtimeChannel {
       this.joinedOnce = true;
       this._rejoin(timeout);
       this.joinPush.receive('ok', /*#__PURE__*/function () {
-        var _ref2 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
+        var _ref2 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
           postgres_changes
         }) {
           var _a;
@@ -20313,7 +20313,7 @@ class RealtimeChannel {
    */
   track(_x2) {
     var _this2 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (payload, opts = {}) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (payload, opts = {}) {
       return yield _this2.send({
         type: 'presence',
         event: 'track',
@@ -20326,7 +20326,7 @@ class RealtimeChannel {
    */
   untrack() {
     var _this3 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (opts = {}) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (opts = {}) {
       return yield _this3.send({
         type: 'presence',
         event: 'untrack'
@@ -20337,7 +20337,7 @@ class RealtimeChannel {
     var _this4 = this;
     if (this.state === _lib_constants__WEBPACK_IMPORTED_MODULE_1__.CHANNEL_STATES.joined && type === REALTIME_LISTEN_TYPES.PRESENCE) {
       this.socket.log('channel', `resubscribe to ${this.topic} due to change in presence callbacks on joined channel`);
-      this.unsubscribe().then(/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      this.unsubscribe().then(/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return yield _this4.subscribe();
       }));
     }
@@ -20356,7 +20356,7 @@ class RealtimeChannel {
    */
   httpSend(_x3, _x4) {
     var _this5 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (event, payload, opts = {}) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (event, payload, opts = {}) {
       var _a;
       if (payload === undefined || payload === null) {
         return Promise.reject('Payload is required for httpSend()');
@@ -20405,7 +20405,7 @@ class RealtimeChannel {
    */
   send(_x5) {
     var _this6 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (args, opts = {}) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (args, opts = {}) {
       var _a, _b;
       if (!_this6._canPush() && args.type === 'broadcast') {
         console.warn('Realtime send() is automatically falling back to REST API. ' + 'This behavior will be deprecated in the future. ' + 'Please use httpSend() explicitly for REST delivery.');
@@ -20516,7 +20516,7 @@ class RealtimeChannel {
   /** @internal */
   _fetchWithTimeout(url, options, timeout) {
     var _this7 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const controller = new AbortController();
       const id = setTimeout(() => controller.abort(), timeout);
       const response = yield _this7.socket.fetch(url, Object.assign(Object.assign({}, options), {
@@ -20770,7 +20770,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ RealtimeClient)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _lib_websocket_factory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./lib/websocket-factory */ 5991);
 /* harmony import */ var _lib_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lib/constants */ 574);
 /* harmony import */ var _lib_serializer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/serializer */ 2035);
@@ -20974,7 +20974,7 @@ class RealtimeClient {
    */
   removeChannel(channel) {
     var _this = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const status = yield channel.unsubscribe();
       if (_this.channels.length === 0) {
         _this.disconnect();
@@ -20987,7 +20987,7 @@ class RealtimeClient {
    */
   removeAllChannels() {
     var _this2 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const values_1 = yield Promise.all(_this2.channels.map(channel => channel.unsubscribe()));
       _this2.channels = [];
       _this2.disconnect();
@@ -21102,7 +21102,7 @@ class RealtimeClient {
    */
   setAuth() {
     var _this3 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (token = null) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (token = null) {
       _this3._authPromise = _this3._performAuth(token);
       try {
         yield _this3._authPromise;
@@ -21124,7 +21124,7 @@ class RealtimeClient {
    */
   sendHeartbeat() {
     var _this4 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _a;
       if (!_this4.isConnected()) {
         try {
@@ -21441,7 +21441,7 @@ class RealtimeClient {
    */
   _performAuth() {
     var _this5 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (token = null) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (token = null) {
       let tokenToSend;
       let isManualToken = false;
       if (token) {
@@ -21490,7 +21490,7 @@ class RealtimeClient {
    */
   _waitForAuthIfNeeded() {
     var _this6 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (_this6._authPromise) {
         yield _this6._authPromise;
       }
@@ -21531,8 +21531,8 @@ class RealtimeClient {
    */
   _setupReconnectionTimer() {
     var _this7 = this;
-    this.reconnectTimer = new _lib_timer__WEBPACK_IMPORTED_MODULE_4__["default"](/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      setTimeout(/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    this.reconnectTimer = new _lib_timer__WEBPACK_IMPORTED_MODULE_4__["default"](/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      setTimeout(/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         yield _this7._waitForAuthIfNeeded();
         if (!_this7.isConnected()) {
           _this7.connect();
@@ -33465,7 +33465,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵPRIMARY_HTTP_BACKEND": () => (/* binding */ PRIMARY_HTTP_BACKEND),
 /* harmony export */   "ɵwithHttpTransferCache": () => (/* binding */ withHttpTransferCache)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 7580);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 9452);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ 3942);
@@ -34992,7 +34992,7 @@ class FetchBackend {
   }
   doRequest(request, signal, observer) {
     var _this = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const init = _this.createRequestInit(request);
       let response;
       try {
@@ -35046,7 +35046,7 @@ class FetchBackend {
         // Perform response processing outside of Angular zone to
         // ensure no excessive change detection runs are executed
         // Here calling the async ReadableStreamDefaultReader.read() is responsible for triggering CD
-        yield _this.ngZone.runOutsideAngular(/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        yield _this.ngZone.runOutsideAngular(/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           while (true) {
             const {
               done,
@@ -37285,7 +37285,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵɵviewQuery": () => (/* binding */ ɵɵviewQuery),
 /* harmony export */   "ɵɵviewQuerySignal": () => (/* binding */ ɵɵviewQuerySignal)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _angular_core_primitives_signals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core/primitives/signals */ 5689);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 819);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 2510);
@@ -71821,7 +71821,7 @@ class ChangeDetectionSchedulerImpl {
    */
   raceTimeoutAndRequestAnimationFrame() {
     var _this = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const timeout = new Promise(resolve => setTimeout(resolve));
       const rAF = typeof _global['requestAnimationFrame'] === 'function' ? new Promise(resolve => requestAnimationFrame(() => resolve())) : null;
       yield Promise.race([timeout, rAF]);
@@ -84469,7 +84469,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵafterNextNavigation": () => (/* binding */ afterNextNavigation),
 /* harmony export */   "ɵloadChildren": () => (/* binding */ loadChildren)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7580);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 2551);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 5429);
@@ -91203,7 +91203,7 @@ class RouterScroller {
   }
   scheduleScrollEvent(routerEvent, anchor) {
     var _this = this;
-    this.zone.runOutsideAngular(/*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    this.zone.runOutsideAngular(/*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // The scroll event needs to be delayed until after change detection. Otherwise we may
       // attempt to restore the scroll position before the router outlet has fully rendered the
       // component by executing its update block of the template function.
@@ -93018,7 +93018,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   PostgrestTransformBuilder: () => (/* binding */ PostgrestTransformBuilder),
 /* harmony export */   "default": () => (/* binding */ src_default)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 
 //#region src/PostgrestError.ts
 /**
@@ -93107,7 +93107,7 @@ var PostgrestBuilder = class {
       body: JSON.stringify(this.body),
       signal: this.signal
     }).then(/*#__PURE__*/function () {
-      var _ref = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (res$1) {
+      var _ref = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (res$1) {
         let error = null;
         let data = null;
         let count = null;
@@ -94318,7 +94318,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   resolveResponse: () => (/* binding */ resolveResponse),
 /* harmony export */   validateVectorDimension: () => (/* binding */ validateVectorDimension)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var iceberg_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! iceberg-js */ 7493);
 
 
@@ -94483,7 +94483,7 @@ const _getErrorMessage$1 = err => {
   return err.msg || err.message || err.error_description || (typeof err.error === "string" ? err.error : (_err$error = err.error) === null || _err$error === void 0 ? void 0 : _err$error.message) || JSON.stringify(err);
 };
 const handleError$1 = /*#__PURE__*/function () {
-  var _ref = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (error, reject, options) {
+  var _ref = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (error, reject, options) {
     if (error instanceof (yield resolveResponse$1()) && !(options === null || options === void 0 ? void 0 : options.noResolveJson)) error.json().then(err => {
       const status = error.status || 500;
       const statusCode = (err === null || err === void 0 ? void 0 : err.statusCode) || status + "";
@@ -94515,7 +94515,7 @@ function _handleRequest$1(_x4, _x5, _x6, _x7, _x8, _x9) {
   return _handleRequest$.apply(this, arguments);
 }
 function _handleRequest$() {
-  _handleRequest$ = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options, parameters, body) {
+  _handleRequest$ = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options, parameters, body) {
     return new Promise((resolve, reject) => {
       fetcher(url, _getRequestParams$1(method, options, parameters, body)).then(result => {
         if (!result.ok) throw result;
@@ -94530,7 +94530,7 @@ function get(_x0, _x1, _x10, _x11) {
   return _get.apply(this, arguments);
 }
 function _get() {
-  _get = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, options, parameters) {
+  _get = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, options, parameters) {
     return _handleRequest$1(fetcher, "GET", url, options, parameters);
   });
   return _get.apply(this, arguments);
@@ -94539,7 +94539,7 @@ function post$1(_x12, _x13, _x14, _x15, _x16) {
   return _post$.apply(this, arguments);
 }
 function _post$() {
-  _post$ = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
+  _post$ = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
     return _handleRequest$1(fetcher, "POST", url, options, parameters, body);
   });
   return _post$.apply(this, arguments);
@@ -94548,7 +94548,7 @@ function put(_x17, _x18, _x19, _x20, _x21) {
   return _put.apply(this, arguments);
 }
 function _put() {
-  _put = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
+  _put = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
     return _handleRequest$1(fetcher, "PUT", url, options, parameters, body);
   });
   return _put.apply(this, arguments);
@@ -94557,7 +94557,7 @@ function head(_x22, _x23, _x24, _x25) {
   return _head.apply(this, arguments);
 }
 function _head() {
-  _head = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, options, parameters) {
+  _head = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, options, parameters) {
     return _handleRequest$1(fetcher, "HEAD", url, _objectSpread2(_objectSpread2({}, options), {}, {
       noResolveJson: true
     }), parameters);
@@ -94569,7 +94569,7 @@ function remove(_x26, _x27, _x28, _x29, _x30) {
 } //#endregion
 //#region src/packages/StreamDownloadBuilder.ts
 function _remove() {
-  _remove = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
+  _remove = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
     return _handleRequest$1(fetcher, "DELETE", url, options, parameters, body);
   });
   return _remove.apply(this, arguments);
@@ -94584,7 +94584,7 @@ var StreamDownloadBuilder = class {
   }
   execute() {
     var _this0 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this0;
       try {
         return {
@@ -94632,7 +94632,7 @@ var BlobDownloadBuilder = class {
   }
   execute() {
     var _this1 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this1;
       try {
         return {
@@ -94692,7 +94692,7 @@ var StorageFileApi = class {
   */
   uploadOrUpdate(method, path, fileBody, fileOptions) {
     var _this15 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this15;
       try {
         let body;
@@ -94789,7 +94789,7 @@ var StorageFileApi = class {
   */
   upload(path, fileBody, fileOptions) {
     var _this16 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this16.uploadOrUpdate("POST", path, fileBody, fileOptions);
     })();
   }
@@ -94826,7 +94826,7 @@ var StorageFileApi = class {
   */
   uploadToSignedUrl(path, token, fileBody, fileOptions) {
     var _this17 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this3 = _this17;
       const cleanPath = _this3._removeEmptyFolders(path);
       const _path = _this3._getFinalPath(cleanPath);
@@ -94903,7 +94903,7 @@ var StorageFileApi = class {
   */
   createSignedUploadUrl(path, options) {
     var _this18 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this4 = _this18;
       try {
         let _path = _this4._getFinalPath(path);
@@ -94979,7 +94979,7 @@ var StorageFileApi = class {
   */
   update(path, fileBody, fileOptions) {
     var _this19 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this19.uploadOrUpdate("PUT", path, fileBody, fileOptions);
     })();
   }
@@ -95012,7 +95012,7 @@ var StorageFileApi = class {
   */
   move(fromPath, toPath, options) {
     var _this20 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this6 = _this20;
       try {
         return {
@@ -95065,7 +95065,7 @@ var StorageFileApi = class {
   */
   copy(fromPath, toPath, options) {
     var _this21 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this7 = _this21;
       try {
         return {
@@ -95144,7 +95144,7 @@ var StorageFileApi = class {
   */
   createSignedUrl(path, expiresIn, options) {
     var _this22 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this8 = _this22;
       try {
         let _path = _this8._getFinalPath(path);
@@ -95213,7 +95213,7 @@ var StorageFileApi = class {
   */
   createSignedUrls(paths, expiresIn, options) {
     var _this23 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this9 = _this23;
       try {
         const data = yield post$1(_this9.fetch, `${_this9.url}/object/sign/${_this9.bucketId}`, {
@@ -95305,7 +95305,7 @@ var StorageFileApi = class {
   */
   info(path) {
     var _this24 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this10 = _this24;
       const _path = _this10._getFinalPath(path);
       try {
@@ -95342,7 +95342,7 @@ var StorageFileApi = class {
   */
   exists(path) {
     var _this25 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this11 = _this25;
       const _path = _this11._getFinalPath(path);
       try {
@@ -95457,7 +95457,7 @@ var StorageFileApi = class {
   */
   remove(paths) {
     var _this26 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this12 = _this26;
       try {
         return {
@@ -95548,7 +95548,7 @@ var StorageFileApi = class {
   */
   list(path, options, parameters) {
     var _this27 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this13 = _this27;
       try {
         const body = _objectSpread2(_objectSpread2(_objectSpread2({}, DEFAULT_SEARCH_OPTIONS), options), {}, {
@@ -95579,7 +95579,7 @@ var StorageFileApi = class {
   */
   listV2(options, parameters) {
     var _this28 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this14 = _this28;
       try {
         const body = _objectSpread2({}, options);
@@ -95689,7 +95689,7 @@ var StorageBucketApi = class {
   */
   listBuckets(options) {
     var _this29 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this29;
       try {
         const queryString = _this.listBucketOptionsToQueryString(options);
@@ -95744,7 +95744,7 @@ var StorageBucketApi = class {
   */
   getBucket(id) {
     var _this30 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this2 = _this30;
       try {
         return {
@@ -95802,7 +95802,7 @@ var StorageBucketApi = class {
   */
   createBucket(_x31) {
     var _this31 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (id, options = {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (id, options = {
       public: false
     }) {
       var _this3 = _this31;
@@ -95867,7 +95867,7 @@ var StorageBucketApi = class {
   */
   updateBucket(id, options) {
     var _this32 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this4 = _this32;
       try {
         return {
@@ -95918,7 +95918,7 @@ var StorageBucketApi = class {
   */
   emptyBucket(id) {
     var _this33 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this5 = _this33;
       try {
         return {
@@ -95964,7 +95964,7 @@ var StorageBucketApi = class {
   */
   deleteBucket(id) {
     var _this34 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this6 = _this34;
       try {
         return {
@@ -96077,7 +96077,7 @@ var StorageAnalyticsClient = class {
   */
   createBucket(name) {
     var _this35 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this35;
       try {
         return {
@@ -96146,7 +96146,7 @@ var StorageAnalyticsClient = class {
   */
   listBuckets(options) {
     var _this36 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this2 = _this36;
       try {
         const queryParams = new URLSearchParams();
@@ -96206,7 +96206,7 @@ var StorageAnalyticsClient = class {
   */
   deleteBucket(bucketName) {
     var _this37 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this3 = _this37;
       try {
         return {
@@ -96357,7 +96357,7 @@ var StorageAnalyticsClient = class {
       auth: {
         type: "custom",
         getHeaders: function () {
-          var _ref2 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+          var _ref2 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
             return _this4.headers;
           });
           return function getHeaders() {
@@ -96372,7 +96372,7 @@ var StorageAnalyticsClient = class {
       get(target, prop) {
         const value = target[prop];
         if (typeof value !== "function") return value;
-        return /*#__PURE__*/(0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
+        return /*#__PURE__*/(0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
           try {
             return {
               data: yield value.apply(target, args),
@@ -96541,7 +96541,7 @@ const _getErrorMessage = err => err.msg || err.message || err.error_description 
 * @param options - Fetch options that may affect error handling
 */
 const handleError = /*#__PURE__*/function () {
-  var _ref4 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (error, reject, options) {
+  var _ref4 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (error, reject, options) {
     if (error && typeof error === "object" && "status" in error && "ok" in error && typeof error.status === "number" && !(options === null || options === void 0 ? void 0 : options.noResolveJson)) {
       const status = error.status || 500;
       const responseError = error;
@@ -96606,7 +96606,7 @@ function _handleRequest(_x35, _x36, _x37, _x38, _x39, _x40) {
 * @returns Promise with parsed response
 */
 function _handleRequest2() {
-  _handleRequest2 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options, parameters, body) {
+  _handleRequest2 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, method, url, options, parameters, body) {
     return new Promise((resolve, reject) => {
       fetcher(url, _getRequestParams(method, options, parameters, body)).then(result => {
         if (!result.ok) throw result;
@@ -96629,7 +96629,7 @@ function post(_x41, _x42, _x43, _x44, _x45) {
 * Use {@link VectorBucketScope} via `supabase.storage.vectors.from('bucket')` instead.
 */
 function _post() {
-  _post = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
+  _post = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetcher, url, body, options, parameters) {
     return _handleRequest(fetcher, "POST", url, options, parameters, body);
   });
   return _post.apply(this, arguments);
@@ -96650,7 +96650,7 @@ var VectorIndexApi = class {
   /** Creates a new vector index within a bucket */
   createIndex(options) {
     var _this38 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this38;
       try {
         return {
@@ -96672,7 +96672,7 @@ var VectorIndexApi = class {
   /** Retrieves metadata for a specific vector index */
   getIndex(vectorBucketName, indexName) {
     var _this39 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this2 = _this39;
       try {
         return {
@@ -96697,7 +96697,7 @@ var VectorIndexApi = class {
   /** Lists vector indexes within a bucket with optional filtering and pagination */
   listIndexes(options) {
     var _this40 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this3 = _this40;
       try {
         return {
@@ -96719,7 +96719,7 @@ var VectorIndexApi = class {
   /** Deletes a vector index and all its data */
   deleteIndex(vectorBucketName, indexName) {
     var _this41 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this4 = _this41;
       try {
         return {
@@ -96766,7 +96766,7 @@ var VectorDataApi = class {
   /** Inserts or updates vectors in batch (1-500 per request) */
   putVectors(options) {
     var _this42 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this42;
       try {
         if (options.vectors.length < 1 || options.vectors.length > 500) throw new Error("Vector batch size must be between 1 and 500 items");
@@ -96789,7 +96789,7 @@ var VectorDataApi = class {
   /** Retrieves vectors by their keys in batch */
   getVectors(options) {
     var _this43 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this2 = _this43;
       try {
         return {
@@ -96811,7 +96811,7 @@ var VectorDataApi = class {
   /** Lists vectors in an index with pagination */
   listVectors(options) {
     var _this44 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this3 = _this44;
       try {
         if (options.segmentCount !== void 0) {
@@ -96839,7 +96839,7 @@ var VectorDataApi = class {
   /** Queries for similar vectors using approximate nearest neighbor search */
   queryVectors(options) {
     var _this45 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this4 = _this45;
       try {
         return {
@@ -96861,7 +96861,7 @@ var VectorDataApi = class {
   /** Deletes vectors by their keys in batch (1-500 per request) */
   deleteVectors(options) {
     var _this46 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this5 = _this46;
       try {
         if (options.keys.length < 1 || options.keys.length > 500) throw new Error("Keys batch size must be between 1 and 500 items");
@@ -96906,7 +96906,7 @@ var VectorBucketApi = class {
   /** Creates a new vector bucket */
   createBucket(vectorBucketName) {
     var _this47 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this47;
       try {
         return {
@@ -96930,7 +96930,7 @@ var VectorBucketApi = class {
   /** Retrieves metadata for a specific vector bucket */
   getBucket(vectorBucketName) {
     var _this48 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this2 = _this48;
       try {
         return {
@@ -96954,7 +96954,7 @@ var VectorBucketApi = class {
   /** Lists vector buckets with optional filtering and pagination */
   listBuckets() {
     var _this49 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
       var _this3 = _this49;
       try {
         return {
@@ -96976,7 +96976,7 @@ var VectorBucketApi = class {
   /** Deletes a vector bucket (must be empty first) */
   deleteBucket(vectorBucketName) {
     var _this50 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this4 = _this50;
       try {
         return {
@@ -97109,7 +97109,7 @@ var StorageVectorsClient = class extends VectorBucketApi {
   createBucket(vectorBucketName) {
     var _superprop_getCreateBucket2 = () => super.createBucket,
       _this51 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getCreateBucket = () => _superprop_getCreateBucket2(),
         _this = _this51;
       return _superprop_getCreateBucket().call(_this, vectorBucketName);
@@ -97140,7 +97140,7 @@ var StorageVectorsClient = class extends VectorBucketApi {
   getBucket(vectorBucketName) {
     var _superprop_getGetBucket2 = () => super.getBucket,
       _this52 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getGetBucket = () => _superprop_getGetBucket2(),
         _this2 = _this52;
       return _superprop_getGetBucket().call(_this2, vectorBucketName);
@@ -97173,7 +97173,7 @@ var StorageVectorsClient = class extends VectorBucketApi {
   listBuckets() {
     var _superprop_getListBuckets2 = () => super.listBuckets,
       _this53 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
       var _superprop_getListBuckets = () => _superprop_getListBuckets2(),
         _this3 = _this53;
       return _superprop_getListBuckets().call(_this3, options);
@@ -97203,7 +97203,7 @@ var StorageVectorsClient = class extends VectorBucketApi {
   deleteBucket(vectorBucketName) {
     var _superprop_getDeleteBucket2 = () => super.deleteBucket,
       _this54 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getDeleteBucket = () => _superprop_getDeleteBucket2(),
         _this4 = _this54;
       return _superprop_getDeleteBucket().call(_this4, vectorBucketName);
@@ -97267,7 +97267,7 @@ var VectorBucketScope = class extends VectorIndexApi {
   createIndex(options) {
     var _superprop_getCreateIndex2 = () => super.createIndex,
       _this55 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getCreateIndex = () => _superprop_getCreateIndex2(),
         _this5 = _this55;
       return _superprop_getCreateIndex().call(_this5, _objectSpread2(_objectSpread2({}, options), {}, {
@@ -97297,7 +97297,7 @@ var VectorBucketScope = class extends VectorIndexApi {
   listIndexes() {
     var _superprop_getListIndexes2 = () => super.listIndexes,
       _this56 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
       var _superprop_getListIndexes = () => _superprop_getListIndexes2(),
         _this6 = _this56;
       return _superprop_getListIndexes().call(_this6, _objectSpread2(_objectSpread2({}, options), {}, {
@@ -97328,7 +97328,7 @@ var VectorBucketScope = class extends VectorIndexApi {
   getIndex(indexName) {
     var _superprop_getGetIndex2 = () => super.getIndex,
       _this57 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getGetIndex = () => _superprop_getGetIndex2(),
         _this7 = _this57;
       return _superprop_getGetIndex().call(_this7, _this7.vectorBucketName, indexName);
@@ -97356,7 +97356,7 @@ var VectorBucketScope = class extends VectorIndexApi {
   deleteIndex(indexName) {
     var _superprop_getDeleteIndex2 = () => super.deleteIndex,
       _this58 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getDeleteIndex = () => _superprop_getDeleteIndex2(),
         _this8 = _this58;
       return _superprop_getDeleteIndex().call(_this8, _this8.vectorBucketName, indexName);
@@ -97456,7 +97456,7 @@ var VectorIndexScope = class extends VectorDataApi {
   putVectors(options) {
     var _superprop_getPutVectors2 = () => super.putVectors,
       _this59 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getPutVectors = () => _superprop_getPutVectors2(),
         _this9 = _this59;
       return _superprop_getPutVectors().call(_this9, _objectSpread2(_objectSpread2({}, options), {}, {
@@ -97490,7 +97490,7 @@ var VectorIndexScope = class extends VectorDataApi {
   getVectors(options) {
     var _superprop_getGetVectors2 = () => super.getVectors,
       _this60 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getGetVectors = () => _superprop_getGetVectors2(),
         _this10 = _this60;
       return _superprop_getGetVectors().call(_this10, _objectSpread2(_objectSpread2({}, options), {}, {
@@ -97524,7 +97524,7 @@ var VectorIndexScope = class extends VectorDataApi {
   listVectors() {
     var _superprop_getListVectors2 = () => super.listVectors,
       _this61 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (options = {}) {
       var _superprop_getListVectors = () => _superprop_getListVectors2(),
         _this11 = _this61;
       return _superprop_getListVectors().call(_this11, _objectSpread2(_objectSpread2({}, options), {}, {
@@ -97561,7 +97561,7 @@ var VectorIndexScope = class extends VectorDataApi {
   queryVectors(options) {
     var _superprop_getQueryVectors2 = () => super.queryVectors,
       _this62 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getQueryVectors = () => _superprop_getQueryVectors2(),
         _this12 = _this62;
       return _superprop_getQueryVectors().call(_this12, _objectSpread2(_objectSpread2({}, options), {}, {
@@ -97594,7 +97594,7 @@ var VectorIndexScope = class extends VectorDataApi {
   deleteVectors(options) {
     var _superprop_getDeleteVectors2 = () => super.deleteVectors,
       _this63 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _superprop_getDeleteVectors = () => _superprop_getDeleteVectors2(),
         _this13 = _this63;
       return _superprop_getDeleteVectors().call(_this13, _objectSpread2(_objectSpread2({}, options), {}, {
@@ -97732,7 +97732,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   navigatorLock: () => (/* reexport safe */ _supabase_auth_js__WEBPACK_IMPORTED_MODULE_3__.navigatorLock),
 /* harmony export */   processLock: () => (/* reexport safe */ _supabase_auth_js__WEBPACK_IMPORTED_MODULE_3__.processLock)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _supabase_functions_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @supabase/functions-js */ 9977);
 /* harmony import */ var _supabase_functions_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @supabase/functions-js */ 422);
 /* harmony import */ var _supabase_postgrest_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @supabase/postgrest-js */ 1590);
@@ -97852,7 +97852,7 @@ const fetchWithAuth = (supabaseKey, getAccessToken, customFetch) => {
   const fetch$1 = resolveFetch(customFetch);
   const HeadersConstructor = resolveHeadersConstructor();
   return /*#__PURE__*/function () {
-    var _ref = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (input, init) {
+    var _ref = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (input, init) {
       var _await$getAccessToken;
       const accessToken = (_await$getAccessToken = yield getAccessToken()) !== null && _await$getAccessToken !== void 0 ? _await$getAccessToken : supabaseKey;
       let headers = new HeadersConstructor(init === null || init === void 0 ? void 0 : init.headers);
@@ -97896,7 +97896,7 @@ function applySettingDefaults(options, defaults) {
       headers: _objectSpread2(_objectSpread2({}, (_DEFAULT_GLOBAL_OPTIO = DEFAULT_GLOBAL_OPTIONS$1 === null || DEFAULT_GLOBAL_OPTIONS$1 === void 0 ? void 0 : DEFAULT_GLOBAL_OPTIONS$1.headers) !== null && _DEFAULT_GLOBAL_OPTIO !== void 0 ? _DEFAULT_GLOBAL_OPTIO : {}), (_globalOptions$header = globalOptions === null || globalOptions === void 0 ? void 0 : globalOptions.headers) !== null && _globalOptions$header !== void 0 ? _globalOptions$header : {})
     }),
     accessToken: function () {
-      var _ref2 = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      var _ref2 = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         return "";
       });
       return function accessToken() {
@@ -98101,7 +98101,7 @@ var SupabaseClient = class {
   }
   _getAccessToken() {
     var _this2 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       var _this = _this2;
       var _data$session$access_, _data$session;
       if (_this.accessToken) return yield _this.accessToken();
@@ -98217,7 +98217,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   parseFixedType: () => (/* binding */ parseFixedType),
 /* harmony export */   typesEqual: () => (/* binding */ typesEqual)
 /* harmony export */ });
-/* harmony import */ var _Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var _home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 
 // src/errors/IcebergError.ts
 var IcebergError = class extends Error {
@@ -98268,7 +98268,7 @@ function buildAuthHeaders(_x) {
   return _buildAuthHeaders.apply(this, arguments);
 }
 function _buildAuthHeaders() {
-  _buildAuthHeaders = (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (auth) {
+  _buildAuthHeaders = (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (auth) {
     if (!auth || auth.type === "none") {
       return {};
     }
@@ -98293,7 +98293,7 @@ function createFetchClient(options) {
   const fetchFn = options.fetchImpl ?? globalThis.fetch;
   return {
     request(_x2) {
-      return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
+      return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* ({
         method,
         path,
         query,
@@ -98347,7 +98347,7 @@ var NamespaceOperations = class {
   }
   listNamespaces(parent) {
     var _this = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const query = parent ? {
         parent: namespaceToPath(parent.namespace)
       } : void 0;
@@ -98363,7 +98363,7 @@ var NamespaceOperations = class {
   }
   createNamespace(id, metadata) {
     var _this2 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const request = {
         namespace: id.namespace,
         properties: metadata?.properties
@@ -98378,7 +98378,7 @@ var NamespaceOperations = class {
   }
   dropNamespace(id) {
     var _this3 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this3.client.request({
         method: "DELETE",
         path: `${_this3.prefix}/namespaces/${namespaceToPath(id.namespace)}`
@@ -98387,7 +98387,7 @@ var NamespaceOperations = class {
   }
   loadNamespaceMetadata(id) {
     var _this4 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const response = yield _this4.client.request({
         method: "GET",
         path: `${_this4.prefix}/namespaces/${namespaceToPath(id.namespace)}`
@@ -98399,7 +98399,7 @@ var NamespaceOperations = class {
   }
   namespaceExists(id) {
     var _this5 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         yield _this5.client.request({
           method: "HEAD",
@@ -98416,7 +98416,7 @@ var NamespaceOperations = class {
   }
   createNamespaceIfNotExists(id, metadata) {
     var _this6 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this6.createNamespace(id, metadata);
       } catch (error) {
@@ -98441,7 +98441,7 @@ var TableOperations = class {
   }
   listTables(namespace) {
     var _this7 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const response = yield _this7.client.request({
         method: "GET",
         path: `${_this7.prefix}/namespaces/${namespaceToPath2(namespace.namespace)}/tables`
@@ -98451,7 +98451,7 @@ var TableOperations = class {
   }
   createTable(namespace, request) {
     var _this8 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const headers = {};
       if (_this8.accessDelegation) {
         headers["X-Iceberg-Access-Delegation"] = _this8.accessDelegation;
@@ -98467,7 +98467,7 @@ var TableOperations = class {
   }
   updateTable(id, request) {
     var _this9 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const response = yield _this9.client.request({
         method: "POST",
         path: `${_this9.prefix}/namespaces/${namespaceToPath2(id.namespace)}/tables/${id.name}`,
@@ -98481,7 +98481,7 @@ var TableOperations = class {
   }
   dropTable(id, options) {
     var _this0 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this0.client.request({
         method: "DELETE",
         path: `${_this0.prefix}/namespaces/${namespaceToPath2(id.namespace)}/tables/${id.name}`,
@@ -98493,7 +98493,7 @@ var TableOperations = class {
   }
   loadTable(id) {
     var _this1 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const headers = {};
       if (_this1.accessDelegation) {
         headers["X-Iceberg-Access-Delegation"] = _this1.accessDelegation;
@@ -98508,7 +98508,7 @@ var TableOperations = class {
   }
   tableExists(id) {
     var _this10 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const headers = {};
       if (_this10.accessDelegation) {
         headers["X-Iceberg-Access-Delegation"] = _this10.accessDelegation;
@@ -98530,7 +98530,7 @@ var TableOperations = class {
   }
   createTableIfNotExists(namespace, request) {
     var _this11 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         return yield _this11.createTable(namespace, request);
       } catch (error) {
@@ -98585,7 +98585,7 @@ var IcebergRestCatalog = class {
    */
   listNamespaces(parent) {
     var _this12 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this12.namespaceOps.listNamespaces(parent);
     })();
   }
@@ -98608,7 +98608,7 @@ var IcebergRestCatalog = class {
    */
   createNamespace(id, metadata) {
     var _this13 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this13.namespaceOps.createNamespace(id, metadata);
     })();
   }
@@ -98626,7 +98626,7 @@ var IcebergRestCatalog = class {
    */
   dropNamespace(id) {
     var _this14 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this14.namespaceOps.dropNamespace(id);
     })();
   }
@@ -98644,7 +98644,7 @@ var IcebergRestCatalog = class {
    */
   loadNamespaceMetadata(id) {
     var _this15 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this15.namespaceOps.loadNamespaceMetadata(id);
     })();
   }
@@ -98662,7 +98662,7 @@ var IcebergRestCatalog = class {
    */
   listTables(namespace) {
     var _this16 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this16.tableOps.listTables(namespace);
     })();
   }
@@ -98699,7 +98699,7 @@ var IcebergRestCatalog = class {
    */
   createTable(namespace, request) {
     var _this17 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this17.tableOps.createTable(namespace, request);
     })();
   }
@@ -98726,7 +98726,7 @@ var IcebergRestCatalog = class {
    */
   updateTable(id, request) {
     var _this18 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this18.tableOps.updateTable(id, request);
     })();
   }
@@ -98742,7 +98742,7 @@ var IcebergRestCatalog = class {
    */
   dropTable(id, options) {
     var _this19 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this19.tableOps.dropTable(id, options);
     })();
   }
@@ -98761,7 +98761,7 @@ var IcebergRestCatalog = class {
    */
   loadTable(id) {
     var _this20 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this20.tableOps.loadTable(id);
     })();
   }
@@ -98779,7 +98779,7 @@ var IcebergRestCatalog = class {
    */
   namespaceExists(id) {
     var _this21 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this21.namespaceOps.namespaceExists(id);
     })();
   }
@@ -98797,7 +98797,7 @@ var IcebergRestCatalog = class {
    */
   tableExists(id) {
     var _this22 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this22.tableOps.tableExists(id);
     })();
   }
@@ -98825,7 +98825,7 @@ var IcebergRestCatalog = class {
    */
   createNamespaceIfNotExists(id, metadata) {
     var _this23 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this23.namespaceOps.createNamespaceIfNotExists(id, metadata);
     })();
   }
@@ -98858,7 +98858,7 @@ var IcebergRestCatalog = class {
    */
   createTableIfNotExists(namespace, request) {
     var _this24 = this;
-    return (0,_Users_mohamedaliboudiche_GitClone_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,_home_runner_work_live_resume_live_resume_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this24.tableOps.createTableIfNotExists(namespace, request);
     })();
   }
