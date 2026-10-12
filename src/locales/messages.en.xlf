@@ -155,6 +155,31 @@
         </context-group>
         <note priority="1" from="description">posts</note>
       </trans-unit>
+      <trans-unit id="empty" datatype="html">
+        <source>No articles yet.</source>
+        <target>No articles yet.</target>
+        <note priority="1" from="description">posts</note>
+      </trans-unit>
+      <trans-unit id="showLess" datatype="html">
+        <source>Show less</source>
+        <target>Show less</target>
+        <note priority="1" from="description">experience</note>
+      </trans-unit>
+      <trans-unit id="tagline" datatype="html">
+        <source>Data and application engineer — pipelines, data quality and cloud platforms.</source>
+        <target>Data and application engineer — pipelines, data quality and cloud platforms.</target>
+        <note priority="1" from="description">welcome</note>
+      </trans-unit>
+      <trans-unit id="seeCareer" datatype="html">
+        <source>See the career path</source>
+        <target>See the career path</target>
+        <note priority="1" from="description">welcome</note>
+      </trans-unit>
+      <trans-unit id="downloadCv" datatype="html">
+        <source>Download resume</source>
+        <target>Download resume</target>
+        <note priority="1" from="description">welcome</note>
+      </trans-unit>
       <trans-unit id="synopsis" datatype="html">
         <source>In countless times, an article or a simple piece of information saved me hours of research, so whenever is possible, I try to do my humble contributions:</source>
         <target>In countless times, an article or a simple piece of information saved me hours of research, so whenever is possible, I try to do my humble contributions:</target>

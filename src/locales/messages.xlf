@@ -86,6 +86,26 @@
         </context-group>
         <note priority="1" from="description">posts</note>
       </trans-unit>
+      <trans-unit id="empty" datatype="html">
+        <source>No articles yet.</source>
+        <note priority="1" from="description">posts</note>
+      </trans-unit>
+      <trans-unit id="showLess" datatype="html">
+        <source>Show less</source>
+        <note priority="1" from="description">experience</note>
+      </trans-unit>
+      <trans-unit id="tagline" datatype="html">
+        <source>Data and application engineer — pipelines, data quality and cloud platforms.</source>
+        <note priority="1" from="description">welcome</note>
+      </trans-unit>
+      <trans-unit id="seeCareer" datatype="html">
+        <source>See the career path</source>
+        <note priority="1" from="description">welcome</note>
+      </trans-unit>
+      <trans-unit id="downloadCv" datatype="html">
+        <source>Download resume</source>
+        <note priority="1" from="description">welcome</note>
+      </trans-unit>
       <trans-unit id="aboutMe" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>About me<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">

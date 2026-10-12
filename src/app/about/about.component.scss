@@ -57,8 +57,25 @@
                 color: #5e6788;
                 margin-right: 2em;
                 text-align: left;
-                min-height: 220px;
                 line-height: 1.5em;
+            }
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            list-style: none;
+            margin: 1.25em 2em 0.5em 0;
+            padding: 0;
+
+            li {
+                background: #eef3fb;
+                color: #222f5c;
+                border-radius: 999px;
+                padding: 0.35em 0.85em;
+                font-size: 14px;
+                font-weight: 600;
             }
         }
     
