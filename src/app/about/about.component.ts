@@ -14,7 +14,6 @@ import { Subscription } from "rxjs";
 export class AboutComponent implements OnInit, OnDestroy {
 
   name: string;
-  yearsOld: number;
 
   subscription: Subscription;
   aboutData: IAbout;
@@ -28,7 +27,6 @@ export class AboutComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.name = "Mohamed Ali Boudiche";
-    this.yearsOld = this.calcAge("1986-05-10"); // Sets here, your date birthday
 
     // Fetches the About information from the Data Service (about.json file).
     this.subscription = this.dataService.getAbout()
@@ -40,10 +38,4 @@ export class AboutComponent implements OnInit, OnDestroy {
     this.subscription.unsubscribe();
   }
 
-  private calcAge(dateString: string) {
-    const birthday: Date = new Date(dateString);
-    const ageDifMs: number = Date.now() - birthday.getTime();
-    const ageDate: Date = new Date(ageDifMs); // miliseconds from epoch
-    return Math.abs(ageDate.getFullYear() - 1970);
-  }
 }
