@@ -4765,8 +4765,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 const environment = {
   production: true,
-  supabaseUrl: "https://auoiubngdazzhyryvrzk.supabase.co",
-  supabaseKey: "sb_publishable_e10A1nnnYID8s0JYvz6Z6A_IBkdGDAO"
+  supabaseUrl: "https://rrrvkpwmwijhbjbugqrz.supabase.co",
+  supabaseKey: "sb_publishable_c4R8W5DvJX2j2I8LMnQsTg_p8ddShed"
 };
 
 /***/ }),
