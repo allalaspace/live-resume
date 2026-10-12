@@ -40,11 +40,17 @@
                     <ol #orderedList>
                         <li *ngFor="let exp of experiencesOrdered; let i = index" [ngClass]="{'selected': i == 0}" data-id="{{ exp.id }}">
                             <div class="header-block">
-                                <div class="logo-block">
-                                    <a href="{{ exp.website }}" target="_blank"><img src="{{ exp.logo }}" alt="{{ exp.companyName }}"></a>
+                                <div class="logo-block" *ngIf="exp.logo">
+                                    <a *ngIf="exp.website; else plainLogo" href="{{ exp.website }}" target="_blank" rel="noopener noreferrer"><img src="{{ exp.logo }}" alt="{{ exp.companyName }}"></a>
+                                    <ng-template #plainLogo>
+                                        <img src="{{ exp.logo }}" alt="{{ exp.companyName }}">
+                                    </ng-template>
                                 </div>
                                 <div class="info-block">
-                                    <div class="company-name"><a href="{{ exp.website }}" target="_blank">{{ exp.companyName }}</a></div>
+                                    <div class="company-name">
+                                        <a *ngIf="exp.website; else plainName" href="{{ exp.website }}" target="_blank" rel="noopener noreferrer">{{ exp.companyName }}</a>
+                                        <ng-template #plainName><span>{{ exp.companyName }}</span></ng-template>
+                                    </div>
                                     <div class="role"  internationalization [data]="exp.internationalizations" property='role'>Loading...</div>
                                     <div class="period">
                                         <span>{{ exp.startAt | safariDateFormatter | localizedDate:'MMM yyyy' }}</span>
@@ -53,8 +59,8 @@
                                     </div>
                                     <div class="location">
                                         <span class="city" internationalization [data]="exp.internationalizations" property='city'>Loading...</span>
-                                        <span class="devider">,&nbsp;</span>
-                                        <span class="country" internationalization [data]="exp.internationalizations" property='country'>Loading...</span>
+                                        <span class="devider" *ngIf="hasCityAndCountry(exp)">,&nbsp;</span>
+                                        <span class="country" internationalization [data]="exp.internationalizations" property='country'></span>
                                     </div>
                                 </div>
                             </div>

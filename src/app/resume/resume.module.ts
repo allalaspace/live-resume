@@ -9,7 +9,6 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { WelcomeModule } from "../welcome/welcome.molule";
 import { ExperienceModule } from "../experience/experience.module";
 import { CoreModule } from "../core/core.module";
-import { PostsModule } from "../posts/posts.molule";
 import { FooterComponent } from "../footer/footer.component";
 
 @NgModule({
@@ -19,8 +18,7 @@ import { FooterComponent } from "../footer/footer.component";
     CoreModule,
     FontAwesomeModule,
     WelcomeModule,
-    ExperienceModule,
-    PostsModule
+    ExperienceModule
   ],
   declarations: [ 
     ResumeComponent,

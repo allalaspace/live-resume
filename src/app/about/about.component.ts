@@ -27,7 +27,7 @@ export class AboutComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.name = "Mohamed Ali Boudich"; // Sets here, your full name
+    this.name = "Mohamed Ali Boudiche";
     this.yearsOld = this.calcAge("1986-05-10"); // Sets here, your date birthday
 
     // Fetches the About information from the Data Service (about.json file).

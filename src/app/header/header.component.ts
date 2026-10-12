@@ -129,9 +129,9 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnDestroy {
   async share() {
     try{
       await this.ngNavigatorShareService.share({
-        title: "Live Resume - Mohamed ali boudich ",
-        text: "Hello, I'm a Full-stack DotNet Web Developer with 10+ years of experience designing web and mobile projects. Find out more in my live-resume!",
-        url: "https://mohamedaliboudich.fr"
+        title: "Mohamed Ali Boudiche — Ingénieur data",
+        text: "Ingénieur data et applicatif. Pipelines, qualité de donnée et plateformes cloud.",
+        url: "https://allalaspace.github.io/live-resume/"
       });
     } catch(error) {
       console.log("You app is not shared, reason: ", error);
