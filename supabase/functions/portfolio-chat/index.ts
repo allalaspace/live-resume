@@ -268,7 +268,7 @@ async function complete(system: string, turns: Turn[]): Promise<string> {
   if (!apiKey) throw new Error("unconfigured");
 
   const base = (Deno.env.get("LLM_BASE_URL") || "https://api.groq.com/openai/v1").replace(/\/$/, "");
-  const model = Deno.env.get("LLM_MODEL") || "llama-3.3-70b-versatile";
+  const model = Deno.env.get("LLM_MODEL") || "openai/gpt-oss-20b";
 
   const call = (jsonMode: boolean) => fetch(`${base}/chat/completions`, {
     method: "POST",
@@ -288,6 +288,7 @@ async function complete(system: string, turns: Turn[]): Promise<string> {
 
   let response = await call(true);
   if (response.status === 400) response = await call(false);
+  if (response.status === 429) throw new Error("rate_limit");
   if (!response.ok) {
     console.error("llm status", response.status);
     throw new Error("upstream");
@@ -344,6 +345,7 @@ Deno.serve(async (req) => {
   } catch (error) {
     const message = error instanceof Error ? error.message : "";
     if (message === "unconfigured") return json({ error: "unconfigured" }, 503);
+    if (message === "rate_limit") return json({ error: "rate_limit" }, 429);
     console.error("portfolio-chat failed", message);
     return json({ error: "upstream" }, 502);
   }
