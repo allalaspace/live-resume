@@ -8,10 +8,14 @@ on:
     branches:
       - master
 
+permissions:
+  contents: read
+
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -20,31 +24,57 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "18"
+          cache: npm
 
       - name: Install dependencies
-        run: npm install --force
+        run: npm ci
 
       - name: Create environment file
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
         run: |
           mkdir -p src/environments
-          cat > src/environments/environment.ts << 'EOF'
+          cat > src/environments/environment.ts <<EOF
           export const environment = {
             production: true,
-            supabaseUrl: "https://rrrvkpwmwijhbjbugqrz.supabase.co",
-            supabaseKey: "sb_publishable_c4R8W5DvJX2j2I8LMnQsTg_p8ddShed"
+            supabaseUrl: "${SUPABASE_URL}",
+            supabaseKey: "${SUPABASE_PUBLISHABLE_KEY}"
           };
           EOF
 
       - name: Build
         run: |
-          npm install -g @angular/cli
-          ng build --configuration=fr --base-href="https://allalaspace.github.io/live-resume/"
+          npx ng build --configuration=fr --base-href="https://allalaspace.github.io/live-resume/"
           cp dist/live-resume/fr/index.html dist/live-resume/fr/404.html
 
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-resume-fr
+          path: dist/live-resume/fr
+          retention-days: 1
+
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    needs: build
+
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: live-resume-fr
+          path: site
+
       - name: Deploy to GitHub Pages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+        uses: JamesIves/github-pages-deploy-action@v4.9.0
         with:
           branch: gh-pages
-          folder: dist/live-resume/fr
+          folder: site
           clean: true
