@@ -1,0 +1,144 @@
+{
+  "generatedFrom": [
+    "src/assets/data/about.json",
+    "src/assets/data/experiences.json",
+    "posts/*.md"
+  ],
+  "blocks": [
+    {
+      "type": "about",
+      "id": "about",
+      "label": {
+        "fr": "À propos",
+        "en": "About"
+      },
+      "text": {
+        "fr": "Ingénieur data et applicatif, référent technique. Je conçois des pipelines d'ingestion et de transformation, je veille à la qualité et à la traçabilité de la donnée, et je porte des plateformes sur le cloud (Azure, AWS, GCP / S3NS).\n\nDepuis 2013, j'accompagne des projets d'assurance, d'ERP et de GED, du développement applicatif .NET jusqu'aux architectures cloud et RAG.\n\nDiplôme national d'ingénieur en informatique, spécialité génie logiciel — ESPRIT, Tunis, 2010–2013.\n\nCentres d'intérêt : Cyclisme, Musculation, Voyage, Lecture\n\nLiens : LinkedIn: https://www.linkedin.com/in/mohamed-ali-boudich/ ; GitHub: https://github.com/allalaspace/ ; Facebook: https://www.facebook.com/mohamedali.boudich/",
+        "en": "Data and application engineer, technical lead. I design ingestion and transformation pipelines, look after data quality and traceability, and run platforms on the cloud (Azure, AWS, GCP / S3NS).\n\nSince 2013 I have worked on insurance, ERP and document-management projects, from .NET application development through to cloud and RAG architectures.\n\nNational engineering degree in computer science, software engineering major — ESPRIT, Tunis, 2010–2013.\n\nInterests: Cyclisme, Musculation, Voyage, Lecture\n\nLinks: LinkedIn: https://www.linkedin.com/in/mohamed-ali-boudich/; GitHub: https://github.com/allalaspace/; Facebook: https://www.facebook.com/mohamedali.boudich/"
+      }
+    },
+    {
+      "type": "experience",
+      "id": "1",
+      "label": {
+        "fr": "Cynapsys — Projet de fin d'études",
+        "en": "Cynapsys — End-of-studies project"
+      },
+      "text": {
+        "fr": "Période : 01-01-2013 → 05-31-2013\nProjet de fin d'études\nTunis, Tunisie\nProjet de fin d'études : gestion du recrutement.",
+        "en": "Period: 01-01-2013 → 05-31-2013\nEnd-of-studies project\nTunis, Tunisia\nEnd-of-studies project: recruitment management."
+      }
+    },
+    {
+      "type": "experience",
+      "id": "2",
+      "label": {
+        "fr": "A3IS — Développeur",
+        "en": "A3IS — Developer"
+      },
+      "text": {
+        "fr": "Période : 06-01-2013 → 01-31-2014\nTechnologies : C#, IoC, AES, ERP\nDéveloppeur\nTunis, Tunisie\nSystème de cache pour un ERP : abstraction, interception IoC, sérialisation et chiffrement AES.",
+        "en": "Period: 06-01-2013 → 01-31-2014\nTechnologies: C#, IoC, AES, ERP\nDeveloper\nTunis, Tunisia\nCache system for an ERP: abstraction, IoC interception, serialization and AES encryption."
+      }
+    },
+    {
+      "type": "experience",
+      "id": "3",
+      "label": {
+        "fr": "Allisone BPO — Développeur",
+        "en": "Allisone BPO — Developer"
+      },
+      "text": {
+        "fr": "Période : 05-01-2014 → 12-31-2015\nTechnologies : C#, ASP.NET MVC 4, WPF, Entity Framework 6.1, SQL Server, Crystal Reports, Alfresco, Activiti\nDéveloppeur\nTunis, Tunisie\nProjets pour Crédit Agricole, HSBC, Sada Assurance, AmenBank et Notaires de France.\n\nApplication de reporting pour le pilotage de production, et portails de GED : archivage de sinistres, garanties de prêt, liasses fiscales.\n\nSolution de gestion des pièces de caisse : contrôle de conformité, tableau de bord, services d'alerte et de typage documentaire. GED Alfresco et processus Activiti BPM.",
+        "en": "Period: 05-01-2014 → 12-31-2015\nTechnologies: C#, ASP.NET MVC 4, WPF, Entity Framework 6.1, SQL Server, Crystal Reports, Alfresco, Activiti\nDeveloper\nTunis, Tunisia\nProjects for Crédit Agricole, HSBC, Sada Assurance, AmenBank and Notaires de France.\n\nBuilt a production-monitoring reporting application and document-management portals: claims archiving, loan guarantees and tax bundles.\n\nDesigned a cash-voucher management solution: compliance checks, dashboard, alerting and document classification. Alfresco ECM and Activiti BPM."
+      }
+    },
+    {
+      "type": "experience",
+      "id": "4",
+      "label": {
+        "fr": "Veolia — Consultant Full Stack",
+        "en": "Veolia — Full-stack Consultant"
+      },
+      "text": {
+        "fr": "Période : 01-01-2016 → 02-28-2021\nTechnologies : C#, ASP.NET Core, Angular, TypeScript, SignalR, MassTransit, RabbitMQ, SQL Server, PostgreSQL, MongoDB, Redis, Jenkins, GitLab\nConsultant Full Stack\nNanterre, France\nJASON, ERP d'exploitation — équipe de 16 personnes.\n\nContribution à la migration d'ASP.NET MVC vers .NET Core, avec découpage en microservices et refonte du front en Angular.\n\nWorkflows asynchrones MassTransit / RabbitMQ et APIs ASP.NET Core exposées via une DMZ.\n\nPlateforme de tests automatisés (Selenium, ChromeDriver) et instrumentation de diagnostic (Elmah, Glimpse).",
+        "en": "Period: 01-01-2016 → 02-28-2021\nTechnologies: C#, ASP.NET Core, Angular, TypeScript, SignalR, MassTransit, RabbitMQ, SQL Server, PostgreSQL, MongoDB, Redis, Jenkins, GitLab\nFull-stack Consultant\nNanterre, France\nJASON, operations ERP — team of 16.\n\nContributed to the migration from ASP.NET MVC to .NET Core, with a split into microservices and a front-end rewrite in Angular.\n\nImplemented asynchronous MassTransit / RabbitMQ workflows and ASP.NET Core APIs exposed through a DMZ.\n\nSet up the automated test platform (Selenium, ChromeDriver) and diagnostic instrumentation (Elmah, Glimpse)."
+      }
+    },
+    {
+      "type": "experience",
+      "id": "5",
+      "label": {
+        "fr": "Jaji Conseil — Consultant Full Stack",
+        "en": "Jaji Conseil — Full-stack Consultant"
+      },
+      "text": {
+        "fr": "Période : 03-01-2021 → 12-31-2024\nTechnologies : .NET Core, ASP.NET MVC, EF Core, PostgreSQL, Redis, MassTransit, RabbitMQ, IdentityServer4, Vue.js, xUnit, Elasticsearch, Kibana, Grafana, Power BI\nConsultant Full Stack\nParis, France\nSocle d'une plateforme d'assurance collective et individuelle.\n\nConception et développement d'un ETL .NET de clonage PostgreSQL : structure via pg_dump, copie des données avec EF Core, re-chiffrement AES et anonymisation RGPD (Bogus) pour provisionner des environnements hors production.\n\nSupervision de bout en bout : logs dans Elasticsearch, tableaux de bord Kibana et Power BI, métriques dans Grafana (latence des APIs, RabbitMQ, Redis, PostgreSQL).\n\nArchitecture des services et APIs métier : affiliation employeur et salarié, souscription, création de projet et de contrat, intégration GoCardless et facturation.\n\nCI/CD sous Azure DevOps en cadre SAFe, avec contrôle de qualité (SonarQube, xUnit) et intégration de briques AWS (Lambda, S3, Textract, SES).",
+        "en": "Period: 03-01-2021 → 12-31-2024\nTechnologies: .NET Core, ASP.NET MVC, EF Core, PostgreSQL, Redis, MassTransit, RabbitMQ, IdentityServer4, Vue.js, xUnit, Elasticsearch, Kibana, Grafana, Power BI\nFull-stack Consultant\nParis, France\nFoundation of a group and individual insurance platform.\n\nDesigned and built a .NET ETL that clones PostgreSQL: schema via pg_dump, data copy with EF Core, AES re-encryption and GDPR anonymisation (Bogus) to provision non-production environments.\n\nEnd-to-end observability: logs in Elasticsearch, dashboards in Kibana and Power BI, metrics in Grafana (API latency, RabbitMQ, Redis, PostgreSQL).\n\nArchitected business services and APIs: employer and employee affiliation, subscription, project and contract creation, GoCardless integration and billing.\n\nIndustrialised CI/CD on Azure DevOps in a SAFe frame, with quality gates (SonarQube, xUnit) and AWS building blocks (Lambda, S3, Textract, SES)."
+      }
+    },
+    {
+      "type": "experience",
+      "id": "6",
+      "label": {
+        "fr": "Klésia — Développeur Cloud & RAG",
+        "en": "Klésia — Cloud & RAG Developer"
+      },
+      "text": {
+        "fr": "Période : 01-01-2025 → 01-31-2026\nTechnologies : C# / .NET 9, Python, ASP.NET Core, Semantic Kernel, Azure OpenAI, Azure AI Search, Cosmos DB, Key Vault, SharePoint, Azure DevOps, EF Core\nDéveloppeur Cloud & RAG\nParis, France\nPlateforme de chatbots d'entreprise sur Azure, adossée à SharePoint. Équipe architecture.\n\nIndustrialisation du pipeline d'ingestion et de transformation : extraction multi-formats (PDF, Word, PowerPoint, Excel, HTML, Markdown, OCR via Document Intelligence), chunking des documents en Python (1 000 tokens, recouvrement de 100), vectorisation et indexation Azure AI Search.\n\nTraçabilité de la réponse : fichier, page et fragment cités. Recherche sémantique exposée au modèle par function calling, avec réponses en streaming.\n\nRéduction du coût et de la durée des réindexations par une ingestion incrémentale appuyée sur un cache d'état dans Cosmos DB. Plateforme multi-chatbots : un index et un périmètre documentaire par chatbot.",
+        "en": "Period: 01-01-2025 → 01-31-2026\nTechnologies: C# / .NET 9, Python, ASP.NET Core, Semantic Kernel, Azure OpenAI, Azure AI Search, Cosmos DB, Key Vault, SharePoint, Azure DevOps, EF Core\nCloud & RAG Developer\nParis, France\nEnterprise chatbot platform on Azure, backed by SharePoint. Architecture team.\n\nIndustrialised the ingestion and transformation pipeline: multi-format extraction (PDF, Word, PowerPoint, Excel, HTML, Markdown, OCR via Document Intelligence), document chunking in Python (1,000 tokens, 100-token overlap), vectorisation and indexing in Azure AI Search.\n\nAnswers are traced to the source file, page and fragment. Semantic search is exposed to the model through function calling, with streaming responses.\n\nCut the cost and duration of reindexing with incremental ingestion backed by a state cache in Cosmos DB. Delivered a multi-chatbot platform: one index and one document scope per chatbot."
+      }
+    },
+    {
+      "type": "experience",
+      "id": "7",
+      "label": {
+        "fr": "OSC-AGPM — Consultant Cloud / Développeur",
+        "en": "OSC-AGPM — Cloud Consultant / Developer"
+      },
+      "text": {
+        "fr": "Période : 02-01-2026 → en cours\nTechnologies : .NET, AWS, GCP / S3NS, Kubernetes, Cloud KMS, Workload Identity, BigQuery, Docker\nConsultant Cloud / Développeur\nFrance\nPlateforme d'assurance portée d'AWS vers le cloud de confiance S3NS.\n\nConception de l'abstraction de stockage (AWS S3 / Google Cloud Storage), sélectionnée par configuration : même contrat d'accès à la donnée, deux implémentations.\n\nPortage du chiffrement applicatif d'AWS KMS vers Cloud KMS, avec authentification Workload Identity à la place des clés statiques.\n\nMigration des traitements de Lambda vers Kubernetes et adaptation des échanges inter-services au maillage du cluster.\n\nDual-run AWS / S3NS pour valider la cible en région française pendant que la production AWS continue d'être servie.",
+        "en": "Period: 02-01-2026 → present\nTechnologies: .NET, AWS, GCP / S3NS, Kubernetes, Cloud KMS, Workload Identity, BigQuery, Docker\nCloud Consultant / Developer\nFrance\nInsurance platform moved from AWS to the S3NS trusted cloud.\n\nDesigned the storage abstraction (AWS S3 / Google Cloud Storage), selected by configuration: the same data-access contract, two implementations.\n\nPorted application encryption from AWS KMS to Cloud KMS, with Workload Identity authentication instead of static keys.\n\nMoved workloads from Lambda to Kubernetes and adapted inter-service traffic to the cluster mesh.\n\nSet up an AWS / S3NS dual-run to validate the target in a French region while AWS production kept serving traffic."
+      }
+    },
+    {
+      "type": "post",
+      "id": "clonage-postgresql-rgpd",
+      "slug": "clonage-postgresql-rgpd",
+      "label": {
+        "fr": "Cloner PostgreSQL pour la recette, sans emporter la production",
+        "en": "Cloner PostgreSQL pour la recette, sans emporter la production"
+      },
+      "text": {
+        "fr": "# Cloner PostgreSQL pour la recette, sans emporter la production\n\nUne plateforme d'assurance a besoin d'environnements de recette réalistes : affiliations, contrats, échéanciers, pièces jointes. Copier la production telle quelle règle le réalisme et crée un autre problème. La recette se remplit de données personnelles, souvent avec les mêmes secrets de chiffrement que la prod.\n\nLe besoin est plus précis : une base structurellement identique, des volumes crédibles, des données qui ne permettent plus d'identifier une personne, et un chiffrement propre à l'environnement cible.\n\n## Trois étapes, pas un `pg_dump` unique\n\nUn dump complet suivi d'un restore copie le schéma, les données et, si l'on n'y prend pas garde, le sens des données. Le clonage utile sépare les trois travaux.\n\n1. **La structure**, via `pg_dump --schema-only`. Tables, index, contraintes, fonctions. Pas une ligne métier.\n2. **Les données**, lues puis réécrites par un ETL .NET (EF Core), table par table, dans un ordre compatible avec les clés étrangères.\n3. **La protection**, appliquée pendant la copie : déchiffrement avec la clé source, anonymisation, rechiffrement avec la clé de l'environnement cible.\n\nLa structure peut être rejouée souvent. Les données ne partent jamais en clair sur le disque de la recette.\n\n## Pourquoi ne pas anonymiser après coup\n\nAnonymiser dans la base déjà restaurée laisse une fenêtre où la prod est présente en recette. Un backup intermédiaire, un log SQL, un export d'un développeur, et la donnée est sortie. L'anonymisation doit avoir lieu dans le flux, avant l'écriture cible.\n\n```text\nprod  --lecture-->  déchiffrement AES (clé prod)\n                         |\n                    anonymisation (Bogus)\n                         |\n                  rechiffrement AES (clé recette)\n                         |\n                    écriture cible\n```\n\nBogus fournit des noms, adresses, e-mails et téléphones vraisemblables, stables si on fixe la graine par clé métier. Deux runs sur la même personne produisent le même pseudonyme. Les jointures de test restent reproductibles, sans conserver l'identité.\n\nLes colonnes qui ne sont pas personnelles (codes produit, barèmes, référentiels) sont copiées telles quelles. Tout n'a pas vocation à devenir du bruit : un jeu de recette inutilisable ne sert à personne.\n\n## Ce qu'il faut décider avant d'écrire la première ligne\n\n| Sujet | Décision |\n| --- | --- |\n| Clés étrangères | Copier les parents avant les enfants, ou désactiver les contraintes le temps du chargement puis les réactiver |\n| Identifiants | Conserver les clés techniques pour que les jeux de tests restent stables |\n| Chiffrement | Une clé par environnement, jamais la clé de prod en recette |\n| Volumes | Un sous-ensemble cohérent (un portefeuille, une période) plutôt qu'un clone intégral systématique |\n| Idempotence | Relancer le job ne doit pas dupliquer les lignes : upsert sur la clé métier |\n\nLe sous-ensemble cohérent est le point le plus souvent négligé. Extraire « les 10 000 derniers contrats » sans leurs adhérents, garanties et échéances produit une base qui démarre et qui ment.\n\n## Rendre le job observable\n\nUn ETL de clonage qui échoue à la table 40 sur 70, sans dire laquelle, est relancé en entier. Le minimum utile :\n\n- un log structuré par table : lues, écrites, rejetées, durée ;\n- un marqueur de reprise, pour repartir après la dernière table commise ;\n- une alerte si le volume écrit s'écarte fortement du volume lu (filtre trop agressif, ou fuite de lignes).\n\nSur la plateforme, cette supervision rejoint le reste : logs dans Elasticsearch, lecture dans Kibana, métriques de latence (API, RabbitMQ, Redis, PostgreSQL) dans Grafana. Le job de clonage n'est pas un script à part. C'est un traitement de plus, avec les mêmes exigences.\n\n## Ce que la recette a le droit de contenir\n\nÀ la fin du passage, un contrôle simple vaut mieux qu'une revue manuelle :\n\n- aucune ligne dont l'e-mail ou le NIR correspond à un échantillon connu de la prod ;\n- les colonnes chiffrées se déchiffrent avec la clé de recette, et pas avec celle de prod ;\n- les comptes de lignes parent / enfant restent cohérents ;\n- un scénario métier type (création de contrat, échéancier) passe sur le clone.\n\nSi l'un de ces contrôles échoue, l'environnement n'est pas ouvert aux équipes.\n\n## À retenir\n\n- Séparez le schéma, la copie et la protection. Un seul dump mélange les trois.\n- Anonymisez dans le flux, puis rechiffrez avec la clé de l'environnement cible.\n- Copiez un sous-ensemble cohérent, pas un extrait arbitraire.\n- Rendez le job reprenable et mesurable, comme n'importe quel traitement de production.\n\nLa recette devient alors un outil : assez proche de la prod pour trouver les bugs, assez loin des personnes pour pouvoir être manipulée sans devenir un nouveau lieu de stockage de données réelles.\n\n---\n\n*Mohamed Ali Boudiche — ingénieur data et applicatif*",
+        "en": ""
+      }
+    },
+    {
+      "type": "post",
+      "id": "ingestion-incrementale-rag",
+      "slug": "ingestion-incrementale-rag",
+      "label": {
+        "fr": "Réindexer un RAG sans tout rejouer",
+        "en": "Réindexer un RAG sans tout rejouer"
+      },
+      "text": {
+        "fr": "# Réindexer un RAG sans tout rejouer\n\nUn chatbot d'entreprise adossé à SharePoint n'est utile que si ses réponses restent à jour. Le réflexe, au début, est de tout réingérer à chaque changement : extraire les fichiers, les découper, les vectoriser, puis reconstruire l'index. Ça tient sur un corpus de démonstration. Dès que le volume grandit, le coût et la durée deviennent le vrai sujet.\n\nCe retour d'expérience décrit un pipeline d'ingestion incrémentale : on ne retraite que ce qui a changé, et chaque réponse reste rattachée à sa source.\n\n## Ce que le pipeline doit faire\n\nLe corpus n'est pas un dossier de PDF propres. C'est un SharePoint : Word, PowerPoint, Excel, HTML, Markdown, et des PDF scannés. Le pipeline enchaîne donc quatre étapes.\n\n1. **Extraire** le texte, avec un OCR (Document Intelligence) quand le fichier n'a pas de couche texte.\n2. **Découper** en fragments d'environ 1 000 tokens, avec un recouvrement de 100 tokens pour ne pas couper une phrase au milieu d'une idée.\n3. **Vectoriser** chaque fragment et l'indexer dans Azure AI Search, avec les métadonnées de provenance.\n4. **Interroger** cet index depuis le modèle, par function calling, et renvoyer la réponse en streaming.\n\nLe point qui change la qualité perçue n'est pas le modèle. C'est la provenance : fichier, page, fragment. Sans ça, une réponse juste reste invérifiable.\n\n## Pourquoi tout réindexer coûte trop cher\n\nUne réindexation complète refait le travail déjà payé.\n\n- L'OCR et l'extraction sont lents sur les PDF scannés.\n- Chaque fragment repasse par l'API d'embeddings.\n- L'index est réécrit alors que la majorité des documents n'a pas bougé.\n- Pendant ce temps, le chatbot répond sur un index soit ancien, soit en cours de reconstruction.\n\nLe bon critère n'est pas « le fichier existe ». C'est « le fichier a changé depuis la dernière ingestion réussie ».\n\n## Un cache d'état, pas un second index\n\nCosmos DB tient l'état de chaque document, pas son contenu. Une entrée suffit :\n\n```json\n{\n  \"id\": \"site/bibliotheque/contrat-collectif.pdf\",\n  \"etag\": \"\\\"a1b2c3\\\"\",\n  \"lastModified\": \"2026-01-12T08:14:00Z\",\n  \"contentHash\": \"9f2c…\",\n  \"status\": \"indexed\",\n  \"chunkCount\": 42,\n  \"indexedAt\": \"2026-01-12T08:21:00Z\"\n}\n```\n\nÀ chaque passage, le pipeline compare l'état SharePoint à cet enregistrement.\n\n| Situation | Action |\n| --- | --- |\n| Document inconnu | Extraction, chunking, indexation, puis écriture de l'état |\n| `etag` ou hash identique | On passe au suivant |\n| Contenu modifié | Suppression des anciens fragments, puis réindexation |\n| Document disparu | Suppression des fragments et de l'état |\n| Échec en cours de route | `status = failed`, reprise au prochain passage |\n\nLe hash protège du cas où l'etag change sans que le texte change (métadonnées, renommage de colonne). L'etag évite de retélécharger un fichier stable.\n\n## Découper sans perdre la source\n\nUn fragment sans coordonnées est inutile au moment de la citation. Le chunk porte donc sa provenance dès la découpe.\n\n```python\ndef chunk_document(doc, size=1000, overlap=100):\n    chunks = []\n    start = 0\n    tokens = doc.tokens\n    while start < len(tokens):\n        end = min(start + size, len(tokens))\n        chunks.append({\n            \"id\": f\"{doc.id}:{start}\",\n            \"content\": detokenize(tokens[start:end]),\n            \"source\": doc.path,\n            \"page\": doc.page_at(start),\n            \"etag\": doc.etag,\n        })\n        if end == len(tokens):\n            break\n        start = end - overlap\n    return chunks\n```\n\nLes identifiants stables (`{document}:{offset}`) permettent de remplacer un fragment sans reconstruire l'index entier. Azure AI Search reçoit un upsert sur ces identifiants, pas un delete-and-recreate du corpus.\n\n## Plusieurs chatbots, un seul pipeline\n\nUne plateforme interne sert rarement un seul assistant. Le même moteur d'ingestion alimente plusieurs chatbots, chacun avec son index et son périmètre documentaire.\n\nLe périmètre est une configuration, pas une branche de code : site SharePoint, bibliothèques, types de fichiers, et index cible. Ajouter un chatbot revient à déclarer un scope, pas à dupliquer le pipeline.\n\n## Ce que le modèle voit\n\nLa recherche sémantique n'est pas collée dans le prompt en dur. Elle est exposée comme un outil. Le modèle décide quand chercher, reçoit les fragments, puis répond en citant fichier, page et extrait. Le streaming démarre dès les premiers tokens, sans attendre la fin de la génération.\n\nLa citation n'est pas un habillage. C'est le contrat : si le fragment n'est pas dans l'index, la réponse ne doit pas l'inventer.\n\n## À retenir\n\n- Ne réindexez que les documents dont le contenu a changé.\n- Gardez l'état (etag, hash, statut) à part du contenu vectorisé.\n- Attachez fichier, page et fragment à chaque chunk avant l'indexation.\n- Isolez les chatbots par index et par périmètre, pas par copie du pipeline.\n\nLe gain n'est pas seulement une facture d'embeddings plus basse. C'est un index qui suit le SharePoint, et des réponses que l'on peut ouvrir à la page citée.\n\n---\n\n*Mohamed Ali Boudiche — ingénieur data et applicatif*",
+        "en": ""
+      }
+    },
+    {
+      "type": "post",
+      "id": "migration-cloud-de-confiance",
+      "slug": "migration-cloud-de-confiance",
+      "label": {
+        "fr": "Porter une plateforme d'assurance vers un cloud de confiance",
+        "en": "Porter une plateforme d'assurance vers un cloud de confiance"
+      },
+      "text": {
+        "fr": "# Porter une plateforme d'assurance vers un cloud de confiance\n\nDéplacer une plateforme déjà en production n'est pas un exercice de « lift and shift » propre. Le code parle AWS : S3 pour les fichiers, KMS pour le chiffrement, Lambda pour les traitements. La cible, ici S3NS, parle un autre vocabulaire. L'objectif n'est pas de réécrire le métier. C'est de changer le socle sans interrompre le service, et sans coller le nom d'un fournisseur dans chaque cas d'usage.\n\n## Le piège du client cloud dans le métier\n\nQuand `AmazonS3Client` ou un appel KMS est appelé depuis un service d'affiliation ou de contrat, la migration devient un chantier applicatif. Chaque équipe retouche son code, les tests divergent, et le jour du basculement tout doit être vrai en même temps.\n\nL'alternative est un contrat d'accès à la donnée, et deux implémentations choisies par configuration.\n\n```csharp\npublic interface IObjectStore\n{\n    Task PutAsync(string key, Stream content, CancellationToken ct);\n    Task<Stream> GetAsync(string key, CancellationToken ct);\n    Task DeleteAsync(string key, CancellationToken ct);\n}\n```\n\n`S3ObjectStore` et `GcsObjectStore` implémentent ce contrat. Le service métier dépend de `IObjectStore`. La composition racine lit la configuration et branche l'une ou l'autre. Même appel, deux régions, deux fournisseurs.\n\nCe découpage sert aussi les tests : un faux store en mémoire suffit pour le métier, les tests d'intégration ciblent une seule implémentation.\n\n## Le chiffrement suit le même mouvement\n\nLes objets ne sont pas seulement déplacés. Ils sont chiffrés par l'application. Porter le stockage sans porter les clés laisse des données illisibles, ou pire, des clés statiques copiées dans le nouveau projet.\n\nLe passage d'AWS KMS vers Cloud KMS reprend le même schéma : une interface de chiffrement, deux implémentations. L'authentification change en même temps. Workload Identity remplace les clés longue durée posées dans la configuration. Le pod prouve son identité au cluster ; le cluster obtient un jeton court pour KMS. Plus de secret à faire tourner dans les variables d'environnement.\n\n## De Lambda vers Kubernetes\n\nLambda convient à des fonctions courtes, déclenchées par un événement. Une plateforme d'assurance a aussi des traitements plus longs, des appels entre services, et un besoin de voir le trafic. Les déplacer vers Kubernetes change trois choses.\n\n- **Le runtime.** Le conteneur remplace le paquet de déploiement Lambda. L'image est la même en recette et en production.\n- **Le réseau.** Les appels qui passaient par des URL publiques ou une DMZ passent par le maillage du cluster. Il faut redéclarer qui a le droit d'appeler qui, au lieu de recopier des security groups.\n- **L'observabilité.** Les logs et les métriques sortent du service managé Lambda pour arriver sur la stack du cluster. Sans ça, le dual-run est aveugle.\n\nLe métier, lui, ne change pas de contrat. Seul l'hébergement du processus change.\n\n## Le dual-run, seule façon de comparer\n\nCouper AWS le vendredi soir pour « voir si S3NS tient » n'est pas un plan. Le dual-run garde la production AWS en service et envoie le même flux, ou un flux miroir, vers la cible en région française.\n\nOn compare alors des choses mesurables :\n\n| Signal | Question |\n| --- | --- |\n| Écriture / lecture objet | Le fichier déposé d'un côté se relit-il à l'identique de l'autre ? |\n| Chiffrement | Un objet chiffré sur la cible se déchiffre-t-il avec la clé Cloud KMS ? |\n| Latence des APIs | Le maillage Kubernetes reste-t-il dans le budget de la prod AWS ? |\n| Erreurs métier | Les codes de retour divergent-ils sur les mêmes jeux d'entrée ? |\n\nTant que ces écarts ne sont pas expliqués, AWS continue de servir le trafic. Le basculement est une décision sur des mesures, pas une date dans un slide.\n\n## Ordre qui évite les impasses\n\n1. Poser les abstractions (stockage, chiffrement) et les couvrir par des tests sur l'implémentation actuelle.\n2. Brancher la seconde implémentation derrière un drapeau de configuration.\n3. Authentifier la cible par Workload Identity, sans clé statique.\n4. Déplacer les traitements vers le cluster et adapter le trafic inter-services.\n5. Lancer le dual-run, comparer, puis seulement ensuite envisager la bascule.\n\n## À retenir\n\n- Isolez le fournisseur derrière un contrat. Le métier ne doit pas connaître S3 ni GCS.\n- Portez les clés en même temps que les fichiers, et supprimez les secrets statiques.\n- Gardez l'ancienne production en service le temps de mesurer la cible.\n- Traitez le réseau et l'observabilité comme une partie de la migration, au même titre que le stockage.\n\nUne migration de cloud de confiance réussie se voit peu dans l'interface. Elle se voit dans le fait que le même binaire parle aux deux socles, et que l'on peut revenir en arrière tant que les chiffres ne sont pas là.\n\n---\n\n*Mohamed Ali Boudiche — ingénieur data et applicatif*",
+        "en": ""
+      }
+    }
+  ]
+}

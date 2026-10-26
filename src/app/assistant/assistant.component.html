@@ -1,0 +1,45 @@
+<section class="assistant" *ngIf="visible">
+  <div class="panel" *ngIf="open" role="dialog" aria-labelledby="assistant-title">
+    <header class="panel-header">
+      <h2 id="assistant-title" i18n="assistant@@assistantTitle">Resume assistant</h2>
+      <button type="button" class="icon-button" (click)="close()" i18n-aria-label="assistant@@assistantClose" aria-label="Close">
+        <span aria-hidden="true">×</span>
+      </button>
+    </header>
+
+    <p class="intro" *ngIf="!messages.length" i18n="assistant@@assistantIntro">Questions about Mohamed Ali Boudiche's experience, skills and articles. Answers stay within this site.</p>
+
+    <div class="suggestions" *ngIf="!messages.length && !loading">
+      <button type="button" (click)="ask($event)" i18n="assistant@@suggestCloud">What is your cloud experience?</button>
+      <button type="button" (click)="ask($event)" i18n="assistant@@suggestRag">Tell me about the RAG work</button>
+      <button type="button" (click)="ask($event)" i18n="assistant@@suggestStack">Which technologies do you use?</button>
+    </div>
+
+    <ol class="thread" #thread>
+      <li *ngFor="let message of messages" [class.user]="message.role === 'user'" [class.assistant]="message.role === 'assistant'">
+        <p>{{ message.content }}</p>
+        <div class="sources" *ngIf="message.sources?.length">
+          <span i18n="assistant@@assistantSources">Sources</span>
+          <button type="button" *ngFor="let source of message.sources" (click)="goToSource(source)">{{ source.label }}</button>
+        </div>
+      </li>
+    </ol>
+
+    <p class="status" *ngIf="loading" i18n="assistant@@assistantThinking">Looking through the resume…</p>
+    <p class="status error" *ngIf="errorCode === 'rate_limit'" i18n="assistant@@assistantRateLimit">Too many questions for now. Please try again in a little while.</p>
+    <p class="status error" *ngIf="errorCode === 'unconfigured'" i18n="assistant@@assistantUnconfigured">The assistant is not available yet.</p>
+    <p class="status error" *ngIf="errorCode === 'upstream'" i18n="assistant@@assistantUpstream">The assistant could not answer. Please try again.</p>
+    <p class="status error" *ngIf="errorCode === 'invalid'" i18n="assistant@@assistantInvalid">I could not read that question.</p>
+
+    <form (submit)="submit($event)">
+      <input #questionInput name="question" maxlength="1000" autocomplete="off" [disabled]="loading" i18n-placeholder="assistant@@assistantPlaceholder" placeholder="Ask a question">
+      <button type="submit" [disabled]="loading" i18n="assistant@@assistantSend">Send</button>
+    </form>
+  </div>
+
+  <button type="button" class="launcher" (click)="toggle()" [attr.aria-expanded]="open" i18n-aria-label="assistant@@assistantOpen" aria-label="Ask about this resume">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M5 6.5A3.5 3.5 0 0 1 8.5 3h7A3.5 3.5 0 0 1 19 6.5v6A3.5 3.5 0 0 1 15.5 16H12l-3.2 3.2c-.6.6-1.8.2-1.8-.7V16H8.5A3.5 3.5 0 0 1 5 12.5v-6Z" />
+    </svg>
+  </button>
+</section>

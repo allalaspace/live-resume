@@ -322,6 +322,81 @@
         </context-group>
         <note priority="1" from="description">contact</note>
       </trans-unit>
+      <trans-unit id="assistantOpen" datatype="html">
+        <source>Ask about this resume</source>
+        <target>Ask about this resume</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantClose" datatype="html">
+        <source>Close</source>
+        <target>Close</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantTitle" datatype="html">
+        <source>Resume assistant</source>
+        <target>Resume assistant</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantIntro" datatype="html">
+        <source>Questions about Mohamed Ali Boudiche&apos;s experience, skills and articles. Answers stay within this site.</source>
+        <target>Questions about Mohamed Ali Boudiche&apos;s experience, skills and articles. Answers stay within this site.</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="suggestCloud" datatype="html">
+        <source>What is your cloud experience?</source>
+        <target>What is your cloud experience?</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="suggestRag" datatype="html">
+        <source>Tell me about the RAG work</source>
+        <target>Tell me about the RAG work</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="suggestStack" datatype="html">
+        <source>Which technologies do you use?</source>
+        <target>Which technologies do you use?</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantPlaceholder" datatype="html">
+        <source>Ask a question</source>
+        <target>Ask a question</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantSend" datatype="html">
+        <source>Send</source>
+        <target>Send</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantThinking" datatype="html">
+        <source>Looking through the resume…</source>
+        <target>Looking through the resume…</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantRateLimit" datatype="html">
+        <source>Too many questions for now. Please try again in a little while.</source>
+        <target>Too many questions for now. Please try again in a little while.</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantUnconfigured" datatype="html">
+        <source>The assistant is not available yet.</source>
+        <target>The assistant is not available yet.</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantUpstream" datatype="html">
+        <source>The assistant could not answer. Please try again.</source>
+        <target>The assistant could not answer. Please try again.</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantInvalid" datatype="html">
+        <source>I could not read that question.</source>
+        <target>I could not read that question.</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantSources" datatype="html">
+        <source>Sources</source>
+        <target>Sources</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
       <trans-unit id="subjectPlaceholder" datatype="html">
         <source>Sujet de votre message</source>
         <target>Your message subject</target>

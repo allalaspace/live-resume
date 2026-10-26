@@ -11,6 +11,7 @@ import { ExperienceModule } from "../experience/experience.module";
 import { CoreModule } from "../core/core.module";
 import { PostsModule } from "../posts/posts.molule";
 import { FooterComponent } from "../footer/footer.component";
+import { AssistantComponent } from "../assistant/assistant.component";
 
 @NgModule({
   imports: [
@@ -27,9 +28,10 @@ import { FooterComponent } from "../footer/footer.component";
     HeaderComponent,
     AboutComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    AssistantComponent
   ],
-  exports: [ ResumeComponent ]
+  exports: [ ResumeComponent, AssistantComponent ]
 })
 
 export class ResumeModule { }

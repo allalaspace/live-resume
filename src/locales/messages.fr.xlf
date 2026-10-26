@@ -322,6 +322,81 @@
         </context-group>
         <note priority="1" from="description">contact</note>
       </trans-unit>
+      <trans-unit id="assistantOpen" datatype="html">
+        <source>Ask about this resume</source>
+        <target>Poser une question sur ce CV</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantClose" datatype="html">
+        <source>Close</source>
+        <target>Fermer</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantTitle" datatype="html">
+        <source>Resume assistant</source>
+        <target>Assistant du CV</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantIntro" datatype="html">
+        <source>Questions about Mohamed Ali Boudiche&apos;s experience, skills and articles. Answers stay within this site.</source>
+        <target>Questions sur le parcours, les compétences et les articles de Mohamed Ali Boudiche. Les réponses restent dans le cadre de ce site.</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="suggestCloud" datatype="html">
+        <source>What is your cloud experience?</source>
+        <target>Quelle est ton expérience cloud ?</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="suggestRag" datatype="html">
+        <source>Tell me about the RAG work</source>
+        <target>Parle-moi du travail RAG</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="suggestStack" datatype="html">
+        <source>Which technologies do you use?</source>
+        <target>Quelles technologies utilises-tu ?</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantPlaceholder" datatype="html">
+        <source>Ask a question</source>
+        <target>Posez une question</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantSend" datatype="html">
+        <source>Send</source>
+        <target>Envoyer</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantThinking" datatype="html">
+        <source>Looking through the resume…</source>
+        <target>Je parcours le CV…</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantRateLimit" datatype="html">
+        <source>Too many questions for now. Please try again in a little while.</source>
+        <target>Trop de questions pour le moment. Réessayez un peu plus tard.</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantUnconfigured" datatype="html">
+        <source>The assistant is not available yet.</source>
+        <target>L&apos;assistant n&apos;est pas encore disponible.</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantUpstream" datatype="html">
+        <source>The assistant could not answer. Please try again.</source>
+        <target>L&apos;assistant n&apos;a pas pu répondre. Réessayez.</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantInvalid" datatype="html">
+        <source>I could not read that question.</source>
+        <target>Je n&apos;ai pas pu lire cette question.</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
+      <trans-unit id="assistantSources" datatype="html">
+        <source>Sources</source>
+        <target>Sources</target>
+        <note priority="1" from="description">assistant</note>
+      </trans-unit>
       <trans-unit id="subjectPlaceholder" datatype="html">
         <source>Sujet de votre message</source>
         <target>Sujet de votre message</target>
