@@ -4,6 +4,7 @@ import { ResumeComponent } from "./resume/resume.component";
 import { ContactFormComponent } from "./components/contact-form/contact-form.component";
 import { FirebaseContactComponent } from "./contact/firebase-contact/firebase-contact.component";
 import { PostDetailComponent } from "./posts/post-detail/post-detail.component";
+import { PageNotFoundComponent } from "./404/page-not-found.component";
 
 // Any URL apart from the root domain is going to be rendered as "page-not-found".
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: "posts", redirectTo: "/#posts"},
   { path: "contact", component: FirebaseContactComponent},
   { path: "contact-form", component: ContactFormComponent},
+  { path: "page-not-found", component: PageNotFoundComponent },
   { path: "**", redirectTo: "/page-not-found" }
 ];
 
